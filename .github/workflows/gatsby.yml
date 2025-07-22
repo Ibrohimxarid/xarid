@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Auction Price Calculator</title>
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            margin: 20px;
+
+            text-align: center;
+
+        }
+
+        table {
+
+            width: 90%;
+
+            margin: 20px auto;
+
+            border-collapse: collapse;
+
+        }
+
+        th, td {
+
+            border: 1px solid #ddd;
+
+            padding: 8px;
+
+            text-align: right;
+
+        }
+
+        th {
+
+            background-color: #f2f2f2;
+
+        }
+
+        input[type="number"] {
+
+            padding: 5px;
+
+            font-size: 16px;
+
+        }
+
+        button {
+
+            padding: 5px 10px;
+
+            font-size: 16px;
+
+            cursor: pointer;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Auction Price Calculator</h1>
+
+    <label for="initialPrice">Enter Starting Price (BoshlangВ‘ich summa):</label>
+
+    <input type="number" id="initialPrice" min="1" step="1" placeholder="e.g., 493500000">
+
+    <button onclick="generateTable()">Calculate</button>
+
+    <table id="auctionTable">
+
+        <thead>
+
+            <tr>
+
+                <th>В№</th>
+
+                <th>BoshlangВ‘ich summa</th>
+
+                <th>Vositachilik yigВ‘imi</th>
+
+                <th>Zakalat miqdori</th>
+
+                <th>Jami</th>
+
+                <th>%</th>
+
+                <th>Keyingi narxi</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="tableBody"></tbody>
+
+    </table>
+
+ 
+
+    <script>
+
+        function formatNumber(num) {
+
+            return Math.round(num).toLocaleString('en-US');
+
+        }
+
+ 
+
+        function generateTable() {
+
+            const initialPrice = parseFloat(document.getElementById('initialPrice').value);
+
+            if (isNaN(initialPrice) || initialPrice <= 0) {
+
+                alert('Please enter a valid starting price.');
+
+                return;
+
+            }
+
+ 
+
+            const tableBody = document.getElementById('tableBody');
+
+            tableBody.innerHTML = ''; // Clear previous table
+
+ 
+
+            const S = initialPrice;
+
+            const threshold = S-S*20/100; // demping
+
+ 
+
+            for (let n = 1; n <= 20; n++) {
+
+                const startingPrice = S * (1 - 0.02 * (n - 1));
+
+                const nextPrice = S * (1 - 0.02 * n);
+
+                const commission = 0.0015 * nextPrice; // 0.15% of next price
+
+                let zakat;
+
+                if (startingPrice <= threshold) {
+
+                    zakat = (S - nextPrice) + (S * 0.03); // initialPrice - nextPrice + initialPrice * 3%
+
+                } else {
+
+                    zakat = S * 0.03; // 3% of initial price
+
+                }
+
+                const total = commission + zakat;
+
+                const percentage = (1 - 0.02 * n).toFixed(2);
+
+ 
+
+                const row = document.createElement('tr');
+
+                row.innerHTML = `
+
+                    <td>${n}</td>
+
+                    <td>${formatNumber(startingPrice)}</td>
+
+                    <td>${formatNumber(commission)}</td>
+
+                    <td>${formatNumber(zakat)}</td>
+
+                    <td>${formatNumber(total)}</td>
+
+                    <td>${percentage}</td>
+
+                    <td>${formatNumber(nextPrice)}</td>
+
+                `;
+
+                tableBody.appendChild(row);
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
+
+ 
