@@ -2,7 +2,9 @@
 
 Writes ``reports/<run>/REPORT.md`` with the six required sections, a museum
 card file (``MUSEUM_CARDS.md``) with the 8 research-logic answers per museum,
-and one outreach draft per A/B museum under ``outreach/``.
+the strict ``VERIFIED_OFFERS.md`` (only documented, current give-away/sale offers),
+and one outreach draft per museum with a documented (current or earlier) offer
+under ``outreach/``.
 """
 
 from __future__ import annotations
@@ -18,6 +20,7 @@ from .outreach import build_draft
 from .priority import assess_museum, research_answers
 from .rows import database_record, iter_rows, museum_summary
 from .stats import compute_stats
+from .verified import verified_offers_markdown
 
 ORDER = {"A": 0, "B": 1, "C": 2, None: 3, "—": 3}
 
@@ -43,8 +46,10 @@ def _sorted(files: list[MuseumFile]) -> list[MuseumFile]:
     return sorted(files, key=lambda mf: (ORDER[assess_museum(mf).priority], mf.museum.country, mf.museum.name))
 
 
-def section_opportunities(files: list[MuseumFile]) -> str:
-    rows = [r for r in iter_rows(files) if r.priority in ("A", "B") and (r.exhibit or r.exhibition)]
+def _opportunity_rows(files: list[MuseumFile], priorities: tuple[str, ...], offered_before: bool = False) -> list:
+    rows = [r for r in iter_rows(files) if r.priority in priorities and (r.exhibit or r.exhibition)]
+    if offered_before:
+        rows = [r for r in rows if r.assessment.availability_evidence]
     rows.sort(key=lambda r: (ORDER[r.priority], r.museum.museum.country, r.museum.museum.name))
     body = []
     for r in rows:
@@ -55,12 +60,23 @@ def section_opportunities(files: list[MuseumFile]) -> str:
             rec["Old Exhibit"],
             rec["Exhibit Category"] if rec["Exhibit Category"] != UNKNOWN else "—",
             rec["Current Status"],
-            rec["Availability Evidence"][:300],
+            (rec["Availability Evidence"] + (" — " + " ".join(r.assessment.notes) if offered_before else ""))[:400],
             _link(rec["Source"], rec["Source Date"] if rec["Source Date"] != UNKNOWN else "n.d."),
         ])
-    if not body:
-        return "_No exhibit-level opportunities yet._"
-    return _table(["P", "Museum", "Exhibit / collection", "Category", "Status", "Availability evidence", "Source"], body)
+    return body
+
+
+def section_opportunities(files: list[MuseumFile]) -> str:
+    """Only A items (offer confirmed and current) in the headline; closed/stale offers below."""
+    headers = ["P", "Museum", "Exhibit / collection", "Category", "Status", "Availability evidence", "Source"]
+    a_rows = _opportunity_rows(files, ("A",))
+    closed = _opportunity_rows(files, ("B",), offered_before=True)
+    out = [_table(headers, a_rows) if a_rows else "_No confirmed, current offers yet._"]
+    out += ["", "### 1b. Offered earlier — window closed, evidence stale or not officially confirmed (ask what is left)", ""]
+    out.append(_table(headers, closed) if closed else "_None._")
+    out += ["", "Removed/stored exhibits with unknown fate and renovation-only museums are **not** "
+            "opportunities — they are listed under Museum Leads."]
+    return "\n".join(out)
 
 
 def section_leads(files: list[MuseumFile]) -> str:
@@ -188,7 +204,10 @@ def generate(files: list[MuseumFile], label: str = "run", out_root: Path | None 
     for stale in (run_dir / "outreach").glob("*.md"):
         stale.unlink()
 
-    drafts = [build_draft(mf) for mf in _sorted(files) if assess_museum(mf).priority in ("A", "B")]
+    # Drafts only where a source shows an actual offer (current = A, or earlier/closed = B with
+    # availability evidence). Renovation-only and "fate unknown" museums get no draft.
+    drafts = [build_draft(mf) for mf in _sorted(files)
+              if assess_museum(mf).priority in ("A", "B") and assess_museum(mf).availability_evidence]
     for d in drafts:
         (run_dir / "outreach" / f"{d.museum_id}.md").write_text(d.markdown(), encoding="utf-8")
 
@@ -233,15 +252,17 @@ Unknown fields read: *{UNKNOWN}*
 
 ## 5. OUTREACH DRAFTS
 
-{chr(10).join(d.markdown() for d in drafts) if drafts else '_No A/B museums yet._'}
+{chr(10).join(d.markdown() for d in drafts) if drafts else '_No museums with a documented offer yet._'}
 
 ## 6. RESEARCH STATISTICS
 
 {section_statistics(files)}
 
 ---
+Strict list (only museums that actually give away / sell / transfer retired objects, with proof): `VERIFIED_OFFERS.md`.
 Museum-by-museum cards with the 8 research-logic answers: `MUSEUM_CARDS.md`.
 """
     (run_dir / "REPORT.md").write_text(report, encoding="utf-8")
     (run_dir / "MUSEUM_CARDS.md").write_text(museum_cards(files), encoding="utf-8")
+    (run_dir / "VERIFIED_OFFERS.md").write_text(verified_offers_markdown(files), encoding="utf-8")
     return run_dir

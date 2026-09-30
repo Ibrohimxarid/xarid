@@ -39,6 +39,7 @@ evidence:
     signals: [available_transfer, deaccession_in_progress]
     verified_via: web_search_snippet
 research:
+  eligibility: "Find an Object: museums and organisations within the public domain."
   researcher: mef expansion
   last_updated: "2026-09-30"
   next_step: Low priority — listing has expired; ask only if combining several UK items into one shipment.

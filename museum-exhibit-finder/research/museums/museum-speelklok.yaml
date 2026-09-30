@@ -33,6 +33,7 @@ evidence:
     verified_via: web_search_snippet
     notes: valid_until derived from the ADB rule that notices stay online for two months.
 research:
+  eligibility: "LAMO: other museums first (two-month notice on the Afstotingsdatabase)."
   researcher: mef expansion
   last_updated: "2026-09-30"
   next_step: Open the ADB PDF; if it contains mechanical instruments/automata, ask whether any remain after the LAMO period.

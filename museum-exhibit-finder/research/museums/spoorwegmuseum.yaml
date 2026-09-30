@@ -70,6 +70,7 @@ evidence:
     signals: [deaccession_policy]
     verified_via: web_search_snippet
 research:
+  eligibility: "Under LAMO: offered first to Dutch museums/heritage institutions and Historisch Railvervoer Nederland members; afterwards other routes."
   researcher: mef expansion
   last_updated: "2026-09-30"
   next_step: Ask the collections team for the current list of rolling stock/components still unallocated after the LAMO period, and whether a foreign museum may take them.

@@ -44,6 +44,7 @@ evidence:
     signals: [for_sale]
     verified_via: web_search_snippet
 research:
+  eligibility: "Public online auction without reserve."
   researcher: mef expansion
   last_updated: "2026-09-30"
   next_step: Low priority — auction finished; check with Classic Trader for unsold lots.

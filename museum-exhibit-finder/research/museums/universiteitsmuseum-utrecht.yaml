@@ -1,0 +1,64 @@
+museum:
+  id: universiteitsmuseum-utrecht
+  name: Universiteitsmuseum Utrecht (UMU)
+  country: Netherlands
+  city: Utrecht
+  website: https://umu.nl/
+  type: university science and history museum
+contacts:
+  - kind: general
+    contact_page: https://shop.museumdepotshop.nl/nl/de-collectie/museum-inventaris/
+    source: e1
+exhibitions:
+  - id: obsolete-display-furniture
+    name: Obsolete display cases and exhibition furniture sold via MuseumDepotShop
+    status: for_sale
+    evidence: [e1, e2]
+    exhibits:
+      - id: vitrines-8-door
+        name: 8-door museum display cabinets (210 x 805 x 60 cm and 210 x 910 x 60 cm)
+        category: [display_cases]
+        dimensions: 210 x 805 x 60 cm; 210 x 910 x 60 cm
+        interactive: false
+        status: for_sale
+        evidence: [e1]
+        fit_for_tpm: Large glazed museum display cabinets — ready-made showcases for small objects in a new gallery.
+      - id: vitrines-4-door
+        name: 4-door museum display cabinets (200 x 205 x 105 cm) and display-case tables; large horizontal vitrine
+        category: [display_cases]
+        dimensions: 200 x 205 x 105 cm
+        interactive: false
+        status: for_sale
+        evidence: [e1]
+evidence:
+  - id: e1
+    url: https://museumdepotshop.nl/collections/collectie-overzicht
+    title: MuseumDepotShop — Collectie overzicht
+    publisher: MuseumDepotShop
+    source_type: association
+    accessed: "2026-09-30"
+    language: nl
+    claim: MuseumDepotShop lists museum display cabinets from the Universiteitsmuseum Utrecht for sale — 8-door cabinets (210x805x60 and 210x910x60 cm), 4-door cabinets (200x205x105 cm), vitrine tables and a large horizontal vitrine.
+    signals: [for_sale, deaccession_in_progress]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.museumdepotshop.nl/meubels-boedel-musea/
+    title: Meubels uit de boedel van musea - MuseumDepotShop
+    publisher: MuseumDepotShop
+    source_type: association
+    accessed: "2026-09-30"
+    language: nl
+    claim: MuseumDepotShop sells display systems and furniture that museums no longer use because once state-of-the-art display systems no longer meet modern presentation requirements; Universiteitsmuseum Utrecht and Museum Singer Laren supplied furniture and exhibition materials.
+    signals: [exhibit_replaced, for_sale]
+    verified_via: web_search_snippet
+research:
+  researcher: mef verification
+  last_updated: "2026-09-30"
+  eligibility: Open webshop — anyone can buy; collection from the depot or delivery by quotation.
+  next_step: Check which cabinets are still in stock and request a delivery/export quotation from MuseumDepotShop.
+  outreach:
+    reason: The museum's retired display cabinets are on sale in MuseumDepotShop.
+    interest: 8-door and 4-door museum display cabinets, vitrine tables.
+    fit: Ready-made museum showcases for TPM's new galleries.
+    email_hook: display cabinets from the Universiteitsmuseum Utrecht that are no longer in use are offered for sale in MuseumDepotShop
+    source: e1

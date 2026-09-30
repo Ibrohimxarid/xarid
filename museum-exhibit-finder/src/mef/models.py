@@ -278,6 +278,9 @@ class Research(Strict):
     outreach_status: OutreachStatus = OutreachStatus.not_contacted
     next_step: Optional[str] = None
     open_questions: list[str] = Field(default_factory=list)
+    eligibility: Optional[str] = Field(
+        None, description="Who may receive the objects, as stated by the source (e.g. UK public bodies first)"
+    )
     outreach: Outreach = Field(default_factory=Outreach)
     notes: Optional[str] = None
 

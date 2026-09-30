@@ -1,0 +1,40 @@
+museum:
+  id: zaans-museum
+  name: Zaans Museum
+  country: Netherlands
+  city: Zaandam
+  type: regional industrial-heritage museum
+contacts:
+  - kind: general
+    contact_page: https://shop.museumdepotshop.nl/en/machine-parts.html
+    source: e1
+exhibitions:
+  - id: depot-sale
+    name: Deaccessioned technical objects sold via MuseumDepotShop
+    status: for_sale
+    evidence: [e1]
+    exhibits:
+      - id: machine-parts
+        name: Machine parts, 20th century (industrial iron wheels from old machines, Ø 7.5–17 cm)
+        category: [industrial, mechanics]
+        dimensions: diameter 7.5–17.0 cm
+        condition: Good, with traces of use and age (per listing)
+        interactive: false
+        status: for_sale
+        evidence: [e1]
+        fit_for_tpm: Small hands-on gear/wheel objects for a mechanics display; low value, low shipping cost.
+evidence:
+  - id: e1
+    url: https://shop.museumdepotshop.nl/en/machine-parts.html
+    title: Zaans Museum Machine parts, 20th century - MuseumDepotShop
+    publisher: MuseumDepotShop
+    source_type: association
+    accessed: "2026-09-30"
+    claim: Zaans Museum machine parts (iron wheels from old machines, 7.5–17 cm) from the museum collection are for sale; pickup from the museum depot in Zwaag or delivery on quotation.
+    signals: [for_sale, deaccession_in_progress]
+    verified_via: web_search_snippet
+research:
+  researcher: mef verification
+  last_updated: "2026-09-30"
+  eligibility: Open webshop — anyone can buy.
+  next_step: Low priority — buy only together with larger items from MuseumDepotShop in one shipment.

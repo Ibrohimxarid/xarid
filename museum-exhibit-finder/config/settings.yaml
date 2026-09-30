@@ -28,7 +28,7 @@ museum_profile:
 priority:
   # Availability evidence older than this is shown as "re-confirm" and the
   # item is downgraded from A to B until someone re-confirms it.
-  availability_max_age_years: 3
+  availability_max_age_years: 2
 
 fetch:
   user_agent: "TashkentPolytechnicMuseum-ExhibitFinder/0.1 (+research; contact via museum)"

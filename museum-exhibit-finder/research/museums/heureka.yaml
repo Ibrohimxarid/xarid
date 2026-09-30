@@ -6,7 +6,10 @@ museum:
   city: Vantaa
   website: https://www.heureka.fi/en
   type: science centre
-  notes: Touring exhibitions and exhibit copies are rented and sold by its subsidiary Heureka Overseas Productions Ltd (HOP) since 2003.
+  notes: >-
+    Touring exhibitions and exhibit copies are rented and sold commercially by its subsidiary
+    Heureka Overseas Productions Ltd (HOP). NOT evidence of retired exhibits being given away —
+    the "Classics" exhibits were specially built for the touring exhibition.
 contacts:
   - name: Irmeli Jyrinsalo
     position: Senior Export Advisor, Heureka Overseas Productions
@@ -20,30 +23,9 @@ contacts:
     source: e2
 exhibitions:
   - id: hop-touring
-    name: Heureka Overseas Productions — touring exhibitions for rent or sale
-    status: for_sale
-    evidence: [e1, e2]
-    exhibits:
-      - id: power-of-play
-        name: Power of Play (touring exhibition, 600 m², 24 interactive exhibits)
-        category: [stem, digital_interactive]
-        interactive: true
-        status: for_sale
-        evidence: [e2]
-        notes: Listed as available for travelling from early 2025; ask whether rental only or sale.
-      - id: classic-collection
-        name: Heureka's Classic Collection (physics phenomena and optical illusions)
-        category: [physics, optics, mechanics, stem]
-        interactive: true
-        status: for_sale
-        evidence: [e2]
-        fit_for_tpm: Core hands-on physics/optics exhibits — directly matches TPM's physics and STEM profile.
-      - id: our-journey-in-space
-        name: Our Journey in Space (touring exhibition)
-        category: [space, stem]
-        interactive: true
-        status: for_sale
-        evidence: [e2]
+    name: Heureka Overseas Productions — commercial touring exhibitions (rent / sale of copies)
+    status: unknown
+    evidence: [e1, e2, e3]
 evidence:
   - id: e1
     url: https://www.heureka.fi/en/pages/heureka-overseas-productions
@@ -51,9 +33,8 @@ evidence:
     publisher: Heureka
     source_type: official_site
     accessed: "2026-09-30"
-    claim: Since 2003 Heureka Overseas Productions Ltd has handled rentals and sales of Heureka's travelling exhibitions; exhibitions fit into 2–6 containers and have travelled to nearly thirty countries.
-    excerpt: Heureka offers both rental and sales turnkey packages; since 2003 Heureka Overseas Productions Ltd has been responsible for the rentals and sales of Heureka's traveling exhibitions; all exhibitions fit to 2–6 containers.
-    signals: [for_sale, touring_for_hire, international_ok, willing_sale]
+    claim: Since 2003 Heureka Overseas Productions Ltd has handled rentals and sales of Heureka's travelling exhibitions (a commercial product line).
+    signals: [touring_for_hire]
     verified_via: web_search_snippet
   - id: e2
     url: https://www.heureka.fi/en/pages/hop-catalogue
@@ -61,21 +42,19 @@ evidence:
     publisher: Heureka
     source_type: official_site
     accessed: "2026-09-30"
-    claim: The HOP catalogue lists touring exhibitions and exhibit copies (e.g. Power of Play, Our Journey in Space, Classic Collection); enquiries to Irmeli Jyrinsalo, hop@heureka.fi.
-    excerpt: HOP manages touring exhibitions and exhibit copies; Power of Play is a 600 m² exhibition with 24 interactive exhibits available for travelling in early 2025; inquiries to Irmeli Jyrinsalo, Senior Export Advisor, hop@heureka.fi.
-    signals: [for_sale, touring_for_hire, accepts_requests, contact]
+    claim: The HOP catalogue lists touring exhibitions and exhibit copies for rent or sale.
+    signals: [touring_for_hire]
+    verified_via: web_search_snippet
+  - id: e3
+    url: https://www.heureka.fi/en/blogs/exhibitions/heureka-classics
+    title: Heureka - Exhibitions - Classics
+    publisher: Heureka
+    source_type: official_site
+    accessed: "2026-09-30"
+    claim: The Heureka Classics exhibits were specially designed and built for the touring exhibition — they are not retired exhibits from Heureka's floor.
+    signals: []
     verified_via: web_search_snippet
 research:
-  researcher: mef pilot
+  researcher: mef verification
   last_updated: "2026-09-30"
-  next_step: Ask HOP specifically for used / end-of-tour exhibitions or retired exhibits from Heureka's own floor (not new copies), with prices.
-  open_questions:
-    - Which exhibitions have finished touring and could be sold second-hand?
-    - Do they retire exhibits from Heureka's own permanent floor, and what happens to them?
-  notes: Commercial offer — new exhibit copies are out of scope; only used/retired exhibitions match the brief.
-  outreach:
-    reason: Heureka sells and rents touring exhibitions internationally through Heureka Overseas Productions.
-    interest: Used or end-of-tour exhibitions, especially the Classic Collection of physics/optics exhibits and Power of Play.
-    fit: Durable, containerised hands-on physics exhibits proven in ~30 countries — easy to ship to Tashkent.
-    email_hook: Heureka Overseas Productions offers Heureka's touring exhibitions for rental and sale, and we are particularly interested in exhibitions that have completed their tours or exhibits retired from Heureka's own galleries.
-    source: e1
+  next_step: Excluded from verified offers (commercial new builds). Only ask HOP whether any end-of-tour units are sold second-hand.

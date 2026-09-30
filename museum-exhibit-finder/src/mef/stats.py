@@ -22,7 +22,9 @@ def compute_stats(files: list[MuseumFile]) -> dict[str, int]:
                 exhibitions_replaced += 1
     exhibits = [(mf, i) for mf in files for ex in mf.exhibitions for i in ex.exhibits]
     confirmed = sum(1 for mf, i in exhibits if assess_exhibit(mf, i).priority == "A")
-    prio = [assess_museum(mf).priority for mf in files]
+    assessed = [assess_museum(mf) for mf in files]
+    prio = [a.priority for a in assessed]
+    b_offered = sum(1 for a in assessed if a.priority == "B" and a.availability_evidence)
     contacts = sum(1 for mf in files for c in mf.contacts if c.email or c.phone or c.contact_page)
     museums_with_contact = sum(1 for mf in files if any(c.email or c.phone or c.contact_page for c in mf.contacts))
     return {
@@ -31,10 +33,10 @@ def compute_stats(files: list[MuseumFile]) -> dict[str, int]:
         "Exhibitions replaced (tracked)": exhibitions_replaced,
         "Old exhibits identified": len(exhibits),
         "Exhibits confirmed available (A)": confirmed,
-        "Museums — A (direct opportunity)": prio.count("A"),
-        "Museums — B (potential opportunity)": prio.count("B"),
-        "Museums — C (lead)": prio.count("C"),
-        "Potential opportunities (A+B museums)": prio.count("A") + prio.count("B"),
+        "Museums — A (documented current offer: giving away / selling / transferring)": prio.count("A"),
+        "Museums — B, offered earlier (window closed / stale / not officially confirmed)": b_offered,
+        "Museums — B, removed or stored, fate unknown (no offer found)": prio.count("B") - b_offered,
+        "Museums — C (lead: renovation / new exhibition only)": prio.count("C"),
         "Contacts found": contacts,
         "Museums with a contact": museums_with_contact,
         "Evidence records (sources)": sum(len(mf.evidence) for mf in files),

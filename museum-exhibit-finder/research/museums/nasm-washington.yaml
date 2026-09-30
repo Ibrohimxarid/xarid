@@ -14,6 +14,17 @@ exhibitions:
     new_exhibition: 8 galleries (Oct 2022), 5 galleries (July 2025), remaining galleries by July 2026
     status: already_replaced
     evidence: [e1, e2, e3]
+  - id: collection-items-transfer
+    name: Collection Items for Transfer (deaccessioned objects offered to museums and educational organisations)
+    status: available_transfer
+    evidence: [e4, e5]
+    exhibits:
+      - id: transfer-list
+        name: Objects on NASM's periodic transfer list (aircraft parts, engines, models and other deaccessioned items — current list not captured)
+        category: [aviation, space, engineering]
+        status: available_transfer
+        evidence: [e4, e5]
+        fit_for_tpm: Aviation/space objects from the national collection; free transfer to qualified museums.
 evidence:
   - id: e1
     url: https://airandspace.si.edu/newsroom/press-releases/national-air-and-space-museum-provides-update-renovation-project
@@ -44,13 +55,36 @@ evidence:
     claim: The museum closed for renovation in 2018 and reopens in phases through 2026.
     signals: [renovation, closure]
     verified_via: web_search_snippet
+  - id: e4
+    url: https://airandspace.si.edu/explore/collections/about-collection/collection-items-transfer
+    title: Collection Items for Transfer | National Air and Space Museum
+    publisher: Smithsonian National Air and Space Museum
+    source_type: official_site
+    accessed: "2026-09-30"
+    claim: NASM periodically identifies deaccessioned objects as candidates for transfer and publishes the list on this page so that museums and educational organisations can request them (the page said the next list was projected for 2025).
+    excerpt: On a regular basis, the National Air and Space Museum will identify objects as candidates for transfer, and this list will be made available to requesting organizations via this website; objects are transferred to qualified museums and educational organizations.
+    signals: [available_transfer, deaccession_in_progress, accepts_requests]
+    verified_via: web_search_snippet
+  - id: e5
+    url: https://airandspace.si.edu/stories/editorial/removing-items-collection-national-air-and-space-museum
+    title: Removing Items from the Collection at the National Air and Space Museum
+    publisher: Smithsonian National Air and Space Museum
+    source_type: official_site
+    accessed: "2026-09-30"
+    claim: NASM's deaccession outreach first targets the Mutual Concerns of Air and Space Museums — an international consortium of air and space museums — before Smithsonian Affiliates and AAM members.
+    signals: [willing_transfer, international_ok]
+    verified_via: web_search_snippet
 research:
-  researcher: mef expansion
+  researcher: mef verification
   last_updated: "2026-09-30"
-  next_step: Ask NASM's exhibits office whether non-collection interactives, simulators or exhibit fixtures from the pre-2018 galleries remain in storage; Smithsonian artifacts follow federal deaccession rules.
+  eligibility: Qualified museums and educational organisations; outreach starts with the international "Mutual Concerns of Air and Space Museums" consortium (foreign museums can be members). US private recipients need 501(c)(3) status — foreign eligibility to be confirmed.
+  next_step: Open the transfer page, download the current list, and ask NASM Collections how a foreign state museum can request objects (and whether TPM can join the Mutual Concerns consortium).
+  open_questions:
+    - Is the 2025/2026 transfer list published, and which items remain?
+    - Can a non-US state museum receive transfers? Who pays shipping?
   outreach:
-    reason: NASM redesigned all 20 galleries between 2018 and 2026.
-    interest: Non-collection interactives, flight simulators and exhibit fixtures from pre-2018 galleries.
-    fit: Aviation and space interactives match TPM's aviation/transport and simulator priorities.
-    email_hook: the National Air and Space Museum has redesigned all twenty of its galleries in the renovation completed in phases between 2018 and 2026
-    source: e1
+    reason: NASM publishes a list of deaccessioned objects available for transfer to museums, with outreach first to an international consortium of air and space museums.
+    interest: Aircraft components, engines, instruments and models on the current transfer list.
+    fit: Aviation and space engineering objects from the US national collection would anchor TPM's aviation section.
+    email_hook: the Museum periodically offers deaccessioned objects to other museums through its Collection Items for Transfer programme, with outreach beginning with the international Mutual Concerns of Air and Space Museums community
+    source: e4

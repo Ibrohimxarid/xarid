@@ -29,6 +29,7 @@ evidence:
     signals: [closure, for_sale, willing_sale]
     verified_via: web_search_snippet
 research:
+  eligibility: "Contents put up for sale after closure — buyers not restricted in the source."
   researcher: mef expansion
   last_updated: "2026-09-30"
   next_step: Find the museum's own announcement / sale channel and ask which vehicles, aircraft or components remain unsold (18 months have passed).

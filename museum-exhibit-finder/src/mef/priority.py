@@ -118,16 +118,21 @@ def assess_exhibit(mf: MuseumFile, exhibit: Exhibit, today: dt.date | None = Non
     return _assess(evs, exhibit.status, today)
 
 
+def _strength(a: Assessment) -> tuple[int, bool]:
+    # Within a priority, an assessment backed by (even stale) availability evidence wins.
+    return RANK[a.priority], bool(a.availability_evidence)
+
+
 def assess_museum(mf: MuseumFile, today: dt.date | None = None) -> Assessment:
     best = _assess(unattached_evidence(mf), None, today)
     for ex in mf.exhibitions:
         ex_evs = [e for e in mf.evidence if e.id in ex.evidence]
         cand = _assess(ex_evs, ex.status, today)
-        if RANK[cand.priority] > RANK[best.priority]:
+        if _strength(cand) > _strength(best):
             best = cand
         for item in ex.exhibits:
             cand = assess_exhibit(mf, item, today)
-            if RANK[cand.priority] > RANK[best.priority]:
+            if _strength(cand) > _strength(best):
                 best = cand
     return best
 

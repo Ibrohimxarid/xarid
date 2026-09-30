@@ -111,6 +111,7 @@ evidence:
     signals: [relocation, new_exhibition]
     verified_via: web_search_snippet
 research:
+  eligibility: "Priority to UK public-heritage organisations; after that the Museum explores 'alternative routes' (per Feb 2026 transfer list). Expressions of interest must state organisation status, contacts and accession numbers."
   researcher: mef expansion
   last_updated: "2026-09-30"
   next_step: Email the Collections Development Committee now — ask which aircraft from the 2025/2026 batches were not taken by UK bodies (SR.53, H.126) and whether a foreign public museum can apply under "alternative routes".

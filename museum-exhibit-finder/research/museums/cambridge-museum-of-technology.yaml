@@ -71,6 +71,7 @@ evidence:
     signals: [available_transfer, deaccession_in_progress, accepts_requests]
     verified_via: web_search_snippet
 research:
+  eligibility: "Find an Object: museums and organisations within the public domain (UK-focused; overseas eligibility to confirm)."
   researcher: mef pilot
   last_updated: "2026-09-30"
   next_step: Open the listing, confirm it has not expired and whether a non-UK public museum is eligible; enquire via the listing.

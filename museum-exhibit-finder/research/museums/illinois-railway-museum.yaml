@@ -43,6 +43,7 @@ evidence:
     signals: [for_sale]
     verified_via: web_search_snippet
 research:
+  eligibility: "Public online auction (anyone could bid)."
   researcher: mef expansion
   last_updated: "2026-09-30"
   next_step: IRM periodically sells surplus railway items — ask to be notified of the next surplus sale (railway components, signals, tools).

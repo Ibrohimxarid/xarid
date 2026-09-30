@@ -1,0 +1,26 @@
+# Channels that look like "exhibits for sale/transfer" but do NOT meet the brief
+# (retired/replaced exhibits actually offered). Shown in the verified-offers report
+# so nobody re-researches them. Each entry needs a source URL.
+
+excluded:
+  - name: Heureka Overseas Productions (Finland)
+    url: https://www.heureka.fi/en/blogs/exhibitions/heureka-classics
+    reason: Commercial rent/sale of touring exhibitions; the "Classics" exhibits were built new for the tour, not retired from Heureka's floor.
+  - name: Ontario Science Centre — Exhibit Sales, Rentals + Consulting
+    url: https://www.ontariosciencecentre.ca/exhibit-sales-rentals-plus-consulting
+    reason: Commercial fabrication of new exhibits and rental of travelling exhibitions; no statement that the stored Don Mills exhibits are for sale.
+  - name: Kamin Science Center — Professional Services
+    url: https://kaminsciencecenter.org/professional-services/
+    reason: Custom design/fabrication and rentals — new builds.
+  - name: California Science Center — Exhibits for Rent & Sale
+    url: https://californiasciencecenter.org/exhibits-for-rent-sale
+    reason: Traveling exhibitions for rent and exhibit designs for sale — new builds.
+  - name: Copernicus Science Centre — Exhibit sales
+    url: https://www.kopernik.org.pl/en/request-custom-product/exhibit-sales
+    reason: Commercial exhibit production for other institutions.
+  - name: Ecsite EXTRA marketplace
+    url: https://www.ecsite.eu/activities-and-services/resources/extra/all
+    reason: Marketplace for touring exhibitions (rental), not transfer of retired exhibits.
+  - name: US National Park Service Museum Clearinghouse
+    url: https://www.nps.gov/subjects/museums/clearinghouse.htm
+    reason: Real deaccession offers, but only to US-qualified institutions (501(c)(3) / federal) — TPM is not eligible.
