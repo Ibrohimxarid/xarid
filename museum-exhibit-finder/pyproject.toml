@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "museum-exhibit-finder"
+version = "0.1.0"
+description = "Global exhibit acquisition finder for Tashkent Polytechnic Museum: detects museum renovation/replacement events and tracks retired exhibits with source evidence."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.5",
+    "PyYAML>=6.0",
+    "rapidfuzz>=3.0",
+    "openpyxl>=3.1",
+    "requests>=2.31",
+    "tldextract>=5.0",
+]
+
+[project.optional-dependencies]
+discovery = [
+    "trafilatura>=1.12",
+    "ddgs>=9.0",
+    "pypdf>=4.0",
+]
+llm = ["anthropic>=1.0"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+mef = "mef.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

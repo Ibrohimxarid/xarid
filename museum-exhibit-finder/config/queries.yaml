@@ -1,0 +1,155 @@
+# Search query templates for mef.search.
+#
+# Groups mirror the research strategy in the brief. Templates may use
+# {country}, {city} and {institution} (expanded from `geography`). Non-English
+# templates are only expanded for countries whose `lang` matches.
+
+groups:
+  exhibit_replacement:
+    en:
+      - 'museum replacing exhibits'
+      - 'science centre replacing exhibits'
+      - 'science center replacing old exhibits'
+      - 'museum exhibition renewal old exhibits'
+      - 'museum gallery renovation old exhibits'
+      - 'old interactive exhibits replaced'
+      - 'science centre new exhibits old exhibits'
+      - 'what happens to old museum exhibits'
+      - '"old exhibits" science centre new gallery'
+      - '"retired exhibits" science center'
+      - '"exhibits no longer needed" museum'
+      - 'science centre {country} new gallery replaces'
+      - '{institution} new gallery old exhibits'
+    de:
+      - 'Science Center alte Exponate ersetzt'
+      - 'Technikmuseum neue Dauerausstellung alte Exponate'
+      - 'Museum Exponate abzugeben'
+      - 'Science Center Exponate zu verkaufen'
+    fr:
+      - 'centre de sciences anciennes manipulations remplacées'
+      - 'musée des sciences nouvelle exposition permanente anciens dispositifs'
+      - 'musée objets à céder'
+    nl:
+      - 'science center oude opstellingen vervangen'
+      - 'museum afstoten objecten'
+      - 'museum nieuwe vaste tentoonstelling oude opstellingen'
+    sv:
+      - 'science center gamla utställningen ersätts'
+      - 'museum utställning säljes'
+    da:
+      - 'science center gamle udstilling erstattes'
+    no:
+      - 'vitensenter gamle utstillinger erstattes'
+    fi:
+      - 'tiedekeskus vanhat näyttelyt myydään'
+    es:
+      - 'museo de la ciencia nuevos módulos sustituyen antiguos'
+    it:
+      - 'museo della scienza nuovo allestimento vecchi exhibit'
+    pl:
+      - 'centrum nauki stare eksponaty sprzedam'
+    cs:
+      - 'science centrum staré exponáty prodej'
+
+  deaccession:
+    en:
+      - 'museum deaccession exhibits'
+      - 'science museum deaccession'
+      - 'science centre deaccession'
+      - 'museum surplus exhibits'
+      - 'museum surplus equipment'
+      - 'museum exhibits available'
+      - 'museum objects available for transfer'
+      - 'museum collections disposal notice'
+      - '"find an object" museums association engineering'
+      - 'transport museum disposal locomotive offered'
+      - 'aviation museum aircraft disposal offered to other museums'
+      - '{institution} deaccession'
+      - '{institution} disposal'
+    de: ['Museum Entsammlung Technik', 'Technikmuseum Deakzession']
+    nl: ['afstotingsdatabase museum techniek', 'museale afstoting voertuigen']
+    fr: ['musée aliénation collection technique']
+    sv: ['museum gallring samlingar teknik']
+
+  renovation:
+    en:
+      - 'science museum gallery redevelopment'
+      - 'science centre gallery renewal'
+      - 'museum exhibition redevelopment'
+      - 'museum renovation new exhibits'
+      - 'science centre new gallery'
+      - 'technology museum new exhibition'
+      - 'transport museum new permanent exhibition'
+      - 'science centre closes for refurbishment'
+      - 'science centre {city} refurbishment'
+      - 'museum closure {country} science centre'
+    de: ['Science Center Umbau neue Ausstellung', 'Technikmuseum Sanierung Dauerausstellung']
+    fr: ['centre de sciences rénovation nouvelles expositions']
+    nl: ['science center renovatie nieuwe tentoonstelling']
+    es: ['museo de la ciencia renovación exposición permanente']
+    it: ['museo della scienza ristrutturazione nuove gallerie']
+    pl: ['centrum nauki modernizacja nowa wystawa stała']
+    cs: ['technické muzeum rekonstrukce nová expozice']
+    ja: ['科学館 リニューアル 展示 更新']
+    ko: ['과학관 전시 리뉴얼']
+
+  touring:
+    en:
+      - 'touring exhibition available science centre'
+      - 'retired touring exhibition for sale'
+      - 'travelling exhibition for sale science'
+      - 'touring exhibition end of tour for sale'
+      - 'exhibition for sale museum second hand'
+    de: ['Wanderausstellung zu verkaufen Science Center']
+
+  networks:
+    en:
+      - 'Ecsite exhibits for sale'
+      - 'ASTC exhibits for sale'
+      - 'ASTC community exhibits available free'
+      - 'museums association find an object'
+      - 'AAM museum closure exhibits'
+      - 'ICOM deaccession guidelines'
+      - 'science centre network exhibit exchange'
+      - 'science centre closing exhibits for sale'
+
+exhibit_type_combos:
+  - events: ['decommissioned', 'retired', 'surplus', 'for sale from museum']
+    types:
+      - 'flight simulator science centre'
+      - 'cutaway engine museum'
+      - 'Van de Graaff generator science centre'
+      - 'railway simulator museum'
+      - 'interactive table museum'
+      - 'planetarium projector'
+      - 'industrial robot exhibit'
+
+geography:
+  uk: {name: United Kingdom, lang: en, cities: [London, Manchester, Glasgow, Edinburgh, Bristol, Birmingham, Cardiff, Newcastle],
+       institutions: [Science Museum Group, National Railway Museum, Techniquest, Glasgow Science Centre, Eureka, We The Curious]}
+  de: {name: Deutschland, lang: de, cities: [München, Berlin, Mannheim, Wolfsburg, Bremen],
+       institutions: [Deutsches Museum, Deutsches Technikmuseum, Technoseum, phaeno, Universum Bremen]}
+  fr: {name: France, lang: fr, cities: [Paris, Lyon, Toulouse],
+       institutions: [Cité des sciences, Palais de la découverte, Musée des Arts et Métiers]}
+  nl: {name: Nederland, lang: nl, cities: [Amsterdam, Rotterdam, Den Haag, Utrecht, Eindhoven],
+       institutions: [NEMO Science Museum, Museon, Spoorwegmuseum, Continium]}
+  be: {name: Belgium, lang: nl, cities: [Brussels, Mechelen, Liège], institutions: [Technopolis, Train World]}
+  ch: {name: Switzerland, lang: de, cities: [Luzern, Winterthur], institutions: [Verkehrshaus, Swiss Science Center Technorama]}
+  at: {name: Austria, lang: de, cities: [Wien], institutions: [Technisches Museum Wien]}
+  se: {name: Sverige, lang: sv, cities: [Stockholm, Göteborg], institutions: [Tekniska museet, Universeum]}
+  dk: {name: Danmark, lang: da, cities: [København, Aarhus], institutions: [Experimentarium, Danmarks Tekniske Museum]}
+  no: {name: Norge, lang: no, cities: [Oslo, Bergen, Trondheim], institutions: [Norsk Teknisk Museum, VilVite]}
+  fi: {name: Suomi, lang: fi, cities: [Helsinki, Vantaa], institutions: [Heureka, Tekniikan museo]}
+  es: {name: España, lang: es, cities: [Madrid, Barcelona, Valencia, Granada], institutions: [CosmoCaixa, Museu de les Ciències, Parque de las Ciencias, MUNCYT]}
+  it: {name: Italia, lang: it, cities: [Milano, Napoli, Torino], institutions: [Museo Nazionale Scienza e Tecnologia, Città della Scienza]}
+  pl: {name: Polska, lang: pl, cities: [Warszawa, Łódź, Kraków], institutions: [Centrum Nauki Kopernik, EC1 Łódź]}
+  cz: {name: Česko, lang: cs, cities: [Praha, Plzeň, Liberec], institutions: [Národní technické muzeum, Techmania, iQLANDIA]}
+  us: {name: United States, lang: en, cities: [Chicago, Boston, Philadelphia, Columbus, Seattle, Tampa],
+       institutions: [Museum of Science and Industry, Franklin Institute, COSI, Pacific Science Center, MOSI Tampa, The Henry Ford]}
+  ca: {name: Canada, lang: en, cities: [Toronto, Ottawa, Montreal, Vancouver],
+       institutions: [Ontario Science Centre, Ingenium, Science World, TELUS Spark]}
+  au: {name: Australia, lang: en, cities: [Sydney, Melbourne, Perth, Canberra],
+       institutions: [Powerhouse Museum, Questacon, Scienceworks, Scitech]}
+  jp: {name: Japan, lang: ja, cities: [Tokyo, Nagoya, Osaka], institutions: [Miraikan, National Museum of Nature and Science]}
+  kr: {name: South Korea, lang: ko, cities: [Seoul, Gwacheon, Daejeon], institutions: [Gwacheon National Science Museum]}
+  sg: {name: Singapore, lang: en, cities: [Singapore], institutions: [Science Centre Singapore]}

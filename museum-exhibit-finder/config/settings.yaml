@@ -1,0 +1,51 @@
+# Settings for the Tashkent Polytechnic Museum exhibit finder.
+
+museum_profile:
+  name: Tashkent Polytechnic Museum
+  aka: [Tashkent Technical Museum]
+  city: Tashkent
+  country: Uzbekistan
+  # Used by the relevance scorer: exhibits in these categories rank higher.
+  priority_categories:
+    - physics
+    - mechanics
+    - optics
+    - electricity
+    - magnetism
+    - thermodynamics
+    - acoustics
+    - engineering
+    - robotics
+    - automation
+    - automotive
+    - transport
+    - railway
+    - aviation
+    - simulator
+    - digital_interactive
+    - stem
+
+priority:
+  # Availability evidence older than this is shown as "re-confirm" and the
+  # item is downgraded from A to B until someone re-confirms it.
+  availability_max_age_years: 3
+
+fetch:
+  user_agent: "TashkentPolytechnicMuseum-ExhibitFinder/0.1 (+research; contact via museum)"
+  delay_seconds: 2.0
+  timeout_seconds: 25
+  respect_robots_txt: true
+  max_bytes: 15000000
+  wayback_fallback: true
+
+search:
+  backend: ddgs            # ddgs | searxng | import
+  searxng_url: http://localhost:8888
+  results_per_query: 10
+  delay_seconds: 2.0
+
+llm:
+  enabled: false
+  model: claude-opus-5-5
+  effort: medium
+  max_page_chars: 60000

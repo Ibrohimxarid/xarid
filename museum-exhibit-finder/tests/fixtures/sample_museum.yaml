@@ -1,0 +1,73 @@
+# TEST FIXTURE — fictional museum, used only by the unit tests.
+museum:
+  id: example-science-centre
+  name: Example Science Centre
+  country: Testland
+  city: Testville
+  website: https://www.example-science.test
+  type: science centre
+contacts:
+  - name: Jane Tester
+    position: Collections Manager
+    email: jane@example-science.test
+    kind: person
+    source: e2
+exhibitions:
+  - id: old-physics-hall
+    name: Physics Hall
+    opening_year: 2001
+    replacement_year: 2024
+    old_exhibition: Physics Hall (2001)
+    new_exhibition: Forces Lab
+    status: already_replaced
+    evidence: [e1]
+    exhibits:
+      - id: vdg
+        name: Van de Graaff generator
+        category: [physics, electricity]
+        status: available_transfer
+        interactive: true
+        evidence: [e2]
+      - id: pendulum
+        name: Foucault pendulum
+        category: [physics, mechanics]
+        status: in_storage
+        evidence: [e3]
+      - id: bikes
+        name: Bicycle generator
+        status: already_transferred
+        evidence: [e4]
+evidence:
+  - id: e1
+    url: https://www.example-science.test/news/forces-lab
+    source_type: press_release
+    source_date: "2024-03-01"
+    accessed: "2026-09-30"
+    claim: Physics Hall closed and replaced by Forces Lab in 2024.
+    signals: [renovation, new_exhibition, exhibit_replaced]
+  - id: e2
+    url: https://www.example-science.test/surplus
+    source_type: official_site
+    source_date: "2025-11-01"
+    accessed: "2026-09-30"
+    claim: The Van de Graaff generator is offered to other museums.
+    signals: [available_transfer, accepts_requests]
+  - id: e3
+    url: https://www.example-science.test/annual-report-2024.pdf
+    source_type: annual_report
+    source_date: "2024"
+    accessed: "2026-09-30"
+    claim: The pendulum was moved into storage.
+    signals: [storage]
+  - id: e4
+    url: https://news.example.test/bikes
+    source_type: news
+    source_date: "2024-06"
+    accessed: "2026-09-30"
+    claim: The bicycle generator was donated to a local school.
+    signals: [already_transferred]
+research:
+  last_updated: "2026-09-30"
+  next_step: Email the collections manager.
+  outreach:
+    email_hook: your Physics Hall was replaced by the Forces Lab in 2024.
