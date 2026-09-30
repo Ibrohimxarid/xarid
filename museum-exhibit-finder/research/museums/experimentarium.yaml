@@ -1,0 +1,39 @@
+museum:
+  id: experimentarium
+  name: Experimentarium
+  country: Denmark
+  city: Hellerup (Copenhagen)
+  website: https://www.experimentarium.dk/
+  type: science centre
+exhibitions:
+  - id: rebuild-2017
+    name: Rebuild and expansion (reopened 26 Jan 2017)
+    replacement_year: 2017
+    old_exhibition: Pre-2014 exhibitions
+    new_exhibition: 16 completely new exhibitions on 9,000 m² (double the previous area)
+    status: already_replaced
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://www.apmollerfonde.dk/projekter/experimentarium/
+    title: Experimentarium - A.P. Møller Fonden
+    publisher: A.P. Møller Foundation
+    source_type: other
+    accessed: "2026-09-30"
+    claim: The rebuilt Experimentarium reopened on 26 January 2017 with 16 completely new exhibitions and doubled exhibition area.
+    signals: [renovation, new_exhibition, exhibit_replaced]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://da.wikipedia.org/wiki/Experimentarium
+    title: Experimentarium - Wikipedia (da)
+    publisher: Wikipedia
+    source_type: other
+    accessed: "2026-09-30"
+    language: da
+    claim: Background on the 2017 reopening.
+    signals: [renovation]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Low priority — old exhibits were replaced in 2014–2017; ask only whether current exhibitions are scheduled for renewal.

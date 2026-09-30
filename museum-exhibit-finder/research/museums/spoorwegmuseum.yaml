@@ -1,0 +1,70 @@
+museum:
+  id: spoorwegmuseum
+  name: Het Spoorwegmuseum (Dutch Railway Museum)
+  country: Netherlands
+  city: Utrecht
+  website: https://www.spoorwegmuseum.nl/
+  type: railway / transport museum
+contacts:
+  - kind: general
+    contact_page: https://www.spoorwegmuseum.nl/collectie/collectie-overzicht/ontzamelen/
+    source: e2
+exhibitions:
+  - id: rolling-stock-deaccession
+    name: Collection review — deaccession of rolling stock (since 2020)
+    replacement_year: "2020–"
+    status: deaccessioned
+    evidence: [e1, e2, e3]
+    exhibits:
+      - id: surplus-rolling-stock
+        name: Surplus rolling stock (duplicates, parts donors, vehicles in poor condition, long-term off-site objects)
+        category: [railway, engineering]
+        interactive: false
+        status: deaccessioned
+        evidence: [e1, e2]
+        fit_for_tpm: Railway vehicles and components — core transport theme; Uzbekistan has strong railway heritage.
+        notes: Specific vehicles not captured — the list is on the Afstotingsdatabase and shared with HRN.
+evidence:
+  - id: e1
+    url: https://www.spoorwegmuseum.nl/over/nieuws/afstoting-van-rollend-materieel/
+    title: Afstoting van rollend materieel - Spoorwegmuseum
+    publisher: Het Spoorwegmuseum
+    source_type: official_site
+    accessed: "2026-09-30"
+    language: nl
+    claim: The Spoorwegmuseum is deaccessioning rolling stock (duplicates, parts donors, vehicles in very poor condition); selected objects are registered on the Museumvereniging Afstotingsdatabase and the list is shared with Historisch Railvervoer Nederland so others can adopt them.
+    signals: [deaccession_in_progress, available_transfer, accepts_requests]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.spoorwegmuseum.nl/collectie/collectie-overzicht/ontzamelen/
+    title: Ontzamelen - Spoorwegmuseum
+    publisher: Het Spoorwegmuseum
+    source_type: official_site
+    accessed: "2026-09-30"
+    language: nl
+    claim: The museum's broader collection review (from 2020) sets aside tripled or non-core objects for deaccession under the LAMO guideline, rehoming them with museums/heritage bodies where possible.
+    signals: [deaccession_in_progress, deaccession_policy]
+    verified_via: web_search_snippet
+  - id: e3
+    url: https://publicaties.spoorwegmuseum.nl/jaarverslag-2024/collecties
+    title: Collecties › Jaarverslag 2024
+    publisher: Het Spoorwegmuseum
+    source_type: annual_report
+    source_date: "2025"
+    accessed: "2026-09-30"
+    language: nl
+    claim: The 2024 annual report covers the collection work, including deaccessioning.
+    signals: [deaccession_policy]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask the collections team for the current list of rolling stock/components still unallocated after the LAMO period, and whether a foreign museum may take them.
+  open_questions:
+    - Which vehicles remain unallocated after Dutch museums and HRN members were offered them?
+  outreach:
+    reason: The Spoorwegmuseum is deaccessioning surplus rolling stock and publishes it on the Dutch disposal database.
+    interest: Surplus locomotives, carriages, bogies and railway components from the rolling-stock review.
+    fit: Railway engineering is a core TPM theme.
+    email_hook: the Spoorwegmuseum is deaccessioning part of its rolling stock following its collection review, first offering it to other museums and heritage railways
+    source: e1

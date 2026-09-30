@@ -1,0 +1,22 @@
+museum:
+  id: look-out-discovery-centre
+  name: The Look Out Discovery Centre
+  country: United Kingdom
+  city: Bracknell
+  website: https://www.bracknell-forest.gov.uk/leisure-and-events/look-out-discovery-centre
+  type: hands-on science centre (council-run)
+evidence:
+  - id: e1
+    url: https://www.bracknell-forest.gov.uk/leisure-and-events/look-out-discovery-centre
+    title: The Look Out Discovery Centre | Bracknell Forest Council
+    publisher: Bracknell Forest Council
+    source_type: official_site
+    source_date: "2026-07"
+    accessed: "2026-09-30"
+    claim: The centre operates with 90+ interactive activities; only a temporary closure (drainage, June 2024) was found — no replacement event.
+    signals: []
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: No event found — re-check in 12 months.

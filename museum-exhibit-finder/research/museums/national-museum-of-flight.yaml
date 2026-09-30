@@ -1,0 +1,46 @@
+museum:
+  id: national-museum-of-flight
+  name: National Museum of Flight (National Museums Scotland)
+  country: United Kingdom
+  city: East Fortune, East Lothian
+  website: https://www.nms.ac.uk/national-museum-of-flight
+  type: aviation museum
+  parent_org: National Museums Scotland
+exhibitions:
+  - id: bac-111
+    name: Outdoor airliner display
+    replacement_year: 2026
+    status: already_transferred
+    evidence: [e1, e2]
+    exhibits:
+      - id: bac-111-g-avmo
+        name: BAC One-Eleven 510ED G-AVMO
+        category: [aviation]
+        status: already_transferred
+        evidence: [e1, e2]
+        notes: Offered via Find an Object May–Oct 2025; no taker; dismantled March 2026 (forward fuselage to Cotswold Airport).
+evidence:
+  - id: e1
+    url: https://www.nms.ac.uk/national-museum-of-flight/removal-of-bac-1-11
+    title: Removal of BAC 1-11 | National Museums Scotland
+    publisher: National Museums Scotland
+    source_type: official_site
+    source_date: "2026"
+    accessed: "2026-09-30"
+    claim: The BAC 1-11 was offered to other museums via Find an Object from May to October 2025 and by direct approaches; with no taker it was dismantled and removed.
+    signals: [deaccession_in_progress, destroyed]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.key.aero/article/scottish-bac-one-eleven-scrapped
+    title: Scottish BAC One-Eleven scrapped
+    publisher: Key Aero
+    source_type: trade_press
+    source_date: "2026-03"
+    accessed: "2026-09-30"
+    claim: G-AVMO was scrapped in March 2026 after 31 years outdoors; corrosion was too extensive to repair.
+    signals: [destroyed]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: No current opportunity. Lesson — large objects offered on Find an Object are scrapped if nobody responds in ~5 months; TPM should monitor the register weekly.

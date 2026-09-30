@@ -1,0 +1,56 @@
+museum:
+  id: nasm-washington
+  name: Smithsonian National Air and Space Museum (National Mall)
+  country: United States
+  city: Washington, DC
+  website: https://airandspace.si.edu/
+  type: national aviation and space museum
+  parent_org: Smithsonian Institution
+exhibitions:
+  - id: transformation-2018-2026
+    name: Building renovation and redesign of all 20 galleries
+    replacement_year: "2018–2026"
+    old_exhibition: All pre-2018 galleries (interactives, displays)
+    new_exhibition: 8 galleries (Oct 2022), 5 galleries (July 2025), remaining galleries by July 2026
+    status: already_replaced
+    evidence: [e1, e2, e3]
+evidence:
+  - id: e1
+    url: https://airandspace.si.edu/newsroom/press-releases/national-air-and-space-museum-provides-update-renovation-project
+    title: National Air and Space Museum Provides Update on Renovation Project
+    publisher: Smithsonian National Air and Space Museum
+    source_type: press_release
+    accessed: "2026-09-30"
+    claim: The renovation redesigns all 20 galleries, refaces the exterior and replaces mechanical systems; more than 1,600 artifacts go into the new galleries.
+    signals: [renovation, new_exhibition, exhibit_replaced]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.si.edu/newsdesk/releases/national-air-and-space-museum-celebrates-50-years-opening-five-new-galleries
+    title: National Air and Space Museum Celebrates 50 Years With Opening of Five New Galleries
+    publisher: Smithsonian Institution
+    source_type: press_release
+    source_date: "2025-07"
+    accessed: "2026-09-30"
+    claim: Five new galleries opened in July 2025 for the museum's 50th anniversary.
+    signals: [new_exhibition]
+    verified_via: web_search_snippet
+  - id: e3
+    url: https://www.aip.org/history/the-2025-2026-reopening-of-the-national-air-and-space-museum-september-12-2025
+    title: "Q&A: The 2025-26 reopening of the National Air and Space Museum"
+    publisher: American Institute of Physics
+    source_type: other
+    source_date: "2025-09-12"
+    accessed: "2026-09-30"
+    claim: The museum closed for renovation in 2018 and reopens in phases through 2026.
+    signals: [renovation, closure]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask NASM's exhibits office whether non-collection interactives, simulators or exhibit fixtures from the pre-2018 galleries remain in storage; Smithsonian artifacts follow federal deaccession rules.
+  outreach:
+    reason: NASM redesigned all 20 galleries between 2018 and 2026.
+    interest: Non-collection interactives, flight simulators and exhibit fixtures from pre-2018 galleries.
+    fit: Aviation and space interactives match TPM's aviation/transport and simulator priorities.
+    email_hook: the National Air and Space Museum has redesigned all twenty of its galleries in the renovation completed in phases between 2018 and 2026
+    source: e1

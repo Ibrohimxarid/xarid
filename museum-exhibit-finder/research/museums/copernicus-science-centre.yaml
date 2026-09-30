@@ -1,0 +1,47 @@
+museum:
+  id: copernicus-science-centre
+  name: Copernicus Science Centre
+  name_local: Centrum Nauki Kopernik
+  country: Poland
+  city: Warsaw
+  website: https://www.kopernik.org.pl/en
+  type: science centre
+exhibitions:
+  - id: digital-brain
+    name: New permanent exhibition "Przyszłość jest dziś — Cyfrowy mózg?"
+    replacement_year: 2021
+    new_exhibition: "Przyszłość jest dziś: Cyfrowy mózg? (opened on the centre's 11th birthday)"
+    status: unknown
+    evidence: [e1]
+  - id: touring
+    name: Touring interactive exhibitions and mobile planetarium
+    status: unknown
+    evidence: [e2]
+evidence:
+  - id: e1
+    url: https://naukawpolsce.pl/aktualnosci/news,90100,w-11-urodziny-centrum-nauki-kopernik-otworzylo-nowa-wystawe-stala.html
+    title: W 11 urodziny Centrum Nauki Kopernik otworzyło nową wystawę stałą
+    publisher: Nauka w Polsce (PAP)
+    source_type: news
+    source_date: "2021-11"
+    accessed: "2026-09-30"
+    language: pl
+    claim: On its 11th birthday Copernicus opened a new permanent exhibition on digital technology, refreshing its profile toward the future and social perception of technology.
+    signals: [new_exhibition]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.kopernik.org.pl/nauka-dla-ciebie/wyjazdy
+    title: Wyjazdy wystaw interaktywnych i mobilnego planetarium
+    publisher: Copernicus Science Centre
+    source_type: official_site
+    accessed: "2026-09-30"
+    language: pl
+    claim: Copernicus sends interactive exhibitions and a mobile planetarium on tour to other venues.
+    signals: [touring_for_hire]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask Copernicus whether older touring exhibitions or replaced gallery exhibits are available for sale.
+  outreach:
+    email_hook: the Copernicus Science Centre tours interactive exhibitions and has been refreshing its permanent galleries

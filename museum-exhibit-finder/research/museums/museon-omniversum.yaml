@@ -1,0 +1,41 @@
+museum:
+  id: museon-omniversum
+  name: Museon-Omniversum
+  country: Netherlands
+  city: The Hague
+  website: https://www.museon-omniversum.nl/
+  type: science, nature and culture museum with dome theatre
+exhibitions:
+  - id: collection-plan
+    name: Collection plan 2024–2028 (deaccessioning low-quality / off-profile objects)
+    status: unknown
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://www.museon-omniversum.nl/media/x4ljsuzz/collectieplan_2024-2028-def.pdf
+    title: Collectie in een museum over actuele thema's — Collectieplan 2024-2028
+    publisher: Museon-Omniversum
+    source_type: board_document
+    source_date: "2024"
+    accessed: "2026-09-30"
+    language: nl
+    claim: Improving collection quality through deaccessioning (removing low-quality and off-profile objects) was not fully achieved in the previous plan and remains an objective for 2024–2028; the collection has 316,000+ objects in nature, culture and technology.
+    signals: [deaccession_policy]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.museon-omniversum.nl/media/4pxljqsj/collectieplan-2021-2024.pdf
+    title: Een nieuwe blik op de collectie — Museon Collectieplan 2021-2024
+    publisher: Museon-Omniversum
+    source_type: board_document
+    source_date: "2021"
+    accessed: "2026-09-30"
+    language: nl
+    claim: The 2021–2024 collection plan set deaccessioning as an objective.
+    signals: [deaccession_policy]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Watch the Afstotingsdatabase for Museon notices; ask whether technology/educational models are among planned deaccessions.
+  outreach:
+    email_hook: Museon-Omniversum's collection plan for 2024–2028 includes the deaccessioning of objects that no longer fit the collection profile

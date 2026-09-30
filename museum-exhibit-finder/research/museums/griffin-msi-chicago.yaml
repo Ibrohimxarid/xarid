@@ -1,0 +1,34 @@
+museum:
+  id: griffin-msi-chicago
+  name: Griffin Museum of Science and Industry
+  aliases: [Museum of Science and Industry Chicago, MSI Chicago]
+  country: United States
+  city: Chicago, Illinois
+  website: https://www.msichicago.org/
+  type: science and industry museum
+exhibitions:
+  - id: genetics
+    name: Genetics and the Baby Chick Hatchery (past exhibit)
+    old_exhibition: Genetics
+    new_exhibition: Gallery to be used for art, science and technology exhibits
+    status: already_replaced
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://legacy.msichicago.org/explore/whats-here/exhibits/genetics-and-the-baby-chick-hatchery
+    title: Genetics [Past Exhibit] - Griffin Museum of Science and Industry
+    publisher: Griffin Museum of Science and Industry
+    source_type: official_site
+    accessed: "2026-09-30"
+    claim: The Genetics exhibit has permanently closed; the gallery will host art, science and technology exhibits.
+    signals: [exhibit_replaced, closure]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask MSI whether components of closed exhibits (and future closures) can be transferred; MSI has previously auctioned retired exhibit items.
+  outreach:
+    reason: MSI permanently closed its Genetics exhibit and continues to refresh galleries.
+    interest: Interactive components from closed exhibits, particularly engineering/transport-related ones.
+    fit: MSI's industrial/transport interactives fit TPM's automotive and industry themes.
+    email_hook: the Museum permanently closed its Genetics exhibit to repurpose the gallery for new art, science and technology exhibits

@@ -1,0 +1,31 @@
+museum:
+  id: must-milano
+  name: Museo Nazionale Scienza e Tecnologia Leonardo da Vinci
+  country: Italy
+  city: Milan
+  website: https://www.museoscienza.org/
+  type: national science and technology museum
+exhibitions:
+  - id: gallerie-leonardo
+    name: Nuove Gallerie Leonardo (replacing the previous Leonardo galleries)
+    replacement_year: 2019
+    new_exhibition: Nuove Gallerie Leonardo da Vinci (1,300 m², 170+ objects incl. historical models; opened Dec 2019)
+    old_exhibition: Previous Leonardo galleries
+    status: already_replaced
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://www.artribune.com/arti-visive/archeologia-arte-antica/2019/12/il-museo-della-scienza-di-milano-inaugura-le-nuove-gallerie-leonardo-ecco-il-nuovo-allestimento/
+    title: Il Museo della Scienza di Milano inaugura le Nuove Gallerie Leonardo
+    publisher: Artribune
+    source_type: trade_press
+    source_date: "2019-12"
+    accessed: "2026-09-30"
+    language: it
+    claim: The museum opened the new Leonardo galleries (1,300 m², 170+ historical models and works) in December 2019 with a new display.
+    signals: [new_exhibition, renovation]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Lead only — ask whether any duplicate Leonardo machine models or retired interactive "i.lab" stations are available.

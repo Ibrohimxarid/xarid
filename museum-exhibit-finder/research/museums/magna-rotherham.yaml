@@ -1,0 +1,21 @@
+museum:
+  id: magna-rotherham
+  name: Magna Science Adventure Centre
+  country: United Kingdom
+  city: Rotherham
+  website: https://www.visitmagna.co.uk/
+  type: science adventure centre in a former steelworks
+evidence:
+  - id: e1
+    url: https://www.visitmagna.co.uk/
+    title: Magna Science Adventure Centre
+    publisher: Magna
+    source_type: official_site
+    accessed: "2026-09-30"
+    claim: Magna operates four pavilions (Earth, Air, Fire, Water); no renovation, closure or exhibit-replacement event found in the search.
+    signals: []
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: No event found — re-check in 12 months.

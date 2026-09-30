@@ -1,0 +1,44 @@
+museum:
+  id: museu-de-les-ciencies-valencia
+  name: Museu de les Ciències (Ciutat de les Arts i les Ciències)
+  country: Spain
+  city: Valencia
+  website: https://cac.es/en/museu-de-les-ciencies/
+  type: science museum / science centre
+exhibitions:
+  - id: content-renewal-2024-2025
+    name: Content renewal for the 25th anniversary
+    replacement_year: "2024–2025"
+    new_exhibition: La Luna en tus manos, Mediterránea, Up to Space (2024); ¡Bailar! El arte de moverse (July 2025)
+    status: unknown
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://comunica.gva.es/es/detalle?id=407058860&site=373410423
+    title: "El Museu de les Ciències renovará sus contenidos este verano con la exposición '¡Bailar! El arte de moverse'"
+    publisher: Generalitat Valenciana
+    source_type: government
+    source_date: "2025"
+    accessed: "2026-09-30"
+    language: es
+    claim: The Museu de les Ciències renews its contents with the new exhibition "¡Bailar!" from 2 July 2025, in its 25th anniversary year.
+    signals: [new_exhibition, renovation]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.valenciabonita.es/2024/05/26/nuevas-exposiciones-museu-de-les-ciencies/
+    title: El Museu de les Ciències presenta nuevas exposiciones sobre astronomía y exploración espacial
+    publisher: Valencia Bonita
+    source_type: news
+    source_date: "2024-05-26"
+    accessed: "2026-09-30"
+    language: es
+    claim: Three new astronomy/space exhibitions opened in 2024.
+    signals: [new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask which exhibitions were dismantled to make room for the 2024–2025 renewals and whether any interactive modules are available.
+  outreach:
+    email_hook: the Museu de les Ciències has been renewing its contents for its 25th anniversary, including new exhibitions in 2024 and 2025
+    source: e1

@@ -1,0 +1,56 @@
+museum:
+  id: franklin-institute
+  name: The Franklin Institute
+  country: United States
+  city: Philadelphia, Pennsylvania
+  website: https://fi.edu/
+  type: science museum / science centre
+exhibitions:
+  - id: bicentennial-master-plan
+    name: Bicentennial master plan — 12 subject exhibitions consolidated into 6
+    replacement_year: "2023–2030"
+    old_exhibition: 12 existing subject exhibitions (being consolidated); Giant Heart (closed for rebuild); Train Factory
+    new_exhibition: Wondrous Space (2023), Body Odyssey and Hamilton Collections Gallery (Nov 2024); planned exhibits on computer science, built environment, advanced machines & robotics, earth systems
+    status: being_replaced
+    evidence: [e1, e2, e3]
+evidence:
+  - id: e1
+    url: https://fi.edu/en/press-room/press-releases/2024/franklin-institute-unveil-reimagined-exhibits-its-bicentennial-year
+    title: The Franklin Institute to Unveil Reimagined Exhibits in its Bicentennial Year
+    publisher: The Franklin Institute
+    source_type: press_release
+    source_date: "2024"
+    accessed: "2026-09-30"
+    claim: Over the next several years the Franklin Institute will reduce 12 subject exhibitions to six larger all-new exhibits (space, human body, computer science, built environment, advanced machines and robotics, earth systems).
+    excerpt: Over the next several years, 12 subject exhibitions will be reduced to six; Body Odyssey joins Wondrous Space as the first two of six all-new exhibits of a multi-year master plan.
+    signals: [renovation, new_exhibition, exhibit_replaced]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.phillyvoice.com/franklin-institute-train-factory-exhibit-renovation/
+    title: Franklin Institute's Train Factory exhibit getting major renovation
+    publisher: PhillyVoice
+    source_type: news
+    source_date: "2024"
+    accessed: "2026-09-30"
+    claim: The Train Factory (home of Baldwin 60000) was transformed with a $6m gift into a two-storey collections gallery.
+    signals: [renovation, exhibit_replaced]
+    verified_via: web_search_snippet
+  - id: e3
+    url: https://fi.edu/en/plan-your-visit/200-years-science-franklin-institute-transforming
+    title: "200 Years of Science: TFI is Transforming"
+    publisher: The Franklin Institute
+    source_type: official_site
+    accessed: "2026-09-30"
+    claim: The museum describes its multi-year transformation and exhibit closures.
+    signals: [renovation]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask the exhibits department which of the 12 legacy exhibitions close next and what happens to their interactives (physics, electricity, machines).
+  outreach:
+    reason: The Franklin Institute is consolidating 12 subject exhibitions into six new ones over several years.
+    interest: Interactives from retiring legacy exhibitions — especially physics, electricity, machines and trains.
+    fit: Classic American hands-on physics and engineering exhibits — a close match to TPM's core themes.
+    email_hook: the Institute's bicentennial master plan will consolidate its twelve subject exhibitions into six new exhibitions over the coming years
+    source: e1

@@ -1,0 +1,28 @@
+museum:
+  id: ntm-prague
+  name: National Technical Museum (Národní technické muzeum)
+  country: Czech Republic
+  city: Prague
+  website: https://www.ntm.cz/
+  type: national technology museum
+exhibitions:
+  - id: exhibitions-2025
+    name: Temporary exhibitions and expansion (2025–2026)
+    new_exhibition: Modern rail transport exhibition (Oct 2025–Feb 2027); Praga cars (to Jan 2027); Postal Museum merged into NTM from 1 Jan 2026
+    status: still_in_use
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://www.ntm.cz/expozice-a-vystavy
+    title: Expozice a výstavy - Národní technické muzeum
+    publisher: Národní technické muzeum
+    source_type: official_site
+    accessed: "2026-09-30"
+    language: cs
+    claim: NTM runs 26 permanent exhibitions (building fully renovated 2003–2013) and new temporary exhibitions in 2025–2027; the Postal Museum became part of NTM on 1 January 2026.
+    signals: [new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: No replacement found — ask about duplicates from the Postal Museum merger (telecom/postal equipment).

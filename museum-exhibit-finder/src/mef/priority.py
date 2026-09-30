@@ -9,7 +9,8 @@ A — DIRECT OPPORTUNITY   availability confirmed (for sale / donation / transfe
                           by evidence not older than ``availability_max_age_years``
 B — POTENTIAL OPPORTUNITY old exhibits replaced / removed / stored, fate unknown
                           (or availability evidence that is stale)
-C — LEAD                  renovation / new exhibition / relocation only
+C — LEAD                  renovation / new exhibition / relocation / published
+                          deaccession programme only
 """
 
 from __future__ import annotations
@@ -82,7 +83,7 @@ def _assess(evs: list[Evidence], status: str | None, today: dt.date | None) -> A
     if sig & REMOVAL_SIGNALS or status in REMOVED_STATUSES or "deaccession_in_progress" in sig:
         stage = 4 if sig & {"storage", "deaccession_in_progress"} or status == "in_storage" else 3
         return Assessment("B", stage, POTENTIAL_LEAD, [], notes)
-    if sig & EVENT_SIGNALS or "touring_for_hire" in sig or status == "still_in_use":
+    if sig & (EVENT_SIGNALS | {"touring_for_hire", "deaccession_policy"}) or status == "still_in_use":
         return Assessment("C", 2, POTENTIAL_LEAD, [], notes)
     return Assessment(None, 1, UNKNOWN, [], notes)
 

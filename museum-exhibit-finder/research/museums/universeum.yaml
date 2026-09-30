@@ -1,0 +1,41 @@
+museum:
+  id: universeum
+  name: Universeum
+  country: Sweden
+  city: Gothenburg
+  website: https://www.universeum.se/en
+  type: science centre
+exhibitions:
+  - id: expansion-2023
+    name: Extension (2019–2023) and new exhibitions
+    replacement_year: 2023
+    new_exhibition: Exhibition space expanded from 10,000 to 14,000 m²; Wisdome Göteborg visualisation dome (June 2023)
+    status: unknown
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://newsroom.notified.com/universeum/posts/pressreleases/universeum-har-nyoppnat
+    title: Universeum har nyöppnat
+    publisher: Universeum
+    source_type: press_release
+    source_date: "2023-06"
+    accessed: "2026-09-30"
+    language: sv
+    claim: Universeum reopened its extension on 14 June 2023, growing public exhibition space from 10,000 to 14,000 m² with new exhibitions.
+    signals: [renovation, new_exhibition]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.wingardhs.se/journal/universeums-tillbyggnad-invigd-sverige-storsta-visualiseringsdom
+    title: Universeums tillbyggnad invigd – Sveriges största visualiseringsdom
+    publisher: Wingårdhs
+    source_type: trade_press
+    source_date: "2023"
+    accessed: "2026-09-30"
+    language: sv
+    claim: The wooden extension includes Sweden's largest visualisation dome.
+    signals: [new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Lead only (expansion, not replacement). Re-check for gallery renewals.

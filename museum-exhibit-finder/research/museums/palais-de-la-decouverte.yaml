@@ -1,0 +1,60 @@
+museum:
+  id: palais-de-la-decouverte
+  name: Palais de la découverte (Universcience)
+  country: France
+  city: Paris
+  website: https://www.palais-decouverte.fr/
+  type: science museum / science centre
+  parent_org: Universcience
+exhibitions:
+  - id: renovation-2020-2027
+    name: Grand Palais renovation — closure and museography renewal
+    opening_year: 1937
+    replacement_year: "2020–2027"
+    old_exhibition: Pre-2020 permanent museography and demonstration rooms
+    new_exhibition: Palais des enfants, new temporary-exhibition space (2025); permanent museography, labs and planetarium reopening (announced for Q1/March 2027)
+    status: being_replaced
+    evidence: [e1, e2, e3]
+evidence:
+  - id: e1
+    url: https://www.sortiraparis.com/en/what-to-visit-in-paris/exhibit-museum/articles/219685-palais-de-la-decouverte-reopening-date-postponed-for-science-museum
+    title: Palais de la Découverte reopening date postponed
+    publisher: Sortiraparis
+    source_type: news
+    source_date: "2026"
+    accessed: "2026-09-30"
+    claim: The Palais de la découverte, closed for renovation since 2020, now pledges full reopening at the start of March 2027 after repeated postponements.
+    signals: [renovation, closure]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.universcience.fr/fileadmin/fileadmin_CSI/fichiers/vous-etes/professionnel/presse-media/cp/SaisonCulturelle24-25_Web.pdf
+    title: Saison culturelle 2024 2025 (Universcience press kit)
+    publisher: Universcience
+    source_type: press_release
+    source_date: "2024"
+    accessed: "2026-09-30"
+    language: fr
+    claim: After major renovation the Palais was to reopen in June 2025 with an AI exhibition and the new Palais des enfants; permanent offers (demonstration rooms, labs, planetarium, permanent museography) to open later.
+    signals: [renovation, new_exhibition]
+    verified_via: web_search_snippet
+  - id: e3
+    url: https://questions.assemblee-nationale.fr/q17/17-9901QE.htm
+    title: "Question n°9901 : Réouverture du Palais de la découverte"
+    publisher: Assemblée nationale
+    source_type: government
+    source_date: "2025"
+    accessed: "2026-09-30"
+    language: fr
+    claim: A parliamentary question concerns the delayed reopening of the Palais de la découverte.
+    signals: [closure]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask Universcience what happened to pre-2020 demonstration apparatus and exhibits not reinstalled in the new museography.
+  outreach:
+    reason: The Palais de la découverte has been closed for renovation since 2020 and is renewing its permanent museography for 2027.
+    interest: Pre-2020 physics/electricity demonstration apparatus and exhibits not reinstalled.
+    fit: The Palais's classic physics and electricity demonstrations are exactly TPM's physics/electricity priority.
+    email_hook: the Palais de la découverte is completing its renovation and a renewed permanent museography, with full reopening announced for 2027
+    source: e1

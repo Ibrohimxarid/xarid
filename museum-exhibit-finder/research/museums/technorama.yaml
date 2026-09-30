@@ -1,0 +1,48 @@
+museum:
+  id: technorama
+  name: Swiss Science Center Technorama
+  country: Switzerland
+  city: Winterthur
+  website: https://www.technorama.ch/
+  type: science centre
+exhibitions:
+  - id: electricity-magnets
+    name: Electricity and Magnets exhibition renewal
+    new_exhibition: New phenomena exhibits (ferrofluid, eddy-current brakes, metal-sorting machine)
+    status: unknown
+    evidence: [e1]
+  - id: tin-toys
+    name: Tin-toy (Blechspielzeug) exhibition renewal
+    new_exhibition: Redesigned basement display with new cases and illuminated train stations
+    status: unknown
+    evidence: [e2]
+evidence:
+  - id: e1
+    url: https://www.technorama.ch/de/erkunden/ausstellungen
+    title: Folge deiner Neugier - Swiss Science Center Technorama
+    publisher: Technorama
+    source_type: official_site
+    accessed: "2026-09-30"
+    language: de
+    claim: Technorama is renewing its Electricity and Magnets exhibition with newly developed phenomena exhibits.
+    signals: [renovation, new_exhibition]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.technorama.ch/de/blogde/erneuerung-der-blechspielzeug-ausstellung
+    title: Erneuerung der Blechspielzeug-Ausstellung
+    publisher: Technorama
+    source_type: official_site
+    accessed: "2026-09-30"
+    language: de
+    claim: The tin-toy collection display in the basement was completely redesigned with new display cases.
+    signals: [renovation, new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask Technorama's workshop whether older electricity/magnetism exhibits replaced in the renewal are available.
+  outreach:
+    reason: Technorama is renewing its Electricity and Magnets area.
+    interest: Older electricity and magnetism exhibits replaced during the renewal.
+    fit: Technorama builds robust phenomena exhibits — electricity/magnetism is a TPM priority.
+    email_hook: Technorama is renewing its Electricity and Magnets exhibition with newly developed exhibits

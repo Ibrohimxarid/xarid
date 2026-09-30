@@ -1,0 +1,48 @@
+museum:
+  id: phaeno
+  name: phaeno Science Center
+  country: Germany
+  city: Wolfsburg
+  website: https://www.phaeno.de/
+  type: science centre
+exhibitions:
+  - id: redesign-2025
+    name: Exhibition redesign for the 20th anniversary
+    opening_year: 2005
+    replacement_year: 2025
+    old_exhibition: Original 2005 exhibition layout
+    new_exhibition: 12 restructured themes, 200 revised and 50 new exhibits incl. 8 large iconic exhibits (reopened 13–14 Dec 2025)
+    status: already_replaced
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://regionalheute.de/wolfsburg/nach-neugestaltung-grosse-wiedereroeffnung-im-phaeno-wolfsburg-1765476675/
+    title: "Nach Neugestaltung: Große Wiedereröffnung im phaeno Wolfsburg"
+    publisher: regionalHeute.de
+    source_type: news
+    source_date: "2025-12"
+    accessed: "2026-09-30"
+    language: de
+    claim: phaeno reopened on 13–14 December 2025 after a seven-week closure and a comprehensive redesign — 12 restructured themes, 200 revised and 50 new exhibits.
+    signals: [renovation, new_exhibition]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.archimedes-exhibitions.de/news/phaeno-2025/
+    title: phaeno 2025 | Archimedes Exhibitions
+    publisher: Archimedes Exhibitions (exhibit designer)
+    source_type: trade_press
+    source_date: "2025"
+    accessed: "2026-09-30"
+    claim: The exhibit designer describes the 2025 redesign with 90 exhibits revised, recontextualised or reconceived together with the museum.
+    signals: [renovation, new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask phaeno whether exhibits replaced by the 50 new ones in 2025 were retired and are stored or for sale.
+  outreach:
+    reason: phaeno completed a major redesign in December 2025 with 50 new exhibits.
+    interest: Hands-on physics exhibits retired in the 2025 redesign.
+    fit: phaeno's phenomena-based physics exhibits are an ideal match for TPM.
+    email_hook: phaeno reopened in December 2025 after a comprehensive redesign that introduced fifty new exhibits
+    source: e1

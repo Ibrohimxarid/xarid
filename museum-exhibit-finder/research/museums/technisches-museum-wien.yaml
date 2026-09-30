@@ -1,0 +1,46 @@
+museum:
+  id: technisches-museum-wien
+  name: Technisches Museum Wien
+  country: Austria
+  city: Vienna
+  website: https://www.technischesmuseum.at/
+  type: technology museum
+exhibitions:
+  - id: redesign-2025-2026
+    name: Largest redesign in 25 years
+    replacement_year: "2025–2026"
+    new_exhibition: Materialwelten (West Hall, 3,000 m², 2025); Wissenschaft im Wandel (early 2026)
+    status: unknown
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://www.meinbezirk.at/wien/c-lokales/groesste-neugestaltung-seit-25-jahren-steht-bevor_a7104886
+    title: "Technisches Museum Wien: Größte Neugestaltung seit 25 Jahren steht bevor"
+    publisher: MeinBezirk.at
+    source_type: news
+    source_date: "2025"
+    accessed: "2026-09-30"
+    language: de
+    claim: The Technisches Museum Wien is undertaking its largest redesign in 25 years, with a new permanent exhibition "Materialwelten" in the West Hall and "Wissenschaft im Wandel" planned for early 2026.
+    signals: [renovation, new_exhibition]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.technischesmuseum.at/presse
+    title: Presse | Technisches Museum Wien
+    publisher: Technisches Museum Wien
+    source_type: press_release
+    accessed: "2026-09-30"
+    language: de
+    claim: The museum's press pages announce the new permanent exhibitions.
+    signals: [new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask TMW which exhibitions the West Hall redesign replaced and what happened to their interactive stations.
+  outreach:
+    reason: TMW is carrying out its largest redesign in 25 years with new permanent exhibitions.
+    interest: Interactive stations and demonstration models from exhibitions replaced by Materialwelten and Wissenschaft im Wandel.
+    fit: A classic European technology museum — its demonstration models match TPM's engineering focus.
+    email_hook: the Technisches Museum Wien is carrying out its largest redesign in 25 years, including the new permanent exhibitions Materialwelten and Wissenschaft im Wandel
+    source: e1

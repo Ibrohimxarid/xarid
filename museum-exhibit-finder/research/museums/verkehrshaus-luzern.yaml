@@ -1,0 +1,57 @@
+museum:
+  id: verkehrshaus-luzern
+  name: Swiss Museum of Transport (Verkehrshaus der Schweiz)
+  country: Switzerland
+  city: Lucerne
+  website: https://www.verkehrshaus.ch/
+  type: transport museum
+exhibitions:
+  - id: rail-hall
+    name: Rail transport halls
+    opening_year: 1982
+    replacement_year: 2025
+    old_exhibition: Rail hall 2+3 (1982) with locomotives, carriages and Gotthard base tunnel model
+    new_exhibition: Swiss Railway Experience (opened 18 June 2025; 31.5 m Gotthard model); planned CHF 60m new hall replacing the rail hall
+    status: being_replaced
+    evidence: [e1, e2, e3]
+evidence:
+  - id: e1
+    url: https://www.verkehrshaus.ch/en/your-visit/museum/rail-transport
+    title: "Verkehrshaus der Schweiz: Schienenverkehr"
+    publisher: Verkehrshaus der Schweiz
+    source_type: official_site
+    source_date: "2025"
+    accessed: "2026-09-30"
+    claim: The new interactive exhibition Swiss Railway Experience opened on 18 June 2025 with eight themes and a redesigned 31.5 m Gotthard railway model.
+    signals: [new_exhibition]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.luzernerzeitung.ch/zentralschweiz/luzern/verkehrshaus-plant-neubau-fuer-60-millionen-franken-schienenhalle-soll-vorzeigeprojekt-weichen-ld.1152249
+    title: "Verkehrshaus plant Neubau: Schienenhalle soll weichen"
+    publisher: Luzerner Zeitung
+    source_type: news
+    accessed: "2026-09-30"
+    language: de
+    claim: The Verkehrshaus plans a CHF 60 million new building for which the existing rail hall is to be demolished.
+    signals: [renovation, relocation, exhibit_replaced]
+    verified_via: web_search_snippet
+  - id: e3
+    url: https://www.srf.ch/news/erneuerung-verkehrshaus-luzern-eine-neue-halle-fuer-60-millionen-franken
+    title: "Erneuerung Verkehrshaus Luzern - Eine neue Halle für 60 Millionen Franken"
+    publisher: SRF
+    source_type: news
+    accessed: "2026-09-30"
+    language: de
+    claim: SRF reports the CHF 60m renewal with a new hall at the Verkehrshaus.
+    signals: [renovation]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask what happens to displays/models from the old rail hall that will not move into the new building.
+  outreach:
+    reason: The Verkehrshaus opened a new railway exhibition in 2025 and plans to replace its 1982 rail hall.
+    interest: Railway models, simulators and interactive stations from the old rail hall.
+    fit: Transport and railway exhibits are a TPM priority.
+    email_hook: the Verkehrshaus opened the Swiss Railway Experience in June 2025 and plans a new building to replace the 1982 rail hall
+    source: e2

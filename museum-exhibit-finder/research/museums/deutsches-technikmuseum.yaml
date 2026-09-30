@@ -1,0 +1,40 @@
+museum:
+  id: deutsches-technikmuseum
+  name: Deutsches Technikmuseum
+  country: Germany
+  city: Berlin
+  website: https://technikmuseum.berlin/
+  type: technology museum
+exhibitions:
+  - id: railway-exhibition
+    name: 'New permanent exhibition "Eisenbahn: Revolution und Alltag"'
+    new_exhibition: "Eisenbahn: Revolution und Alltag"
+    status: unknown
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://technikmuseum.berlin/programm/dauerausstellungen/eisenbahn
+    title: Dauerausstellung Eisenbahn | Deutsches Technikmuseum
+    publisher: Deutsches Technikmuseum
+    source_type: official_site
+    accessed: "2026-09-30"
+    language: de
+    claim: 'The museum presents a new permanent railway exhibition "Eisenbahn: Revolution und Alltag".'
+    signals: [new_exhibition]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://oldtimer-markt.de/aktuell/Ein-Blick-ins-Depot
+    title: Ein Blick ins Depot | Deutsches Technikmuseum
+    publisher: Oldtimer Markt
+    source_type: trade_press
+    accessed: "2026-09-30"
+    language: de
+    claim: Renovation of the depots led to 29 vehicles being shown temporarily ("Umgeparkt – Autos aus dem Depot").
+    signals: [renovation]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Lead — ask about surplus vehicles/duplicates identified during the depot renovation.
+  outreach:
+    email_hook: the Deutsches Technikmuseum has renewed its railway exhibition and reorganised its vehicle depots

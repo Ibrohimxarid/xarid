@@ -1,0 +1,44 @@
+museum:
+  id: tekniska-museet
+  name: Tekniska museet (National Museum of Science and Technology)
+  country: Sweden
+  city: Stockholm
+  website: https://www.tekniskamuseet.se/en/
+  type: national science and technology museum
+exhibitions:
+  - id: dromlandet
+    name: Drömlandet — new permanent base exhibition (centenary)
+    replacement_year: 2026
+    new_exhibition: Drömlandet (opened 29 April 2026; planned to run 10–15 years)
+    status: unknown
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://www.regeringen.se/pressmeddelanden/2026/04/kulturministern-inviger-tekniska-museets-nya-utstallning/
+    title: Kulturministern inviger Tekniska museets nya utställning
+    publisher: Government Offices of Sweden
+    source_type: government
+    source_date: "2026-04"
+    accessed: "2026-09-30"
+    language: sv
+    claim: The Minister for Culture opened Tekniska museet's new exhibition Drömlandet — the museum's largest exhibition project, a permanent base exhibition for 10–15 years.
+    signals: [new_exhibition]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.mitti.se/nyheter/tekniska-museet-oppnar-en-ny-permanent-utstallning-6.3.359162.28c2d859e6
+    title: Tekniska museet öppnar en ny permanent utställning
+    publisher: Mitt i
+    source_type: news
+    source_date: "2026"
+    accessed: "2026-09-30"
+    language: sv
+    claim: Local press reports the opening of the new permanent exhibition at Tekniska museet.
+    signals: [new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask which earlier exhibitions made room for Drömlandet and whether their interactive stations are surplus.
+  outreach:
+    email_hook: Tekniska museet opened its new permanent exhibition Drömlandet in April 2026
+    source: e1

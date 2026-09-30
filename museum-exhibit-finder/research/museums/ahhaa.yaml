@@ -1,0 +1,35 @@
+museum:
+  id: ahhaa
+  name: Science Centre AHHAA
+  country: Estonia
+  city: Tartu
+  website: https://ahhaa.ee/en
+  type: science centre
+exhibitions:
+  - id: rotating-exhibitions
+    name: Rotating temporary exhibitions and touring exhibitions
+    status: still_in_use
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://ahhaa.ee/en/aha-the-core-of-science
+    title: Aha, The Core of Science! — Science Centre AHHAA
+    publisher: Science Centre AHHAA
+    source_type: official_site
+    accessed: "2026-09-30"
+    claim: AHHAA runs rotating temporary exhibitions (e.g. AI, giant bugs) and updates its permanent expositions with new objects.
+    signals: [new_exhibition]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.teo-exhibitions.com/touring-community/single/ahhaa-science-centre/
+    title: AHHAA Science Centre - Teo, All about touring exhibitions
+    publisher: Teo (touring exhibitions platform)
+    source_type: association
+    accessed: "2026-09-30"
+    claim: AHHAA is listed on the Teo touring-exhibition platform as a producer/host of touring exhibitions.
+    signals: [touring_for_hire]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask AHHAA about retired touring exhibitions for sale (Estonian/Russian/English content could suit Central Asia).

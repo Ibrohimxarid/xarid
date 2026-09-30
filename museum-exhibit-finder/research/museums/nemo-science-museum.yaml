@@ -1,0 +1,40 @@
+museum:
+  id: nemo-science-museum
+  name: NEMO Science Museum
+  country: Netherlands
+  city: Amsterdam
+  website: https://www.nemosciencemuseum.nl/
+  type: science centre
+exhibitions:
+  - id: roof-2025
+    name: Roof renovation and new rooftop terrace
+    replacement_year: 2025
+    new_exhibition: Green roof terrace with outdoor stage (opened 22 May 2025)
+    status: still_in_use
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://www.nemosciencemuseum.nl/pers/persberichten/verbouwing-dak-nemo-science-museum
+    title: Verbouwing dak NEMO Science Museum van start
+    publisher: NEMO Science Museum
+    source_type: press_release
+    source_date: "2024"
+    accessed: "2026-09-30"
+    language: nl
+    claim: NEMO renovated its roof (realised in 2025) into a green terrace with an outdoor stage; no replacement of indoor exhibitions was reported.
+    signals: [renovation]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://musemap.art/en/amsterdam/museum/nemo-science-museum/news/successful-year-and-new-initiatives
+    title: NEMO Science Museum Visitor Numbers & 2026 Plans | Musemap
+    publisher: Musemap
+    source_type: other
+    source_date: "2026"
+    accessed: "2026-09-30"
+    claim: The new roof terrace opened on 22 May 2025; 2026 plans focus on programming and extended hours.
+    signals: [new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Lead only — ask NEMO whether any indoor exhibitions (e.g. Technium) are due for renewal and what happens to retired exhibits.

@@ -1,0 +1,71 @@
+museum:
+  id: saint-louis-science-center
+  name: Saint Louis Science Center
+  country: United States
+  city: St. Louis, Missouri
+  website: https://www.slsc.org/
+  type: science centre with planetarium
+exhibitions:
+  - id: mcdonnell-planetarium-upgrade
+    name: James S. McDonnell Planetarium technology upgrade
+    replacement_year: 2026
+    old_exhibition: ZEISS UNIVERSARIUM Mark IX star projector (25 years in service)
+    new_exhibition: GOTO Chiron III Hybrid star projector + Cosm Digistar full-dome system (StarBay reopened 18 July 2026)
+    status: already_replaced
+    evidence: [e1, e2, e3]
+    exhibits:
+      - id: zeiss-universarium-ix
+        name: ZEISS UNIVERSARIUM Mark IX planetarium star projector
+        description: Opto-mechanical star projector retired after ~25 years; disassembled piece by piece during the 2026 upgrade.
+        category: [optics, space, engineering]
+        manufacturer: Carl Zeiss
+        approx_age: ~25 years (installed c. 2000)
+        interactive: false
+        status: already_replaced
+        evidence: [e1, e2]
+        fit_for_tpm: A decommissioned Zeiss star projector is a spectacular precision-engineering and optics object for display (or reuse in a small dome).
+evidence:
+  - id: e1
+    url: https://www.slsc.org/hello-goto/
+    title: Say Hello to Our GOTO – Saint Louis Science Center
+    publisher: Saint Louis Science Center
+    source_type: official_site
+    source_date: "2026"
+    accessed: "2026-09-30"
+    claim: The GOTO Chiron III Hybrid star projector replaces the ZEISS UNIVERSARIUM Mark IX, retired after 25 years; crews disassembled the Zeiss projector piece by piece.
+    signals: [exhibit_replaced, new_exhibition]
+    verified_via: web_search_snippet
+    notes: Fate of the disassembled Zeiss projector not stated in sources.
+  - id: e2
+    url: https://www.slsc.org/james-s-mcdonnell-planetarium-to-receive-largest-technology-upgrade-in-more-than-25-years/
+    title: James S. McDonnell Planetarium to Receive Largest Technology Upgrade in More Than 25 Years
+    publisher: Saint Louis Science Center
+    source_type: press_release
+    source_date: "2025"
+    accessed: "2026-09-30"
+    claim: The planetarium's largest technology upgrade in 25+ years installs a GOTO Chiron III and Cosm Digistar; StarBay and upper-floor exhibits closed temporarily from 1 February.
+    signals: [renovation, new_exhibition, closure]
+    verified_via: web_search_snippet
+  - id: e3
+    url: https://www.stlpr.org/health-science-environment/2026-07-14/sneak-peek-st-louis-science-centers-upgraded-planetarium-opens-saturday
+    title: Get a sneak peek at the St. Louis Science Center's upgraded planetarium
+    publisher: St. Louis Public Radio
+    source_type: news
+    source_date: "2026-07-14"
+    accessed: "2026-09-30"
+    claim: The upgraded planetarium reopened in July 2026.
+    signals: [new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Email SLSC now — ask whether the retired ZEISS UNIVERSARIUM Mark IX (or its components) is available, before it is scrapped or sold.
+  open_questions:
+    - Is the Zeiss projector complete and stored, returned to Zeiss, or sold?
+    - Dimensions/weight of the projector and control system?
+  outreach:
+    reason: SLSC retired and disassembled its ZEISS UNIVERSARIUM Mark IX star projector in 2026 after installing a GOTO Chiron III.
+    interest: ZEISS UNIVERSARIUM Mark IX star projector (complete or major components) and any retired planetarium control equipment.
+    fit: A landmark opto-mechanical instrument for TPM's optics/space section, or reuse in a small dome.
+    email_hook: the McDonnell Planetarium's ZEISS UNIVERSARIUM Mark IX was retired and carefully disassembled in 2026 after 25 years of service, following the installation of the new GOTO Chiron III
+    source: e1

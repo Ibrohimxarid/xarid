@@ -1,0 +1,45 @@
+museum:
+  id: catalyst-widnes
+  name: Catalyst Science Discovery Centre and Museum
+  country: United Kingdom
+  city: Widnes
+  website: https://www.catalyst.org.uk/
+  type: science discovery centre and chemical-industry museum
+exhibitions:
+  - id: synergy
+    name: Synergy Project (NLHF £1m)
+    replacement_year: "2024–2026"
+    old_exhibition: Birth of an Industry gallery; Observation Gallery
+    new_exhibition: Refurbished galleries on two floors with new interactives
+    status: being_replaced
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://www.catalyst.org.uk/catalyst-lottery-fund-win/
+    title: Catalyst wins £1m National Lottery Heritage Fund bid
+    publisher: Catalyst Science Discovery Centre
+    source_type: press_release
+    source_date: "2024-10"
+    accessed: "2026-09-30"
+    claim: Catalyst received £1,009,930 from the National Lottery Heritage Fund (Oct 2024) for the Synergy Project, refurbishing the Birth of an Industry gallery and the Observation Gallery with new interactives.
+    signals: [renovation, new_exhibition]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://industrialheritagenetworks.com/2024/11/25/catalyst-science-discovery-centre-museum-awarded-1-million-nlhf-grant/
+    title: Catalyst Science Discovery Centre & Museum Awarded £1 Million NLHF Grant
+    publisher: Industrial Heritage Networks
+    source_type: trade_press
+    source_date: "2024-11-25"
+    accessed: "2026-09-30"
+    claim: Half the grant refurbishes two floors showcasing the chemical industry's history.
+    signals: [renovation]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask Catalyst which existing displays/interactives from the refurbished floors are being retired.
+  outreach:
+    reason: Catalyst is refurbishing two gallery floors under its NLHF-funded Synergy Project.
+    interest: Retired interactives and industrial-chemistry displays from the refurbished galleries.
+    fit: Industrial chemistry/technology interactives fit TPM's industrial technology theme.
+    email_hook: Catalyst is refurbishing its Birth of an Industry and Observation galleries through the Synergy Project

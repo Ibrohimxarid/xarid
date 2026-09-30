@@ -1,0 +1,42 @@
+museum:
+  id: museum-speelklok
+  name: Museum Speelklok
+  country: Netherlands
+  city: Utrecht
+  website: https://www.museumspeelklok.nl/
+  type: museum of self-playing musical instruments (mechanical music, automata)
+exhibitions:
+  - id: adb-2025-11
+    name: Deaccession notice on the Afstotingsdatabase (20 Nov 2025)
+    replacement_year: 2025
+    status: deaccessioned
+    evidence: [e1]
+    exhibits:
+      - id: adb-objects
+        name: Objects in the 20-11-2025 deaccession notice (contents not captured)
+        category: [mechanics, acoustics]
+        status: deaccessioned
+        evidence: [e1]
+        notes: Open the PDF to see which objects; the two-month LAMO window ended ~Jan 2026.
+evidence:
+  - id: e1
+    url: https://afstotingsdatabase.nl/wp-content/uploads/2025/11/Museum-Speelklok-ADB-2025-11-20.pdf
+    title: Museum Speelklok - Afstotingsdatabase
+    publisher: Afstotingsdatabase (Museumvereniging / Museumregister)
+    source_type: association
+    source_date: "2025-11-20"
+    accessed: "2026-09-30"
+    language: nl
+    claim: Museum Speelklok published a deaccession notice on the Dutch Afstotingsdatabase on 20 November 2025 (objects offered first to other museums for two months).
+    signals: [deaccession_in_progress, available_transfer]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Open the ADB PDF; if it contains mechanical instruments/automata, ask whether any remain after the LAMO period.
+  outreach:
+    reason: Museum Speelklok announced objects for deaccession on the Dutch disposal database in November 2025.
+    interest: Mechanical musical instruments, automata or mechanisms included in the notice.
+    fit: Mechanical music and automata illustrate gears, cams and pneumatics — attractive hands-on mechanics content.
+    email_hook: Museum Speelklok published a deaccession notice on the Afstotingsdatabase on 20 November 2025
+    source: e1

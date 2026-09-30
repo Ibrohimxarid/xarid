@@ -1,0 +1,28 @@
+museum:
+  id: norsk-teknisk-museum
+  name: Norsk Teknisk Museum (Norwegian Museum of Science and Technology)
+  country: Norway
+  city: Oslo
+  website: https://www.tekniskmuseum.no/
+  type: national science and technology museum
+exhibitions:
+  - id: strategy-renewal
+    name: Strategy 2019–2024 — renewal of base exhibitions
+    status: unknown
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://www.tekniskmuseum.no/museumsinformasjon/strategi-og-styring/154-ntm-strategi-2019-2024-1/file
+    title: Strategi for Norsk Teknisk Museum 2019-2024
+    publisher: Norsk Teknisk Museum
+    source_type: board_document
+    source_date: "2019"
+    accessed: "2026-09-30"
+    language: "no"
+    claim: The museum's 2019–2024 strategy prioritises renewal of its base (permanent) exhibitions.
+    signals: [renovation]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Check the "previous exhibitions" page for closed base exhibitions and ask about their fate.

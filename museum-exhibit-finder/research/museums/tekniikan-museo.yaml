@@ -1,0 +1,28 @@
+museum:
+  id: tekniikan-museo
+  name: Tekniikan museo (Museum of Technology)
+  country: Finland
+  city: Helsinki
+  website: https://www.tekniikanmuseo.fi/en/
+  type: national technology museum
+exhibitions:
+  - id: new-wing
+    name: New wing (AI and quantum computing) and exhibition renewal
+    replacement_year: 2024
+    status: unknown
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://fi.wikipedia.org/wiki/Tekniikan_museo
+    title: Tekniikan museo – Wikipedia
+    publisher: Wikipedia
+    source_type: other
+    accessed: "2026-09-30"
+    language: fi
+    claim: A new wing on artificial intelligence and quantum computing was planned to open in 2024; outdoor areas were being renovated.
+    signals: [new_exhibition, renovation]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Lead only — confirm on the museum's news page and ask about retired displays.

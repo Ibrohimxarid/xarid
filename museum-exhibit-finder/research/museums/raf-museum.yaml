@@ -1,0 +1,118 @@
+museum:
+  id: raf-museum
+  name: Royal Air Force Museum (London & Midlands/Cosford)
+  country: United Kingdom
+  city: London / Cosford (Shropshire)
+  website: https://www.rafmuseum.org.uk/
+  type: national aviation museum
+contacts:
+  - kind: department
+    position: Collections Development Committee (Objects Transfer Programme)
+    contact_page: https://www.rafmuseum.org.uk/research/default/acquisitions-and-transfers/object-transfer-programme/
+    source: e1
+exhibitions:
+  - id: objects-transfer-programme
+    name: Objects Transfer Programme (Collections Review, 2030 Strategy)
+    replacement_year: "2025–2026"
+    status: available_transfer
+    evidence: [e1, e2, e3, e4]
+    exhibits:
+      - id: sr53-xd145
+        name: Saunders-Roe SR.53 XD145 (rocket/jet interceptor prototype, 1957)
+        category: [aviation, engineering]
+        year: "1957"
+        interactive: false
+        status: available_transfer
+        evidence: [e3, e5]
+        fit_for_tpm: Rare jet/rocket research aircraft — landmark aviation engineering object.
+        documentation: [https://www.rafmuseum.org.uk/documents/collections/69-A-696-SR-53-XD145.pdf]
+      - id: h126-xn714
+        name: Hunting H.126 XN714 (blown-flap STOL research aircraft)
+        category: [aviation, engineering]
+        interactive: false
+        status: available_transfer
+        evidence: [e3]
+        fit_for_tpm: Demonstrates aerodynamic research (blown flaps / STOL) — strong engineering story.
+      - id: sea-balliol-wl732
+        name: Boulton Paul Sea Balliol T.21 WL732
+        category: [aviation]
+        year: "1954"
+        interactive: false
+        status: available_transfer
+        evidence: [e2, e5]
+        documentation: [https://www.rafmuseum.org.uk/documents/collections/69-A-626_Sea_Balliol_WL732.pdf]
+        notes: Listed in the March 2025 transfer batch — check whether already allocated.
+evidence:
+  - id: e1
+    url: https://www.rafmuseum.org.uk/research/default/acquisitions-and-transfers/object-transfer-programme/
+    title: Objects Transfer Programme | RAF Museum
+    publisher: Royal Air Force Museum
+    source_type: official_site
+    source_date: "2026"
+    accessed: "2026-09-30"
+    claim: The RAF Museum runs an Objects Transfer Programme releasing batches of objects from its national collection; expressions of interest are submitted to its Collections Development Committee (a 2026 batch had a mid-April 2026 deadline).
+    signals: [available_transfer, deaccession_in_progress, accepts_requests]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://vintageaviationnews.com/aviation-museum-news/raf-museum-announced-transfer-of-historic-aircraft-from-national-collection.html
+    title: RAF Museum Announced Transfer of Historic Aircraft from National Collection
+    publisher: Vintage Aviation News
+    source_type: trade_press
+    source_date: "2025-03"
+    accessed: "2026-09-30"
+    claim: In March 2025 the RAF Museum made several stored aircraft (incl. Sea Balliol) available for transfer, inviting expressions of interest by 25 April 2025, with priority to UK public organisations.
+    signals: [available_transfer, deaccession_in_progress, accepts_requests]
+    verified_via: web_search_snippet
+  - id: e3
+    url: https://vintageaviationnews.com/aviation-museum-news/raf-museum-midlands-cosford-restoration-storage-and-disposals-update.html
+    title: RAF Museum Midlands (Cosford) – Restoration, Storage, and Disposals Update
+    publisher: Vintage Aviation News
+    source_type: trade_press
+    source_date: "2025"
+    accessed: "2026-09-30"
+    claim: About half of Cosford's flight-test aircraft collection is being removed; the SR.53 XD145 and Hunting H.126 XN714, previously listed for disposal, are still awaiting new homes.
+    signals: [deaccession_in_progress, available_transfer, exhibit_replaced]
+    verified_via: web_search_snippet
+  - id: e4
+    url: https://crm-media.museumsassociation.org/Transfers-from-the-Royal-Air-Force-Museum-LT_Feb-2026.pdf
+    title: Transfers from the Royal Air Force Museum's National Collection (Feb 2026)
+    publisher: Royal Air Force Museum (via Museums Association)
+    source_type: official_site
+    source_date: "2026-02"
+    accessed: "2026-09-30"
+    claim: The February 2026 transfer list gives priority to UK public-heritage organisations "before exploring alternative routes"; the list is the entirety of condition, hazard, dimension and weight information available; expressions of interest by 20 April 2026.
+    excerpt: Where objects are identified for transfer the Museum gives priority to other organisations in the UK public heritage sector before exploring alternative routes.
+    signals: [available_transfer, deaccession_in_progress, accepts_requests]
+    verified_via: web_search_snippet
+  - id: e5
+    url: https://www.rafmuseum.org.uk/documents/collections/69-A-696-SR-53-XD145.pdf
+    title: Saunders-Roe SR.53 XD145 — individual history
+    publisher: Royal Air Force Museum
+    source_type: collection_database
+    accessed: "2026-09-30"
+    claim: The RAF Museum publishes individual aircraft histories (documentation) for SR.53 XD145 and Sea Balliol WL732.
+    signals: []
+    verified_via: web_search_snippet
+  - id: e6
+    url: https://www.expressandstar.com/entertainment/attractions/2025/06/13/west-midlands-raf-museums-huge-mission-to-relocate-50000-historic-objects-to-new-collections-hub-heres-how-you-can-help/
+    title: RAF Museum's mission to relocate 50,000 historic objects to new collections hub
+    publisher: Express & Star
+    source_type: news
+    source_date: "2025-06-13"
+    accessed: "2026-09-30"
+    claim: The RAF Museum is moving 50,000+ objects from MOD Stafford to a new Collections Hub at Cosford (completion summer 2027) with a new permanent exhibition.
+    signals: [relocation, new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Email the Collections Development Committee now — ask which aircraft from the 2025/2026 batches were not taken by UK bodies (SR.53, H.126) and whether a foreign public museum can apply under "alternative routes".
+  open_questions:
+    - Are overseas public museums eligible once UK interest is exhausted?
+    - Transport/export logistics for large airframes (dismantling needed?).
+  outreach:
+    reason: The RAF Museum is transferring aircraft from its national collection; several (SR.53, H.126) were still awaiting new homes.
+    interest: Saunders-Roe SR.53 XD145, Hunting H.126 XN714, and other research/test aircraft or engines in current transfer batches.
+    fit: Landmark British aviation engineering; would anchor an aviation section at TPM.
+    email_hook: the Museum's Objects Transfer Programme is offering aircraft from the national collection, and that the Saunders-Roe SR.53 and Hunting H.126 were still awaiting new homes
+    source: e4
