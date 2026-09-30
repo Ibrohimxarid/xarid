@@ -1,0 +1,27 @@
+museum:
+  id: national-holden-motor-museum
+  name: National Holden Motor Museum
+  country: Australia
+  city: Echuca, Victoria
+  type: automotive museum (closed)
+exhibitions:
+  - id: closure-2024
+    name: Closure and auction of contents
+    replacement_year: 2024
+    status: already_transferred
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://www.drive.com.au/news/echuca-holden-museum-to-auction-collection-this-weekend-including-near-unicorn-statesman-coupe/
+    title: Echuca Holden museum auction raises $2.5 million
+    publisher: Drive
+    source_type: trade_press
+    source_date: "2024-05"
+    accessed: "2026-09-30"
+    claim: The museum closed on 14 April 2024 and its vehicles and memorabilia (731 lots) were auctioned on 18–19 May 2024.
+    signals: [closure, already_transferred]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: No opportunity — collection dispersed at auction in 2024.

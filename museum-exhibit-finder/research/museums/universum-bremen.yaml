@@ -5,6 +5,22 @@ museum:
   city: Bremen
   website: https://universum-bremen.de/
   type: science centre
+contacts:
+  - name: Dr. Kerstin Haller
+    position: Exhibition contact
+    phone: "+49 421 3346-0"
+    kind: person
+    source: https://universum-bremen.de/kontaktadressen/
+  - name: Dr. Tobias Wolff
+    position: Exhibition contact
+    phone: "+49 421 3346-0"
+    kind: person
+    source: https://universum-bremen.de/kontaktadressen/
+  - kind: general
+    email: info@universum-bremen.de
+    phone: "+49 421 3346-0"
+    contact_page: https://universum-bremen.de/kontakt/
+    source: https://universum-bremen.de/kontaktadressen/
 exhibitions:
   - id: permanent-rebuild-2026
     name: Rebuild of the 4,000 m² permanent exhibition

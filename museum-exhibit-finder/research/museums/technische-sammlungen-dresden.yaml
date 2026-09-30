@@ -1,0 +1,28 @@
+museum:
+  id: technische-sammlungen-dresden
+  name: Technische Sammlungen Dresden
+  country: Germany
+  city: Dresden
+  website: https://tsd.de/
+  type: technology museum and science centre
+exhibitions:
+  - id: refurbishment-2026
+    name: Closure for energy-efficiency refurbishment (from 2 Nov 2026)
+    replacement_year: 2026
+    status: unknown
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://tsd.de/en/visit/opening-hours-admission
+    title: Opening hours & admission - Technische Sammlungen
+    publisher: Technische Sammlungen Dresden
+    source_type: official_site
+    source_date: "2026"
+    accessed: "2026-09-30"
+    claim: The museum closes from 2 November 2026 for an energy-efficiency refurbishment of the building.
+    signals: [renovation]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask whether the refurbishment is used to renew exhibitions (and retire older interactive stations).

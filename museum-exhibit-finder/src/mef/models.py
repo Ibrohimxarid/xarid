@@ -149,6 +149,9 @@ class Evidence(Strict):
         None, description="Publication date of the source: YYYY, YYYY-MM or YYYY-MM-DD"
     )
     accessed: str = Field(..., description="Date the source was read: YYYY-MM-DD")
+    valid_until: Optional[str] = Field(
+        None, description="Deadline/expiry of the offer stated by the source (YYYY[-MM[-DD]])"
+    )
     language: Optional[str] = None
     claim: str = Field(..., description="What this source supports, in plain English")
     excerpt: Optional[str] = Field(None, description="Quote or close paraphrase from the source")
@@ -164,7 +167,7 @@ class Evidence(Strict):
             raise ValueError(f"evidence url must be absolute http(s): {v!r}")
         return v.strip()
 
-    @field_validator("source_date", "accessed")
+    @field_validator("source_date", "accessed", "valid_until")
     @classmethod
     def _date(cls, v: Optional[str]) -> Optional[str]:
         if v is None:

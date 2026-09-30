@@ -1,0 +1,29 @@
+museum:
+  id: chom-tuscaloosa
+  name: Children's Hands-On Museum (CHOM)
+  country: United States
+  city: Tuscaloosa, Alabama
+  type: children's hands-on museum
+exhibitions:
+  - id: transition-ignite
+    name: Closure and transition to IGNITE at the Saban Center
+    replacement_year: 2026
+    old_exhibition: CHOM downtown exhibits (closed 1 Aug 2026)
+    new_exhibition: IGNITE at the Saban Center
+    status: being_replaced
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://www.tuscaloosa.com/posts/2025/08/19/chom-announces-closing-and-transition-to-ignite-at-the-saban-center-a-new-era-for-childrens-discovery-in-tuscaloosa
+    title: CHOM Announces Closing and Transition to IGNITE at the Saban Center
+    publisher: City of Tuscaloosa
+    source_type: government
+    source_date: "2025-08-19"
+    accessed: "2026-09-30"
+    claim: CHOM closes on 1 August 2026 and transitions to a new discovery space, IGNITE at the Saban Center.
+    signals: [closure, relocation, new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask which CHOM exhibits are not moving to IGNITE.

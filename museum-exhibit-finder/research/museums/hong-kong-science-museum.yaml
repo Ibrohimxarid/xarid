@@ -3,8 +3,15 @@ museum:
   name: Hong Kong Science Museum
   country: Hong Kong SAR, China
   city: Hong Kong
+  website: https://hk.science.museum/en/web/scm/index.html
   type: science museum (LCSD, government)
   parent_org: Leisure and Cultural Services Department
+contacts:
+  - kind: general
+    email: enquiries@hk.science.museum
+    phone: "+852 2732 3232"
+    contact_page: https://hk.science.museum/en/web/scm/contact-us.html
+    source: https://hk.science.museum/en/web/scm/contact-us.html
 exhibitions:
   - id: permanent-renewal
     name: Permanent exhibition renewal project

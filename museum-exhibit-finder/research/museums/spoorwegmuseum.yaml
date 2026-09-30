@@ -6,6 +6,19 @@ museum:
   website: https://www.spoorwegmuseum.nl/
   type: railway / transport museum
 contacts:
+  - kind: department
+    position: Collections department (collection questions)
+    email: collectie@spoorwegmuseum.nl
+    source: https://www.spoorwegmuseum.nl/over/bruikleen-schenking/
+  - kind: department
+    position: Collections department (loans)
+    email: e.pieterse@spoorwegmuseum.nl
+    source: https://www.spoorwegmuseum.nl/over/bruikleen-schenking/
+  - kind: general
+    email: info@spoorwegmuseum.nl
+    phone: "+31 30 230 62 06"
+    contact_page: https://www.spoorwegmuseum.nl/en/about/contact-press/
+    source: https://www.spoorwegmuseum.nl/en/about/contact-press/
   - kind: general
     contact_page: https://www.spoorwegmuseum.nl/collectie/collectie-overzicht/ontzamelen/
     source: e2

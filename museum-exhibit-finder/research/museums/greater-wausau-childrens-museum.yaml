@@ -1,0 +1,39 @@
+museum:
+  id: greater-wausau-childrens-museum
+  name: Greater Wausau Children's Museum
+  country: United States
+  city: Rothschild (Wausau), Wisconsin
+  website: http://www.wausauchildrensmuseum.org/
+  type: children's museum (closed)
+exhibitions:
+  - id: closure-2026
+    name: Closure (31 May 2026)
+    replacement_year: 2026
+    old_exhibition: Hands-on children's exhibits at Cedar Creek Mall
+    status: unknown
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://www.wsaw.com/2026/05/29/greater-wausau-childrens-museum-close-after-11-years/
+    title: Greater Wausau Children's Museum to close after 11 years
+    publisher: WSAW
+    source_type: news
+    source_date: "2026-05-29"
+    accessed: "2026-09-30"
+    claim: The museum closed on 31 May 2026 for financial reasons despite ~2,000 visitors a month; the fate of its exhibits was not reported.
+    signals: [closure]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://wausaupilotandreview.com/2026/06/01/greater-wausau-childrens-museum-closes-after-more-than-a-decade/
+    title: Greater Wausau Children's Museum closes after more than a decade
+    publisher: Wausau Pilot & Review
+    source_type: news
+    source_date: "2026-06-01"
+    accessed: "2026-09-30"
+    claim: Local press confirms the closure.
+    signals: [closure]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Low thematic fit (young children). Ask only for STEM-oriented exhibits.

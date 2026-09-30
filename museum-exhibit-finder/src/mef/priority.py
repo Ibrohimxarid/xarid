@@ -20,7 +20,14 @@ from dataclasses import dataclass, field
 
 from . import POTENTIAL_LEAD, UNKNOWN
 from .config import settings
-from .evidence import age_years, exhibit_evidence, primary_source, signals_of, unattached_evidence
+from .evidence import (
+    age_years,
+    exhibit_evidence,
+    parse_date,
+    primary_source,
+    signals_of,
+    unattached_evidence,
+)
 from .models import (
     AVAILABILITY_SIGNALS,
     EVENT_SIGNALS,
@@ -48,12 +55,19 @@ class Assessment:
     notes: list[str] = field(default_factory=list)
 
 
+def _expired(e: Evidence, today: dt.date | None) -> bool:
+    deadline = parse_date(e.valid_until)
+    return deadline is not None and deadline < (today or dt.date.today())
+
+
 def _fresh(evs: list[Evidence], today: dt.date | None) -> tuple[list[Evidence], list[Evidence]]:
+    """Split availability evidence into still-valid and stale (too old or offer window closed)."""
     max_age = settings().availability_max_age_years
     fresh, stale = [], []
     for e in evs:
         age = age_years(e, today)
-        (stale if age is not None and age > max_age else fresh).append(e)
+        too_old = age is not None and age > max_age
+        (stale if too_old or _expired(e, today) else fresh).append(e)
     return fresh, stale
 
 
@@ -79,9 +93,14 @@ def _assess(evs: list[Evidence], status: str | None, today: dt.date | None) -> A
                 "A", 5, "Yes — availability confirmed by source (see evidence).", fresh, notes
             )
         if stale:
-            newest = max((e.source_date or "") for e in stale)
-            notes.append(f"Availability evidence dated {newest} is older than "
-                         f"{settings().availability_max_age_years} years — re-confirm.")
+            closed = [e for e in stale if _expired(e, today)]
+            if closed:
+                last = max(e.valid_until or "" for e in closed)
+                notes.append(f"Offer window closed on {last} — ask whether the item is still available.")
+            else:
+                newest = max((e.source_date or "") for e in stale)
+                notes.append(f"Availability evidence dated {newest} is older than "
+                             f"{settings().availability_max_age_years} years — re-confirm.")
             return Assessment("B", 4, "Stale — was available per source; re-confirm.", stale, notes)
         # status claims availability but no availability-signal evidence: treat as removed
         notes.append("Status says available but no evidence carries an availability signal.")

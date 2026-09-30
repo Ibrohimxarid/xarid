@@ -26,10 +26,12 @@ evidence:
     source_type: association
     source_date: "2025-11-20"
     accessed: "2026-09-30"
+    valid_until: "2026-01-20"
     language: nl
     claim: Museum Speelklok published a deaccession notice on the Dutch Afstotingsdatabase on 20 November 2025 (objects offered first to other museums for two months).
     signals: [deaccession_in_progress, available_transfer]
     verified_via: web_search_snippet
+    notes: valid_until derived from the ADB rule that notices stay online for two months.
 research:
   researcher: mef expansion
   last_updated: "2026-09-30"

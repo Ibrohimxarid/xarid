@@ -1,0 +1,27 @@
+museum:
+  id: erwin-hymer-museum
+  name: Erwin Hymer Museum
+  country: Germany
+  city: Bad Waldsee
+  type: recreational-vehicle / mobility museum
+exhibitions:
+  - id: closure-modernisation
+    name: Closure for renovation and modernisation
+    new_exhibition: Modernised museum (80+ historic recreational vehicles)
+    status: unknown
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://www.kfz-betrieb.vogel.de/hymer-museum-schliesst-und-oeffnet-neu-a-be250bf57069f867e4b023dd7faa7d0d/
+    title: Hymer-Museum schließt – und öffnet neu
+    publisher: kfz-betrieb (Vogel)
+    source_type: trade_press
+    accessed: "2026-09-30"
+    language: de
+    claim: The Erwin Hymer Museum closes in November for renovation and modernisation of its displays of 80+ historic recreational vehicles.
+    signals: [renovation, new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Lead only — ask about retired display infrastructure/interactives.

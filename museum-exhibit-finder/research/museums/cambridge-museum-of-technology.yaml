@@ -8,6 +8,11 @@ museum:
   notes: Located at The Old Pumping Station, Cheddars Lane, Cambridge.
 contacts:
   - kind: general
+    email: info@museumoftechnology.com
+    phone: "+44 1223 500652"
+    contact_page: https://www.museumoftechnology.com/contact
+    source: https://www.museumoftechnology.com/contact
+  - kind: general
     contact_page: https://findanobject.collectionstrust.org.uk/objects-for-disposal/kleischograph-engraving-machine/
     source: e1
 exhibitions:
@@ -25,6 +30,14 @@ exhibitions:
         status: available_transfer
         evidence: [e1]
         fit_for_tpm: History of printing / industrial technology; a mid-size machine suitable for a technology-history display.
+      - id: engineering-books
+        name: ~350 books on steam, mechanical, electrical and telecommunications engineering (1870s–present)
+        description: Treatises, repair manuals, catalogues and magazines; individual books or sets can be requested; collection or pre-arranged postage only.
+        category: [engineering, industrial, telecommunications]
+        interactive: false
+        status: available_transfer
+        evidence: [e3]
+        fit_for_tpm: Reference library for TPM curators and engineering education; low shipping cost.
 evidence:
   - id: e1
     url: https://findanobject.collectionstrust.org.uk/objects-for-disposal/kleischograph-engraving-machine/
@@ -47,6 +60,15 @@ evidence:
     claim: Find an Object lists items deaccessioned from museum collections that are available for transfer to other museums or organisations within the public domain.
     excerpt: A listing of items deaccessioned from museum collections that are available for transfer to other museums or organisations within the public domain; free to upload, registration required.
     signals: [available_transfer, accepts_requests]
+    verified_via: web_search_snippet
+  - id: e3
+    url: https://findanobject.collectionstrust.org.uk/objects-for-disposal/a-collection-of-approximately-800-books-relating-to-steam-mechanical-electrical-and-telecommunications-engineering-dates-range-from-1870s-to-present-includes-treatises-repair-manuals-catalogues/
+    title: A collection of approximately 350 books relating to steam, mechanical, electrical and telecommunications engineering
+    publisher: Collections Trust (Find an Object)
+    source_type: association
+    accessed: "2026-09-30"
+    claim: Cambridge Museum of Technology offers ~350 engineering books (1870s–present) via Find an Object; interest in individual books or sets accepted; collection or pre-arranged postage only.
+    signals: [available_transfer, deaccession_in_progress, accepts_requests]
     verified_via: web_search_snippet
 research:
   researcher: mef pilot

@@ -5,6 +5,11 @@ museum:
   city: St. Louis, Missouri
   website: https://www.slsc.org/
   type: science centre with planetarium
+contacts:
+  - kind: general
+    phone: "+1 314-289-4400"
+    contact_page: https://www.slsc.org/contact-us/
+    source: https://www.slsc.org/contact-us/
 exhibitions:
   - id: mcdonnell-planetarium-upgrade
     name: James S. McDonnell Planetarium technology upgrade

@@ -1,0 +1,42 @@
+museum:
+  id: cavanaugh-flight-museum
+  name: Cavanaugh Flight Museum
+  country: United States
+  city: Addison, Texas (collection moved to North Texas Regional Airport, Denison)
+  website: https://cavflight.org/
+  type: aviation museum (closed to the public)
+exhibitions:
+  - id: closure-2023
+    name: Closure at Addison Airport and move to storage
+    replacement_year: "2023–2024"
+    old_exhibition: 50+ aircraft, military vehicles, educational displays and memorabilia
+    status: in_storage
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://vintageaviationnews.com/aviation-museum-news/cavanaugh-flight-museum-to-close-after-30-years.html
+    title: Cavanaugh Flight Museum To Close After 30 Years
+    publisher: Vintage Aviation News
+    source_type: trade_press
+    source_date: "2023"
+    accessed: "2026-09-30"
+    claim: The Cavanaugh Flight Museum closed to the public on 31 December 2023 after its Addison Airport lease ended; aircraft, displays and memorabilia moved to North Texas Regional Airport; no decision announced on returning to public display.
+    signals: [closure, relocation, storage]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.wfaa.com/article/news/local/addison-texas-cavanaugh-flight-museum-closing/287-85fe72cf-3131-4919-88ed-e92d8cfa30c0
+    title: Cavanaugh Flight Museum in Addison, Texas closes
+    publisher: WFAA
+    source_type: news
+    source_date: "2023-12"
+    accessed: "2026-09-30"
+    claim: Local TV confirms the closure.
+    signals: [closure]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask whether educational displays, simulators or non-flying aircraft/parts in storage could be sold or donated.
+  outreach:
+    email_hook: the Cavanaugh Flight Museum closed at Addison Airport at the end of 2023 and moved its collection and educational displays into storage
+    source: e1

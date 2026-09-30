@@ -13,7 +13,7 @@ from . import UNKNOWN
 from .evidence import primary_source
 from .models import MuseumFile
 from .priority import assess_museum
-from .rows import best_contact
+from .rows import best_contact, best_email_contact, ranked_contacts
 
 SUBJECT = "Potential transfer of retired museum exhibits to Tashkent Polytechnic Museum"
 
@@ -90,14 +90,17 @@ def build_draft(mf: MuseumFile) -> OutreachDraft:
     m, o = mf.museum, mf.research.outreach
     src = mf.evidence_by_id().get(o.source or "") or primary_source(mf.evidence)
     contact = best_contact(mf)
-    greeting = f"Dear {contact.name}," if contact and contact.name else "Dear Colleagues,"
-    to = (contact.email if contact and contact.email else None) or m.general_email or (
-        contact.contact_page if contact and contact.contact_page else "[contact to be identified]"
-    )
+    mail_to = best_email_contact(mf)
+    person = mail_to if mail_to and mail_to.name else (contact if contact and contact.name else None)
+    greeting = f"Dear {person.name}," if person else "Dear Colleagues,"
+    page = next((c.contact_page for c in ranked_contacts(mf) if c.contact_page), None)
+    to = (mail_to.email if mail_to else None) or m.general_email or page or "[contact to be identified]"
     contact_line = UNKNOWN
     if contact:
-        contact_line = ", ".join(x for x in [contact.name, contact.position, contact.email,
-                                            contact.phone, contact.contact_page] if x)
+        contact_line = "; ".join(
+            ", ".join(x for x in [c.name, c.position, c.email, c.phone, c.contact_page] if x)
+            for c in ranked_contacts(mf)[:3]
+        )
 
     hook = (o.email_hook or "[state the verified fact that prompted this e-mail, citing the source]").rstrip(".")
     src_ref = source_phrase(src)

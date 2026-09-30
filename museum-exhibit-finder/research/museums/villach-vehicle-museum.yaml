@@ -1,0 +1,49 @@
+museum:
+  id: villach-vehicle-museum
+  name: Fahrzeugmuseum Villach (Villach Collection, Rudolf Pirker)
+  country: Austria
+  city: Villach-Zauchen
+  type: private vehicle museum (closed)
+exhibitions:
+  - id: online-auction-2026
+    name: Online auction of all exhibits (200+ vehicles, no reserve)
+    replacement_year: 2026
+    status: for_sale
+    evidence: [e1, e2]
+    exhibits:
+      - id: villach-vehicles
+        name: 200+ historic vehicles (motorcycles, mopeds, historic electric car, Porsche, Lohner Sissy, last-built Trabant)
+        category: [automotive, transport]
+        status: for_sale
+        evidence: [e1, e2]
+        notes: Auction ran in early 2026 — check unsold lots.
+evidence:
+  - id: e1
+    url: https://kaernten.orf.at/stories/3338779/
+    title: Fahrzeugmuseum versteigert Exponate - kaernten.ORF.at
+    publisher: ORF Kärnten
+    source_type: news
+    source_date: "2026"
+    valid_until: "2026-03-31"
+    accessed: "2026-09-30"
+    language: de
+    claim: All exhibits of the vehicle museum in Villach-Zauchen (closed ~5 years after the collector's death) were put up for online auction — over 200 vehicles.
+    signals: [closure, for_sale, willing_sale]
+    verified_via: web_search_snippet
+    notes: valid_until approximates the March 2026 auction end.
+  - id: e2
+    url: https://www.classic-trader.com/de/magazin/classic-trader-versteigert-mehr-als-200-fahrzeuge-der-villach-collection-ohne-mindestpreis
+    title: Classic Trader versteigert mehr als 200 Fahrzeuge der Villach Collection ohne Mindestpreis
+    publisher: Classic Trader
+    source_type: trade_press
+    source_date: "2026"
+    valid_until: "2026-03-31"
+    accessed: "2026-09-30"
+    language: de
+    claim: Classic Trader auctioned 200+ vehicles of the Villach Collection without reserve.
+    signals: [for_sale]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Low priority — auction finished; check with Classic Trader for unsold lots.

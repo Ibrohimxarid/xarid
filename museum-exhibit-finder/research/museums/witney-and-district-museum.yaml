@@ -1,0 +1,44 @@
+museum:
+  id: witney-and-district-museum
+  name: Witney and District Museum
+  country: United Kingdom
+  city: Witney, Oxfordshire
+  type: local history museum
+contacts:
+  - kind: general
+    contact_page: https://findanobject.collectionstrust.org.uk/objects-for-disposal/mid-20th-century-fridge/
+    source: e1
+exhibitions:
+  - id: disposal-2026
+    name: Objects offered via Find an Object (2026)
+    status: available_transfer
+    evidence: [e1]
+    exhibits:
+      - id: prestcold-fridge
+        name: Prestcold steel electric refrigerator (c. 1950s)
+        description: Mid-20th-century domestic fridge in good condition by Prestcold (Pressed Steel Company, Cowley); may still contain coolant.
+        category: [thermodynamics, electricity, industrial]
+        manufacturer: Prestcold (Pressed Steel Company)
+        approx_age: ~70 years (c. 1950s)
+        dimensions: W55 x H92 x D50 (cm)
+        interactive: false
+        condition: Good (per listing)
+        status: available_transfer
+        evidence: [e1]
+        fit_for_tpm: Illustrates the refrigeration cycle / domestic electrification — useful for a thermodynamics display.
+evidence:
+  - id: e1
+    url: https://findanobject.collectionstrust.org.uk/objects-for-disposal/mid-20th-century-fridge/
+    title: Mid 20th century fridge - Collections Trust Find an Object
+    publisher: Collections Trust (Find an Object)
+    source_type: association
+    source_date: "2026-05-20"
+    valid_until: "2026-07-20"
+    accessed: "2026-09-30"
+    claim: Witney and District Museum listed a c.1950s Prestcold fridge (W55xH92xD50) for transfer on 20 May 2026, with listing expiry 20 July 2026.
+    signals: [available_transfer, deaccession_in_progress]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Low priority — listing has expired; ask only if combining several UK items into one shipment.

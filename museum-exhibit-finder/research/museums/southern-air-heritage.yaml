@@ -1,0 +1,27 @@
+museum:
+  id: southern-air-heritage
+  name: Southern Air Heritage Foundation museum
+  country: United States
+  city: Tallulah, Louisiana
+  type: aviation museum (closing)
+exhibitions:
+  - id: wind-down
+    name: End of exhibits (end 2026) and artifact disposition (2027)
+    replacement_year: "2026–2027"
+    status: being_replaced
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://www.vicksburgpost.com/news/southern-air-heritage-foundation-to-close-museum-phase-out-operations-by-2027
+    title: Southern Air Heritage Foundation to close museum, phase out operations by 2027
+    publisher: The Vicksburg Post
+    source_type: news
+    source_date: "2026"
+    accessed: "2026-09-30"
+    claim: The museum will end exhibits at the close of 2026; 2027 will focus on artifact disposition — returning items to families or transferring them to partner institutions such as the CAF Mississippi Wing and the Mississippi Armed Forces Museum.
+    signals: [closure, exhibit_replaced]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Low priority — named US partners come first; ask only about items the partners decline.

@@ -1,0 +1,28 @@
+museum:
+  id: national-museum-of-australia
+  name: National Museum of Australia
+  country: Australia
+  city: Canberra
+  website: https://www.nma.gov.au/
+  type: national history museum (incl. technology and transport collections)
+exhibitions:
+  - id: collection-storage-project
+    name: Long-term collection storage project (from 2026)
+    replacement_year: 2026
+    status: unknown
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://www.nma.gov.au/explore/collection
+    title: Collection | National Museum of Australia
+    publisher: National Museum of Australia
+    source_type: official_site
+    source_date: "2026"
+    accessed: "2026-09-30"
+    claim: Access to the collection may be affected by the museum's long-term collection storage project from 2026.
+    signals: [relocation]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask whether the storage move includes a rationalisation/deaccession review (technology/transport objects).

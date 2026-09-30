@@ -1,0 +1,48 @@
+museum:
+  id: illinois-railway-museum
+  name: Illinois Railway Museum
+  country: United States
+  city: Union, Illinois
+  website: https://www.irm.org/
+  type: railway museum
+exhibitions:
+  - id: surplus-auction-2025
+    name: Surplus-items auction (Jan 2025)
+    replacement_year: 2025
+    status: for_sale
+    evidence: [e1, e2]
+    exhibits:
+      - id: cnw-tender
+        name: Ex-Chicago & North Western steam locomotive tender
+        category: [railway]
+        interactive: false
+        status: for_sale
+        evidence: [e1, e2]
+        notes: Buyer had 12 months to remove the tender — check whether it sold.
+evidence:
+  - id: e1
+    url: https://www.irm.org/in-the-news/museum-auction-2025/
+    title: Tools, Artwork, Locomotive Tender Included in Museum Auction - Illinois Railway Museum
+    publisher: Illinois Railway Museum
+    source_type: official_site
+    source_date: "2025-01"
+    valid_until: "2025-01-17"
+    accessed: "2026-09-30"
+    claim: IRM auctioned 112 surplus items (incl. an ex-C&NW steam locomotive tender) deemed surplus to requirements; the auction ended 17 January 2025.
+    signals: [for_sale, deaccession_in_progress, willing_sale]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.trains.com/trn/news-reviews/news-wire/locomotive-tender-among-items-available-in-illinois-railway-museum-auction/
+    title: Locomotive tender among items available in Illinois Railway Museum auction
+    publisher: Trains
+    source_type: trade_press
+    source_date: "2025-01"
+    valid_until: "2025-01-17"
+    accessed: "2026-09-30"
+    claim: Trade press confirms the auction and removal terms.
+    signals: [for_sale]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: IRM periodically sells surplus railway items — ask to be notified of the next surplus sale (railway components, signals, tools).

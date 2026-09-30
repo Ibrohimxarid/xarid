@@ -8,6 +8,12 @@ museum:
   parent_org: Culture Coventry Trust
 contacts:
   - kind: department
+    position: Museum collections enquiries
+    email: museumcollections@cvlife.co.uk
+    phone: "+44 24 7623 4270"
+    contact_page: https://www.transport-museum.com/contact.aspx
+    source: https://www.transport-museum.com/contact.aspx
+  - kind: department
     position: Collections team (Collections Review Project)
     contact_page: https://transport-museum.com/collection/collections-review-project.aspx
     source: e1

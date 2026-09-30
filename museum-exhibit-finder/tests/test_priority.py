@@ -41,6 +41,15 @@ def test_stale_availability_downgraded_to_B(sample_raw):
     assert "re-confirm" in " ".join(a.notes)
 
 
+def test_expired_offer_window_is_B(sample_raw):
+    raw = copy.deepcopy(sample_raw)
+    raw["evidence"][1]["valid_until"] = "2026-01-31"
+    mf = MuseumFile.model_validate(raw)
+    a = assess_exhibit(mf, _items(mf)["vdg"], TODAY)
+    assert a.priority == "B"
+    assert "window closed on 2026-01-31" in " ".join(a.notes)
+
+
 def test_social_media_only_availability_is_B(sample_raw):
     raw = copy.deepcopy(sample_raw)
     raw["evidence"][1]["source_type"] = "social_media"

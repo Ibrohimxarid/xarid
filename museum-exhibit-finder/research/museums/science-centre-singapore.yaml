@@ -5,6 +5,11 @@ museum:
   city: Singapore (Jurong East)
   website: https://www.science.edu.sg/
   type: science centre (statutory board)
+contacts:
+  - kind: general
+    phone: "+65 6425 2500"
+    contact_page: https://www.science.edu.sg/contact-us
+    source: https://www.science.edu.sg/contact-us
 exhibitions:
   - id: jurong-east-galleries
     name: Jurong East galleries (current building, opened 1977)

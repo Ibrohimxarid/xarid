@@ -69,9 +69,10 @@ def build_queries(
                                 push(" ".join(q.split()), group, lang, country)
                 else:
                     push(t, group, lang, None)
-    for combo in cfg.get("exhibit_type_combos", []):
-        for a, b in itertools.product(combo["events"], combo["types"]):
-            push(f"{a} {b}", "exhibit_types", "en", None)
+    if not wanted_groups or "exhibit_types" in wanted_groups:
+        for combo in cfg.get("exhibit_type_combos", []):
+            for a, b in itertools.product(combo["events"], combo["types"]):
+                push(f"{a} {b}", "exhibit_types", "en", None)
     return out[:limit] if limit else out
 
 

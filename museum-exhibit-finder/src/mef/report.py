@@ -193,11 +193,22 @@ def generate(files: list[MuseumFile], label: str = "run", out_root: Path | None 
         (run_dir / "outreach" / f"{d.museum_id}.md").write_text(d.markdown(), encoding="utf-8")
 
     stats = compute_stats(files)
+    via: dict[str, int] = {}
+    for mf in files:
+        for e in mf.evidence:
+            via[e.verified_via] = via.get(e.verified_via, 0) + 1
+    via_line = ", ".join(f"{k}: {v}" for k, v in sorted(via.items()))
+    snippet_note = (
+        "\n> **Verification:** evidence marked `web_search_snippet` was taken from search-result "
+        "summaries (the pages could not be opened from the research environment). Open the source "
+        "link and confirm the fact before contacting a museum.\n"
+        if via.get("web_search_snippet") else ""
+    )
     report = f"""# Tashkent Polytechnic Museum — Exhibit Acquisition Finder
 
 **Research run:** {label} · **Date:** {today} · **Museums researched:** {stats['Museums researched']} ·
-**Countries:** {stats['Countries covered']} · **Evidence records:** {stats['Evidence records (sources)']}
-
+**Countries:** {stats['Countries covered']} · **Evidence records:** {stats['Evidence records (sources)']} ({via_line})
+{snippet_note}
 Priority legend — **A**: direct opportunity (availability confirmed by source) ·
 **B**: potential opportunity (old exhibits removed/stored, fate unknown, or availability evidence stale) ·
 **C**: lead (renovation/new exhibition only).

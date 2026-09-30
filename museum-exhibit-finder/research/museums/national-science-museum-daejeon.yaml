@@ -1,0 +1,30 @@
+museum:
+  id: national-science-museum-daejeon
+  name: National Science Museum (Daejeon)
+  name_local: 국립중앙과학관
+  country: South Korea
+  city: Daejeon
+  website: https://www.science.go.kr/
+  type: national science museum
+exhibitions:
+  - id: creativity-hall
+    name: Creativity Hall (창의나래관) remodelling
+    replacement_year: 2025
+    status: being_replaced
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://www.science.go.kr/mps/1111/bbs/208/moveBbsNttDetail.do?nttSn=47188
+    title: 2025년 국립중앙과학관 주요 프로그램
+    publisher: National Science Museum (Korea)
+    source_type: official_site
+    source_date: "2025"
+    accessed: "2026-09-30"
+    language: ko
+    claim: The museum is remodelling its Creativity Hall (with free admission extended in connection with the renovation).
+    signals: [renovation]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask which Creativity Hall exhibits were removed; Korean national museums follow state property disposal rules.

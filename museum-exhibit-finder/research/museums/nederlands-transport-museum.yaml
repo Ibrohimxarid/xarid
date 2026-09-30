@@ -1,0 +1,42 @@
+museum:
+  id: nederlands-transport-museum
+  name: Nederlands Transport Museum
+  country: Netherlands
+  type: transport museum (closed)
+exhibitions:
+  - id: closure-2025
+    name: Closure and dispersal of the collection
+    replacement_year: 2025
+    old_exhibition: Transport collection (vehicles, aircraft and related objects)
+    status: for_sale
+    evidence: [e1]
+    exhibits:
+      - id: collection-contents
+        name: Museum contents offered for sale after closure (items not itemised in source)
+        category: [transport, automotive, aviation]
+        status: for_sale
+        evidence: [e1]
+        notes: Loans were being returned to owners; the remaining contents were put up for sale.
+evidence:
+  - id: e1
+    url: https://vintageaviationnews.com/aviation-museum-news/nederlands-transport-museum-set-to-close.html
+    title: Nederlands Transport Museum Set to Close - Vintage Aviation News
+    publisher: Vintage Aviation News
+    source_type: trade_press
+    source_date: "2025-03"
+    accessed: "2026-09-30"
+    claim: The Nederlands Transport Museum closed on 6 March 2025 after failing to relocate its collection; the collection is being dismantled, loans returned and the contents put up for sale.
+    signals: [closure, for_sale, willing_sale]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Find the museum's own announcement / sale channel and ask which vehicles, aircraft or components remain unsold (18 months have passed).
+  open_questions:
+    - Official sale channel and contact? City/location of the collection?
+  outreach:
+    reason: The museum closed in March 2025 and put its contents up for sale.
+    interest: Remaining vehicles, aircraft components, engines and transport displays.
+    fit: Transport and aviation objects are core TPM themes; the Netherlands–Uzbekistan freight route is straightforward.
+    email_hook: following the closure of the Nederlands Transport Museum in March 2025, the remaining contents of the collection were offered for sale
+    source: e1

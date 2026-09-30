@@ -113,6 +113,25 @@ groups:
       - 'science centre network exhibit exchange'
       - 'science centre closing exhibits for sale'
 
+  # Registers and pages that publish objects offered to other museums.
+  # Run weekly: `mef search --group watchlist` — listings expire after ~2 months.
+  watchlist:
+    en:
+      - 'site:findanobject.collectionstrust.org.uk objects-for-disposal engine'
+      - 'site:findanobject.collectionstrust.org.uk objects-for-disposal machine'
+      - 'site:findanobject.collectionstrust.org.uk objects-for-disposal vehicle'
+      - 'site:findanobject.collectionstrust.org.uk objects-for-disposal scientific instrument'
+      - 'site:findanobject.collectionstrust.org.uk objects-for-disposal model'
+      - 'site:rafmuseum.org.uk object transfer programme'
+      - 'site:sciencemuseumgroup.org.uk managing the collection transferred'
+      - 'site:vintageaviationnews.com museum disposal transfer aircraft'
+      - 'site:heureka.fi Heureka Overseas Productions'
+      - 'site:teo-exhibitions.com touring exhibition for sale'
+    nl:
+      - 'site:afstotingsdatabase.nl techniek'
+      - 'site:afstotingsdatabase.nl voertuig'
+      - 'site:afstotingsdatabase.nl model'
+
 exhibit_type_combos:
   - events: ['decommissioned', 'retired', 'surplus', 'for sale from museum']
     types:

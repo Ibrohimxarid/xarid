@@ -1,0 +1,40 @@
+museum:
+  id: royal-engineers-museum
+  name: Royal Engineers Museum
+  country: United Kingdom
+  city: Gillingham, Kent
+  type: military engineering museum
+contacts:
+  - kind: general
+    contact_page: https://findanobject.collectionstrust.org.uk/objects-for-disposal/proceedings-of-the-institution-of-electrical-engineers/
+    source: e1
+exhibitions:
+  - id: disposal-2026
+    name: Library items offered via Find an Object (2026)
+    status: available_transfer
+    evidence: [e1]
+    exhibits:
+      - id: iee-proceedings
+        name: Proceedings of the Institution of Electrical Engineers, 41 hardback volumes (1949–1962)
+        category: [electricity, engineering, telecommunications]
+        quantity: "41 volumes"
+        interactive: false
+        status: available_transfer
+        evidence: [e1]
+        fit_for_tpm: Reference material on mid-century electrical engineering for curators/educators.
+evidence:
+  - id: e1
+    url: https://findanobject.collectionstrust.org.uk/objects-for-disposal/proceedings-of-the-institution-of-electrical-engineers/
+    title: Proceedings of the Institution of Electrical Engineers - Collections Trust Find an Object
+    publisher: Collections Trust (Find an Object)
+    source_type: association
+    source_date: "2026-06-08"
+    valid_until: "2026-08-08"
+    accessed: "2026-09-30"
+    claim: The Royal Engineers Museum listed 41 hardback volumes of the Proceedings of the IEE (1949–1962) for disposal on 8 June 2026, expiring 8 August 2026.
+    signals: [available_transfer, deaccession_in_progress]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Low priority — listing expired; the museum is a lead for future engineering-object disposals.

@@ -7,6 +7,11 @@ museum:
   type: national aviation museum
 contacts:
   - kind: department
+    position: Collections Division (collections enquiries)
+    email: askcollections@rafmuseum.org
+    contact_page: https://www.rafmuseum.org.uk/research/research-enquiries/contact-collections-division.aspx
+    source: https://www.rafmuseum.org.uk/research/research-enquiries/contact-collections-division.aspx
+  - kind: department
     position: Collections Development Committee (Objects Transfer Programme)
     contact_page: https://www.rafmuseum.org.uk/research/default/acquisitions-and-transfers/object-transfer-programme/
     source: e1
@@ -50,7 +55,7 @@ evidence:
     source_type: official_site
     source_date: "2026"
     accessed: "2026-09-30"
-    claim: The RAF Museum runs an Objects Transfer Programme releasing batches of objects from its national collection; expressions of interest are submitted to its Collections Development Committee (a 2026 batch had a mid-April 2026 deadline).
+    claim: The RAF Museum runs an Objects Transfer Programme releasing batches of objects from its national collection (priority to UK public-domain organisations; expressions of interest need organisation status, contacts and accession numbers); it expects to complete the process in late 2027.
     signals: [available_transfer, deaccession_in_progress, accepts_requests]
     verified_via: web_search_snippet
   - id: e2
@@ -60,6 +65,7 @@ evidence:
     source_type: trade_press
     source_date: "2025-03"
     accessed: "2026-09-30"
+    valid_until: "2025-04-25"
     claim: In March 2025 the RAF Museum made several stored aircraft (incl. Sea Balliol) available for transfer, inviting expressions of interest by 25 April 2025, with priority to UK public organisations.
     signals: [available_transfer, deaccession_in_progress, accepts_requests]
     verified_via: web_search_snippet
@@ -80,6 +86,7 @@ evidence:
     source_type: official_site
     source_date: "2026-02"
     accessed: "2026-09-30"
+    valid_until: "2026-04-20"
     claim: The February 2026 transfer list gives priority to UK public-heritage organisations "before exploring alternative routes"; the list is the entirety of condition, hazard, dimension and weight information available; expressions of interest by 20 April 2026.
     excerpt: Where objects are identified for transfer the Museum gives priority to other organisations in the UK public heritage sector before exploring alternative routes.
     signals: [available_transfer, deaccession_in_progress, accepts_requests]

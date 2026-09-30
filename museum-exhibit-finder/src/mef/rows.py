@@ -46,10 +46,23 @@ def acquisition_flags(evs: list[Evidence], mf: MuseumFile) -> str:
     )
 
 
+_KIND_RANK = {"person": 0, "department": 1, "general": 2}
+
+
+def ranked_contacts(mf: MuseumFile) -> list:
+    """Reachable contacts, people first, then departments, then general lines."""
+    usable = [c for c in mf.contacts if c.email or c.phone or c.linkedin or c.contact_page]
+    return sorted(usable, key=lambda c: _KIND_RANK.get(c.kind, 3))
+
+
 def best_contact(mf: MuseumFile):
-    people = [c for c in mf.contacts if c.kind == "person" and (c.email or c.phone or c.linkedin)]
-    general = [c for c in mf.contacts if c.email or c.phone or c.contact_page]
-    return (people or general or [None])[0]
+    ranked = ranked_contacts(mf)
+    return ranked[0] if ranked else None
+
+
+def best_email_contact(mf: MuseumFile):
+    """The contact an e-mail should go to: the highest-ranked one with an address."""
+    return next((c for c in ranked_contacts(mf) if c.email), None)
 
 
 @dataclass

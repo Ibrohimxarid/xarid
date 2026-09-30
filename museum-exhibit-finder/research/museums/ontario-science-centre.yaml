@@ -5,6 +5,11 @@ museum:
   city: Toronto
   type: science centre (provincial agency)
   notes: Closed abruptly in June 2024 (roof safety); interim sites; new centre at Ontario Place planned for 2029 per the Auditor General.
+contacts:
+  - kind: general
+    phone: "+1 416-696-1000"
+    contact_page: https://www.ontariosciencecentre.ca/contact-us-boxoffice
+    source: https://www.ontariosciencecentre.ca/contact-us-boxoffice
 exhibitions:
   - id: don-mills-building
     name: Don Mills building permanent exhibitions

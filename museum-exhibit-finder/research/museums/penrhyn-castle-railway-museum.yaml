@@ -1,0 +1,38 @@
+museum:
+  id: penrhyn-castle-railway-museum
+  name: Penrhyn Castle Railway Museum (National Trust)
+  country: United Kingdom
+  city: Bangor, Wales
+  website: https://www.nationaltrust.org.uk/visit/wales/penrhyn-castle-and-garden
+  type: industrial railway museum (closed; becoming "Industrial Penrhyn")
+exhibitions:
+  - id: closure-2024
+    name: Closure of the Railway Museum and rehoming of locomotives
+    replacement_year: 2024
+    new_exhibition: Industrial Penrhyn (quarry-related locomotives retained)
+    status: already_transferred
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://www.nationaltrust.org.uk/services/media/penrhyn-castle-plans-to-share-more-about-its-industrial-history-in-a-new-experience-as-it-rehomes-some-of-its-locomotives
+    title: Penrhyn Castle plans to share more about its industrial history as it rehomes some of its locomotives
+    publisher: National Trust
+    source_type: press_release
+    source_date: "2024"
+    accessed: "2026-09-30"
+    claim: The National Trust closed the railway museum in 2024, rehoming locomotives not linked to Penrhyn Quarry and creating a new Industrial Penrhyn experience.
+    signals: [closure, new_exhibition, already_transferred]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.heavyliftnews.com/rolling-stock-units-transported-from-penrhyn-castle-railway-museum-by-allelys/
+    title: Rolling Stock Units Transported from Penrhyn Castle Railway Museum by Allelys
+    publisher: Heavy Lift News
+    source_type: trade_press
+    accessed: "2026-09-30"
+    claim: Six locomotives and one carriage were moved to six heritage railways/museums on loan.
+    signals: [already_transferred]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: No opportunity — locomotives already loaned to UK heritage railways.

@@ -10,8 +10,13 @@ museum:
 contacts:
   - name: Irmeli Jyrinsalo
     position: Senior Export Advisor, Heureka Overseas Productions
-    email: hop@heureka.fi
+    email: irmeli.jyrinsalo@heureka.fi
+    phone: "+358 40 9015 255"
     kind: person
+    source: https://www.heureka.fi/en/pages/heureka-overseas-productions
+  - kind: department
+    position: Heureka Overseas Productions (general)
+    email: hop@heureka.fi
     source: e2
 exhibitions:
   - id: hop-touring
