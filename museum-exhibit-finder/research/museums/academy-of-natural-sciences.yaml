@@ -1,0 +1,56 @@
+museum:
+  id: academy-of-natural-sciences
+  name: Academy of Natural Sciences of Drexel University
+  country: United States
+  city: Philadelphia, Pennsylvania
+  website: https://ansp.org/
+  type: natural history museum (public museum closing; research institution continues)
+exhibitions:
+  - id: public-museum
+    name: Public museum galleries (closing 2026)
+    replacement_year: 2026
+    old_exhibition: Dinosaur Hall, 37 habitat dioramas, hands-on "big dig"
+    status: being_replaced
+    evidence: [e1, e2, e3]
+evidence:
+  - id: e1
+    url: https://www.inquirer.com/education/academy-of-natural-sciences-closing-museum-philadelphia-20260901.html
+    title: The Academy of Natural Sciences is closing its museum after nearly two centuries
+    publisher: The Philadelphia Inquirer
+    source_type: news
+    source_date: "2026-09-01"
+    accessed: "2026-09-30"
+    claim: Drexel's Academy of Natural Sciences is closing its public museum (opened 1828) citing financial pressures and low attendance; operations end 30 September 2026.
+    signals: [closure]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://extinctmonsters.net/2026/09/05/academy-of-natural-sciences-museum-to-close/
+    title: Academy of Natural Sciences museum to close | EXTINCT MONSTERS
+    publisher: Extinct Monsters (blog)
+    source_type: other
+    source_date: "2026-09-05"
+    accessed: "2026-09-30"
+    claim: A specialist blog says non-accessioned exhibit components are likely to be sold off or discarded, including dismantling of the dioramas and the dinosaur hall.
+    notes: Speculative wording ("likely") — not an official offer.
+    signals: [exhibit_replaced]
+    verified_via: web_search_snippet
+  - id: e3
+    url: https://drexel.edu/news/archive/2026/September/Academy-of-Natural-Sciences-museum-collections-message
+    title: Preserving the Academy of Natural Sciences' Legacy and Collections for the Future
+    publisher: Drexel University
+    source_type: official_site
+    source_date: "2026-09"
+    accessed: "2026-09-30"
+    claim: Drexel states the collections and research continue; it will look for new, financially sustainable ways to display elements of the collection.
+    signals: [closure]
+    verified_via: web_search_snippet
+research:
+  researcher: mef pilot
+  last_updated: "2026-09-30"
+  next_step: Low thematic fit (natural history). Only ask about non-accessioned exhibit infrastructure (showcases, AV, hands-on stations) if TPM needs gallery furniture.
+  outreach:
+    reason: The public museum closed on 30 September 2026 and exhibit components may be dispersed.
+    interest: Non-accessioned exhibit infrastructure — display cases, AV and hands-on stations.
+    fit: Gallery infrastructure only; natural-history content is outside TPM's core profile.
+    email_hook: the Academy's public museum closed at the end of September 2026.
+    source: e1

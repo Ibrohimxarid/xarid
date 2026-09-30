@@ -1,0 +1,58 @@
+museum:
+  id: science-museum-group
+  name: Science Museum Group (collection)
+  country: United Kingdom
+  city: London / Wroughton
+  website: https://www.sciencemuseumgroup.org.uk/
+  type: national science and technology museum group
+  notes: Group-level record for collection transfers; individual museums (e.g. National Railway Museum) have their own records.
+exhibitions:
+  - id: collection-transfers
+    name: Collection transfers to other museums (rationalisation)
+    status: unknown
+    evidence: [e1, e2]
+    exhibits:
+      - id: altair
+        name: Altair computer and components
+        category: [computing]
+        status: already_transferred
+        evidence: [e1]
+        notes: Transferred in 2015 to the Centre for Computing History, Cambridge.
+      - id: electricity-gallery-1950s
+        name: 100+ 1950s domestic electrical items from the Science and Industry Museum Electricity Gallery
+        category: [electricity]
+        status: already_transferred
+        evidence: [e1]
+        notes: Moved to Beamish Museum in 2016.
+evidence:
+  - id: e1
+    url: https://www.sciencemuseumgroup.org.uk/our-work/our-collection/managing-collection
+    title: Managing the collection | Science Museum Group
+    publisher: Science Museum Group
+    source_type: official_site
+    accessed: "2026-09-30"
+    claim: SMG transfers items to other museums/public collections when better suited elsewhere or duplicated; priority is given to accredited museums; examples include an Altair computer (2015) and 100+ Electricity Gallery items (2016).
+    excerpt: SMG will look to transfer items to other museums and public collections if they are better suited to display or research by another public institution, or if they are duplicates; priority to accredited museums.
+    signals: [deaccession_policy, already_transferred]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.sciencemuseum.org.uk/sites/default/files/2025-02/2025-01-31_SMG_One_Collection_Report.pdf
+    title: "Transforming access to the Science Museum Group collection: One Collection"
+    publisher: Science Museum Group
+    source_type: annual_report
+    source_date: "2025-01-31"
+    accessed: "2026-09-30"
+    claim: SMG's One Collection programme is moving and reorganising the national collection into new storage (National Collections Centre).
+    signals: [relocation]
+    verified_via: web_search_snippet
+research:
+  researcher: mef pilot
+  last_updated: "2026-09-30"
+  next_step: Ask SMG's collections team whether overseas public museums can be considered for transfers and how to register interest.
+  open_questions:
+    - Are transfers to non-UK museums permitted under the SMG disposal procedure?
+  outreach:
+    reason: SMG transfers duplicate or better-placed objects to other public museums as part of collection rationalisation during the One Collection move.
+    interest: Duplicate engineering, electrical, computing and transport objects identified during the One Collection move.
+    fit: The national science and industry collection overlaps closely with TPM's themes.
+    email_hook: the Science Museum Group transfers duplicate or better-placed objects to other public museums, and is currently reorganising its collection through the One Collection programme.

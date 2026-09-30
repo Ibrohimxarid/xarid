@@ -1,0 +1,63 @@
+museum:
+  id: cambridge-museum-of-technology
+  name: Cambridge Museum of Technology
+  country: United Kingdom
+  city: Cambridge
+  website: https://www.museumoftechnology.com/
+  type: technology / industrial heritage museum (Victorian pumping station)
+  notes: Located at The Old Pumping Station, Cheddars Lane, Cambridge.
+contacts:
+  - kind: general
+    contact_page: https://findanobject.collectionstrust.org.uk/objects-for-disposal/kleischograph-engraving-machine/
+    source: e1
+exhibitions:
+  - id: disposal-2026
+    name: Objects offered for disposal via Find an Object
+    status: available_transfer
+    evidence: [e1, e2]
+    exhibits:
+      - id: kleischograph
+        name: Klischograph (kleischograph) mechanical photo-engraving machine
+        description: Grey metal mechanical photo-engraving machine (printing-plate engraving technology).
+        category: [industrial, mechanics, electricity]
+        dimensions: 60 cm x 105 cm x 100 cm
+        interactive: false
+        status: available_transfer
+        evidence: [e1]
+        fit_for_tpm: History of printing / industrial technology; a mid-size machine suitable for a technology-history display.
+evidence:
+  - id: e1
+    url: https://findanobject.collectionstrust.org.uk/objects-for-disposal/kleischograph-engraving-machine/
+    title: Kleischograph engraving machine - Collections Trust Find an Object
+    publisher: Collections Trust (Find an Object)
+    source_type: association
+    accessed: "2026-09-30"
+    claim: Cambridge Museum of Technology lists a kleischograph mechanical photo-engraving machine (60 x 105 x 100 cm) on the Find an Object disposal register.
+    excerpt: A grey metal kleischograph, or mechanical photo-engraving machine, 60cm x 105cm x 100cm, posted by Cambridge Museum of Technology.
+    signals: [available_transfer, deaccession_in_progress]
+    verified_via: web_search_snippet
+    notes: Listing date/expiry not captured — open the page and check it is still live.
+  - id: e2
+    url: https://findanobject.collectionstrust.org.uk/
+    title: Find an Object - Collections Trust
+    publisher: Collections Trust
+    source_type: association
+    source_date: "2026"
+    accessed: "2026-09-30"
+    claim: Find an Object lists items deaccessioned from museum collections that are available for transfer to other museums or organisations within the public domain.
+    excerpt: A listing of items deaccessioned from museum collections that are available for transfer to other museums or organisations within the public domain; free to upload, registration required.
+    signals: [available_transfer, accepts_requests]
+    verified_via: web_search_snippet
+research:
+  researcher: mef pilot
+  last_updated: "2026-09-30"
+  next_step: Open the listing, confirm it has not expired and whether a non-UK public museum is eligible; enquire via the listing.
+  open_questions:
+    - Is transfer to a museum outside the UK acceptable under their disposal procedure?
+    - Working condition and weight of the machine?
+  outreach:
+    reason: The museum has listed a mechanical photo-engraving machine for disposal on the UK Find an Object register.
+    interest: Klischograph mechanical photo-engraving machine (60 x 105 x 100 cm).
+    fit: Illustrates electro-mechanical printing technology for TPM's history-of-technology galleries.
+    email_hook: your Klischograph mechanical photo-engraving machine (60 x 105 x 100 cm) is offered for transfer to other museums.
+    source: e1

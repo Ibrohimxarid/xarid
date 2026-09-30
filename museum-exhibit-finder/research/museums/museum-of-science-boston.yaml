@@ -1,0 +1,45 @@
+museum:
+  id: museum-of-science-boston
+  name: Museum of Science, Boston
+  country: United States
+  city: Boston, Massachusetts
+  website: https://www.mos.org/
+  type: science museum / science centre
+exhibitions:
+  - id: blue-wing
+    name: Blue Wing renovation — Public Science Common
+    replacement_year: "2024–2026"
+    old_exhibition: Museum Then and Now; Garden Walk; Insect Zoo (closed 2024–2025)
+    new_exhibition: Public Science Common (opening late 2026)
+    status: already_replaced
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://www.mos.org/public-science-common/construction-updates
+    title: Construction and Closure Updates | Museum of Science
+    publisher: Museum of Science
+    source_type: official_site
+    source_date: "2025"
+    accessed: "2026-09-30"
+    claim: The museum is renovating 10,000 sq ft of the Blue Wing into the Public Science Common (completion 2026); the Museum Then and Now exhibit closed in 2025 and the Garden Walk and Insect Zoo closed permanently from 2024.
+    signals: [renovation, exhibit_replaced, new_exhibition]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.wbur.org/news/2024/05/15/boston-museum-of-science-renovation-construction-charles-river-newsletter
+    title: A look inside the Boston Museum of Science's big renovation plans
+    publisher: WBUR
+    source_type: news
+    source_date: "2024-05-15"
+    accessed: "2026-09-30"
+    claim: Press coverage of the museum's renovation programme.
+    signals: [renovation]
+    verified_via: web_search_snippet
+research:
+  researcher: mef pilot
+  last_updated: "2026-09-30"
+  next_step: Ask the exhibits department what happened to components of the closed Blue Wing exhibits.
+  outreach:
+    reason: Parts of the Blue Wing were closed and are being renovated into the Public Science Common.
+    interest: Exhibits and interactives removed from the Blue Wing.
+    fit: MoS Boston interactives are high quality and engineering-focused.
+    email_hook: part of the Museum's Blue Wing has been closed and is being transformed into the Public Science Common.

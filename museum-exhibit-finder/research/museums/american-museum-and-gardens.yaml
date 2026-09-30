@@ -1,0 +1,44 @@
+museum:
+  id: american-museum-and-gardens
+  name: American Museum & Gardens
+  country: United Kingdom
+  city: Bath
+  type: decorative arts and social history museum
+contacts:
+  - kind: general
+    contact_page: https://findanobject.collectionstrust.org.uk/objects-for-disposal/singer-treadle-sewing-machine/
+    source: e1
+exhibitions:
+  - id: disposal-2026
+    name: Objects offered for disposal via Find an Object
+    status: available_transfer
+    evidence: [e1]
+    exhibits:
+      - id: singer-treadle
+        name: Singer treadle sewing machine
+        category: [mechanics, industrial]
+        interactive: false
+        status: available_transfer
+        evidence: [e1]
+        fit_for_tpm: Classic example of domestic mechanical engineering (treadle drive, crank, belt) — low-cost, small object; modest fit.
+evidence:
+  - id: e1
+    url: https://findanobject.collectionstrust.org.uk/objects-for-disposal/singer-treadle-sewing-machine/
+    title: Singer Treadle Sewing Machine - Collections Trust Find an Object
+    publisher: Collections Trust (Find an Object)
+    source_type: association
+    accessed: "2026-09-30"
+    claim: American Museum & Gardens lists a Singer treadle sewing machine on the Find an Object disposal register.
+    excerpt: Singer Treadle Sewing Machine available from American Museum and Gardens.
+    signals: [available_transfer, deaccession_in_progress]
+    verified_via: web_search_snippet
+research:
+  researcher: mef pilot
+  last_updated: "2026-09-30"
+  next_step: Low priority — only enquire if bundled with other UK collections for one shipment.
+  outreach:
+    reason: A Singer treadle sewing machine is listed for transfer on Find an Object.
+    interest: Singer treadle sewing machine.
+    fit: Simple mechanism (treadle, crank, flywheel, belt) useful for a hands-on mechanics display.
+    email_hook: your Singer treadle sewing machine is offered for transfer to other museums.
+    source: e1

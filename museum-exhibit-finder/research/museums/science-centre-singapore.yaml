@@ -1,0 +1,58 @@
+museum:
+  id: science-centre-singapore
+  name: Science Centre Singapore
+  country: Singapore
+  city: Singapore (Jurong East)
+  website: https://www.science.edu.sg/
+  type: science centre (statutory board)
+exhibitions:
+  - id: jurong-east-galleries
+    name: Jurong East galleries (current building, opened 1977)
+    opening_year: 1977
+    replacement_year: 2027
+    old_exhibition: 850+ exhibits in eight galleries at 15 Science Centre Road
+    new_exhibition: New Science Centre in Jurong Lake District (Zaha Hadid Architects), opening ~end-2027
+    status: still_in_use
+    evidence: [e1, e2, e3]
+evidence:
+  - id: e1
+    url: https://www.science.edu.sg/about-us/new-science-centre
+    title: New Science Centre | Science Centre Corporate Website
+    publisher: Science Centre Singapore
+    source_type: official_site
+    accessed: "2026-09-30"
+    claim: Science Centre Singapore will move to a new building in the Jurong Lake District, targeted to open around end-2027.
+    signals: [relocation, new_exhibition]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.moe.gov.sg/news/press-releases/20231101-groundbreaking-ceremony-for-new-science-centre
+    title: Groundbreaking Ceremony for New Science Centre | MOE
+    publisher: Ministry of Education, Singapore
+    source_type: government
+    source_date: "2023-11-01"
+    accessed: "2026-09-30"
+    claim: Groundbreaking for the new ~55,000 m² Science Centre took place in 2023; it will be ~25% larger than the current centre.
+    signals: [relocation, new_exhibition]
+    verified_via: web_search_snippet
+  - id: e3
+    url: https://grant-associates.uk.com/news/new-singapore-science-centre-to-open-in-2027
+    title: New Singapore Science Centre to open in 2027
+    publisher: Grant Associates
+    source_type: trade_press
+    accessed: "2026-09-30"
+    claim: The current Jurong East centre houses over 850 exhibits in eight galleries; construction of the new building began April 2024 for completion in Q4 2027.
+    signals: [relocation]
+    verified_via: web_search_snippet
+research:
+  researcher: mef pilot
+  last_updated: "2026-09-30"
+  next_step: Contact the Science Centre's exhibitions/facilities team now — before the 2027 move — to ask which current exhibits will not be transferred to the new building.
+  open_questions:
+    - Closing date of the Jurong East building?
+    - Disposal policy for exhibits not moving (government asset disposal rules)?
+  outreach:
+    reason: The centre will relocate to a new building in 2027 and currently operates 850+ exhibits in the old building.
+    interest: Physics, engineering and technology exhibits from the current Jurong East galleries that will not move to the new centre.
+    fit: Large, well-maintained interactive collection in English; timing allows planned transfer rather than emergency disposal.
+    email_hook: Science Centre Singapore will move to its new home in the Jurong Lake District around 2027, after almost fifty years in Jurong East.
+    source: e1

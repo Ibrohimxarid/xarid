@@ -5,10 +5,7 @@ from __future__ import annotations
 from .models import EVENT_SIGNALS, MuseumFile
 from .priority import assess_exhibit, assess_museum
 
-REMOVED_OR_BEYOND = {
-    "already_replaced", "in_storage", "deaccessioned", "for_sale", "available_donation",
-    "available_transfer", "already_transferred", "being_replaced",
-}
+REPLACED_STATUSES = {"already_replaced", "in_storage", "being_replaced", "already_transferred"}
 
 
 def compute_stats(files: list[MuseumFile]) -> dict[str, int]:
@@ -16,12 +13,13 @@ def compute_stats(files: list[MuseumFile]) -> dict[str, int]:
     renovation = sum(
         1 for mf in files if any(set(e.signals) & (EVENT_SIGNALS | {"exhibit_replaced", "closure"}) for e in mf.evidence)
     )
-    exhibitions_replaced = sum(
-        1
-        for mf in files
-        for ex in mf.exhibitions
-        if ex.status in REMOVED_OR_BEYOND or ex.replacement_year or ex.new_exhibition
-    )
+    exhibitions_replaced = 0
+    for mf in files:
+        by_id = mf.evidence_by_id()
+        for ex in mf.exhibitions:
+            sig = {s for i in ex.evidence if i in by_id for s in by_id[i].signals}
+            if ex.status in REPLACED_STATUSES or sig & {"exhibit_replaced", "closure"}:
+                exhibitions_replaced += 1
     exhibits = [(mf, i) for mf in files for ex in mf.exhibitions for i in ex.exhibits]
     confirmed = sum(1 for mf, i in exhibits if assess_exhibit(mf, i).priority == "A")
     prio = [assess_museum(mf).priority for mf in files]

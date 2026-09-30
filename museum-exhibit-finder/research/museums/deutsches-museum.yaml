@@ -1,0 +1,47 @@
+museum:
+  id: deutsches-museum
+  name: Deutsches Museum
+  country: Germany
+  city: Munich
+  website: https://www.deutsches-museum.de/
+  type: science and technology museum
+exhibitions:
+  - id: phase-2
+    name: Zukunftsinitiative — second construction phase (Museumsinsel)
+    replacement_year: "2022–2028"
+    old_exhibition: Remaining "old" exhibitions in the second construction section
+    new_exhibition: New exhibitions incl. Power Machines, High Voltage, Shipping, Marine Research, Historical Aviation (full reopening 2028)
+    status: in_storage
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://www.deutsches-museum.de/museum/geschichte/die-zukunftsinitiative
+    title: Die Zukunftsinitiative - Deutsches Museum
+    publisher: Deutsches Museum
+    source_type: official_site
+    accessed: "2026-09-30"
+    claim: The Zukunftsinitiative (launched 2006) renovates the collection building and re-conceives the exhibitions; the first part reopened July 2022 and the museum will fully reopen in 2028.
+    signals: [renovation, new_exhibition]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.deutsches-museum.de/museum/presse/wer-wir-sind/auf-dem-weg-in-die-zukunft
+    title: Auf dem Weg in die Zukunft - Deutsches Museum
+    publisher: Deutsches Museum
+    source_type: press_release
+    accessed: "2026-09-30"
+    claim: In the second construction phase the remaining old exhibitions are being cleared out; thousands of objects, from aircraft to turbines, are packed and moved to depots (incl. Erding).
+    excerpt: The remaining "old" exhibitions are being cleared out; thousands of objects, from aircraft to turbines, are being packed and transported to depots.
+    signals: [exhibit_replaced, storage]
+    verified_via: web_search_snippet
+research:
+  researcher: mef pilot
+  last_updated: "2026-09-30"
+  next_step: Ask the Deutsches Museum whether non-collection items from dismantled galleries (demonstration rigs, models, interactive stations, showcases) are being disposed of — accessioned objects will normally stay in the collection.
+  open_questions:
+    - Are demonstration apparatus / interactive stations from the old galleries surplus?
+  outreach:
+    reason: The old exhibitions of the second construction phase are being cleared and objects moved to depots ahead of the 2028 reopening.
+    interest: Surplus demonstration apparatus, models and interactive stations from dismantled galleries (not accessioned collection objects).
+    fit: Engineering, power machinery and aviation displays match TPM's core themes.
+    email_hook: the remaining exhibitions of the second construction phase are being cleared as part of the Zukunftsinitiative, with the museum fully reopening in 2028.
+    source: e2

@@ -1,0 +1,57 @@
+museum:
+  id: technopolis-mechelen
+  name: Technopolis
+  country: Belgium
+  city: Mechelen
+  website: https://www.technopolis.be/
+  type: science centre (Flemish science & technology "doe-centrum")
+exhibitions:
+  - id: main-expo-2022
+    name: Main exhibition (hoofdexpo) renewal
+    replacement_year: 2022
+    old_exhibition: Previous main exhibition installations (partly retained)
+    new_exhibition: Renewed main exhibition; later ON/OFF expo and Doolhoofd
+    status: already_replaced
+    evidence: [e1, e2, e3]
+evidence:
+  - id: e1
+    url: https://www.made-in.be/mechelen/wetenschappelijk-doe-centrum-technopolis-vernieuwt-hoofdexpo-maar-enkele-klassiekers-blijven-behouden/
+    title: "Wetenschappelijk doe-centrum Technopolis vernieuwt hoofdexpo: 'Maar enkele klassiekers blijven behouden'"
+    publisher: Made in Mechelen
+    source_type: news
+    source_date: "2022"
+    accessed: "2026-09-30"
+    language: nl
+    claim: In autumn 2022 Technopolis unveiled a renewed main exhibition; some classic installations (bike on a cable, bed of nails) were retained and new installations added — implying others were replaced.
+    signals: [renovation, new_exhibition, exhibit_replaced]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.madeinmechelen.be/nieuws/investering-van-10-miljoen-voor-technopolis/
+    title: Investering van 10 miljoen voor Technopolis
+    publisher: Made in Mechelen
+    source_type: news
+    source_date: "2019"
+    accessed: "2026-09-30"
+    language: nl
+    claim: In 2019 the Flemish government committed €10 million to a thorough renewal of Technopolis.
+    signals: [renovation]
+    verified_via: web_search_snippet
+  - id: e3
+    url: https://www.technopolis.be/en/expositions/new-main-exhibition/
+    title: Hoofdexpo - Technopolis
+    publisher: Technopolis
+    source_type: official_site
+    accessed: "2026-09-30"
+    claim: Technopolis presents its new main exhibition on the official site.
+    signals: [new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef pilot
+  last_updated: "2026-09-30"
+  next_step: Ask Technopolis what happened to the installations removed in the 2022 renewal (stored, sold, reused).
+  outreach:
+    reason: Technopolis renewed its main exhibition in 2022, replacing part of its installations.
+    interest: Physics and technology installations removed during the 2022 main-exhibition renewal.
+    fit: Technopolis is a technology-focused hands-on centre; its retired installations match TPM's profile.
+    email_hook: Technopolis renewed its main exhibition in 2022, keeping some classics while replacing other installations.
+    source: e1

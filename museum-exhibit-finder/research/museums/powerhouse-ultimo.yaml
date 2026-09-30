@@ -1,0 +1,56 @@
+museum:
+  id: powerhouse-ultimo
+  name: Powerhouse Ultimo (Museum of Applied Arts and Sciences)
+  country: Australia
+  city: Sydney
+  website: https://powerhouse.com.au/
+  type: applied arts, science and technology museum
+exhibitions:
+  - id: ultimo-renewal
+    name: Ultimo revitalisation (closed 4 Feb 2024)
+    replacement_year: 2024
+    old_exhibition: Permanent displays at Ultimo (incl. Catalina flying boat, Locomotive No. 1)
+    new_exhibition: Renewed Powerhouse Ultimo (heritage revitalisation)
+    status: in_storage
+    evidence: [e1, e2, e3]
+evidence:
+  - id: e1
+    url: https://www.abc.net.au/news/2024-02-04/sydney-powerhouse-museum-shutdown-three-years-renovations/103421286
+    title: Sydney's Powerhouse Museum to shut its doors for repairs
+    publisher: ABC News
+    source_type: news
+    source_date: "2024-02-04"
+    accessed: "2026-09-30"
+    claim: Powerhouse Ultimo closed on 4 February 2024 for a ~$300m revitalisation; large objects such as the Catalina flying boat and Locomotive No. 1 were relocated to the Castle Hill storage site.
+    signals: [renovation, closure, storage]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://powerhousemuseumalliance.com/news-chronology-2023-on/
+    title: "News Chronology: 2023-2024 – Powerhouse Museum Alliance"
+    publisher: Powerhouse Museum Alliance (advocacy group)
+    source_type: other
+    source_date: "2024"
+    accessed: "2026-09-30"
+    claim: An advocacy group states exhibition space will be halved and few of the ~3,000 displayed objects will return after renovation.
+    notes: Advocacy source — treat as unconfirmed.
+    signals: [exhibit_replaced]
+    verified_via: web_search_snippet
+  - id: e3
+    url: https://powerhouse.com.au/faq
+    title: Powerhouse FAQ
+    publisher: Powerhouse
+    source_type: official_site
+    accessed: "2026-09-30"
+    claim: Powerhouse continues programmes at Castle Hill and Sydney Observatory during the Ultimo closure.
+    signals: [storage]
+    verified_via: web_search_snippet
+research:
+  researcher: mef pilot
+  last_updated: "2026-09-30"
+  next_step: Ask Powerhouse whether any non-collection exhibition infrastructure or interactives from the former Ultimo galleries are surplus; accessioned objects are under NSW collection rules.
+  outreach:
+    reason: Powerhouse Ultimo closed in 2024 for a major revitalisation and its displays were moved to storage at Castle Hill.
+    interest: Interactive exhibits and exhibition infrastructure from former Ultimo galleries that will not return.
+    fit: Engineering, transport and technology galleries closely match TPM's themes.
+    email_hook: Powerhouse Ultimo closed in February 2024 for its revitalisation and many displays were relocated to storage at Castle Hill.
+    source: e1

@@ -68,9 +68,10 @@ def exhibit_evidence(mf: MuseumFile, exhibit: Exhibit) -> list[Evidence]:
 
 
 def unattached_evidence(mf: MuseumFile) -> list[Evidence]:
-    """Evidence not tied to any exhibit — counts at museum level."""
+    """Evidence not tied to any exhibition or exhibit — counts at museum level."""
     used: set[str] = set()
     for ex in mf.exhibitions:
+        used.update(ex.evidence)
         for item in ex.exhibits:
             used.update(item.evidence)
     return [e for e in mf.evidence if e.id not in used]

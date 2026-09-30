@@ -56,7 +56,7 @@ def section_opportunities(files: list[MuseumFile]) -> str:
             rec["Exhibit Category"] if rec["Exhibit Category"] != UNKNOWN else "—",
             rec["Current Status"],
             rec["Availability Evidence"][:300],
-            _link(rec["Source"], rec["Source Date"]),
+            _link(rec["Source"], rec["Source Date"] if rec["Source Date"] != UNKNOWN else "n.d."),
         ])
     if not body:
         return "_No exhibit-level opportunities yet._"
@@ -185,6 +185,8 @@ def generate(files: list[MuseumFile], label: str = "run", out_root: Path | None 
     today = dt.date.today().isoformat()
     run_dir = (out_root or PATHS.reports) / f"{today}-{label}"
     (run_dir / "outreach").mkdir(parents=True, exist_ok=True)
+    for stale in (run_dir / "outreach").glob("*.md"):
+        stale.unlink()
 
     drafts = [build_draft(mf) for mf in _sorted(files) if assess_museum(mf).priority in ("A", "B")]
     for d in drafts:

@@ -1,0 +1,36 @@
+museum:
+  id: miraikan
+  name: Miraikan – The National Museum of Emerging Science and Innovation
+  name_local: 日本科学未来館
+  country: Japan
+  city: Tokyo
+  website: https://www.miraikan.jst.go.jp/en/
+  type: national science museum (JST)
+exhibitions:
+  - id: renewal-2023
+    name: Permanent exhibition renewal 2023
+    replacement_year: 2023
+    old_exhibition: Previous permanent exhibition zones
+    new_exhibition: Four new permanent exhibitions (incl. Robots, Global Environment, Aging), opened 22 Nov 2023; Geo-Cosmos upgraded
+    status: already_replaced
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://www.miraikan.jst.go.jp/en/resources/exhibitions2023.html
+    title: Renewal Open of Permanent Exhibition 2023 | Miraikan
+    publisher: Miraikan
+    source_type: official_site
+    source_date: "2023-11-22"
+    accessed: "2026-09-30"
+    claim: On 22 November 2023 Miraikan opened four new permanent exhibitions (robots, global environment, aging…), renewing its permanent galleries; the Geo-Cosmos display was upgraded with LED panels.
+    signals: [renovation, new_exhibition, exhibit_replaced]
+    verified_via: web_search_snippet
+research:
+  researcher: mef pilot
+  last_updated: "2026-09-30"
+  next_step: Ask Miraikan (JST) what happened to exhibits and robots from the pre-2023 permanent zones (e.g. retired robot demonstrations, previous Geo-Cosmos panels).
+  outreach:
+    reason: Miraikan renewed its permanent exhibitions in November 2023.
+    interest: Retired robotics and technology exhibits from pre-2023 zones.
+    fit: Robotics and emerging-technology exhibits match TPM's robotics / digital interactive priorities.
+    email_hook: Miraikan renewed its permanent exhibitions in November 2023, opening four new exhibitions including Robots.

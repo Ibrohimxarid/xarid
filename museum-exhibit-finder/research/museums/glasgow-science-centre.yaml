@@ -1,0 +1,60 @@
+museum:
+  id: glasgow-science-centre
+  name: Glasgow Science Centre
+  country: United Kingdom
+  city: Glasgow
+  website: https://www.glasgowsciencecentre.org/
+  type: science centre
+exhibitions:
+  - id: mindworks-floor
+    name: Science Mall floor refurbishment (MindWorks)
+    old_exhibition: An entire floor of older exhibits
+    new_exhibition: MindWorks (senses/psychology exhibition); later Idea No59 on Floor 2
+    status: already_replaced
+    evidence: [e1]
+    notes: Year of the MindWorks replacement not captured — verify.
+  - id: connect
+    name: Connect programme (£4m)
+    replacement_year: 2021
+    new_exhibition: "Connect: Outer Space (external spaces, completed 2021) and extended exhibitions"
+    status: unknown
+    evidence: [e2, e3]
+evidence:
+  - id: e1
+    url: https://blooloop.com/museum/news/glasgow-science-centre-revamp/
+    title: Glasgow Science Centre set for £4 million revamp | blooloop
+    publisher: blooloop
+    source_type: trade_press
+    accessed: "2026-09-30"
+    claim: An entire floor of old exhibits at Glasgow Science Centre was replaced with the MindWorks exhibition.
+    signals: [exhibit_replaced, new_exhibition, renovation]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.glasgowsciencecentre.org/support-us/connect
+    title: Connect | Glasgow Science Centre
+    publisher: Glasgow Science Centre
+    source_type: official_site
+    accessed: "2026-09-30"
+    claim: The £4m Connect programme extends the centre's exhibitions, spaces and outreach.
+    signals: [renovation, new_exhibition]
+    verified_via: web_search_snippet
+  - id: e3
+    url: https://www.glasgowsciencecentre.org/our-blog/our-outer-space-transformation
+    title: Our outer space transformation | Glasgow Science Centre
+    publisher: Glasgow Science Centre
+    source_type: official_site
+    source_date: "2021"
+    accessed: "2026-09-30"
+    claim: The £4.2m transformation of the centre's external spaces (Connect Outer Space) was completed in 2021.
+    signals: [renovation]
+    verified_via: web_search_snippet
+research:
+  researcher: mef pilot
+  last_updated: "2026-09-30"
+  next_step: Ask GSC whether exhibits removed from the Science Mall floors are stored or available.
+  outreach:
+    reason: Glasgow Science Centre replaced an entire floor of older exhibits with MindWorks and continues to refresh the Science Mall.
+    interest: Older physics/engineering exhibits removed from the Science Mall.
+    fit: Large UK science centre with engineering-oriented hands-on exhibits.
+    email_hook: an entire floor of the Science Mall's earlier exhibits was replaced by the MindWorks exhibition as part of the Centre's renewal.
+    source: e1

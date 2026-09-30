@@ -1,0 +1,30 @@
+museum:
+  id: moas-daytona
+  name: Museum of Arts & Sciences (MOAS)
+  country: United States
+  city: Daytona Beach, Florida
+  website: https://www.moas.org/
+  type: art and science museum (with children's science museum)
+exhibitions:
+  - id: childrens-museum
+    name: Children's Museum (closed Aug 2025 for expansion)
+    replacement_year: 2025
+    old_exhibition: Children's Museum interactive elements
+    new_exhibition: Major expansion funded by a $150m endowment
+    status: already_transferred
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://www.observerlocalnews.com/news/2025/aug/08/moas-closes-childrens-museum-marking-start-of-upcoming-major-transformation/
+    title: MOAS closes Children's Museum, marking start of upcoming major transformation
+    publisher: Observer Local News
+    source_type: news
+    source_date: "2025-08-08"
+    accessed: "2026-09-30"
+    claim: MOAS closed its Children's Museum in 2025 ahead of a major expansion; many interactive elements were to be donated to Burns Science and Technology Charter School (Oak Hill).
+    signals: [closure, renovation, exhibit_replaced, already_transferred]
+    verified_via: web_search_snippet
+research:
+  researcher: mef pilot
+  last_updated: "2026-09-30"
+  next_step: No opportunity — interactives already committed to a local school. Watch the expansion for future replacements.

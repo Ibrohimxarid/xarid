@@ -1,0 +1,30 @@
+museum:
+  id: we-the-curious
+  name: We The Curious
+  country: United Kingdom
+  city: Bristol
+  website: https://www.wethecurious.org/
+  type: science centre
+exhibitions:
+  - id: post-fire
+    name: Reopening after the 2022 rooftop fire
+    replacement_year: 2024
+    old_exhibition: Existing exhibits (some restored)
+    new_exhibition: Refreshed foyer, new planetarium shows; Project What If back on display
+    status: still_in_use
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://museumsandheritage.com/advisor/posts/a-whirlwind-we-the-curious-reopens-two-years-after-fire/
+    title: "'A whirlwind': We The Curious reopens two years after fire"
+    publisher: Museums + Heritage Advisor
+    source_type: trade_press
+    source_date: "2024-07"
+    accessed: "2026-09-30"
+    claim: We The Curious reopened on 2 July 2024 after closure following a 2022 fire; existing exhibits are still on display, some restored, with new additions.
+    signals: [renovation, new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef pilot
+  last_updated: "2026-09-30"
+  next_step: No opportunity found — exhibits returned to use after the fire. Re-check in 12 months.

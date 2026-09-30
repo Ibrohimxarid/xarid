@@ -1,0 +1,80 @@
+museum:
+  id: national-railway-museum
+  name: National Railway Museum
+  country: United Kingdom
+  city: York
+  website: https://www.railwaymuseum.org.uk/
+  type: transport (railway) museum — Science Museum Group
+  parent_org: Science Museum Group
+exhibitions:
+  - id: vision-2025
+    name: Vision 2025 masterplan
+    replacement_year: "2023–2026"
+    new_exhibition: "Wonderlab: The Bramall Gallery (opened 22 July 2023); Central Hall and Railway Futures gallery"
+    status: unknown
+    evidence: [e1, e2]
+  - id: rolling-stock-rationalisation
+    name: Rolling-stock collection review
+    status: already_transferred
+    evidence: [e3, e4]
+    exhibits:
+      - id: t3-563
+        name: LSWR T3 class locomotive No. 563
+        category: [railway]
+        status: already_transferred
+        evidence: [e3]
+        notes: Transferred to the Swanage Railway in 2017.
+      - id: 4vep
+        name: British Railways Southern Region 4VEP electric multiple unit
+        category: [railway]
+        status: already_transferred
+        evidence: [e4]
+        notes: Collected by the East Kent Railway in late 2016.
+evidence:
+  - id: e1
+    url: https://www.railwaymuseum.org.uk/about-us/press-office/national-railway-museum-opens-wonderlab-bramall-gallery
+    title: "National Railway Museum Opens Wonderlab: The Bramall Gallery"
+    publisher: National Railway Museum
+    source_type: press_release
+    source_date: "2023-07"
+    accessed: "2026-09-30"
+    claim: The NRM opened Wonderlab, an interactive engineering gallery in the 1,500 m² former locomotive workshop, on 22 July 2023.
+    signals: [new_exhibition]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.railwaymuseum.org.uk/about-us/press-office/plans-approved-national-railway-museums-central-hall
+    title: Plans approved for National Railway Museum's Central Hall
+    publisher: National Railway Museum
+    source_type: press_release
+    accessed: "2026-09-30"
+    claim: Vision 2025 includes a new Central Hall, a Railway Futures gallery, improvements to Great Hall and North Shed, and a new collection building at Shildon.
+    signals: [renovation, new_exhibition]
+    verified_via: web_search_snippet
+  - id: e3
+    url: https://www.museumsassociation.org/museums-journal/news/2017/08/23082017-national-railway-museum-in-disposal-controversy/
+    title: National Railway Museum in disposal controversy
+    publisher: Museums Association
+    source_type: trade_press
+    source_date: "2017-08-23"
+    accessed: "2026-09-30"
+    claim: In 2017 the NRM deaccessioned T3 locomotive No. 563 and transferred it to the Swanage Railway as part of a collections review.
+    signals: [deaccession_in_progress, already_transferred]
+    verified_via: web_search_snippet
+  - id: e4
+    url: https://www.sciencemuseumgroup.org.uk/our-work/our-collection/managing-collection
+    title: Managing the collection | Science Museum Group
+    publisher: Science Museum Group
+    source_type: official_site
+    accessed: "2026-09-30"
+    claim: A Southern Region 4VEP electric unit at the NRM was offered for transfer as a duplicate and collected by the East Kent Railway in late 2016.
+    signals: [already_transferred]
+    verified_via: web_search_snippet
+research:
+  researcher: mef pilot
+  last_updated: "2026-09-30"
+  next_step: Ask NRM/SMG to notify TPM of future rolling-stock or engineering-object transfers (duplicates), and whether non-UK public museums are eligible.
+  outreach:
+    reason: The NRM periodically transfers duplicate rolling stock to other organisations and is redeveloping its site under Vision 2025.
+    interest: Future duplicate rolling stock, railway engineering components, signalling equipment and retired interactive exhibits.
+    fit: Railway technology is a core TPM theme (Uzbekistan's railway heritage).
+    email_hook: the National Railway Museum has in recent years transferred duplicate rolling stock to other organisations and is redeveloping its site under Vision 2025.

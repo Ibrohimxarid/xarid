@@ -1,0 +1,41 @@
+museum:
+  id: techniquest
+  name: Techniquest
+  country: United Kingdom
+  city: Cardiff
+  website: https://www.techniquest.org/
+  type: science discovery centre
+exhibitions:
+  - id: science-capital
+    name: Science Capital refurbishment
+    replacement_year: 2020
+    new_exhibition: 50+ new interactive exhibits (biomedical science, chemistry, world issues, environment, space); earthquake simulator
+    old_exhibition: Original Techniquest exhibits (some kept in a "Retro" area)
+    status: still_in_use
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://www.techniquest.org/blog/reveal-brand-new-exhibits/
+    title: We reveal brand new exhibits! • Techniquest
+    publisher: Techniquest
+    source_type: official_site
+    source_date: "2020"
+    accessed: "2026-09-30"
+    claim: Techniquest completed its largest refurbishment (Science Capital) in May 2020 with 50+ new interactive exhibits and 60% more floor space; original classic exhibits were kept in a "Retro" area.
+    signals: [renovation, new_exhibition]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://en.wikipedia.org/wiki/Techniquest
+    title: Techniquest - Wikipedia
+    publisher: Wikipedia
+    source_type: other
+    accessed: "2026-09-30"
+    claim: Techniquest is a Cardiff science discovery centre opened in 1986 (moved to Cardiff Bay in 1995).
+    signals: []
+    verified_via: web_search_snippet
+research:
+  researcher: mef pilot
+  last_updated: "2026-09-30"
+  next_step: Lead only — ask whether any pre-2020 exhibits not kept in the Retro area were retained in store.
+  outreach:
+    email_hook: Techniquest completed its Science Capital refurbishment in 2020, adding more than fifty new exhibits.

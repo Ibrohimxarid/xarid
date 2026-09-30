@@ -1,0 +1,42 @@
+museum:
+  id: ingenium-cstm
+  name: Canada Science and Technology Museum (Ingenium)
+  country: Canada
+  city: Ottawa
+  website: https://ingenium.ca/scitech/en/
+  type: national science and technology museum
+  parent_org: Ingenium – Canada's Museums of Science and Innovation
+exhibitions:
+  - id: deaccession-programme
+    name: Collection deaccessioning (duplicates, over-represented, poor condition, hazardous)
+    status: unknown
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://ingenium.ca/en/collections-research/collection/
+    title: Collection - Ingenium
+    publisher: Ingenium
+    source_type: official_site
+    accessed: "2026-09-30"
+    claim: Ingenium curators periodically remove duplicative, over-represented or poor-condition artifacts; objects approved for deaccessioning are first offered to other Canadian museums, then disposed of per accepted practice.
+    excerpt: Objects approved for deaccessioning are first offered to other Canadian museums, and if other museums express no interest, the objects are disposed of in accordance with accepted museum practices.
+    signals: [deaccession_policy]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://ingeniumcanada.org/channel/articles/artifacts-and-asbestos-managing-hazards-at-ingenium
+    title: "Artifacts and asbestos: Managing hazards at Ingenium | The Channel"
+    publisher: Ingenium
+    source_type: official_site
+    accessed: "2026-09-30"
+    claim: Objects with friable asbestos that cannot be handled safely may be considered for deaccession.
+    signals: [deaccession_policy]
+    verified_via: web_search_snippet
+research:
+  researcher: mef pilot
+  last_updated: "2026-09-30"
+  next_step: Ask Ingenium whether deaccessioned objects declined by Canadian museums may be offered to foreign public museums before disposal.
+  outreach:
+    reason: Ingenium deaccessions duplicate and over-represented artifacts, offering them first to Canadian museums.
+    interest: Deaccessioned engineering/transport artifacts not taken by Canadian museums.
+    fit: Canada's national technology collection (rail, aviation, engines, communications) overlaps with TPM's themes.
+    email_hook: Ingenium periodically deaccessions duplicate or over-represented artifacts, offering them first to Canadian museums before other disposal routes.

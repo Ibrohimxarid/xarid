@@ -1,0 +1,63 @@
+museum:
+  id: montana-science-center
+  name: Montana Science Center
+  country: United States
+  city: Bozeman, Montana
+  website: https://montanasciencecenter.org/
+  type: hands-on science centre (closed; organisation dissolving)
+contacts:
+  - name: Lauri Moss
+    position: Board Chair
+    kind: person
+    contact_page: https://montanasciencecenter.org/
+    source: e1
+exhibitions:
+  - id: all-exhibits
+    name: Hands-on science exhibits (whole centre)
+    opening_year: 2001
+    replacement_year: 2024
+    old_exhibition: Montana Science Center hands-on exhibits
+    status: available_transfer
+    evidence: [e1, e2]
+    exhibits:
+      - id: hands-on-exhibits
+        name: Interactive hands-on science exhibits (unspecified)
+        category: [stem, physics]
+        interactive: true
+        status: available_transfer
+        evidence: [e1]
+        notes: Individual exhibits not listed in the sources.
+evidence:
+  - id: e1
+    url: https://www.ypradio.org/regional-news/2024-09-26/montana-science-center-closes-after-23-years-in-bozeman
+    title: Montana Science Center closes after 23 years in Bozeman | YPR
+    publisher: Yellowstone Public Radio
+    source_type: news
+    source_date: "2024-09-26"
+    accessed: "2026-09-30"
+    claim: The Montana Science Center closed permanently after 24 September 2024; the board dissolved the organisation and planned to find new homes for exhibits with nonprofits fulfilling similar missions.
+    excerpt: After the doors closed, the non-profit planned to return donated assets and try to find new homes for exhibits and the hands-on experiences to nonprofits fulfilling similar missions; board chair Lauri Moss said "we simply could not afford to keep the doors open any longer."
+    signals: [closure, available_transfer, willing_transfer]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.bozemandailychronicle.com/news/education/heartbreaking-decision-montana-science-center-closes-after-two-decades-in-bozeman/article_6fde5f3e-7c5b-11ef-bfb9-afb44042e0b8.html
+    title: "'Heartbreaking decision': Montana Science Center closes after two decades in Bozeman"
+    publisher: Bozeman Daily Chronicle
+    source_type: news
+    source_date: "2024-09"
+    accessed: "2026-09-30"
+    claim: Local press confirms the permanent closure of the Montana Science Center in September 2024.
+    signals: [closure]
+    verified_via: web_search_snippet
+research:
+  researcher: mef pilot
+  last_updated: "2026-09-30"
+  next_step: Two years have passed — check whether any exhibits remain unallocated; contact via website/Facebook or the former board chair.
+  open_questions:
+    - Were all exhibits already rehomed? Would they consider a foreign nonprofit museum?
+  outreach:
+    reason: The centre closed in 2024 and said it would find new homes for its exhibits among nonprofits with similar missions.
+    interest: Any remaining hands-on physics / STEM exhibits.
+    fit: Small-centre hands-on exhibits are robust and suitable for school groups at TPM.
+    email_hook: following the closure of the Montana Science Center in September 2024, the organisation intended to find new homes for its exhibits with nonprofits pursuing similar educational missions.
+    source: e1

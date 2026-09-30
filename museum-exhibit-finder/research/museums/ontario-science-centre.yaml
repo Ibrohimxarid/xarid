@@ -1,0 +1,72 @@
+museum:
+  id: ontario-science-centre
+  name: Ontario Science Centre
+  country: Canada
+  city: Toronto
+  website: https://www.ontariosciencecentre.ca/
+  type: science centre (provincial agency)
+  notes: Closed abruptly in June 2024 (roof safety); interim sites; new centre at Ontario Place planned for 2029 per the Auditor General.
+exhibitions:
+  - id: don-mills-building
+    name: Don Mills building permanent exhibitions
+    opening_year: 1969
+    replacement_year: 2024
+    old_exhibition: Exhibit halls at 770 Don Mills Road
+    new_exhibition: Interim hub at Harbourfront Centre (2026) and new centre at Ontario Place (planned 2029)
+    status: in_storage
+    evidence: [e1, e2, e3]
+evidence:
+  - id: e1
+    url: https://www.ctvnews.ca/toronto/article/the-ontario-science-centre-is-being-packed-up-following-its-abrupt-closure-here-is-a-look-inside/
+    title: The Ontario Science Centre is being packed up following its abrupt closure
+    publisher: CTV News
+    source_type: news
+    source_date: "2024"
+    accessed: "2026-09-30"
+    claim: After the abrupt closure the centre was packed up; most exhibits were moved to storage by 31 October 2024, including a government-owned facility at 101 Resources Road.
+    excerpt: By October 31, 2024, most exhibits were moved to storage; a government-owned storage facility at 101 Resources Road was identified for the Science Centre exhibits, artifacts and items.
+    signals: [closure, storage]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://globalnews.ca/news/11252077/ont-science-centre/
+    title: "'The biggest betrayal': A year on, staff grieve Ontario Science Centre's snap closure"
+    publisher: Global News / Canadian Press
+    source_type: news
+    source_date: "2025"
+    accessed: "2026-09-30"
+    claim: A year after closure, materials are stored at Resources Road (with reported pest problems) and the exhibit-building department is at a virtual standstill.
+    signals: [storage]
+    verified_via: web_search_snippet
+  - id: e3
+    url: https://www.canadianarchitect.com/ontario-science-centre-opening-interim-location-at-harbourfront-centre-by-summer-2026/
+    title: Ontario Science Centre Opening Interim Location at Harbourfront Centre by Summer 2026
+    publisher: Canadian Architect
+    source_type: trade_press
+    source_date: "2025"
+    accessed: "2026-09-30"
+    claim: The province announced an interim Science Centre location at Harbourfront Centre to open by summer 2026; a new building at Ontario Place is planned.
+    signals: [relocation, new_exhibition]
+    verified_via: web_search_snippet
+  - id: e4
+    url: https://www.auditor.on.ca/en/content/annualreports/arreports/en23/AR_sciencecentres_en23.pdf
+    title: "Value-for-Money Audit: Science Centres (2023)"
+    publisher: Office of the Auditor General of Ontario
+    source_type: government
+    source_date: "2023-12"
+    accessed: "2026-09-30"
+    claim: The Auditor General found the relocation decision was not fully informed and made without a clear plan for the old site.
+    signals: [relocation]
+    verified_via: web_search_snippet
+research:
+  researcher: mef pilot
+  last_updated: "2026-09-30"
+  next_step: Ask the Ontario Science Centre (collections/exhibits) whether exhibits in storage that will not move to Ontario Place will be declared surplus, and the disposal route (Ontario public-asset rules).
+  open_questions:
+    - Which of the ~1969–2024 exhibits are planned for the new building?
+    - Is there a provincial surplus-asset process open to foreign museums?
+  outreach:
+    reason: The centre closed in 2024 and its exhibits were moved into storage pending a new building planned for 2029.
+    interest: Stored hands-on exhibits not planned for the new Ontario Place centre (physics, energy, technology).
+    fit: One of the world's pioneering hands-on science centres — its classic physics/engineering exhibits match TPM's profile.
+    email_hook: following the closure of the Don Mills building in 2024, the Centre's exhibits were moved into storage while a new facility is planned.
+    source: e1

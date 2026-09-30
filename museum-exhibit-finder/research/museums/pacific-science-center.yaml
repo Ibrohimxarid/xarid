@@ -1,0 +1,56 @@
+museum:
+  id: pacific-science-center
+  name: Pacific Science Center
+  country: United States
+  city: Seattle, Washington
+  website: https://pacificsciencecenter.org/
+  type: science centre
+exhibitions:
+  - id: campus-reduction
+    name: Campus reduction and exhibit refresh (2025–2026)
+    replacement_year: 2025
+    old_exhibition: Dinosaurs (1986–2025) and part of the Ackerley Family Exhibit Gallery
+    new_exhibition: "Spiders: from Fear to Fascination; planned makerspace expansion"
+    status: already_replaced
+    evidence: [e1, e2, e3]
+evidence:
+  - id: e1
+    url: https://www.geekwire.com/2025/pacific-science-center-tries-to-survive-as-it-plans-makerspace-expansion-eyes-real-estate-deal/
+    title: Pacific Science Center tries to survive as it plans makerspace expansion, eyes real estate deal
+    publisher: GeekWire
+    source_type: news
+    source_date: "2025"
+    accessed: "2026-09-30"
+    claim: Many exhibit spaces sit empty and some house dated displays; the CEO said the institution's future is not certain; deficits in FY2023 and FY2024.
+    signals: [exhibit_replaced]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.king5.com/article/news/local/seattle/pacific-science-center-campus-sale-space-needle/281-34a36747-ad61-4fda-bf05-37f4dde936dd
+    title: Pacific Science Center sells part of campus for $17.25 million
+    publisher: KING 5
+    source_type: news
+    source_date: "2025"
+    accessed: "2026-09-30"
+    claim: PSC sold part of its campus — Carnevali Pavilion, Boeing IMAX Theater and part of the Ackerley Family Exhibit Gallery — to the Space Needle.
+    signals: [relocation, exhibit_replaced]
+    verified_via: web_search_snippet
+  - id: e3
+    url: https://www.king5.com/article/news/local/pacific-science-center-close-five-weeks-40-year-old-dinosaur-exhibit-going-extinct/281-3d79bf1b-d0fa-402d-9e8d-d55e9ea612f9
+    title: Pacific Science Center to close for five weeks, 40-year-old dinosaur exhibit going extinct
+    publisher: KING 5
+    source_type: news
+    source_date: "2025-09"
+    accessed: "2026-09-30"
+    claim: PSC closed 2 Sep–10 Oct 2025 to remove 11 animatronic dinosaurs (since 1986) and prepare for new exhibits; the materials were beyond salvage.
+    signals: [exhibit_replaced, destroyed]
+    verified_via: web_search_snippet
+research:
+  researcher: mef pilot
+  last_updated: "2026-09-30"
+  next_step: Ask which exhibits from the sold part of the Ackerley gallery were removed and whether physics/tech interactives are surplus.
+  outreach:
+    reason: PSC is reducing its campus and refreshing exhibits, with parts of the Ackerley exhibit gallery sold.
+    interest: Physics and technology interactives removed from the sold part of the Ackerley Family Exhibit Gallery.
+    fit: Classic US science-centre interactives suit TPM's hands-on STEM programme.
+    email_hook: Pacific Science Center is reconfiguring its campus following the 2025 sale of part of the site, including part of the Ackerley Family Exhibit Gallery.
+    source: e2

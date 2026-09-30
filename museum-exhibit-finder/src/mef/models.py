@@ -266,6 +266,7 @@ class Outreach(Strict):
         None,
         description="Sentence completing 'We understand from <source> that …' — facts only",
     )
+    source: Optional[str] = Field(None, description="Evidence id the e-mail hook is based on")
 
 
 class Research(Strict):

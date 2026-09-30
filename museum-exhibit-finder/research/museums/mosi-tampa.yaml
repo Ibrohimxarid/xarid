@@ -1,0 +1,41 @@
+museum:
+  id: mosi-tampa
+  name: Museum of Science & Innovation (MOSI, formerly Museum of Science & Industry)
+  country: United States
+  city: Tampa, Florida
+  website: https://mosi.org/
+  type: science centre
+exhibitions:
+  - id: main-building-2017
+    name: Main building legacy exhibits
+    replacement_year: 2017
+    old_exhibition: Legacy exhibits incl. The Amazing You, Weathering The Storm
+    new_exhibition: Downsized 40,000 sq ft facility; Saunders Planetarium & Digital Dome (2025)
+    status: already_replaced
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://en.wikipedia.org/wiki/Museum_of_Science_&_Industry_(Tampa)
+    title: Museum of Science & Industry (Tampa) - Wikipedia
+    publisher: Wikipedia
+    source_type: other
+    accessed: "2026-09-30"
+    claim: On 13 August 2017 MOSI closed 85% of its facility; portions of legacy exhibits were eliminated and items including the large dinosaurs were sold; the name changed to Museum of Science & Innovation in January 2026.
+    signals: [closure, exhibit_replaced, already_transferred]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.wusf.org/science-space/2026-01-28/tampas-mosi-gets-a-new-name-and-an-expanded-learning-space
+    title: Tampa's MOSI gets a new name and an expanded learning space
+    publisher: WUSF
+    source_type: news
+    source_date: "2026-01-28"
+    accessed: "2026-09-30"
+    claim: MOSI adopted a new name and expanded its learning space in January 2026.
+    signals: [new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef pilot
+  last_updated: "2026-09-30"
+  next_step: Low priority — the 2017 legacy exhibits were largely eliminated or sold; ask only whether any remain in storage.
+  outreach:
+    email_hook: MOSI downsized in 2017 and several legacy exhibits were retired.

@@ -55,6 +55,26 @@ class OutreachDraft:
         )
 
 
+def source_phrase(src) -> str:
+    """How the e-mail refers to the source: 'your website', 'a BBC report (2024)' …"""
+    if src is None:
+        return "published information"
+    when = f" ({src.source_date[:4]})" if src.source_date else ""
+    if src.source_type in ("official_site", "press_release", "annual_report", "board_document"):
+        return "your published information"
+    if src.source_type in ("association", "collection_database"):
+        return f"the {src.publisher or 'published'} listing{when}"
+    if src.source_type in ("news", "trade_press"):
+        if not src.publisher:
+            return f"a press report{when}"
+        name = src.publisher[4:] if src.publisher.startswith("The ") else src.publisher
+        article = "an" if name[:1].upper() in "AEIOU" else "a"
+        return f"{article} {name} report{when}"
+    if src.source_type == "government":
+        return f"{src.publisher or 'government'} information{when}"
+    return f"published information{when}"
+
+
 def _interest(mf: MuseumFile) -> str:
     names = [i.name for ex in mf.exhibitions for i in ex.exhibits
              if i.status not in ("already_transferred", "still_in_use")]
@@ -68,7 +88,7 @@ def _interest(mf: MuseumFile) -> str:
 
 def build_draft(mf: MuseumFile) -> OutreachDraft:
     m, o = mf.museum, mf.research.outreach
-    src = primary_source(mf.evidence)
+    src = mf.evidence_by_id().get(o.source or "") or primary_source(mf.evidence)
     contact = best_contact(mf)
     greeting = f"Dear {contact.name}," if contact and contact.name else "Dear Colleagues,"
     to = (contact.email if contact and contact.email else None) or m.general_email or (
@@ -79,9 +99,9 @@ def build_draft(mf: MuseumFile) -> OutreachDraft:
         contact_line = ", ".join(x for x in [contact.name, contact.position, contact.email,
                                             contact.phone, contact.contact_page] if x)
 
-    hook = o.email_hook or "[state the verified fact that prompted this e-mail, citing the source]"
-    src_ref = f"{src.title or src.publisher or 'your published information'}" if src else "your published information"
-    interest = _interest(mf)
+    hook = (o.email_hook or "[state the verified fact that prompted this e-mail, citing the source]").rstrip(".")
+    src_ref = source_phrase(src)
+    interest = _interest(mf).rstrip(".")
     a = assess_museum(mf)
     ask = (
         "whether these items might be available for transfer, donation or purchase"
@@ -94,7 +114,7 @@ def build_draft(mf: MuseumFile) -> OutreachDraft:
 
 I am writing on behalf of Tashkent Polytechnic Museum in Tashkent, Uzbekistan — a museum of science, engineering, transport and the history of technology. We are currently developing a modern, hands-on exhibition for school students, families and young engineers.
 
-We understand from {src_ref} that {hook}
+We understand from {src_ref} that {hook}.
 
 We would be very interested to learn {ask}. Our particular interest is in: {interest}.
 
