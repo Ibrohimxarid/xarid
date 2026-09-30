@@ -71,6 +71,7 @@ evidence:
     signals: [relocation, storage]
     verified_via: web_search_snippet
 research:
+  summary_ru: "Совет Ковентри 26.02.2026 одобрил списание предметов коллекции (Транспортный музей, Herbert, хранилища). Списанное сначала предлагают аккредитованным музеям через Find an Object, затем другим организациям; передача за пределы Ковентри приветствуется. Перечень предметов не получен — запросить."
   eligibility: "Offered first to accredited museums via Find an Object; if no interest, to other appropriate organisations (transfers outside Coventry welcomed)."
   researcher: mef expansion
   last_updated: "2026-09-30"

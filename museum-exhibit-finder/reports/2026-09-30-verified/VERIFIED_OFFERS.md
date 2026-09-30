@@ -22,6 +22,8 @@
 
 ### 1. Coventry Transport Museum (Culture Coventry Trust) — Coventry, United Kingdom
 
+_Совет Ковентри 26.02.2026 одобрил списание предметов коллекции (Транспортный музей, Herbert, хранилища). Списанное сначала предлагают аккредитованным музеям через Find an Object, затем другим организациям; передача за пределы Ковентри приветствуется. Перечень предметов не получен — запросить._
+
 **Что предлагают:**
 - Items approved for disposal by Coventry City Council (26 Feb 2026 report) — list not captured
 
@@ -40,6 +42,8 @@
 
 ### 2. Cambridge Museum of Technology — Cambridge, United Kingdom
 
+_Музей выставил в Find an Object фотогравировальную машину Klischograph (60×105×100 см) и около 350 книг по паровой, механической, электро- и телеком-технике (1870-е — наши дни). Объявления без даты — проверить, что они ещё активны._
+
 **Что предлагают:**
 - Klischograph (kleischograph) mechanical photo-engraving machine — 60 cm x 105 cm x 100 cm
 - ~350 books on steam, mechanical, electrical and telecommunications engineering (1870s–present)
@@ -55,6 +59,8 @@
 **Следующий шаг:** Open the listing, confirm it has not expired and whether a non-UK public museum is eligible; enquire via the listing.
 
 ### 3. Royal Air Force Museum (London & Midlands/Cosford) — London / Cosford (Shropshire), United Kingdom
+
+_Музей ВВС ведёт программу передачи объектов из национальной коллекции (до конца 2027). В 2025 г. опытные самолёты SR.53 XD145 и Hunting H.126 XN714 значились «всё ещё ожидающими нового дома». Раунды 04.2025 и 02.2026 уже закрыты; приоритет — британским публичным организациям, затем «альтернативные пути»._
 
 **Что предлагают:**
 - Saunders-Roe SR.53 XD145 (rocket/jet interceptor prototype, 1957)
@@ -75,6 +81,8 @@
 
 ### 4. Nederlands Transport Museum — Netherlands
 
+_Музей закрылся 6 марта 2025 г.; коллекция разбирается, содержимое выставлено на продажу (по новостному источнику). Прошло 18 месяцев — выяснить, что не продано. Официальный канал продажи и контакт не найдены._
+
 **Что предлагают:**
 - Museum contents offered for sale after closure (items not itemised in source)
 
@@ -88,6 +96,8 @@
 
 ### 5. American Museum & Gardens — Bath, United Kingdom
 
+_Швейная машина Singer с ножным приводом выставлена в Find an Object. Объявление без даты; низкий приоритет._
+
 **Что предлагают:**
 - Singer treadle sewing machine
 
@@ -100,6 +110,8 @@
 **Следующий шаг:** Low priority — only enquire if bundled with other UK collections for one shipment.
 
 ### 6. Smithsonian National Air and Space Museum (National Mall) — Washington, DC, United States
+
+_Смитсоновский музей авиации и космонавтики периодически публикует список списанных предметов для передачи квалифицированным музеям и образовательным организациям; первыми предложение получают члены международного консорциума Mutual Concerns of Air and Space Museums. Актуальный список не получен._
 
 **Что предлагают:**
 - Objects on NASM's periodic transfer list (aircraft parts, engines, models and other deaccessioned items — current list not captured)
@@ -119,6 +131,8 @@
 
 ### 7. Het Spoorwegmuseum (Dutch Railway Museum) — Utrecht, Netherlands
 
+_Железнодорожный музей Нидерландов списывает подвижной состав (дубли, доноры запчастей, единицы в очень плохом состоянии) через голландскую базу списаний Afstotingsdatabase; по правилам LAMO сначала — музеи Нидерландов. Спросить, что осталось невостребованным._
+
 **Что предлагают:**
 - Surplus rolling stock (duplicates, parts donors, vehicles in poor condition, long-term off-site objects)
 
@@ -132,6 +146,8 @@
 **Следующий шаг:** Ask the collections team for the current list of rolling stock/components still unallocated after the LAMO period, and whether a foreign museum may take them.
 
 ### 8. Universiteitsmuseum Utrecht (UMU) — Utrecht, Netherlands
+
+_Музей продаёт через MuseumDepotShop витрины, которые больше не использует: 8-дверные (210×805×60 и 210×910×60 см), 4-дверные (200×205×105 см), столы-витрины и большую горизонтальную витрину. Открытый магазин._
 
 **Что предлагают:**
 - 8-door museum display cabinets (210 x 805 x 60 cm and 210 x 910 x 60 cm)
@@ -147,6 +163,8 @@
 **Следующий шаг:** Check which cabinets are still in stock and request a delivery/export quotation from MuseumDepotShop.
 
 ### 9. Zaans Museum — Zaandam, Netherlands
+
+_Через MuseumDepotShop продаются детали машин из коллекции музея — чугунные колёса Ø 7,5–17 см; самовывоз из депо в Звааге или доставка по запросу. Низкий приоритет._
 
 **Что предлагают:**
 - Machine parts, 20th century (industrial iron wheels from old machines, Ø 7.5–17 cm)

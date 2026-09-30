@@ -33,6 +33,7 @@ evidence:
     verified_via: web_search_snippet
     notes: valid_until derived from the ADB rule that notices stay online for two months.
 research:
+  summary_ru: "20.11.2025 музей опубликовал уведомление о списании в голландской базе Afstotingsdatabase (два месяца — приоритет музеям); срок истёк 20.01.2026. Состав предметов не получен."
   eligibility: "LAMO: other museums first (two-month notice on the Afstotingsdatabase)."
   researcher: mef expansion
   last_updated: "2026-09-30"

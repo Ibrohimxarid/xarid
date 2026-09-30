@@ -44,6 +44,7 @@ evidence:
     signals: [for_sale]
     verified_via: web_search_snippet
 research:
+  summary_ru: "Закрытый частный музей выставил все 200+ машин на онлайн-аукцион Classic Trader без минимальной цены (до марта 2026). Можно спросить о непроданных лотах."
   eligibility: "Public online auction without reserve."
   researcher: mef expansion
   last_updated: "2026-09-30"

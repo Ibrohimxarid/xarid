@@ -48,6 +48,7 @@ evidence:
     signals: []
     verified_via: web_search_snippet
 research:
+  summary_ru: "По сообщению журнала Hot Rod в Facebook, музей передал пять исторических хот-родов на аукцион Mecum 2026. Официального подтверждения музея нет."
   researcher: mef expansion
   last_updated: "2026-09-30"
   next_step: Confirm on petersen.org whether the museum is deaccessioning vehicles; if so, ask to be notified before future consignments (possible museum-to-museum transfer instead of auction).

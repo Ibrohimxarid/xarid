@@ -82,8 +82,8 @@ def _museum_evidence(mf: MuseumFile, items, today: dt.date) -> tuple[list, list,
     return offer, stale, removal
 
 
-def verified_offers_markdown(files: list[MuseumFile], today: dt.date | None = None) -> str:
-    today = today or dt.date.today()
+def collect(files: list[MuseumFile], today: dt.date) -> tuple[list, list]:
+    """(verified, closed): museums with a current documented offer, and museums whose offer lapsed."""
     verified, closed = [], []
     for mf in files:
         items = _offered_items(mf, today)
@@ -102,6 +102,12 @@ def verified_offers_markdown(files: list[MuseumFile], today: dt.date | None = No
         return (not open_window, -newest.toordinal())
 
     verified.sort(key=sort_key)
+    return verified, closed
+
+
+def verified_offers_markdown(files: list[MuseumFile], today: dt.date | None = None) -> str:
+    today = today or dt.date.today()
+    verified, closed = collect(files, today)
     snippet = sum(1 for mf, _ in verified for e in mf.evidence if e.verified_via == "web_search_snippet")
     out = [
         "# Подтверждённые предложения: музеи, которые реально отдают / продают снятые предметы",
@@ -132,6 +138,8 @@ def verified_offers_markdown(files: list[MuseumFile], today: dt.date | None = No
     for n, (mf, items) in enumerate(verified, 1):
         evs, earlier, removal = _museum_evidence(mf, items, today)
         out += [f"### {n}. {mf.museum.name} — {mf.museum.city or ''}, {mf.museum.country}".replace(" — ,", " —"), ""]
+        if mf.research.summary_ru:
+            out += [f"_{_cell(mf.research.summary_ru)}_", ""]
         out.append("**Что предлагают:**")
         out += [f"- {_cell(label)}" for label, _ in items]
         out.append("")

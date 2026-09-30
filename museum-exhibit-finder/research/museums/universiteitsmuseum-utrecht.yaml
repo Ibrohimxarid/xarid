@@ -52,6 +52,7 @@ evidence:
     signals: [exhibit_replaced, for_sale]
     verified_via: web_search_snippet
 research:
+  summary_ru: "Музей продаёт через MuseumDepotShop витрины, которые больше не использует: 8-дверные (210×805×60 и 210×910×60 см), 4-дверные (200×205×105 см), столы-витрины и большую горизонтальную витрину. Открытый магазин."
   researcher: mef verification
   last_updated: "2026-09-30"
   eligibility: Open webshop — anyone can buy; collection from the depot or delivery by quotation.

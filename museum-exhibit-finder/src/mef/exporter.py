@@ -11,6 +11,7 @@ from .models import MuseumFile
 from .priority import assess_museum
 from .rows import DATABASE_FIELDS, database_record, iter_rows
 from .stats import compute_stats
+from .verified_xlsx import write_verified_xlsx
 
 MUSEUM_FIELDS = [
     "Museum ID", "Museum", "Local Name", "Country", "City", "Website", "Museum Type",
@@ -133,6 +134,7 @@ def export_all(
         "contacts": out_dir / "contacts.csv",
         "contacts_dir": contacts_dir / "contacts.csv",
         "xlsx": out_dir / "museum_finder.xlsx",
+        "verified_xlsx": out_dir / "verified_offers.xlsx",
     }
     _write_csv(paths["database"], DATABASE_FIELDS, db_records)
     _write_csv(paths["opportunities"], DATABASE_FIELDS, opportunities)
@@ -155,4 +157,5 @@ def export_all(
            [{"Metric": "Generated", "Value": dt.date.today().isoformat()}])
     paths["xlsx"].parent.mkdir(parents=True, exist_ok=True)
     wb.save(paths["xlsx"])
+    write_verified_xlsx(files, paths["verified_xlsx"])
     return paths

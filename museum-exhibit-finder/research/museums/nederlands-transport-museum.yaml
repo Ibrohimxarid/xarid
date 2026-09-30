@@ -29,6 +29,7 @@ evidence:
     signals: [closure, for_sale, willing_sale]
     verified_via: web_search_snippet
 research:
+  summary_ru: "Музей закрылся 6 марта 2025 г.; коллекция разбирается, содержимое выставлено на продажу (по новостному источнику). Прошло 18 месяцев — выяснить, что не продано. Официальный канал продажи и контакт не найдены."
   eligibility: "Contents put up for sale after closure — buyers not restricted in the source."
   researcher: mef expansion
   last_updated: "2026-09-30"

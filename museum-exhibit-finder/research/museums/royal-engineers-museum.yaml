@@ -35,6 +35,7 @@ evidence:
     signals: [available_transfer, deaccession_in_progress]
     verified_via: web_search_snippet
 research:
+  summary_ru: "41 том трудов британского Института инженеров-электриков (1949–1962) выставлен в Find an Object; срок объявления истёк 08.08.2026."
   eligibility: "Find an Object: museums and organisations within the public domain."
   researcher: mef expansion
   last_updated: "2026-09-30"

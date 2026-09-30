@@ -50,6 +50,7 @@ evidence:
     signals: [closure]
     verified_via: web_search_snippet
 research:
+  summary_ru: "Центр закрылся в сентябре 2024 г.; правление планировало передать интерактивные экспонаты некоммерческим организациям с похожей миссией. Данные старше 2 лет — экспонаты, вероятно, уже распределены."
   eligibility: "New homes sought with nonprofits fulfilling similar missions."
   researcher: mef pilot
   last_updated: "2026-09-30"

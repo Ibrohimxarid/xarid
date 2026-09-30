@@ -34,6 +34,7 @@ evidence:
     signals: [for_sale, deaccession_in_progress]
     verified_via: web_search_snippet
 research:
+  summary_ru: "Через MuseumDepotShop продаются детали машин из коллекции музея — чугунные колёса Ø 7,5–17 см; самовывоз из депо в Звааге или доставка по запросу. Низкий приоритет."
   researcher: mef verification
   last_updated: "2026-09-30"
   eligibility: Open webshop — anyone can buy.

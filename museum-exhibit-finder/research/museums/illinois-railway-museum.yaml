@@ -43,6 +43,7 @@ evidence:
     signals: [for_sale]
     verified_via: web_search_snippet
 research:
+  summary_ru: "Аукцион 112 излишних предметов (в т.ч. тендер паровоза Chicago & North Western) завершился 17.01.2025. Можно спросить о непроданных лотах."
   eligibility: "Public online auction (anyone could bid)."
   researcher: mef expansion
   last_updated: "2026-09-30"

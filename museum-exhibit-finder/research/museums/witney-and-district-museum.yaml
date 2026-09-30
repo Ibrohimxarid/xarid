@@ -39,6 +39,7 @@ evidence:
     signals: [available_transfer, deaccession_in_progress]
     verified_via: web_search_snippet
 research:
+  summary_ru: "Холодильник Prestcold 1950-х (55×92×50 см) выставлен в Find an Object 20.05.2026; срок объявления истёк 20.07.2026."
   eligibility: "Find an Object: museums and organisations within the public domain."
   researcher: mef expansion
   last_updated: "2026-09-30"

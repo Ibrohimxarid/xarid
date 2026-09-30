@@ -281,6 +281,9 @@ class Research(Strict):
     eligibility: Optional[str] = Field(
         None, description="Who may receive the objects, as stated by the source (e.g. UK public bodies first)"
     )
+    summary_ru: Optional[str] = Field(
+        None, description="Short Russian summary for TPM staff; must only restate the evidence"
+    )
     outreach: Outreach = Field(default_factory=Outreach)
     notes: Optional[str] = None
 

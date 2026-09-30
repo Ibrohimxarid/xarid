@@ -111,6 +111,7 @@ evidence:
     signals: [relocation, new_exhibition]
     verified_via: web_search_snippet
 research:
+  summary_ru: "Музей ВВС ведёт программу передачи объектов из национальной коллекции (до конца 2027). В 2025 г. опытные самолёты SR.53 XD145 и Hunting H.126 XN714 значились «всё ещё ожидающими нового дома». Раунды 04.2025 и 02.2026 уже закрыты; приоритет — британским публичным организациям, затем «альтернативные пути»."
   eligibility: "Priority to UK public-heritage organisations; after that the Museum explores 'alternative routes' (per Feb 2026 transfer list). Expressions of interest must state organisation status, contacts and accession numbers."
   researcher: mef expansion
   last_updated: "2026-09-30"

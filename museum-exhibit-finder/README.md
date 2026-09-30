@@ -60,7 +60,8 @@ NEW EXHIBITION → OLD EXHIBITION REMOVED → OLD EXHIBITS NO LONGER NEEDED
   В разделе 1 только A, в подразделе 1b перечислены закрытые или устаревшие предложения.
 - Карточки музеев: [`reports/2026-09-30-verified/MUSEUM_CARDS.md`](reports/2026-09-30-verified/MUSEUM_CARDS.md)
 - Письма (только музеям с документированным предложением): `reports/2026-09-30-verified/outreach/*.md`
-- База: `exports/museum_finder.xlsx` и CSV в `exports/`, контакты — `contacts/contacts.csv`
+- **Excel с подтверждёнными предложениями: [`exports/verified_offers.xlsx`](exports/verified_offers.xlsx)** — листы «Отдают сейчас» (по строке на предмет, с доказательствами, ссылками, контактами), «Срок истёк — спросить», «Исключено», «Доказательства», «Пояснения»
+- Полная база: `exports/museum_finder.xlsx` и CSV в `exports/`, контакты — `contacts/contacts.csv`
 - Предыдущие прогоны: `reports/2026-09-30-pilot/` (21 музей), `reports/2026-09-30-expansion-100/`.
   Там B включало реконструкции, поэтому для решений используйте `verified`.
 

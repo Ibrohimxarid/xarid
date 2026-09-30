@@ -33,3 +33,17 @@ def test_report_sections(sample, tmp_path):
         assert heading in text
     assert (run / "outreach" / "example-science-centre.md").exists()
     assert "Foucault pendulum" in (run / "MUSEUM_CARDS.md").read_text(encoding="utf-8")
+
+
+def test_verified_offers_workbook(sample, tmp_path):
+    from openpyxl import load_workbook
+
+    paths = export_all([sample], out_dir=tmp_path, contacts_dir=tmp_path / "contacts")
+    wb = load_workbook(paths["verified_xlsx"])
+    assert wb.sheetnames == ["Отдают сейчас", "Срок истёк — спросить", "Исключено", "Доказательства", "Пояснения"]
+    ws = wb["Отдают сейчас"]
+    header = [c.value for c in ws[1]]
+    rows = [dict(zip(header, r)) for r in ws.iter_rows(min_row=2, values_only=True)]
+    assert [r["Что предлагают"] for r in rows] == ["Van de Graaff generator"]
+    assert rows[0]["Ссылка на предложение"] == "https://www.example-science.test/surplus"
+    assert rows[0]["Email"] == "jane@example-science.test"

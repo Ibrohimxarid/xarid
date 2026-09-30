@@ -70,6 +70,7 @@ evidence:
     signals: [deaccession_policy]
     verified_via: web_search_snippet
 research:
+  summary_ru: "Железнодорожный музей Нидерландов списывает подвижной состав (дубли, доноры запчастей, единицы в очень плохом состоянии) через голландскую базу списаний Afstotingsdatabase; по правилам LAMO сначала — музеи Нидерландов. Спросить, что осталось невостребованным."
   eligibility: "Under LAMO: offered first to Dutch museums/heritage institutions and Historisch Railvervoer Nederland members; afterwards other routes."
   researcher: mef expansion
   last_updated: "2026-09-30"
