@@ -1,0 +1,30 @@
+museum:
+  id: tech-interactive
+  name: The Tech Interactive
+  country: United States
+  city: San Jose, California
+  website: https://www.thetech.org/
+  type: science and technology centre
+exhibitions:
+  - id: renewal
+    name: Exhibit renewal (more than half the museum new)
+    replacement_year: "2023–2025"
+    new_exhibition: New galleries incl. Dream Garden (2025, AI-driven immersive environment)
+    status: already_replaced
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://en.wikipedia.org/wiki/The_Tech_Interactive
+    title: The Tech Interactive - Wikipedia
+    publisher: Wikipedia
+    source_type: other
+    accessed: "2026-09-30"
+    claim: More than half of the museum's exhibits are new, with some favourites (e.g. space jetpack) retained; Dream Garden opened in 2025.
+    signals: [new_exhibition, exhibit_replaced]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Confirm on thetech.org; ask what happened to replaced technology exhibits.
+  outreach:
+    email_hook: The Tech Interactive has renewed more than half of its exhibits in recent years

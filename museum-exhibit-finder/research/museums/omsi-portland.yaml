@@ -1,0 +1,59 @@
+museum:
+  id: omsi-portland
+  name: Oregon Museum of Science and Industry (OMSI)
+  country: United States
+  city: Portland, Oregon
+  website: https://omsi.edu/
+  type: science museum / science centre
+exhibitions:
+  - id: turbine-hall
+    name: Turbine Hall renovation
+    old_exhibition: Previous Turbine Hall exhibits incl. the Shake House earthquake simulator
+    new_exhibition: Innovation Stations; Epicenter earthquake simulator (replacing the old Shake House)
+    status: already_replaced
+    evidence: [e1]
+    exhibits:
+      - id: shake-house
+        name: Shake House earthquake simulator (replaced by Epicenter)
+        category: [simulator, stem]
+        interactive: true
+        status: already_replaced
+        evidence: [e1]
+        fit_for_tpm: A walk-in earthquake simulator is a popular hands-on exhibit (Tashkent is seismically active — strong local relevance).
+  - id: natural-sciences-hall
+    name: Natural Sciences Hall → Nancy Stueber Natural Sciences Hall
+    replacement_year: "2025–2026"
+    old_exhibition: Natural Sciences Hall (closed 30 Sept 2025)
+    new_exhibition: Climate-focused Nancy Stueber Natural Sciences Hall (spring 2026)
+    status: already_replaced
+    evidence: [e2]
+evidence:
+  - id: e1
+    url: https://www.walshconstruction.com/project/omsi-turbine-hall/
+    title: OMSI Turbine Hall - Walsh Construction Co.
+    publisher: Walsh Construction
+    source_type: trade_press
+    accessed: "2026-09-30"
+    claim: The Turbine Hall renovation created 6,200 sq ft of new exhibit space; the Epicenter earthquake simulator replaced the old Shake House.
+    signals: [renovation, new_exhibition, exhibit_replaced]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://omsi.edu/articles/reimagined-natural-sciences-hall/
+    title: Reimagined Natural Sciences Hall | OMSI
+    publisher: OMSI
+    source_type: official_site
+    source_date: "2025"
+    accessed: "2026-09-30"
+    claim: The Natural Sciences Hall closed on 30 September 2025 for transformation into a climate-focused hall opening in spring 2026.
+    signals: [renovation, closure, new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask OMSI what happened to the old Shake House simulator and exhibits from the Natural Sciences Hall.
+  outreach:
+    reason: OMSI replaced its Shake House earthquake simulator with the new Epicenter and closed its Natural Sciences Hall for renewal in 2025.
+    interest: The retired Shake House earthquake simulator; physics/earth-science interactives from the renewed halls.
+    fit: Tashkent's seismic history (1966 earthquake) makes an earthquake simulator especially relevant.
+    email_hook: the Epicenter simulator replaced the Shake House in the renovated Turbine Hall, and the Natural Sciences Hall closed in September 2025 for renewal
+    source: e1

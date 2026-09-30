@@ -1,0 +1,34 @@
+museum:
+  id: vitm-bengaluru
+  name: Visvesvaraya Industrial and Technological Museum (VITM)
+  country: India
+  city: Bengaluru
+  website: https://vismuseum.gov.in/
+  type: industrial and technology museum / science centre
+  parent_org: National Council of Science Museums (NCSM)
+exhibitions:
+  - id: fun-science
+    name: Fun Science gallery revamp
+    replacement_year: 2025
+    old_exhibition: Previous Fun Science gallery
+    new_exhibition: Revamped Fun Science gallery, ~50 hands-on exhibits (mechanics, optics, sound, mathematics), inaugurated 27 July 2025
+    status: already_replaced
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://ncsm.gov.in/activities/inauguration-of-fun-science-gallery-at-visvesvaraya-industrial-and-technological-museum-vitm-bengaluru
+    title: Inauguration of "Fun Science" Gallery at VITM, Bengaluru
+    publisher: National Council of Science Museums
+    source_type: official_site
+    source_date: "2025-07-27"
+    accessed: "2026-09-30"
+    claim: A newly revamped Fun Science gallery with ~50 hands-on exhibits was inaugurated at VITM on 27 July 2025.
+    signals: [renovation, new_exhibition, exhibit_replaced]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask NCSM whether exhibits from revamped galleries are redistributed within India or could go abroad; NCSM also builds exhibits for other countries.
+  outreach:
+    email_hook: VITM inaugurated its revamped Fun Science gallery in July 2025
+    source: e1

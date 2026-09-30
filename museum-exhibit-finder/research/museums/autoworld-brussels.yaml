@@ -1,0 +1,27 @@
+museum:
+  id: autoworld-brussels
+  name: Autoworld
+  country: Belgium
+  city: Brussels
+  website: https://www.autoworld.be/en/
+  type: automotive museum
+exhibitions:
+  - id: main-floor
+    name: Main-floor renovation and 40-year retrospective
+    new_exhibition: "Autoworld 40 Years – Looking back to the future"
+    status: unknown
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://www.autoworld.be/en/agenda
+    title: Events & Exhibitions – Autoworld Brussels
+    publisher: Autoworld
+    source_type: official_site
+    accessed: "2026-09-30"
+    claim: Autoworld (300+ vehicles, 1896–today) has been renovating its main floor, affecting the exhibition layout; a 40-year retrospective runs in the autumn.
+    signals: [renovation, new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask whether the main-floor renovation leads to vehicles or displays leaving the collection.

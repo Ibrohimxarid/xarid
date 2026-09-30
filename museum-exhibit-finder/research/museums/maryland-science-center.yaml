@@ -1,0 +1,46 @@
+museum:
+  id: maryland-science-center
+  name: Maryland Science Center
+  country: United States
+  city: Baltimore, Maryland
+  website: https://www.mdsci.org/
+  type: science centre
+exhibitions:
+  - id: our-place-in-space
+    name: Second-floor space exhibit replacement (50th-anniversary enhancements)
+    replacement_year: 2025
+    old_exhibition: Our Place in Space
+    new_exhibition: New 5,000 sq ft space-exploration exhibit (late 2025)
+    status: already_replaced
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://www.mdsci.org/wp-content/uploads/2025/04/Announcement-of-Enhancements_24.pdf
+    title: Maryland Science Center announces $10 million in enhancements
+    publisher: Maryland Science Center
+    source_type: press_release
+    source_date: "2024-10"
+    accessed: "2026-09-30"
+    claim: The centre's $10m+ enhancements (largest in 20+ years) include a new 5,000 sq ft space exhibit in late 2025 replacing Our Place in Space, a relocated Shed makerspace and upgrades to Dinosaur Mysteries and the Demonstration Stage.
+    signals: [renovation, new_exhibition, exhibit_replaced]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.southbmore.com/2024/10/10/maryland-science-center-announces-10-million-in-plaza-and-exhibit-improvements/
+    title: Maryland Science Center Announces $10 Million in Plaza and Exhibit Improvements
+    publisher: SouthBMore.com
+    source_type: news
+    source_date: "2024-10-10"
+    accessed: "2026-09-30"
+    claim: Local press confirms the exhibit improvements.
+    signals: [renovation]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask what happened to the Our Place in Space exhibit components (models, interactives).
+  outreach:
+    reason: Maryland Science Center replaced its Our Place in Space exhibit in 2025.
+    interest: Space models and interactives from Our Place in Space.
+    fit: Space-exploration interactives suit TPM's aviation/space section.
+    email_hook: the Center replaced its Our Place in Space exhibit with a new space-exploration gallery in 2025
+    source: e1

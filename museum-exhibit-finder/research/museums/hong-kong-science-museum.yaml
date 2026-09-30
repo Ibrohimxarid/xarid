@@ -1,0 +1,46 @@
+museum:
+  id: hong-kong-science-museum
+  name: Hong Kong Science Museum
+  country: Hong Kong SAR, China
+  city: Hong Kong
+  type: science museum (LCSD, government)
+  parent_org: Leisure and Cultural Services Department
+exhibitions:
+  - id: permanent-renewal
+    name: Permanent exhibition renewal project
+    replacement_year: "2024–2027"
+    old_exhibition: Existing permanent galleries (incl. World of Mirrors, Environmental Conservation Gallery due 2026–27)
+    new_exhibition: AI Gallery, InnoTech Gallery, Living Tech Gallery (Feb 2026); nine other galleries renewed
+    status: being_replaced
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://www.info.gov.hk/gia/general/202411/13/P2024111300160.htm
+    title: "LCQ4: Permanent exhibitions of the Hong Kong Science Museum"
+    publisher: Hong Kong SAR Government (Legislative Council reply)
+    source_type: government
+    source_date: "2024-11-13"
+    accessed: "2026-09-30"
+    claim: The government reported a phased renewal of the Science Museum's permanent exhibitions, with nine galleries renewed in 2025 and the last two (World of Mirrors; Jockey Club Environmental Conservation Gallery) planned for renewal in 2026–27.
+    signals: [renovation, exhibit_replaced, new_exhibition]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.info.gov.hk/gia/general/202602/05/P2026020500269.htm
+    title: Three new permanent exhibition galleries at Hong Kong Science Museum to open tomorrow
+    publisher: Hong Kong SAR Government
+    source_type: press_release
+    source_date: "2026-02-05"
+    accessed: "2026-09-30"
+    claim: Three new permanent galleries (AI, InnoTech, Living Tech) opened in February 2026 as part of the renewal project.
+    signals: [new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask LCSD whether exhibits removed in the renewal (esp. World of Mirrors optics exhibits, due 2026–27) are disposed of via government surplus procedures and whether overseas museums can apply.
+  outreach:
+    reason: The Hong Kong Science Museum is renewing its permanent galleries in phases to 2027.
+    interest: Optics exhibits from World of Mirrors and physics/technology exhibits removed in the renewal.
+    fit: Optics and classic physics interactives are a TPM priority; bilingual (English) labels.
+    email_hook: the Hong Kong Science Museum is renewing its permanent exhibition galleries in phases, with World of Mirrors scheduled for renewal in 2026–27
+    source: e1

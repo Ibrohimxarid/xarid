@@ -1,0 +1,42 @@
+museum:
+  id: science-world-vancouver
+  name: Science World
+  country: Canada
+  city: Vancouver
+  website: https://www.scienceworld.ca/
+  type: science centre
+exhibitions:
+  - id: gallery-renewals
+    name: Gallery renewals (federal $10m for building upgrades and new exhibits)
+    replacement_year: "2022–2025"
+    old_exhibition: Previous BodyWorks gallery and other galleries
+    new_exhibition: Re-imagined BodyWorks; Wonder Gallery (0–5); Creative Technology Gallery (2023)
+    status: already_replaced
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://www.canada.ca/en/pacific-economic-development/news/2022/10/government-of-canada-announces-10-million-to-science-world-for-building-upgrades-and-new-exhibits.html
+    title: Government of Canada announces $10 million to Science World for building upgrades and new exhibits
+    publisher: Government of Canada (PacifiCan)
+    source_type: government
+    source_date: "2022-10"
+    accessed: "2026-09-30"
+    claim: Science World received $10 million in federal funding for building upgrades and new exhibits.
+    signals: [renovation, new_exhibition]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.scienceworld.ca/exhibitions/
+    title: Exhibitions - Science World
+    publisher: Science World
+    source_type: official_site
+    accessed: "2026-09-30"
+    claim: Science World opened the Wonder Gallery and a re-imagined BodyWorks gallery with new and refurbished displays; the Creative Technology Gallery launched in 2023.
+    signals: [new_exhibition, exhibit_replaced]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask Science World what happened to displays replaced in the BodyWorks and other gallery renewals.
+  outreach:
+    email_hook: Science World has renewed several galleries, including a re-imagined BodyWorks and the new Creative Technology Gallery
+    source: e2

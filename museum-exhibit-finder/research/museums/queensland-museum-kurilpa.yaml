@@ -1,0 +1,27 @@
+museum:
+  id: queensland-museum-kurilpa
+  name: Queensland Museum Kurilpa (SparkLab, Sciencentre)
+  country: Australia
+  city: Brisbane
+  website: https://www.museum.qld.gov.au/kurilpa/
+  type: state museum with science centre
+exhibitions:
+  - id: sparklab
+    name: SparkLab, Sciencentre (redeveloped)
+    new_exhibition: Redeveloped SparkLab, Sciencentre
+    status: already_replaced
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://www.museum.qld.gov.au/kurilpa/
+    title: Queensland Museum Kurilpa
+    publisher: Queensland Museum
+    source_type: official_site
+    accessed: "2026-09-30"
+    claim: Permanent galleries include the redeveloped SparkLab, Sciencentre (the former Sciencentre was redeveloped into SparkLab).
+    signals: [renovation, new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Lead only — ask about exhibits from the pre-SparkLab Sciencentre.

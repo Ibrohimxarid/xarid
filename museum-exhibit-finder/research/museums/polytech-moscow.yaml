@@ -1,0 +1,42 @@
+museum:
+  id: polytech-moscow
+  name: Polytechnic Museum (Politekh)
+  name_local: Политехнический музей
+  country: Russia
+  city: Moscow
+  type: science and technology museum
+exhibitions:
+  - id: lubyanka-reconstruction
+    name: Historic Lubyanka building reconstruction
+    replacement_year: "2013–2026"
+    old_exhibition: Pre-2013 permanent exhibitions in the historic building
+    new_exhibition: New exhibitions in the reconstructed building (expected 2026); "Open Collection" store at the Moskva technopolis
+    status: in_storage
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://www.theartnewspaper.ru/posts/20231026-lpdh/
+    title: "Политехнический музей от подвала до крыши: как было раньше и как будет вскоре"
+    publisher: The Art Newspaper Russia
+    source_type: trade_press
+    source_date: "2023-10-26"
+    accessed: "2026-09-30"
+    language: ru
+    claim: The historic building has been under major reconstruction, with the collection shown at other venues — mainly the "Open Collection" at the Moskva technopolis (a former car-factory building); exhibitions in the main building were expected in 2026.
+    signals: [renovation, relocation, storage]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9
+    title: Политехнический музей — Википедия
+    publisher: Wikipedia (ru)
+    source_type: other
+    accessed: "2026-09-30"
+    language: ru
+    claim: Background on the museum's history, including earlier transfers of maritime/river-transport exhibits to a specialised museum in Leningrad.
+    signals: [already_transferred]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Lead only — check sanctions/export constraints before any approach; ask about duplicates and retired demonstration apparatus after the 2026 reopening.
+  notes: A regional peer with the same polytechnic profile; logistics via Kazakhstan are feasible but legal/export rules must be checked.

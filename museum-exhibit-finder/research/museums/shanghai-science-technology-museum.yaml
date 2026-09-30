@@ -1,0 +1,47 @@
+museum:
+  id: shanghai-science-technology-museum
+  name: Shanghai Science and Technology Museum
+  country: China
+  city: Shanghai
+  website: https://en.sstm.org.cn/
+  type: science and technology museum
+exhibitions:
+  - id: upgrade-2023-2026
+    name: Largest systematic upgrade (closed 31 Mar 2023, reopened Jan 2026)
+    opening_year: 2001
+    replacement_year: "2023–2026"
+    old_exhibition: Original 2001-era permanent exhibition halls
+    new_exhibition: 10 permanent areas, 405 interactive displays / 926 exhibits (87% original); CLED giant-screen theatre
+    status: already_replaced
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://english.shanghai.gov.cn/en-Latest-WhatsNew/20260129/261808d990f243f1a6ae4a897e1ef31b.html
+    title: Shanghai Science and Technology Museum set to reopen
+    publisher: Shanghai Municipal People's Government
+    source_type: government
+    source_date: "2026-01-29"
+    accessed: "2026-09-30"
+    claim: After closing on 31 March 2023 for a RMB 820m upgrade, the museum reopened in January 2026 with 405 interactive displays (926 exhibits, 87% original creations) in 10 permanent exhibition areas.
+    signals: [renovation, closure, new_exhibition, exhibit_replaced]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://blooloop.com/shanghai-science-technology-museum-reopen/
+    title: Shanghai Science and Technology Museum reopens after three-year renovation
+    publisher: blooloop
+    source_type: trade_press
+    source_date: "2026"
+    accessed: "2026-09-30"
+    claim: Trade press confirms the reopening after a three-year renovation, the museum's largest update in 20+ years.
+    signals: [renovation, new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask SSTM (international cooperation office) what happened to the pre-2023 interactive exhibits — stored, transferred to regional science centres, or scrapped.
+  outreach:
+    reason: SSTM replaced its original exhibition halls in a 2023–2026 upgrade.
+    interest: Pre-2023 physics, mechanics, robotics and energy interactives.
+    fit: Large collection of robust interactives; overland/rail logistics from China to Uzbekistan are well established.
+    email_hook: the Shanghai Science and Technology Museum reopened in January 2026 after its largest upgrade, replacing its original exhibition halls with new interactive galleries
+    source: e1

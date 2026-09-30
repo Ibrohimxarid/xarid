@@ -1,0 +1,30 @@
+museum:
+  id: ec1-lodz
+  name: EC1 Łódź – Science and Technology Centre
+  name_local: Centrum Nauki i Techniki EC1
+  country: Poland
+  city: Łódź
+  website: https://ec1lodz.pl/en/
+  type: science and technology centre (former power plant)
+exhibitions:
+  - id: development-2025-2028
+    name: Development project 2025–2028 (motion capture, VR/AR zone upgrades)
+    replacement_year: "2025–2028"
+    status: unknown
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://ec1lodz.pl/czym-jest-ec1/projekty
+    title: Projekty — EC1 Łódź
+    publisher: EC1 Łódź
+    source_type: official_site
+    source_date: "2025"
+    accessed: "2026-09-30"
+    language: pl
+    claim: EC1 runs a 2025 project to add motion-capture technology and upgrade its VR/AR zones, and a Science and Technology Centre development project for 2025–2028.
+    signals: [renovation, new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask EC1 whether VR/AR hardware and interactives replaced in the upgrade are available.

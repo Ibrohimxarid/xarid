@@ -1,0 +1,32 @@
+museum:
+  id: kahaku-tokyo
+  name: National Museum of Nature and Science, Tokyo
+  name_local: 国立科学博物館
+  country: Japan
+  city: Tokyo (Ueno)
+  website: https://www.kahaku.go.jp/english/
+  type: national museum of nature and science
+exhibitions:
+  - id: global-gallery-b3f
+    name: Global Gallery B3F renovation
+    replacement_year: 2026
+    status: being_replaced
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://www.kahaku.go.jp/english/exhibitions/index.html
+    title: "Exhibitions :: National Museum of Nature and Science, Tokyo"
+    publisher: National Museum of Nature and Science
+    source_type: official_site
+    source_date: "2026"
+    accessed: "2026-09-30"
+    claim: The 3rd basement floor of the Global Gallery closes for renovation from 8 September 2026.
+    signals: [renovation, closure]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Identify which B3F exhibits (physics/science-technology) are being removed and ask about their fate.
+  outreach:
+    email_hook: the Global Gallery's third basement floor closed for renovation in September 2026
+    source: e1

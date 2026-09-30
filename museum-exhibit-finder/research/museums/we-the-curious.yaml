@@ -3,7 +3,6 @@ museum:
   name: We The Curious
   country: United Kingdom
   city: Bristol
-  website: https://www.wethecurious.org/
   type: science centre
 exhibitions:
   - id: post-fire

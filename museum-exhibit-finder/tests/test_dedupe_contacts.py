@@ -25,8 +25,13 @@ def test_duplicate_museums_by_name_and_domain():
     assert {(p.a, p.b) for p in pairs} == {("a", "b")}
 
 
-def test_name_similarity_ignores_stopwords():
-    assert name_similarity("Deutsches Museum", "Deutsches Museum München") > 90
+def test_name_similarity_ignores_stopwords_and_city():
+    assert name_similarity("Deutsches Museum", "Deutsches Museum München", {"munchen"}) > 90
+
+
+def test_generic_words_are_not_a_match():
+    assert name_similarity("Science Museum", "Catalyst Science Discovery Centre and Museum") < 80
+    assert name_similarity("Deutsches Museum", "Deutsches Technikmuseum") < 80
 
 
 def test_extract_contacts_keeps_source_and_deobfuscates():

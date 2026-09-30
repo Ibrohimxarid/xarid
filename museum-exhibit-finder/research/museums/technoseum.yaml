@@ -1,0 +1,36 @@
+museum:
+  id: technoseum
+  name: TECHNOSEUM – Landesmuseum für Technik und Arbeit
+  country: Germany
+  city: Mannheim
+  website: https://www.en.technoseum.de/
+  type: technology museum
+exhibitions:
+  - id: permanent-renewal
+    name: Gradual renewal of the permanent exhibition (multi-year)
+    replacement_year: "2024–"
+    old_exhibition: Current permanent exhibition (large exhibits such as the steam engine, textile factory and print workshop to remain)
+    status: being_replaced
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://www.wochenblatt-reporter.de/mannheim/c-ausgehen-geniessen/zukunftslabor-und-schaufenster-fuer-industrie-und-wissenschaft-wie-das-technoseum-mannheim-fit-fuer-die-zukunft-wird_a510645
+    title: Wie das TECHNOSEUM Mannheim fit für die Zukunft wird
+    publisher: Wochenblatt-Reporter
+    source_type: news
+    source_date: "2024"
+    accessed: "2026-09-30"
+    language: de
+    claim: TECHNOSEUM is renewing its permanent exhibition gradually over several years (concepts finalised in 2024, tenders for external providers); the steam engine, two-floor textile factory and print workshop stay.
+    signals: [renovation, new_exhibition, exhibit_replaced]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask TECHNOSEUM which interactive stations and demonstration models leave during each renewal phase.
+  outreach:
+    reason: TECHNOSEUM is renewing its permanent exhibition in phases over several years.
+    interest: Interactive stations, demonstration models and machine displays removed in each phase.
+    fit: A technology-and-work museum closely aligned with TPM (industry, engines, electricity).
+    email_hook: the TECHNOSEUM is renewing its permanent exhibition step by step over the coming years
+    source: e1

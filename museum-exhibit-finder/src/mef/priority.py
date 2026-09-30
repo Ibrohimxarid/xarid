@@ -34,6 +34,8 @@ from .models import (
 AVAILABLE_STATUSES = {"for_sale", "available_donation", "available_transfer", "deaccessioned"}
 REMOVED_STATUSES = {"already_replaced", "in_storage", "being_replaced"}
 GONE_STATUSES = {"already_transferred"}
+# Sources that alone cannot confirm availability (brief: confirm social-media finds officially).
+UNCONFIRMED_SOURCES = {"social_media", "forum"}
 RANK = {"A": 3, "B": 2, "C": 1, None: 0}
 
 
@@ -65,6 +67,10 @@ def _assess(evs: list[Evidence], status: str | None, today: dt.date | None) -> A
 
     if avail_evs or status in AVAILABLE_STATUSES:
         fresh, stale = _fresh(avail_evs, today)
+        if fresh and all(e.source_type in UNCONFIRMED_SOURCES for e in fresh):
+            notes.append("Availability reported only on social media / forums — confirm on an "
+                         "official source before treating as a direct opportunity.")
+            return Assessment("B", 4, "Reported but not confirmed by an official source.", fresh, notes)
         if fresh:
             undated = [e for e in fresh if not e.source_date]
             if undated:

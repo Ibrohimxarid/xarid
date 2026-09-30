@@ -1,0 +1,39 @@
+museum:
+  id: fleet-science-center
+  name: Fleet Science Center
+  country: United States
+  city: San Diego, California
+  website: https://www.fleetscience.org/
+  type: science centre with giant dome theatre
+exhibitions:
+  - id: renovation-2025-2026
+    name: $5.6m renovation (Aug 2025 – June 2026)
+    replacement_year: "2025–2026"
+    new_exhibition: Community Gallery, Mind Bender Mansion, "trolley tubes" transport simulation; restored original tornado exhibit
+    status: unknown
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://www.fleetscience.org/press-room/press-releases/fleet-science-center-announces-major-renovation-part-multi-year-capital-0
+    title: Fleet Science Center Announces Major Renovation as Part of Multi-Year Capital Campaign
+    publisher: Fleet Science Center
+    source_type: press_release
+    source_date: "2025"
+    accessed: "2026-09-30"
+    claim: A $5.6m renovation from August 2025 increases gallery space by ~20% without expanding the building.
+    signals: [renovation, new_exhibition]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://hoodline.com/2026/06/fleet-science-center-roars-back-in-balboa-park-with-slick-new-galleries/
+    title: Fleet Science Center Roars Back In Balboa Park With Slick New Galleries
+    publisher: Hoodline
+    source_type: news
+    source_date: "2026-06"
+    accessed: "2026-09-30"
+    claim: The Fleet reopened its renovated galleries on 27–28 June 2026.
+    signals: [new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Lead only — ask which exhibits were removed to create the new galleries.

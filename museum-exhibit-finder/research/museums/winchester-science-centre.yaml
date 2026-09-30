@@ -1,0 +1,30 @@
+museum:
+  id: winchester-science-centre
+  name: Winchester Science Centre and Planetarium
+  country: United Kingdom
+  city: Winchester
+  website: https://www.winchestersciencecentre.org/
+  type: science centre with planetarium
+exhibitions:
+  - id: capital-project
+    name: £3.4m building project
+    new_exhibition: Live science theatre (replacing the Space Marquee), new multi-sensory exhibition, upgraded planetarium
+    status: being_replaced
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://www.winchestersciencecentre.org/news/news-and-announcements/winchester-science-centre-unveils-34m-building-project-and-capital-fundraising-campaign-to-transform-its-visitor-experience/
+    title: Winchester Science Centre unveils £3.4m building project and capital fundraising campaign
+    publisher: Winchester Science Centre
+    source_type: press_release
+    accessed: "2026-09-30"
+    claim: The centre plans a £3.4m transformation adding a 200-seat live science theatre (replacing the Space Marquee), a major new multi-sensory exhibition and an upgraded planetarium.
+    signals: [renovation, new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask whether the planetarium upgrade frees the current projector and which exhibits the new exhibition replaces.
+  outreach:
+    email_hook: the Centre is carrying out a £3.4m project including a new exhibition and an upgraded planetarium
+    source: e1

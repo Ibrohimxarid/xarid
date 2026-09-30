@@ -1,0 +1,32 @@
+museum:
+  id: questacon
+  name: Questacon – The National Science and Technology Centre
+  country: Australia
+  city: Canberra
+  website: https://www.questacon.edu.au/
+  type: national science centre
+exhibitions:
+  - id: new-exhibition-2025
+    name: New hands-on exhibition (comic-book theme) reviving classic exhibits
+    replacement_year: 2025
+    new_exhibition: New in-house exhibition built at the Ian Potter Foundation Technology Learning Centre (June 2025)
+    status: unknown
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://www.abc.net.au/news/2025-06-02/questacon-canberra-new-exhibition-zap-clank-pow/105363326
+    title: Questacon's new hands-on exhibition brings back classics from decades past
+    publisher: ABC News
+    source_type: news
+    source_date: "2025-06-02"
+    accessed: "2026-09-30"
+    claim: Questacon opened a new hands-on exhibition, two years in development and built in Canberra, bringing back classic exhibits.
+    signals: [new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask Questacon whether exhibits rotated out (and its travelling exhibitions) are ever sold to overseas centres.
+  outreach:
+    email_hook: Questacon opened a new in-house hands-on exhibition in 2025
+    source: e1

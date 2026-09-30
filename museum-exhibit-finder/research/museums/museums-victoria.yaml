@@ -1,0 +1,26 @@
+museum:
+  id: museums-victoria
+  name: Museums Victoria (incl. Scienceworks)
+  country: Australia
+  city: Melbourne
+  website: https://museumsvictoria.com.au/
+  type: state museum organisation (science, technology, history)
+exhibitions:
+  - id: deaccessioning
+    name: Deaccessioning programme
+    status: unknown
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://museumsvictoria.com.au/article/deaccessioning/
+    title: "Deaccessioning: Why do museums remove objects from collections?"
+    publisher: Museums Victoria
+    source_type: official_site
+    accessed: "2026-09-30"
+    claim: Museums Victoria (≈15 million objects) runs a formal deaccessioning process, usually with a 12-month cooling-off period before disposal.
+    signals: [deaccession_policy]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask Museums Victoria how overseas public museums can register interest in deaccessioned technology objects (Scienceworks collection).

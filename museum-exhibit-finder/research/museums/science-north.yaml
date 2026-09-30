@@ -1,0 +1,41 @@
+museum:
+  id: science-north
+  name: Science North
+  country: Canada
+  city: Sudbury, Ontario
+  website: https://www.sciencenorth.ca/
+  type: science centre
+exhibitions:
+  - id: floors-3-4-renewal
+    name: Third and fourth floor renewal ($1.9m) and Woven by Water (to 2028)
+    replacement_year: "2025–2028"
+    new_exhibition: Woven by Water (water ecosystems, Indigenous knowledge) — target 2028
+    status: being_replaced
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://www.sudbury.com/local-news/third-fourth-floors-at-science-north-getting-a-19m-renewal-11632359
+    title: Third, fourth floors at Science North getting a $1.9M renewal
+    publisher: Sudbury.com
+    source_type: news
+    accessed: "2026-09-30"
+    claim: Science North's third and fourth floors are getting a $1.9m renewal.
+    signals: [renovation, new_exhibition]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.sudbury.com/local-business/major-science-north-renewal-receives-650k-from-provincial-heritage-fund-12600374
+    title: Major Science North renewal receives $650K from provincial Heritage Fund
+    publisher: Sudbury.com
+    source_type: news
+    source_date: "2026"
+    accessed: "2026-09-30"
+    claim: Ontario and FedNor each invested $650,000 in the new Woven by Water exhibit, targeted for completion in 2028.
+    signals: [renovation, new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask Science North which floor-3/4 exhibits are being retired for the renewal.
+  outreach:
+    email_hook: Science North is renewing its third and fourth floors, including the new Woven by Water exhibit
+    source: e1

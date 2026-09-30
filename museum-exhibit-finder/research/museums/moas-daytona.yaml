@@ -3,7 +3,6 @@ museum:
   name: Museum of Arts & Sciences (MOAS)
   country: United States
   city: Daytona Beach, Florida
-  website: https://www.moas.org/
   type: art and science museum (with children's science museum)
 exhibitions:
   - id: childrens-museum

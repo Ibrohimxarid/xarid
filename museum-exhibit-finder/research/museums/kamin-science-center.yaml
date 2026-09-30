@@ -1,0 +1,38 @@
+museum:
+  id: kamin-science-center
+  name: Kamin Science Center (formerly Carnegie Science Center)
+  aliases: [Carnegie Science Center]
+  country: United States
+  city: Pittsburgh, Pennsylvania
+  website: https://kaminsciencecenter.org/
+  type: science centre
+  parent_org: Carnegie Museums of Pittsburgh
+exhibitions:
+  - id: makeover-2025-2027
+    name: Makeover — nine new permanent exhibitions in 27 months
+    replacement_year: "2025–2027"
+    old_exhibition: SportsWorks (separate building) and other exhibitions being replaced
+    new_exhibition: New SportsWorks in main building; Science of Speed (auto racing) in the former SportsWorks building; renovated Early Learner space
+    status: being_replaced
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://www.wesanews.org/arts-culture/2025-09-11/carnegie-museums-new-name-makeover-kamin-science-center
+    title: Carnegie Museums unveil new name, makeover plan for Pittsburgh's Kamin Science Center
+    publisher: WESA
+    source_type: news
+    source_date: "2025-09-11"
+    accessed: "2026-09-30"
+    claim: The renamed Kamin Science Center plans nine new permanent exhibitions over 27 months; SportsWorks moves into the main building and its former building becomes a Science of Speed (auto racing) exhibit.
+    signals: [renovation, new_exhibition, exhibit_replaced]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask which legacy SportsWorks and other exhibits are being retired rather than moved.
+  outreach:
+    reason: Kamin Science Center is replacing multiple exhibitions (nine new permanent exhibitions by 2027).
+    interest: Retired SportsWorks physics-of-motion interactives and other replaced exhibits.
+    fit: Physics-of-sport and motion interactives are classic TPM mechanics content.
+    email_hook: the Kamin Science Center is opening nine new permanent exhibitions by 2027, including a reworked SportsWorks and a new Science of Speed exhibit
+    source: e1

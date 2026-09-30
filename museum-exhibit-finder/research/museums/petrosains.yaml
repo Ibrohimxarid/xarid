@@ -1,0 +1,28 @@
+museum:
+  id: petrosains
+  name: Petrosains, The Discovery Centre
+  country: Malaysia
+  city: Kuala Lumpur
+  website: https://petrosains.com.my/
+  type: science discovery centre
+exhibitions:
+  - id: transformation
+    name: Transformation into an immersive learning hub
+    replacement_year: "2025"
+    status: unknown
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://kualalumpurwithkids.com/petrosains-the-discovery-centre-kuala-lumpur-review/
+    title: "Petrosains, The Discovery Centre Review: What to Expect with Kids"
+    publisher: Kuala Lumpur with Kids (blog)
+    source_type: other
+    source_date: "2025-09"
+    accessed: "2026-09-30"
+    claim: A 2025 visitor review notes Petrosains is being transformed into an immersive learning hub with updated exhibitions.
+    signals: [renovation, new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Confirm on petrosains.com.my; ask about retired oil & gas / energy exhibits.

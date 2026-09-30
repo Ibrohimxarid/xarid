@@ -1,0 +1,29 @@
+museum:
+  id: aberdeen-science-centre
+  name: Aberdeen Science Centre
+  country: United Kingdom
+  city: Aberdeen
+  website: https://www.aberdeensciencecentre.org/
+  type: science centre
+exhibitions:
+  - id: redevelopment-2020
+    name: £6m redevelopment (reopened Nov 2020)
+    replacement_year: 2020
+    new_exhibition: 60+ new interactive exhibits in six zones (Energy, Space, Life Sciences, Make It Test It, under-6s, Shell Learning Zone)
+    status: unknown
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://aberdeensciencecentre.org/ascreopens/
+    title: Aberdeen Science Centre reopens its doors
+    publisher: Aberdeen Science Centre
+    source_type: press_release
+    source_date: "2020-11"
+    accessed: "2026-09-30"
+    claim: After a two-year £6m redevelopment the centre reopened in November 2020 with 60+ new interactive exhibits.
+    signals: [renovation, new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Lead only — pre-2018 exhibits likely gone; ask about exhibits due for rotation.

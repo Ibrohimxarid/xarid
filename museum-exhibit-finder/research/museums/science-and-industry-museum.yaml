@@ -1,0 +1,57 @@
+museum:
+  id: science-and-industry-museum
+  name: Science and Industry Museum
+  country: United Kingdom
+  city: Manchester
+  website: https://www.scienceandindustrymuseum.org.uk/
+  type: science and industry museum
+  parent_org: Science Museum Group
+exhibitions:
+  - id: power-hall
+    name: "Power Hall: The Andrew Law Gallery"
+    replacement_year: "2019–2025"
+    old_exhibition: Power Hall displays (closed 2019)
+    new_exhibition: Restored Power Hall with running engines and new interactives (reopened 17 Oct 2025)
+    status: already_replaced
+    evidence: [e1, e2]
+  - id: site-transformation
+    name: Site-wide transformation (extended plans)
+    status: unknown
+    evidence: [e3]
+evidence:
+  - id: e1
+    url: https://www.scienceandindustrymuseum.org.uk/about-us/press-office/power-hall-reopening-october-2025
+    title: Power Hall to reopen 17 October 2025
+    publisher: Science and Industry Museum
+    source_type: press_release
+    source_date: "2025"
+    accessed: "2026-09-30"
+    claim: Power Hall, closed since 2019 for roof repairs and decarbonisation, reopened on 17 October 2025 with the largest single-room exhibition refit in the museum's history and new interactives.
+    signals: [renovation, new_exhibition]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.museumsassociation.org/museums-journal/news/2025/10/manchesters-power-hall-reopens-after-major-repairs/
+    title: Manchester's Power Hall reopens after major repairs
+    publisher: Museums Association
+    source_type: trade_press
+    source_date: "2025-10"
+    accessed: "2026-09-30"
+    claim: Trade press confirms the reopening of the restored Power Hall.
+    signals: [renovation]
+    verified_via: web_search_snippet
+  - id: e3
+    url: https://www.scienceandindustrymuseum.org.uk/about-us/press-office/science-and-industry-museum-announces-plans-extend-transformation
+    title: Science and Industry Museum announces plans to extend transformation
+    publisher: Science and Industry Museum
+    source_type: press_release
+    accessed: "2026-09-30"
+    claim: The museum is extending its multi-million-pound site transformation to further buildings.
+    signals: [renovation]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask whether pre-2019 Power Hall interactives/displays not reinstalled, or items from other buildings under transformation, are surplus (SMG transfer procedure).
+  outreach:
+    email_hook: Power Hall reopened in October 2025 after the largest exhibition refit in the museum's history, and the museum is extending its transformation to other buildings
+    source: e1

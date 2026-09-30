@@ -1,0 +1,27 @@
+museum:
+  id: noesis-thessaloniki
+  name: NOESIS – Thessaloniki Science Center and Technology Museum
+  country: Greece
+  city: Thessaloniki
+  type: science centre and technology museum
+exhibitions:
+  - id: planetarium-upgrade
+    name: Digital planetarium upgrade
+    old_exhibition: Previous planetarium projection system
+    new_exhibition: Modern projection system, dome-screen extension, wireless bilingual headphones
+    status: already_replaced
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://thessaloniki.travel/exploring-the-city/art-culture/noesis/noesis-thessaloniki-science-center-and-technology-museum/
+    title: NOESIS - Thessaloniki Science Center and Technology Museum
+    publisher: thessaloniki.travel (city tourism)
+    source_type: other
+    accessed: "2026-09-30"
+    claim: The 160-seat digital planetarium recently received a modern projection system and dome-screen extension; the Technology Museum has Ancient Greek Technology, Technopark and a Car Gallery.
+    signals: [renovation, exhibit_replaced]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Low priority — ask whether the previous planetarium projectors are available.

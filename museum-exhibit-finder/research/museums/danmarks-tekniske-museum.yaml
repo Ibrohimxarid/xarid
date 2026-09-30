@@ -1,0 +1,29 @@
+museum:
+  id: danmarks-tekniske-museum
+  name: Danmarks Tekniske Museum (Danish Museum of Science and Technology)
+  country: Denmark
+  city: Helsingør
+  website: https://tekniskmuseum.dk/
+  type: technology museum
+exhibitions:
+  - id: relocation-svanemolle
+    name: Planned relocation to Svanemølleværket, Copenhagen (≈DKK 1bn)
+    old_exhibition: Current exhibitions in an unheated former foundry hall, Helsingør
+    status: still_in_use
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://kulturmonitor.dk/kulturarv/art10329864/Museums-flytteplaner-for-%C3%A9n-milliard-kroner-rykker-n%C3%A6rmere
+    title: "»En væsentlig milepæl«: Museums flytteplaner for én milliard kroner rykker nærmere"
+    publisher: Kulturmonitor
+    source_type: trade_press
+    source_date: "2025"
+    accessed: "2026-09-30"
+    language: da
+    claim: The museum plans to move from its unheated foundry hall in Helsingør to the preserved Svanemølleværket in Nordhavn, Copenhagen (≈DKK 1bn); Copenhagen Municipality is preparing a local plan.
+    signals: [relocation]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Monitor — ask about duplicates/surplus when the move is scheduled.

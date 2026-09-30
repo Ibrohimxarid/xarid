@@ -1,0 +1,76 @@
+museum:
+  id: coventry-transport-museum
+  name: Coventry Transport Museum (Culture Coventry Trust)
+  country: United Kingdom
+  city: Coventry
+  website: https://www.transport-museum.com/
+  type: transport / automotive museum
+  parent_org: Culture Coventry Trust
+contacts:
+  - kind: department
+    position: Collections team (Collections Review Project)
+    contact_page: https://transport-museum.com/collection/collections-review-project.aspx
+    source: e1
+exhibitions:
+  - id: collections-review
+    name: Collections Review Project ahead of the move to the former IKEA building
+    replacement_year: "2025–2026"
+    status: deaccessioned
+    evidence: [e1, e2, e3, e4]
+    exhibits:
+      - id: approved-disposals-2026
+        name: Items approved for disposal by Coventry City Council (26 Feb 2026 report) — list not captured
+        category: [automotive, transport]
+        status: deaccessioned
+        evidence: [e2, e3]
+        notes: Report covers items at Coventry Transport Museum, the Herbert and ancillary stores; open the PDF to identify transport/technology items.
+evidence:
+  - id: e1
+    url: https://transport-museum.com/collection/collections-review-project.aspx
+    title: Collections Review Project - Coventry Transport Museum
+    publisher: Coventry Transport Museum
+    source_type: official_site
+    accessed: "2026-09-30"
+    claim: The museum is reviewing its collections before moving them to the former IKEA building; approved disposals are offered first to accredited museums via Find an Object, then to other appropriate organisations; transfers outside Coventry are welcomed.
+    signals: [deaccession_in_progress, available_transfer, accepts_requests, relocation]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://edemocracy.coventry.gov.uk/documents/s66296/26.02.26%20Cabinet%20Member%20report%20-%20Collection%20Disposals.pdf
+    title: 26.02.26 Cabinet Member report — Collection Disposals
+    publisher: Coventry City Council
+    source_type: board_document
+    source_date: "2026-02-26"
+    accessed: "2026-09-30"
+    claim: A council report of 26 February 2026 concerns Culture Coventry Trust's request to dispose of collection items housed at Coventry Transport Museum, the Herbert and ancillary stores.
+    signals: [deaccession_in_progress]
+    verified_via: web_search_snippet
+  - id: e3
+    url: https://www.coventrytelegraph.net/news/coventry-news/hundreds-historical-items-coventry-unwanted-33330570
+    title: Hundreds of historical items on Coventry 'unwanted list'
+    publisher: Coventry Live
+    source_type: news
+    source_date: "2026"
+    accessed: "2026-09-30"
+    claim: Local press reports hundreds of historical items on Coventry's list for disposal.
+    signals: [deaccession_in_progress]
+    verified_via: web_search_snippet
+  - id: e4
+    url: https://www.coventrytelegraph.net/news/coventry-news/collections-coventry-transport-museum-displayed-32413565
+    title: Collections from Coventry Transport Museum to be displayed (former IKEA)
+    publisher: Coventry Live
+    source_type: news
+    source_date: "2025"
+    accessed: "2026-09-30"
+    claim: Collections stored at the museum and off-site are to move to the former IKEA building; ~300,000 Culture Coventry objects are being reviewed.
+    signals: [relocation, storage]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Open the Feb 2026 council report; ask the collections team which transport/engineering items remain unallocated after the Find an Object period and whether an overseas public museum can apply.
+  outreach:
+    reason: Coventry Transport Museum is disposing of collection items after its Collections Review, first offering them to other museums.
+    interest: Vehicles, engines, cycles and engineering objects on the approved disposal list.
+    fit: Coventry is the historic heart of the British motor and cycle industry — directly relevant to TPM's automotive theme.
+    email_hook: Culture Coventry's Collections Review has identified items for disposal, which are being offered to other museums
+    source: e1

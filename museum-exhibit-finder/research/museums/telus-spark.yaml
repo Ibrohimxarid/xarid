@@ -1,0 +1,33 @@
+museum:
+  id: telus-spark
+  name: TELUS Spark Science Centre
+  country: Canada
+  city: Calgary
+  website: https://sparkscience.ca/
+  type: science centre
+exhibitions:
+  - id: digital-gallery
+    name: Permanent digital gallery (6,000 sq ft gallery transformed)
+    replacement_year: "2021–2022"
+    new_exhibition: Immersive digital gallery ("Every Second", new experience every ~6 months)
+    old_exhibition: Previous gallery in the same 6,000 sq ft space
+    status: already_replaced
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://www.inparkmagazine.com/tssc-digital-gallery/
+    title: TELUS Spark Science Centre opens permanent digital gallery with first of many exhibits
+    publisher: InPark Magazine
+    source_type: trade_press
+    source_date: "2021"
+    accessed: "2026-09-30"
+    claim: A 6,000 sq ft gallery at TELUS Spark was transformed into a permanent digital projection gallery, with new experiences planned roughly every six months.
+    signals: [renovation, new_exhibition, exhibit_replaced]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask whether earlier digital experiences (projection content + hardware) rotated out of the gallery are available.
+  outreach:
+    email_hook: TELUS Spark converted a 6,000 sq ft gallery into a permanent digital gallery that rotates new experiences
+    source: e1

@@ -1,0 +1,58 @@
+museum:
+  id: petersen-automotive-museum
+  name: Petersen Automotive Museum
+  country: United States
+  city: Los Angeles, California
+  website: https://www.petersen.org/
+  type: automotive museum
+exhibitions:
+  - id: auction-deaccessions-2026
+    name: Vehicles consigned to public auctions (2026)
+    replacement_year: 2026
+    status: unknown
+    evidence: [e1, e2]
+    exhibits:
+      - id: hot-rods-mecum-2026
+        name: Five historic hot rods consigned to a 2026 Mecum auction
+        category: [automotive]
+        status: unknown
+        evidence: [e1]
+        notes: Auction date passed — check results; source is a magazine's Facebook post.
+      - id: alfa-giulia-tz
+        name: 1964 Alfa Romeo Giulia TZ from the Petersen (Velocity Invitational / Cars & Bids auction, May 2026)
+        category: [automotive]
+        year: "1964"
+        status: unknown
+        evidence: [e2]
+        notes: Auction (29–31 May 2026) has passed — check result.
+evidence:
+  - id: e1
+    url: https://www.facebook.com/hotrodmag/posts/petersen-museum-consigns-5-historic-hot-rods-to-2026-mecum-auction-and-four-of-t/1530342405787844/
+    title: Petersen Museum Consigns 5 Historic Hot Rods to 2026 Mecum Auction
+    publisher: Hot Rod Magazine (Facebook)
+    source_type: social_media
+    source_date: "2026"
+    accessed: "2026-09-30"
+    claim: Hot Rod Magazine reported that the Petersen consigned five historic hot rods to a 2026 Mecum auction.
+    signals: [for_sale, deaccession_in_progress]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://petersen.org/pages/petersen-event/collectors-summit-2026
+    title: Collectors' Summit 2026 – Petersen Automotive Museum
+    publisher: Petersen Automotive Museum
+    source_type: official_site
+    source_date: "2026"
+    accessed: "2026-09-30"
+    claim: The Petersen hosts a Collectors' Summit with major auction houses; separately, a 1964 Alfa Romeo Giulia TZ from the Petersen was to be offered at the Velocity Invitational 2026 live auction (Cars & Bids).
+    notes: The Alfa Romeo lot is not confirmed on the Petersen site in the captured snippet.
+    signals: []
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Confirm on petersen.org whether the museum is deaccessioning vehicles; if so, ask to be notified before future consignments (possible museum-to-museum transfer instead of auction).
+  outreach:
+    reason: The Petersen appears to be releasing vehicles from its collection through public auctions in 2026.
+    interest: Deaccessioned vehicles, cutaway engines and automotive technology displays.
+    fit: Automotive technology is a core TPM theme.
+    email_hook: the Petersen has been releasing some vehicles from its collection through public auctions in 2026

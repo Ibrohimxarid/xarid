@@ -1,0 +1,26 @@
+museum:
+  id: canada-aviation-space-museum
+  name: Canada Aviation and Space Museum (Ingenium)
+  country: Canada
+  city: Ottawa
+  type: national aviation and space museum
+  parent_org: Ingenium – Canada's Museums of Science and Innovation
+exhibitions:
+  - id: new-wing
+    name: New two-storey wing
+    status: unknown
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://www.thecanadianencyclopedia.ca/en/article/canada-aviation-museum
+    title: Canada Aviation and Space Museum | The Canadian Encyclopedia
+    publisher: The Canadian Encyclopedia
+    source_type: other
+    accessed: "2026-09-30"
+    claim: The museum is adding a new two-storey wing; a Reserve Hangar stores collection items not on display.
+    signals: [renovation, new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Covered by Ingenium's deaccession policy (Canadian museums first) — ask Ingenium about aviation duplicates declined domestically.

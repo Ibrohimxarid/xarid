@@ -1,0 +1,39 @@
+museum:
+  id: exploratorium
+  name: Exploratorium
+  country: United States
+  city: San Francisco, California
+  website: https://www.exploratorium.edu/
+  type: science centre (exhibit developer)
+exhibitions:
+  - id: exhibit-lifecycle
+    name: Continuous exhibit development and retirement
+    status: unknown
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://www.exploratorium.edu/exhibits/exhibit-making
+    title: Exhibit Making | Exploratorium
+    publisher: Exploratorium
+    source_type: official_site
+    accessed: "2026-09-30"
+    claim: The Exploratorium constantly creates, modifies and retires exhibits; many exhibits go through several incarnations.
+    signals: [exhibit_replaced]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.exploratorium.edu/about/our-story
+    title: Our Story | Exploratorium
+    publisher: Exploratorium
+    source_type: official_site
+    accessed: "2026-09-30"
+    claim: Through Global Collaborations and the Exploratorium Cookbooks it shares exhibit designs and know-how with partner organisations worldwide (no evidence of selling retired exhibits).
+    signals: []
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask the Exploratorium's Global Collaborations team whether retired exhibit units (not new builds) are ever released to partner museums.
+  notes: New exhibit sales by the Exploratorium are commercial and out of scope.
+  outreach:
+    email_hook: the Exploratorium regularly retires and replaces exhibits on its floor
+    source: e1

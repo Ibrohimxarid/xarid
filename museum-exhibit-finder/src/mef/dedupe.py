@@ -52,17 +52,26 @@ def registered_domain(url: str | None) -> str | None:
     return f"{ext.domain}.{ext.suffix}".lower() if ext.suffix else ext.domain.lower()
 
 
-def normalise_name(name: str) -> str:
-    s = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode().lower()
-    s = re.sub(r"[^a-z0-9 ]+", " ", s)
-    return " ".join(w for w in s.split() if w not in _STOP)
+def _ascii_tokens(text: str) -> list[str]:
+    s = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode().lower()
+    return re.sub(r"[^a-z0-9 ]+", " ", s).split()
 
 
-def name_similarity(a: str, b: str) -> float:
-    na, nb = normalise_name(a), normalise_name(b)
+def normalise_name(name: str, extra_stop: frozenset[str] | set[str] = frozenset()) -> str:
+    return " ".join(w for w in _ascii_tokens(name) if w not in _STOP and w not in extra_stop)
+
+
+def name_similarity(a: str, b: str, extra_stop: frozenset[str] | set[str] = frozenset()) -> float:
+    """Order-insensitive similarity of distinctive name tokens.
+
+    Uses token_sort (not token_set) so that "Science Museum" is not a 100% match
+    for every name that merely contains those words; ``extra_stop`` removes
+    tokens such as the city ("Deutsches Museum München" = "Deutsches Museum").
+    """
+    na, nb = normalise_name(a, extra_stop), normalise_name(b, extra_stop)
     if not na or not nb:
-        return float(fuzz.token_set_ratio(a.lower(), b.lower()))
-    return float(fuzz.token_set_ratio(na, nb))
+        return float(fuzz.token_sort_ratio(" ".join(_ascii_tokens(a)), " ".join(_ascii_tokens(b))))
+    return float(fuzz.token_sort_ratio(na, nb))
 
 
 @dataclass
@@ -97,7 +106,8 @@ def find_duplicate_museums(museums: list[dict], threshold: float = 92.0) -> list
                 continue
             names_a = [m["name"], *m.get("aliases", [])]
             names_b = [n["name"], *n.get("aliases", [])]
-            best = max(name_similarity(x, y) for x in names_a for y in names_b)
+            cities = set(_ascii_tokens(f"{m.get('city') or ''} {n.get('city') or ''}"))
+            best = max(name_similarity(x, y, cities) for x in names_a for y in names_b)
             if best >= threshold:
                 pairs.append(DuplicatePair(m["id"], n["id"], "similar name, same country", best))
     return pairs

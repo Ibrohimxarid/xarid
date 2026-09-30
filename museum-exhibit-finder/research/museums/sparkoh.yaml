@@ -1,0 +1,40 @@
+museum:
+  id: sparkoh
+  name: SPARKOH!
+  country: Belgium
+  city: Frameries (Mons)
+  website: https://sparkoh.be/
+  type: science centre (former colliery)
+exhibitions:
+  - id: investments-2024-2026
+    name: Makeover (2021) and 2024–2026 investment programme
+    new_exhibition: Cosmos (Oct 2024–Oct 2025); digital/AR and sports courses
+    status: unknown
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://www.dhnet.be/regions/mons/borinage/2025/01/13/a-frameries-le-science-center-sparkoh-tire-un-bilan-2024-positif-malgre-une-legere-baisse-de-frequentation-et-se-tourne-vers-2025-avec-serenite-IAL6YL5NIRADVA7T63W4SNXXQA/
+    title: À Frameries, le science center SparkOh! tire un bilan 2024 positif
+    publisher: La DH
+    source_type: news
+    source_date: "2025-01-13"
+    accessed: "2026-09-30"
+    language: fr
+    claim: After a 2021 makeover, SPARKOH! is accelerating investment in digital, AR and sports courses in 2024–2026; its cinema was closed six months for renovation in 2024.
+    signals: [renovation, new_exhibition]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.lalibre.be/dernieres-depeches/2024/10/17/la-musee-scientifique-sparkoh-a-frameries-inaugure-sa-nouvelle-exposition-cosmos-QOPPZTFEMVHVHA4P7LIY64MUKQ/
+    title: Le musée scientifique SparkOH! à Frameries inaugure sa nouvelle exposition "Cosmos"
+    publisher: La Libre
+    source_type: news
+    source_date: "2024-10-17"
+    accessed: "2026-09-30"
+    language: fr
+    claim: SPARKOH! opened its Cosmos exhibition in October 2024 (until October 2025).
+    signals: [new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask whether Cosmos (ended Oct 2025) or older modules are available.

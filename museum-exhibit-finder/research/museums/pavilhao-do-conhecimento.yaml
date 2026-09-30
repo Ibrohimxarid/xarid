@@ -1,0 +1,28 @@
+museum:
+  id: pavilhao-do-conhecimento
+  name: Pavilhão do Conhecimento – Centro Ciência Viva
+  country: Portugal
+  city: Lisbon
+  website: https://www.pavconhecimento.pt/
+  type: science centre
+exhibitions:
+  - id: rotating
+    name: Rotating permanent/temporary exhibitions (~4,000 m²)
+    new_exhibition: Missão Espaço; brain exhibition (May 2024)
+    status: unknown
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://www.pavconhecimento.pt/3639/pavilhao-do-conhecimento-com-nova-exposicao
+    title: Pavilhão do Conhecimento com nova exposição
+    publisher: Pavilhão do Conhecimento
+    source_type: official_site
+    accessed: "2026-09-30"
+    language: pt
+    claim: The centre rotates permanent and temporary exhibitions; new exhibitions opened (e.g. Missão Espaço; a brain exhibition in May 2024).
+    signals: [new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask Ciência Viva whether retired exhibitions circulate within its national network or could be sold abroad.

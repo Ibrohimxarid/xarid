@@ -1,0 +1,37 @@
+museum:
+  id: scitech-perth
+  name: Scitech
+  country: Australia
+  city: Perth (West Perth)
+  website: https://www.scitech.org.au/
+  type: science centre
+exhibitions:
+  - id: relocation
+    name: Planned relocation from City West to a new Perth CBD science centre
+    old_exhibition: City West Centre exhibition hall
+    status: still_in_use
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://www.miragenews.com/expressions-of-interest-to-find-a-new-state-of-the-art-home-for-scitech/
+    title: Expressions of interest to find a new state-of-the-art home for Scitech
+    publisher: Mirage News (WA Government release)
+    source_type: news
+    source_date: "2019-04"
+    accessed: "2026-09-30"
+    claim: The WA Government sought expressions of interest (April 2019) for a new state-of-the-art home for Scitech in central Perth.
+    signals: [relocation]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.scitech.org.au/business-centre/news/1821-a-new-home-for-scitech
+    title: A new home for Scitech
+    publisher: Scitech
+    source_type: official_site
+    accessed: "2026-09-30"
+    claim: Scitech announced a new home and continued operating in West Perth until its lease ended (mid-2023).
+    signals: [relocation]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Confirm current status of the relocation; ask which City West exhibits will not move.

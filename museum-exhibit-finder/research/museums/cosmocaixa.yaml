@@ -1,0 +1,43 @@
+museum:
+  id: cosmocaixa
+  name: CosmoCaixa (Museo de la Ciencia, Fundación "la Caixa")
+  country: Spain
+  city: Barcelona
+  website: https://cosmocaixa.org/
+  type: science museum / science centre
+exhibitions:
+  - id: sala-universo
+    name: Floor −5 renewal — Sala Universo
+    old_exhibition: Previous permanent exhibition on floor −5 (except the Flooded Forest and Geological Wall, which were retained)
+    new_exhibition: Sala Universo (3,500 m² — Kósmos, Evolución, Fronteras; Math Lab), produced with MediaPro Exhibitions
+    status: already_replaced
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://www.elnacional.cat/es/cultura/universo-cosmocaixa-renovacion-ciencia_402289_102.html
+    title: "'Un nuevo universo': renovación en profundidad del CosmoCaixa"
+    publisher: ElNacional.cat
+    source_type: news
+    accessed: "2026-09-30"
+    language: es
+    claim: CosmoCaixa deeply renovated its largest floor (−5); apart from the Flooded Forest, Geological Wall and temporary-exhibition space, the rest was redivided into the new Sala Universo.
+    notes: Opening date given as 11 July — year not captured (verify).
+    signals: [renovation, new_exhibition, exhibit_replaced]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://cosmocaixa.org/es/p/sala-universo_a455343
+    title: Sala Universo | Museo de la ciencia CosmoCaixa
+    publisher: CosmoCaixa
+    source_type: official_site
+    accessed: "2026-09-30"
+    language: es
+    claim: Official page for the permanent Sala Universo exhibition.
+    signals: [new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask Fundación "la Caixa" what happened to the pre-Universo floor −5 exhibits (the former "Sala de la Materia" interactives).
+  outreach:
+    email_hook: CosmoCaixa renewed its main floor with the new Sala Universo, replacing most of the previous permanent exhibition
+    source: e1

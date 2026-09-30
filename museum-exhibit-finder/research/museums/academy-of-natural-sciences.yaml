@@ -3,7 +3,6 @@ museum:
   name: Academy of Natural Sciences of Drexel University
   country: United States
   city: Philadelphia, Pennsylvania
-  website: https://ansp.org/
   type: natural history museum (public museum closing; research institution continues)
 exhibitions:
   - id: public-museum

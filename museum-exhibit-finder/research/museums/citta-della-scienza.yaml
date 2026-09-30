@@ -1,0 +1,30 @@
+museum:
+  id: citta-della-scienza
+  name: Città della Scienza
+  country: Italy
+  city: Naples
+  website: https://www.cittadellascienza.it/en/
+  type: science centre
+exhibitions:
+  - id: science-centre-reconstruction
+    name: Reconstruction of the Science Centre destroyed by the 2013 fire
+    replacement_year: "2025–"
+    new_exhibition: New three-level Science Centre (first lot €21.4m)
+    status: unknown
+    evidence: [e1]
+evidence:
+  - id: e1
+    url: https://www.cittadellascienza.it/ricostruzione-science-centre/
+    title: Ricostruzione Science Centre - Città della Scienza
+    publisher: Città della Scienza
+    source_type: official_site
+    source_date: "2025-11"
+    accessed: "2026-09-30"
+    language: it
+    claim: Campania Region funds the €21.4m reconstruction of the Science Centre destroyed in 2013 on a new adjacent site; a November 2025 resolution assigned the procurement role.
+    signals: [renovation, relocation, new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Monitor — interim exhibits (e.g. temporary halls) may be retired when the new centre opens.

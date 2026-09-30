@@ -1,0 +1,64 @@
+museum:
+  id: science-museum-london
+  name: Science Museum
+  aliases: [Science Museum London]
+  country: United Kingdom
+  city: London
+  website: https://www.sciencemuseum.org.uk/
+  type: national science museum
+  parent_org: Science Museum Group
+exhibitions:
+  - id: exploring-space
+    name: Exploring Space gallery (≈40 years) → Space gallery
+    replacement_year: 2025
+    old_exhibition: Exploring Space (closed after Easter 2025)
+    new_exhibition: Space gallery, West Hall (opened 20 Sept 2025)
+    status: already_replaced
+    evidence: [e1, e2]
+  - id: ground-floor-transformation
+    name: Ground-floor transformation to 2030
+    replacement_year: "2025–2030"
+    new_exhibition: "Tomorrow: The Bennett Gallery (early 2027); Ages of Invention (before 2030)"
+    status: being_replaced
+    evidence: [e1, e3]
+evidence:
+  - id: e1
+    url: https://www.sciencemuseum.org.uk/about-us/press-office/science-museum-announces-plans-extend-ambitious-transformation-ground-floor
+    title: Science Museum announces plans to extend ambitious transformation to ground floor galleries
+    publisher: Science Museum
+    source_type: press_release
+    source_date: "2025-02"
+    accessed: "2026-09-30"
+    claim: The Science Museum will open three new ground-floor galleries by 2030 (Space 2025, Tomorrow 2027, Ages of Invention before 2030); the 40-year-old Exploring Space gallery closed after Easter 2025 to be replaced by Space.
+    signals: [renovation, new_exhibition, exhibit_replaced]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.sciencemuseum.org.uk/about-us/press-office/space-gallery-opens-science-museum
+    title: Space gallery opens at the Science Museum
+    publisher: Science Museum
+    source_type: press_release
+    source_date: "2025-09"
+    accessed: "2026-09-30"
+    claim: The new Space gallery opened to the public on 20 September 2025.
+    signals: [new_exhibition]
+    verified_via: web_search_snippet
+  - id: e3
+    url: https://www.museumsassociation.org/museums-journal/news/2025/02/science-museum-to-open-three-new-galleries-in-next-five-years/
+    title: Science Museum to open three new galleries in next five years
+    publisher: Museums Association
+    source_type: trade_press
+    source_date: "2025-02"
+    accessed: "2026-09-30"
+    claim: Trade press confirms the ground-floor transformation plan.
+    signals: [renovation, new_exhibition]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask which ground-floor galleries close for Tomorrow and Ages of Invention, and whether non-collection models, replicas and interactives from Exploring Space are surplus.
+  outreach:
+    reason: The Science Museum replaced its 40-year-old Exploring Space gallery in 2025 and is transforming the ground floor to 2030.
+    interest: Non-collection space models, replicas and interactives from Exploring Space and galleries closing for the 2027–2030 projects.
+    fit: Space and engineering models suit TPM's aviation/space and engineering galleries.
+    email_hook: the Museum's 40-year-old Exploring Space gallery closed in 2025 to make way for the new Space gallery, as part of a ground-floor transformation continuing to 2030
+    source: e1

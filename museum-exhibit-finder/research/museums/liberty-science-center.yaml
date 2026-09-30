@@ -1,0 +1,42 @@
+museum:
+  id: liberty-science-center
+  name: Liberty Science Center
+  country: United States
+  city: Jersey City, New Jersey
+  type: science centre
+exhibitions:
+  - id: project-supernova
+    name: Project Supernova ($40m expansion and renewal)
+    replacement_year: "2026–"
+    old_exhibition: Our Hudson Home (dated exhibit); 4th-floor special-exhibits gallery
+    new_exhibition: River Rising; larger first-floor special-exhibits gallery; refreshed Jennifer Chalsty Planetarium
+    status: being_replaced
+    evidence: [e1, e2]
+evidence:
+  - id: e1
+    url: https://www.roi-nj.com/2026/09/11/education/liberty-science-center-breaks-ground-on-40m-expansion-that-reimagines-the-facility/
+    title: Liberty Science Center breaks ground on $40M expansion that reimagines the facility
+    publisher: ROI-NJ
+    source_type: news
+    source_date: "2026-09-11"
+    accessed: "2026-09-30"
+    claim: Liberty Science Center broke ground on the $40m Project Supernova in September 2026; it replaces the Our Hudson Home exhibition with River Rising, relocates the special-exhibits gallery and refreshes the planetarium.
+    signals: [renovation, new_exhibition, exhibit_replaced]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.newjerseystage.com/articles2/2025/11/19/state-of-new-jersey-pledges-support-of-major-40-million-expansion-of-liberty-science-center/
+    title: State of New Jersey Pledges Support of Major $40 Million Expansion of Liberty Science Center
+    publisher: New Jersey Stage
+    source_type: news
+    source_date: "2025-11-19"
+    accessed: "2026-09-30"
+    claim: New Jersey pledged support for the $40m expansion.
+    signals: [renovation]
+    verified_via: web_search_snippet
+research:
+  researcher: mef expansion
+  last_updated: "2026-09-30"
+  next_step: Ask about the fate of Our Hudson Home components and any planetarium equipment replaced in the refresh.
+  outreach:
+    email_hook: Liberty Science Center has begun Project Supernova, which will replace the Our Hudson Home exhibition and refresh the planetarium
+    source: e1
