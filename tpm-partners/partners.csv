@@ -1,0 +1,28 @@
+id,name_en,name_local,country,city,domain,type,priority,contact_email,stage
+CN-01,China Association for Science and Technology (CAST) - Dept of International Cooperation,中国科学技术协会 国际合作部,China,Beijing,cast.org.cn,3,HIGH,fengkai@cast.org.cn,1
+CN-02,China Science and Technology Museum (CSTM) - China Mobile S&T Museum,中国科学技术馆 / 中国流动科技馆,China,Beijing,cstm.cdstm.cn,2,HIGH,,1
+CN-03,China Association of Natural Science Museums (CANSM) / BRISMIS,中国自然科学博物馆学会,China,Beijing,cansm.org.cn,1,HIGH,,1
+CN-04,CAST Youth Science and Technology Center - Belt and Road Youth Maker Camp,中国科协青少年科技中心,China,Beijing,castscs.org.cn,3,MEDIUM,yangming@xiaoxiaotong.org,1
+CN-05,ASPAC - Asia Pacific Network of Science & Technology Centres,ASPAC,Regional (secretariat Singapore),Singapore,aspacnet.org,1,MEDIUM,LEE_Song_Choon@science.edu.sg,1
+CN-06,ICOM International Training Centre for Museum Studies (ICOM-ITC),国际博协国际博物馆培训中心（故宫博物院）,China,Beijing,icom.museum,3,MEDIUM,,1
+CN-07,Shanghai Science and Technology Museum,上海科技馆,China,Shanghai,sstm.org.cn,2;4,MEDIUM,,1
+CN-08,Guangdong Science Center,广东科学中心,China,Guangzhou,gdsc.cn,2,MEDIUM,,1
+CN-09,Hong Kong Science Museum (LCSD),香港科學館,China (Hong Kong SAR),Hong Kong,hk.science.museum,4,LOW,enquiries@hk.science.museum,1
+CN-10,Macao Science Center,澳門科學館,China (Macao SAR),Macao,msc.org.mo,2,LOW,mfhall@msc.org.mo,1
+CN-11,Shanghai Auto Museum,上海汽车博物馆,China,Shanghai,shautomuseum.com,7,LOW,Info@shautomuseum.com,1
+CN-12,Beijing Auto Museum,北京汽车博物馆,China,Beijing,,7,LOW,,1
+CN-13,China Railway Museum,中国铁道博物馆,China,Beijing,,7,LOW,,1
+CN-14,Beihang Aviation and Aerospace Museum,北京航空航天博物馆,China,Beijing,buaa.edu.cn,7,LOW,international@buaa.edu.cn,1
+CN-15,Macao Grand Prix Museum,澳門大賽車博物館,China (Macao SAR),Macao,mgpm.macaotourism.gov.mo,7,LOW,mgpm@macaotourism.gov.mo,1
+CN-16,Tianjin Science and Technology Museum,天津科学技术馆,China,Tianjin,tjstm.org,2,LOW,,1
+CN-17,Hefei Panshi Intelligent Technology,合肥磐石智能科技,China,Hefei,panshiexhibit.com,5,HIGH,panshizhineng@outlook.com,1
+CN-18,QINGCHUANG (Zigong Qingchuang Technology),自贡青创科技,China,Zigong,interactiveexhibit.com,5,LOW,,1
+CN-19,UBTECH Robotics,优必选科技,China,Shenzhen,ubtrobot.com,5;6,HIGH,UBTECH.EDU@ubtrobot.com,1
+CN-20,DOBOT (Shenzhen Yuejiang Technology),越疆科技,China,Shenzhen,dobot-robots.com,5,MEDIUM,sales@dobot-robots.com,1
+CN-21,Makeblock,童心制物,China,Shenzhen,makeblock.com,5,MEDIUM,,1
+CN-22,BYD Uzbekistan Factory,BYD Uzbekistan Factory,Uzbekistan (China company),Jizzakh/Tashkent,bydauto.uz,6,MEDIUM,info@bydauto.uz,1
+CN-23,CRRC Corporation,中国中车,China,Beijing,crrcgc.cc,6,MEDIUM,crrc@crrcgc.cc,1
+CN-24,Huawei Uzbekistan,Huawei Tech Investment Tashkent,Uzbekistan (China company),Tashkent,huawei.com/uz,6,MEDIUM,infouz@huawei.com,1
+CN-25,China Energy Engineering (Energy China / Energy China International),中国能源建设,China,Beijing/Tashkent,ceec.net.cn,6,MEDIUM,,1
+CN-26,Tianjin Maritime College - Luban Workshop Uzbekistan,天津海运职业学院 / 乌兹别克斯坦鲁班工坊,China,Tianjin/Tashkent,tjmc.edu.cn,3,MEDIUM,,1
+CN-27,Shenzhen Foundation for International Exchange and Cooperation,深圳市国际交流合作基金会,China,Shenzhen,sfiec.org.cn,3;6,MEDIUM,sfiec@sfiec.org.cn,1
