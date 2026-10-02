@@ -15,11 +15,13 @@ exhibitions:
     exhibits:
       - id: shake-house
         name: Shake House earthquake simulator (replaced by Epicenter)
-        category: [simulator, stem]
+        category: [engineering, physics, stem]
         interactive: true
         status: already_replaced
         evidence: [e1]
-        fit_for_tpm: A walk-in earthquake simulator is a popular hands-on exhibit (Tashkent is seismically active — strong local relevance).
+        fit_for_tpm: 'Walk-in earthquake simulator: visitors feel recorded ground motion and learn how buildings respond — the brief''s earthquake-simulator item, and locally meaningful in seismically active Tashkent (1966 earthquake).'
+        object_type: simulator
+        former_exhibit: true
   - id: natural-sciences-hall
     name: Natural Sciences Hall → Nancy Stueber Natural Sciences Hall
     replacement_year: "2025–2026"

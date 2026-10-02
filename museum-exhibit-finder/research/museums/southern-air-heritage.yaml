@@ -10,6 +10,8 @@ exhibitions:
     replacement_year: "2026–2027"
     status: being_replaced
     evidence: [e1]
+    object_type: mixed_collection
+    category: [aviation]
 evidence:
   - id: e1
     url: https://www.vicksburgpost.com/news/southern-air-heritage-foundation-to-close-museum-phase-out-operations-by-2027
@@ -25,3 +27,4 @@ research:
   researcher: mef expansion
   last_updated: "2026-09-30"
   next_step: Low priority — named US partners come first; ask only about items the partners decline.
+  transfer_programme: Artifact disposition in 2027 (to families and partner institutions)

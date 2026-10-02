@@ -15,6 +15,9 @@ exhibitions:
     new_exhibition: New SportsWorks in main building; Science of Speed (auto racing) in the former SportsWorks building; renovated Early Learner space
     status: being_replaced
     evidence: [e1]
+    object_type: interactive_station
+    category: [physics, stem]
+    fit_for_tpm: Interactive exhibits retired during the nine-exhibition makeover (incl. the old SportsWorks building, which becomes a Science of Speed auto-racing exhibit) — hands-on motion and force stations fit TPM's interactive mechanics area.
 evidence:
   - id: e1
     url: https://www.wesanews.org/arts-culture/2025-09-11/carnegie-museums-new-name-makeover-kamin-science-center

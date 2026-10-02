@@ -11,7 +11,7 @@ from .models import MuseumFile
 from .priority import assess_museum
 from .rows import DATABASE_FIELDS, database_record, iter_rows
 from .stats import compute_stats
-from .verified_xlsx import write_verified_xlsx
+from .candidates_out import write_candidates_xlsx
 
 MUSEUM_FIELDS = [
     "Museum ID", "Museum", "Local Name", "Country", "City", "Website", "Museum Type",
@@ -120,7 +120,12 @@ def export_all(
     db_records = [database_record(r) for r in rows]
     order = {"A": 0, "B": 1, "C": 2, "—": 3}
     db_records.sort(key=lambda r: (order.get(r["Priority"], 4), r["Country"], r["Museum"]))
-    opportunities = [r for r in db_records if r["Priority"] in ("A", "B") and r["Exhibit ID"]]
+    # Exhibit opportunities: removed/offered exhibits that passed the TPM relevance check
+    # (NOT_RELEVANT objects — books, furniture, decorative — are never shown here).
+    opportunities = [r for r in db_records if r["Priority"] in ("A", "B") and r["Exhibit ID"]
+                     and r["Museum Relevance"] in ("DIRECT_MATCH", "STRONG_MATCH", "RELATED", "WEAK_MATCH")]
+    opportunities.sort(key=lambda r: ({"HIGH": 0, "MEDIUM": 1, "LOW": 2}.get(r["Acquisition Priority"], 3),
+                                      r["Museum Relevance"], r["Museum"]))
     museums = sorted(museum_records(files), key=lambda r: (order.get(r["Priority"], 4), r["Country"], r["Museum"]))
     evidence = evidence_records(files)
     contacts = contact_records(files)
@@ -134,7 +139,7 @@ def export_all(
         "contacts": out_dir / "contacts.csv",
         "contacts_dir": contacts_dir / "contacts.csv",
         "xlsx": out_dir / "museum_finder.xlsx",
-        "verified_xlsx": out_dir / "verified_offers.xlsx",
+        "candidates_xlsx": out_dir / "tpm_candidates.xlsx",
     }
     _write_csv(paths["database"], DATABASE_FIELDS, db_records)
     _write_csv(paths["opportunities"], DATABASE_FIELDS, opportunities)
@@ -157,5 +162,5 @@ def export_all(
            [{"Metric": "Generated", "Value": dt.date.today().isoformat()}])
     paths["xlsx"].parent.mkdir(parents=True, exist_ok=True)
     wb.save(paths["xlsx"])
-    write_verified_xlsx(files, paths["verified_xlsx"])
+    write_candidates_xlsx(files, paths["candidates_xlsx"])
     return paths

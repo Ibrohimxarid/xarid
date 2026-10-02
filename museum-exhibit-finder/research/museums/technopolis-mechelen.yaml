@@ -13,10 +13,13 @@ exhibitions:
     new_exhibition: Renewed main exhibition; later ON/OFF expo and Doolhoofd
     status: already_replaced
     evidence: [e1, e2, e3]
+    object_type: interactive_station
+    category: [physics, stem]
+    fit_for_tpm: Technopolis replaced part of its main exhibition in 2022 (classics such as the bicycle on a cable and the bed of nails were kept); the retired hands-on physics installations fit TPM's interactive-physics format.
 evidence:
   - id: e1
     url: https://www.made-in.be/mechelen/wetenschappelijk-doe-centrum-technopolis-vernieuwt-hoofdexpo-maar-enkele-klassiekers-blijven-behouden/
-    title: "Wetenschappelijk doe-centrum Technopolis vernieuwt hoofdexpo: 'Maar enkele klassiekers blijven behouden'"
+    title: 'Wetenschappelijk doe-centrum Technopolis vernieuwt hoofdexpo: ''Maar enkele klassiekers blijven behouden'''
     publisher: Made in Mechelen
     source_type: news
     source_date: "2022"

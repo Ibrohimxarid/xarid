@@ -33,9 +33,23 @@ def _load_files():
 
 
 def cmd_validate(args) -> int:
+    from .candidates import build as build_candidates
+
     files, errors = _load_files()
     print(f"{len(files)} research files valid, {len(errors)} invalid")
-    return 1 if errors else 0
+    # Relevance check hygiene: every candidate needs a concrete WHY_IT_FITS,
+    # and every itemised exhibit needs an object_type for the relevance rules.
+    cands, _, _ = build_candidates(files)
+    weak_why = [c for c in cands if c.why_problems]
+    for c in weak_why:
+        print(f"WHY_IT_FITS {c.museum.museum.id}/{c.obj.id}: {'; '.join(c.why_problems)}")
+    untyped = [(mf.museum.id, it.id) for mf in files for ex in mf.exhibitions for it in ex.exhibits
+               if getattr(it.object_type, "value", it.object_type) == "unspecified"]
+    for mid, iid in untyped:
+        print(f"object_type missing: {mid}/{iid}")
+    print(f"{len(cands)} relevance-checked candidates, {len(weak_why)} with an unacceptable WHY_IT_FITS, "
+          f"{len(untyped)} exhibits without object_type")
+    return 1 if errors or weak_why or untyped else 0
 
 
 def cmd_dedupe(args) -> int:

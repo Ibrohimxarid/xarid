@@ -14,10 +14,13 @@ exhibitions:
     new_exhibition: 12 restructured themes, 200 revised and 50 new exhibits incl. 8 large iconic exhibits (reopened 13–14 Dec 2025)
     status: already_replaced
     evidence: [e1, e2]
+    object_type: interactive_station
+    category: [physics, stem]
+    fit_for_tpm: phaeno's 2025 redesign revised 200 and added 50 hands-on exhibits; stations taken off the floor are interactive physics experiments of the kind TPM already uses — ask which left the floor.
 evidence:
   - id: e1
     url: https://regionalheute.de/wolfsburg/nach-neugestaltung-grosse-wiedereroeffnung-im-phaeno-wolfsburg-1765476675/
-    title: "Nach Neugestaltung: Große Wiedereröffnung im phaeno Wolfsburg"
+    title: 'Nach Neugestaltung: Große Wiedereröffnung im phaeno Wolfsburg'
     publisher: regionalHeute.de
     source_type: news
     source_date: "2025-12"

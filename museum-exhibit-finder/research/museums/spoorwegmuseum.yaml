@@ -16,7 +16,7 @@ contacts:
     source: https://www.spoorwegmuseum.nl/over/bruikleen-schenking/
   - kind: general
     email: info@spoorwegmuseum.nl
-    phone: "+31 30 230 62 06"
+    phone: +31 30 230 62 06
     contact_page: https://www.spoorwegmuseum.nl/en/about/contact-press/
     source: https://www.spoorwegmuseum.nl/en/about/contact-press/
   - kind: general
@@ -25,7 +25,7 @@ contacts:
 exhibitions:
   - id: rolling-stock-deaccession
     name: Collection review — deaccession of rolling stock (since 2020)
-    replacement_year: "2020–"
+    replacement_year: 2020–
     status: deaccessioned
     evidence: [e1, e2, e3]
     exhibits:
@@ -35,8 +35,10 @@ exhibitions:
         interactive: false
         status: deaccessioned
         evidence: [e1, e2]
-        fit_for_tpm: Railway vehicles and components — core transport theme; Uzbekistan has strong railway heritage.
+        fit_for_tpm: Locomotives and carriages (duplicates and parts donors) — real railway vehicles showing traction, bogies, couplings and braking; railways are a major transport sector in Uzbekistan.
         notes: Specific vehicles not captured — the list is on the Afstotingsdatabase and shared with HRN.
+        object_type: rolling_stock
+        transport: oversize
 evidence:
   - id: e1
     url: https://www.spoorwegmuseum.nl/over/nieuws/afstoting-van-rollend-materieel/
@@ -70,16 +72,17 @@ evidence:
     signals: [deaccession_policy]
     verified_via: web_search_snippet
 research:
-  summary_ru: "Железнодорожный музей Нидерландов списывает подвижной состав (дубли, доноры запчастей, единицы в очень плохом состоянии) через голландскую базу списаний Afstotingsdatabase; по правилам LAMO сначала — музеи Нидерландов. Спросить, что осталось невостребованным."
-  eligibility: "Under LAMO: offered first to Dutch museums/heritage institutions and Historisch Railvervoer Nederland members; afterwards other routes."
+  summary_ru: Железнодорожный музей Нидерландов списывает подвижной состав (дубли, доноры запчастей, единицы в очень плохом состоянии) через голландскую базу списаний Afstotingsdatabase; по правилам LAMO сначала — музеи Нидерландов. Спросить, что осталось невостребованным.
+  eligibility: 'Under LAMO: offered first to Dutch museums/heritage institutions and Historisch Railvervoer Nederland members; afterwards other routes.'
   researcher: mef expansion
   last_updated: "2026-09-30"
   next_step: Ask the collections team for the current list of rolling stock/components still unallocated after the LAMO period, and whether a foreign museum may take them.
-  open_questions:
-    - Which vehicles remain unallocated after Dutch museums and HRN members were offered them?
+  open_questions: ['Which vehicles remain unallocated after Dutch museums and HRN members were offered them?']
   outreach:
     reason: The Spoorwegmuseum is deaccessioning surplus rolling stock and publishes it on the Dutch disposal database.
     interest: Surplus locomotives, carriages, bogies and railway components from the rolling-stock review.
     fit: Railway engineering is a core TPM theme.
     email_hook: the Spoorwegmuseum is deaccessioning part of its rolling stock following its collection review, first offering it to other museums and heritage railways
     source: e1
+  international_transfer: domestic_first
+  transfer_programme: Rolling-stock deaccession via the Afstotingsdatabase

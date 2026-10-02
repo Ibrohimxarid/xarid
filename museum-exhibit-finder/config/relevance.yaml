@@ -1,0 +1,186 @@
+# TASHKENT POLYTECHNIC MUSEUM RELEVANCE CHECK
+#
+# Relevance is decided by rules over two facts recorded for every object:
+#   1. its categories (what subject it belongs to), and
+#   2. its object_type (what it physically is: interactive station, cutaway,
+#      engine, vehicle, book, vitrine ...).
+# No subjective scores. The rules live in src/mef/relevance.py; this file holds
+# the vocabularies so they can be reviewed and changed without touching code.
+
+museum_profile:
+  - Automotive technology
+  - Transport technology
+  - Engineering
+  - Mechanics
+  - Physics
+  - Electricity
+  - Optics
+  - Robotics
+  - Industrial technology
+  - STEM education
+  - Interactive science
+  - Technology history
+
+# Profile areas from the TPM brief. A* = priority group A (high value), B = useful.
+areas:
+  A1: Automotive technology
+  A2: Transport (rail, aviation, ships, traffic)
+  A3: Physics — interactive (mechanics, fluids, waves, optics, electricity & magnetism)
+  A4: Robotics & automation
+  A5: Engineering (structures, machines, hydraulics, manufacturing systems)
+  A6: Energy technology
+  A7: STEM interactive exhibits
+  A8: Digital / immersive technology
+  A9: Automotive manufacturing
+  B: Useful (aviation/railway exhibits, industrial & agricultural machinery, telecoms, electronics, computing history, materials, environment, space)
+
+category_area:
+  automotive: A1
+  transport: A2
+  aviation: A2
+  railway: A2
+  maritime: A2
+  traffic: A2
+  simulator: A2
+  physics: A3
+  mechanics: A3
+  fluid_mechanics: A3
+  acoustics: A3
+  optics: A3
+  electricity: A3
+  magnetism: A3
+  thermodynamics: A3
+  robotics: A4
+  automation: A4
+  engineering: A5
+  industrial: A5
+  energy: A6
+  stem: A7
+  digital_interactive: A8
+  manufacturing: A9
+  computing: B
+  telecommunications: B
+  electronics: B
+  space: B
+  agriculture: B
+  materials: B
+  environment: B
+
+# Categories that never qualify (brief: EXCLUDE list).
+excluded_categories:
+  - display_cases
+  - furniture
+  - books
+  - documents
+  - art
+  - archaeology
+  - natural_history
+  - clothing
+  - decorative
+
+object_type_groups:
+  # complete educational experiences — the most wanted objects
+  demonstration: [interactive_station, demonstrator, cutaway, simulator, robot, digital_installation]
+  # real technology objects (static exhibits)
+  real_technology: [engine, vehicle, aircraft, rolling_stock, machine, instrument, computer, model]
+  partial: [component]
+  low_value: [household]
+  excluded: [display_furniture, book_document, decorative]
+  not_itemised: [mixed_collection, unspecified]
+
+# WHY_IT_FITS must name a concrete phenomenon, technology or activity. A text
+# with none of these terms is rejected as generic ("Interesting for the museum").
+why_it_fits_terms:
+  - engine
+  - combustion
+  - piston
+  - gear
+  - transmission
+  - brake
+  - steering
+  - suspension
+  - powertrain
+  - battery
+  - motor
+  - generator
+  - turbine
+  - steam
+  - electric
+  - magnet
+  - induction
+  - circuit
+  - voltage
+  - lever
+  - pulley
+  - force
+  - momentum
+  - inertia
+  - energy
+  - friction
+  - gravity
+  - pendulum
+  - oscillat
+  - gyroscop
+  - pressure
+  - bernoulli
+  - aerodynam
+  - airflow
+  - lift
+  - flight
+  - cockpit
+  - pilot
+  - navigation
+  - rail
+  - locomotive
+  - signal
+  - traffic
+  - wave
+  - sound
+  - resonance
+  - light
+  - lens
+  - mirror
+  - laser
+  - optic
+  - projection
+  - star
+  - robot
+  - automation
+  - assembly
+  - manufactur
+  - production
+  - welding
+  - program
+  - sensor
+  - comput
+  - binary
+  - calculat
+  - punch
+  - simulat
+  - earthquake
+  - structur
+  - hydraul
+  - pneumat
+  - mechani
+  - machine
+  - refrigerat
+  - thermodynam
+  - density
+  - buoyan
+  - mass
+  - rocket
+  - propulsion
+  - jet
+  - vehicle
+  - car
+  - motorcycle
+  - aircraft
+  - hands-on
+  - interactive
+  - experiment
+
+generic_why_it_fits_patterns:
+  - "\\binteresting (object |item |piece )?for (the|our) museum\\b"
+  - "\\b(could|may|might) be (useful|interesting)\\b"
+  - "^\\s*(good|nice|great) (fit|object|item)\\.?\\s*$"
+  - "\\bfits the museum('s)? profile\\.?\\s*$"

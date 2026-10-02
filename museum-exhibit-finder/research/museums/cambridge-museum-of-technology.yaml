@@ -9,7 +9,7 @@ museum:
 contacts:
   - kind: general
     email: info@museumoftechnology.com
-    phone: "+44 1223 500652"
+    phone: +44 1223 500652
     contact_page: https://www.museumoftechnology.com/contact
     source: https://www.museumoftechnology.com/contact
   - kind: general
@@ -24,12 +24,14 @@ exhibitions:
       - id: kleischograph
         name: Klischograph (kleischograph) mechanical photo-engraving machine
         description: Grey metal mechanical photo-engraving machine (printing-plate engraving technology).
-        category: [industrial, mechanics, electricity]
+        category: [industrial, mechanics, electricity, optics]
         dimensions: 60 cm x 105 cm x 100 cm
         interactive: false
         status: available_transfer
         evidence: [e1]
-        fit_for_tpm: History of printing / industrial technology; a mid-size machine suitable for a technology-history display.
+        fit_for_tpm: 'Klischograph-type photo-engraving machine: the photograph is scanned optically and the printing plate engraved automatically — shows optical scanning, electrical control and mechanical automation in the printing industry.'
+        object_type: machine
+        transport: standard
       - id: engineering-books
         name: ~350 books on steam, mechanical, electrical and telecommunications engineering (1870s–present)
         description: Treatises, repair manuals, catalogues and magazines; individual books or sets can be requested; collection or pre-arranged postage only.
@@ -38,6 +40,7 @@ exhibitions:
         status: available_transfer
         evidence: [e3]
         fit_for_tpm: Reference library for TPM curators and engineering education; low shipping cost.
+        object_type: book_document
 evidence:
   - id: e1
     url: https://findanobject.collectionstrust.org.uk/objects-for-disposal/kleischograph-engraving-machine/
@@ -71,14 +74,12 @@ evidence:
     signals: [available_transfer, deaccession_in_progress, accepts_requests]
     verified_via: web_search_snippet
 research:
-  summary_ru: "Музей выставил в Find an Object фотогравировальную машину Klischograph (60×105×100 см) и около 350 книг по паровой, механической, электро- и телеком-технике (1870-е — наши дни). Объявления без даты — проверить, что они ещё активны."
-  eligibility: "Find an Object: museums and organisations within the public domain (UK-focused; overseas eligibility to confirm)."
+  summary_ru: Музей выставил в Find an Object фотогравировальную машину Klischograph (60×105×100 см) и около 350 книг по паровой, механической, электро- и телеком-технике (1870-е — наши дни). Объявления без даты — проверить, что они ещё активны.
+  eligibility: 'Find an Object: museums and organisations within the public domain (UK-focused; overseas eligibility to confirm).'
   researcher: mef pilot
   last_updated: "2026-09-30"
   next_step: Open the listing, confirm it has not expired and whether a non-UK public museum is eligible; enquire via the listing.
-  open_questions:
-    - Is transfer to a museum outside the UK acceptable under their disposal procedure?
-    - Working condition and weight of the machine?
+  open_questions: ['Is transfer to a museum outside the UK acceptable under their disposal procedure?', 'Working condition and weight of the machine?']
   outreach:
     reason: The museum has listed a mechanical photo-engraving machine for disposal on the UK Find an Object register.
     interest: Klischograph mechanical photo-engraving machine (60 x 105 x 100 cm).

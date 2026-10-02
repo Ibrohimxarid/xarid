@@ -15,6 +15,9 @@ exhibitions:
     new_exhibition: Palais des enfants, new temporary-exhibition space (2025); permanent museography, labs and planetarium reopening (announced for Q1/March 2027)
     status: being_replaced
     evidence: [e1, e2, e3]
+    object_type: demonstrator
+    category: [physics, electricity, optics]
+    fit_for_tpm: The pre-2020 demonstration rooms (live physics demonstrations) are replaced by a new museography; retired demonstration apparatus for electricity, optics and mechanics fits TPM's interactive physics area.
 evidence:
   - id: e1
     url: https://www.sortiraparis.com/en/what-to-visit-in-paris/exhibit-museum/articles/219685-palais-de-la-decouverte-reopening-date-postponed-for-science-museum
@@ -39,7 +42,7 @@ evidence:
     verified_via: web_search_snippet
   - id: e3
     url: https://questions.assemblee-nationale.fr/q17/17-9901QE.htm
-    title: "Question n°9901 : Réouverture du Palais de la découverte"
+    title: 'Question n°9901 : Réouverture du Palais de la découverte'
     publisher: Assemblée nationale
     source_type: government
     source_date: "2025"

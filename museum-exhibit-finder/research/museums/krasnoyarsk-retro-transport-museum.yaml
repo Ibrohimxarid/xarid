@@ -1,0 +1,100 @@
+museum:
+  id: krasnoyarsk-retro-transport-museum
+  name: Krasnoyarsk Museum of Retro Transport (Parashutnaya St.)
+  name_local: Музей ретро-техники (Красноярск, ул. Парашютная)
+  country: Russia
+  city: Krasnoyarsk
+  type: private museum of Soviet-era cars, trucks and motorcycles (closed 1 June 2026)
+contacts:
+  - name: Alexander Knapnugel (Александр Кнапнугель)
+    position: Founder and owner of the collection
+    kind: person
+    source: e1
+exhibitions:
+  - id: closure-2026
+    name: Closure of the museum and dispersal of the collection (June 2026)
+    replacement_year: "2026"
+    status: unknown
+    evidence: [e1, e2, e3, e4]
+    exhibits:
+      - id: soviet-vehicles
+        name: About 120 restored Soviet-era cars, trucks, official vehicles and motorcycles
+        category: [automotive, transport]
+        object_type: vehicle
+        transport: standard
+        former_exhibit: true
+        quantity: "~120–130 units (about 50 cars and 15 motorcycles belong to partners)"
+        status: unknown
+        evidence: [e1, e3, e4]
+        fit_for_tpm: Restored Soviet-era cars, trucks and motorcycles — vehicles familiar to Uzbek visitors that show the engine, transmission and chassis technology of the Soviet automotive industry; a close match to TPM's automotive-history theme, and road transport from Siberia to Tashkent is feasible.
+      - id: godenko-car
+        name: Car of choreographer Mikhail Godenko
+        category: [automotive]
+        object_type: vehicle
+        status: already_transferred
+        evidence: [e5]
+        notes: Transferred to the Krasnoyarsk Regional Museum (June 2026).
+evidence:
+  - id: e1
+    url: https://knews.media/2026/05/15/krasnoyarsk-museum-of-retro-transport-on-parashutnaya-may-close/
+    title: Krasnoyarsk Museum of Retro Transport on Parashutnaya may close
+    publisher: Krasnoyarsk News (knews.media)
+    source_type: news
+    source_date: "2026-05-15"
+    accessed: "2026-10-02"
+    language: en
+    claim: The private museum (almost 130 vehicles — cars, trucks, official vehicles and motorcycles) may stop work on 1 June 2026 because owner Alexander Knapnugel can no longer fund restoration; about 50 cars and 15 motorcycles belong to his partners and would have to be sold or moved to other regions if the museum closes.
+    signals: [closure]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://ngs24.ru/text/auto/2026/05/18/76425864/
+    title: Единственный крупный за Уралом музей ретроавто закрывается в Красноярске — в чем причина
+    publisher: NGS24
+    source_type: news
+    source_date: "2026-05-18"
+    accessed: "2026-10-02"
+    language: ru
+    claim: The only large retro-car museum east of the Urals is closing in Krasnoyarsk (it was to work until 1 June).
+    signals: [closure]
+    verified_via: web_search_snippet
+  - id: e3
+    url: https://ngs24.ru/text/gorod/2026/06/01/76452907/
+    title: Уникальный музей ретромобилей закрылся в Красноярске
+    publisher: NGS24
+    source_type: news
+    source_date: "2026-06-01"
+    accessed: "2026-10-02"
+    language: ru
+    claim: The unique retro-car museum in Krasnoyarsk, created by Alexander Knapnugel 13 years ago, closed on 1 June 2026; the collection numbers about 120 units.
+    signals: [closure]
+    verified_via: web_search_snippet
+  - id: e4
+    url: https://ngs24.ru/text/auto/2026/06/09/76467204/
+    title: За красноярской коллекцией ретроавто выстроилась очередь. Куда может уехать уникальный в России музей
+    publisher: NGS24
+    source_type: news
+    source_date: "2026-06-09"
+    accessed: "2026-10-02"
+    language: ru
+    claim: Buyers from Novokuznetsk, Moscow and Vladivostok are ready to purchase cars from the closed museum ('if you are going to sell — I'll fly in tomorrow'); where the collection may go is under discussion.
+    signals: [closure]
+    verified_via: web_search_snippet
+    notes: Shows buyer demand; no public sale offer by the owner found.
+  - id: e5
+    url: https://ngs24.ru/text/auto/2026/06/03/76457703/
+    title: Автомобиль хореографа Михаила Годенко передали в Красноярский краеведческий музей — а что дальше
+    publisher: NGS24
+    source_type: news
+    source_date: "2026-06-03"
+    accessed: "2026-10-02"
+    language: ru
+    claim: The car of choreographer Mikhail Godenko from the collection was handed to the Krasnoyarsk Regional Museum.
+    signals: [already_transferred]
+    verified_via: web_search_snippet
+research:
+  researcher: mef relevance pass
+  last_updated: "2026-10-02"
+  international_transfer: unknown
+  eligibility: No sale procedure published; the owner and his partners decide; buyers from other Russian regions have shown interest.
+  summary_ru: Частный музей советской техники в Красноярске (около 120 машин, грузовиков и мотоциклов) закрылся 1 июня 2026. Около 50 машин и 15 мотоциклов принадлежат партнёрам владельца и, по его словам, при закрытии будут проданы или вывезены в другие регионы; покупатели из Москвы, Новокузнецка и Владивостока уже интересуются. Официального объявления о продаже нет — нужно связаться с владельцем (Александр Кнапнугель). Близко к профилю TPM (советская автотехника), доставка автотранспортом в Ташкент реальна.
+  next_step: Reach the owner Alexander Knapnugel through the Krasnoyarsk media (NGS24 / Prima TV) — ask whether vehicles are for sale, prices and condition, and check Russian export rules for historic vehicles to Uzbekistan.

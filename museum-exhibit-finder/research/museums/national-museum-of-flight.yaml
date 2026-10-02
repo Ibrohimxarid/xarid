@@ -19,6 +19,8 @@ exhibitions:
         status: already_transferred
         evidence: [e1, e2]
         notes: Offered via Find an Object May–Oct 2025; no taker; dismantled March 2026 (forward fuselage to Cotswold Airport).
+        object_type: aircraft
+        transport: oversize
 evidence:
   - id: e1
     url: https://www.nms.ac.uk/national-museum-of-flight/removal-of-bac-1-11

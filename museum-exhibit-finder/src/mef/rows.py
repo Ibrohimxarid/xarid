@@ -19,6 +19,8 @@ DATABASE_FIELDS = [
     # extra columns (after the required minimum set)
     "Museum ID", "Exhibit ID", "Description", "Interactive", "Dimensions", "Weight",
     "Condition", "Fit for TPM", "Evidence IDs", "Next Step",
+    # TPM relevance check (relevance.py)
+    "Object Type", "Museum Relevance", "Acquisition Priority", "Why Not HIGH",
 ]
 
 
@@ -150,6 +152,23 @@ def database_record(row: Row) -> dict[str, str]:
         "Fit for TPM": item.fit_for_tpm if item and item.fit_for_tpm else (mf.research.outreach.fit or ""),
         "Evidence IDs": ", ".join(e.id for e in row.evidence),
         "Next Step": mf.research.next_step or "",
+        **_relevance_fields(row),
+    }
+
+
+def _relevance_fields(row: Row) -> dict[str, str]:
+    from .relevance import assess_acquisition
+
+    obj = row.exhibit or row.exhibition
+    if obj is None:
+        return {"Object Type": "", "Museum Relevance": "", "Acquisition Priority": "", "Why Not HIGH": ""}
+    acq = assess_acquisition(row.museum, obj, row.assessment)
+    ot = getattr(obj.object_type, "value", obj.object_type)
+    return {
+        "Object Type": ot,
+        "Museum Relevance": acq.relevance.value if acq.relevance else "not itemised (channel)",
+        "Acquisition Priority": acq.priority or "",
+        "Why Not HIGH": acq.why_not_high() if acq.priority and acq.priority != "HIGH" else "",
     }
 
 

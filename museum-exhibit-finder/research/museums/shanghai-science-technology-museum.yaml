@@ -13,7 +13,10 @@ exhibitions:
     old_exhibition: Original 2001-era permanent exhibition halls
     new_exhibition: 10 permanent areas, 405 interactive displays / 926 exhibits (87% original); CLED giant-screen theatre
     status: already_replaced
-    evidence: [e1, e2]
+    evidence: [e1, e2, e3]
+    object_type: interactive_station
+    category: [robotics, stem, computing]
+    fit_for_tpm: The 2001-era halls 'Robot World' and 'Information Age' were entirely replaced in the 2023–2026 upgrade — retired robot and information-technology exhibits fit TPM's robotics and automation area.
 evidence:
   - id: e1
     url: https://english.shanghai.gov.cn/en-Latest-WhatsNew/20260129/261808d990f243f1a6ae4a897e1ef31b.html
@@ -34,6 +37,17 @@ evidence:
     accessed: "2026-09-30"
     claim: Trade press confirms the reopening after a three-year renovation, the museum's largest update in 20+ years.
     signals: [renovation, new_exhibition]
+    verified_via: web_search_snippet
+  - id: e3
+    url: https://www.shanghai.gov.cn/nw4411/20230326/617b6b75acd4460c91ee0b0fd8dab9c1.html
+    title: 上海科技馆本月底闭馆升级改造 计划2025年重新向公众开放
+    publisher: Shanghai Municipal People's Government
+    source_type: government
+    source_date: "2023-03-26"
+    accessed: "2026-10-02"
+    language: zh
+    claim: For the upgrade, the 'Robot World', 'Information Age', 'Space Navigation', 'Designer's Cradle' and 'Earth's Crust' zones are re-themed and entirely renewed, while the classic principle zones ('Light of Wisdom', 'Light of Exploration') are only partly optimised.
+    signals: [exhibit_replaced, renovation]
     verified_via: web_search_snippet
 research:
   researcher: mef expansion

@@ -12,6 +12,9 @@ exhibitions:
     replacement_year: 2025
     status: being_replaced
     evidence: [e1]
+    object_type: interactive_station
+    category: [stem]
+    fit_for_tpm: The Creativity Hall (hands-on science zone) is being remodelled; Korean national science museums transfer retired exhibits to other institutions (see Gwacheon) — retired interactive stations fit TPM's STEM area.
 evidence:
   - id: e1
     url: https://www.science.go.kr/mps/1111/bbs/208/moveBbsNttDetail.do?nttSn=47188

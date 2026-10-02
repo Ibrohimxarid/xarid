@@ -14,6 +14,9 @@ exhibitions:
     new_exhibition: Four new permanent exhibitions (incl. Robots, Global Environment, Aging), opened 22 Nov 2023; Geo-Cosmos upgraded
     status: already_replaced
     evidence: [e1]
+    object_type: interactive_station
+    category: [stem]
+    fit_for_tpm: Miraikan replaced its previous permanent zones in November 2023 with four new exhibitions (incl. Robots) — retired interactive science-and-technology exhibits fit TPM's STEM area; ask what was kept.
 evidence:
   - id: e1
     url: https://www.miraikan.jst.go.jp/en/resources/exhibitions2023.html

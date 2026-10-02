@@ -1,0 +1,68 @@
+museum:
+  id: zcom-hoyerswerda
+  name: ZCOM Zuse-Computer-Museum
+  country: Germany
+  city: Hoyerswerda
+  type: computer-history museum (closed 1 September 2026)
+exhibitions:
+  - id: closure-2026
+    name: Closure of the museum (1 September 2026); fate of the collection open
+    replacement_year: "2026"
+    status: unknown
+    evidence: [e1, e2, e3]
+    exhibits:
+      - id: z1-functional-model
+        name: Functional model of the Zuse Z1 mechanical computer
+        category: [computing, mechanics]
+        object_type: demonstrator
+        former_exhibit: true
+        status: unknown
+        evidence: [e1]
+        fit_for_tpm: Working model of Konrad Zuse's Z1 — a purely mechanical binary computer; visitors see how moving metal plates perform logic and arithmetic, linking mechanics with computing history.
+      - id: robotron-punch-card
+        name: GDR Robotron computers and punch-card machines
+        category: [computing]
+        object_type: computer
+        former_exhibit: true
+        status: unknown
+        evidence: [e1]
+        fit_for_tpm: Robotron computers and punch-card machines show how data was processed mechanically and electronically in the socialist bloc — computing history familiar to post-Soviet visitors.
+evidence:
+  - id: e1
+    url: https://www.heise.de/en/news/Zuse-Computer-Museum-ZCOM-in-Hoyerswerda-faces-closure-11344513.html
+    title: Zuse Computer Museum ZCOM in Hoyerswerda faces closure
+    publisher: heise online
+    source_type: trade_press
+    source_date: "2026"
+    accessed: "2026-10-02"
+    claim: ZCOM stops regular public operation from 1 September 2026 because of a financing gap; it holds about 18,000 exhibits incl. historical Zuse computers, GDR Robotron technology, punch-card machines, early calculating aids and a functional model of the Z1.
+    signals: [closure]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://ostdeutsche-zeitung.de/hoyerswerda/lokales/zuse-museum-hoyerswerda-schliessung-zcom-finanzierung-13
+    title: "Zuse-Museum Hoyerswerda schließt: Ist das ZCOM noch zu retten?"
+    publisher: Ostdeutsche Zeitung
+    source_type: news
+    source_date: "2026"
+    accessed: "2026-10-02"
+    language: de
+    claim: What becomes of the exhibits is unclear; there are concerns that significant exhibits could go to Dresden, Berlin or western German museums.
+    signals: [closure]
+    verified_via: web_search_snippet
+  - id: e3
+    url: https://hoyte24.de/ein-letztes-mal-im-computermuseum-zcom/
+    title: Ein letztes Mal im Computermuseum
+    publisher: Hoyte24
+    source_type: news
+    source_date: "2026-08"
+    accessed: "2026-10-02"
+    language: de
+    claim: The museum received its last regular visitors on 30 August 2026 and closed on 1 September 2026.
+    signals: [closure]
+    verified_via: web_search_snippet
+research:
+  researcher: mef relevance pass
+  last_updated: "2026-10-02"
+  international_transfer: unknown
+  summary_ru: Компьютерный музей Цузе (ZCOM) в Хойерсверде (Германия) закрылся 1 сентября 2026 из-за нехватки финансирования. Около 18 000 экспонатов, включая действующую модель механического компьютера Z1, ЭВМ «Роботрон» (ГДР) и перфокарточные машины. Судьба коллекции не решена — предложений о передаче нет.
+  next_step: Ask the operator (City of Hoyerswerda / ZCOM association) whether duplicates or hands-on stations will be released and whether a foreign museum can receive them.

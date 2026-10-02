@@ -27,6 +27,9 @@ exhibitions:
         status: available_transfer
         evidence: [e1]
         notes: Individual exhibits not listed in the sources.
+        object_type: interactive_station
+        former_exhibit: true
+        fit_for_tpm: Hands-on exhibits from a closed interactive science centre — visitors carry out the experiments themselves, the interactive STEM format TPM already uses; the exact exhibit list must be requested.
 evidence:
   - id: e1
     url: https://www.ypradio.org/regional-news/2024-09-26/montana-science-center-closes-after-23-years-in-bozeman
@@ -41,7 +44,7 @@ evidence:
     verified_via: web_search_snippet
   - id: e2
     url: https://www.bozemandailychronicle.com/news/education/heartbreaking-decision-montana-science-center-closes-after-two-decades-in-bozeman/article_6fde5f3e-7c5b-11ef-bfb9-afb44042e0b8.html
-    title: "'Heartbreaking decision': Montana Science Center closes after two decades in Bozeman"
+    title: '''Heartbreaking decision'': Montana Science Center closes after two decades in Bozeman'
     publisher: Bozeman Daily Chronicle
     source_type: news
     source_date: "2024-09"
@@ -50,13 +53,12 @@ evidence:
     signals: [closure]
     verified_via: web_search_snippet
 research:
-  summary_ru: "Центр закрылся в сентябре 2024 г.; правление планировало передать интерактивные экспонаты некоммерческим организациям с похожей миссией. Данные старше 2 лет — экспонаты, вероятно, уже распределены."
-  eligibility: "New homes sought with nonprofits fulfilling similar missions."
+  summary_ru: Центр закрылся в сентябре 2024 г.; правление планировало передать интерактивные экспонаты некоммерческим организациям с похожей миссией. Данные старше 2 лет — экспонаты, вероятно, уже распределены.
+  eligibility: New homes sought with nonprofits fulfilling similar missions.
   researcher: mef pilot
   last_updated: "2026-09-30"
   next_step: Two years have passed — check whether any exhibits remain unallocated; contact via website/Facebook or the former board chair.
-  open_questions:
-    - Were all exhibits already rehomed? Would they consider a foreign nonprofit museum?
+  open_questions: ['Were all exhibits already rehomed? Would they consider a foreign nonprofit museum?']
   outreach:
     reason: The centre closed in 2024 and said it would find new homes for its exhibits among nonprofits with similar missions.
     interest: Any remaining hands-on physics / STEM exhibits.

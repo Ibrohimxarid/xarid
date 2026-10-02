@@ -25,16 +25,23 @@ exhibitions:
       - id: vdg
         name: Van de Graaff generator
         category: [physics, electricity]
+        object_type: demonstrator
+        working_condition: working
+        transport: standard
         status: available_transfer
         interactive: true
         evidence: [e2]
+        fit_for_tpm: Electrostatic generator that makes visitors' hair stand on end — demonstrates electric charge, voltage and sparks for the electricity section.
       - id: pendulum
         name: Foucault pendulum
         category: [physics, mechanics]
+        object_type: demonstrator
         status: in_storage
         evidence: [e3]
+        fit_for_tpm: A long pendulum whose swing plane turns during the day — demonstrates the Earth's rotation and oscillation for the mechanics hall.
       - id: bikes
         name: Bicycle generator
+        object_type: interactive_station
         status: already_transferred
         evidence: [e4]
 evidence:
@@ -68,6 +75,7 @@ evidence:
     signals: [already_transferred]
 research:
   last_updated: "2026-09-30"
+  international_transfer: "yes"
   next_step: Email the collections manager.
   outreach:
     email_hook: your Physics Hall was replaced by the Forces Lab in 2024.

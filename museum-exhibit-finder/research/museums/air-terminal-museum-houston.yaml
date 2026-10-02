@@ -1,0 +1,140 @@
+museum:
+  id: air-terminal-museum-houston
+  name: 1940 Air Terminal Museum
+  country: United States
+  city: Houston, Texas
+  website: https://www.1940airterminal.org/
+  type: aviation history museum (closed March 2026)
+contacts:
+  - kind: general
+    email: info@1940airterminal.org
+    contact_page: https://www.1940airterminal.org/
+    source: e5
+exhibitions:
+  - id: liquidation-2026
+    name: Sale of non-core assets before vacating Hobby Airport (May–June 2026)
+    replacement_year: "2026"
+    status: for_sale
+    evidence: [e1, e2, e3, e4]
+    exhibits:
+      - id: sw-737-200-simulator
+        name: Southwest Airlines' first Boeing 737-200 full-motion flight simulator
+        category: [aviation, simulator]
+        object_type: simulator
+        transport: oversize
+        condition: Not powered on since the museum received it; functional capacity unknown (per listing)
+        status: for_sale
+        evidence: [e1, e3, e5]
+        fit_for_tpm: Full-size airliner cockpit on a motion platform — visitors sit at real flight controls and instruments and see how pilots fly and how motion simulators reproduce flight; usable even as a static cockpit.
+        notes: Asking price USD 20,000 (May 2026); buyer arranges removal; a forklift rated ≥22,700 lb is needed; sold with computer cabinets and manuals.
+      - id: king-air-200-simulator
+        name: Beechcraft King Air 200 full-motion flight simulator (donated by FlightSafety)
+        category: [aviation, simulator]
+        object_type: simulator
+        transport: oversize
+        condition: Not powered on since the museum received it; functional capacity unknown (per listing)
+        status: for_sale
+        evidence: [e1, e3, e5]
+        fit_for_tpm: Turboprop flight-deck simulator — shows cockpit instruments, flight controls and the principle of motion-based flight simulation for pilot training.
+        notes: Asking price USD 20,000 (May 2026); buyer arranges removal.
+      - id: hawker-700-simulator
+        name: Hawker 700 business-jet full-motion flight simulator (donated by FlightSafety)
+        category: [aviation, simulator]
+        object_type: simulator
+        transport: oversize
+        condition: Not powered on since the museum received it; functional capacity unknown (per listing)
+        status: for_sale
+        evidence: [e1, e3, e5]
+        fit_for_tpm: Business-jet flight-deck simulator — shows jet cockpit instruments, flight controls and motion-based flight simulation for pilot training.
+        notes: Asking price USD 20,000 (May 2026); buyer arranges removal.
+      - id: link-ifr-trainer
+        name: Link instrument-flight (IFR) trainer
+        category: [aviation, simulator]
+        object_type: simulator
+        status: for_sale
+        evidence: [e3]
+        fit_for_tpm: Classic Link instrument-flight trainer — the pioneering electromechanical flight simulator used to teach pilots to fly on instruments; a technology-history landmark for TPM's aviation and simulator areas.
+        notes: Listed for sale in May 2026 (USD 20,000 per item per the Houston Chronicle); size and weight not captured.
+      - id: dc6-nose
+        name: Douglas DC-6 nose / cockpit section (cut from N841TA, mounted on a trailer)
+        category: [aviation]
+        object_type: aircraft
+        transport: oversize
+        status: for_sale
+        evidence: [e2, e3]
+        fit_for_tpm: Airliner cockpit section visitors can enter — shows the flight deck, instruments and airframe structure of a 1950s piston airliner.
+      - id: lodestar-n31g
+        name: 1942 Lockheed Lodestar N31G aircraft
+        category: [aviation]
+        object_type: aircraft
+        transport: oversize
+        status: for_sale
+        evidence: [e3]
+        fit_for_tpm: Complete 1940s twin-engine piston airliner — shows radial engines, propellers and early airliner structure.
+evidence:
+  - id: e1
+    url: https://www.1940airterminal.org/news/liquidation-of-simulators
+    title: Liquidation of simulators — 1940 Air Terminal Museum and Special Event Venue
+    publisher: 1940 Air Terminal Museum
+    source_type: official_site
+    valid_until: "2026-06-30"
+    accessed: "2026-10-02"
+    claim: The museum offers three full-size, full-motion simulators (Southwest's first 737-200, a Beechcraft King Air 200 and a Hawker 700) for USD 20,000 each with cabinets, manuals and related equipment; buyers handle removal and transport; the simulators have not been powered on since the museum received them; the museum must vacate its building by the end of June.
+    signals: [closure, for_sale, willing_sale]
+    verified_via: web_search_snippet
+    notes: Page undated; valid_until is the 30 June 2026 deadline to vacate the building.
+  - id: e2
+    url: https://avweb.com/aviation-news/1940-air-terminal-museum-begins-liquidation/
+    title: 1940 Air Terminal Museum Begins Liquidation
+    publisher: AVweb
+    source_type: trade_press
+    source_date: "2026-05"
+    valid_until: "2026-06-30"
+    accessed: "2026-10-02"
+    claim: The museum began liquidating parts of its collection ahead of a 30 June deadline to vacate its buildings at Hobby Airport; initial items are three full-size simulators and the nose section of a Douglas DC-6 (cut from N841TA, on a trailer).
+    signals: [closure, for_sale]
+    verified_via: web_search_snippet
+  - id: e3
+    url: https://www.chron.com/news/article/aircraft-aviation-sale-houston-texas-22324301.php
+    title: Houston's 1940 Air Terminal Museum selling artifacts before exiting
+    publisher: Houston Chronicle
+    source_type: news
+    source_date: "2026-05-30"
+    valid_until: "2026-06-30"
+    accessed: "2026-10-02"
+    claim: The museum listed a Link IFR trainer simulator, a DC-6 nose and three simulators (Southwest 737-200, King Air 200, Hawker 700) for sale at USD 20,000 each; ten items were up for bid, including a 1942 Lockheed Lodestar N31G.
+    signals: [for_sale]
+    verified_via: web_search_snippet
+  - id: e4
+    url: https://www.click2houston.com/news/local/2026/07/01/texas-historical-commission-signs-short-term-lease-for-1940-air-terminal-museum-pauses-artifact-removal/
+    title: Texas Historical Commission signs short-term lease for 1940 Air Terminal Museum, pauses artifact removal
+    publisher: KPRC Click2Houston
+    source_type: news
+    source_date: "2026-07-01"
+    accessed: "2026-10-02"
+    claim: The Texas Historical Commission signed a six-month lease for the museum building, halting artifact removal while it assesses whether the site can join the state historic sites system; most assets remain in place, the museum sells only a limited number of 'non-core assets' to pay creditors and loans its collection to the commission.
+    signals: [closure]
+    verified_via: web_search_snippet
+  - id: e5
+    url: https://www.squaredtech.co/stunning-20k-deal-historic-flight-simulators-must-go
+    title: "Flight Simulators For Sale: 3 Full-motion Rigs At $20K Each"
+    publisher: SquaredTech
+    source_type: news
+    source_date: "2026-05"
+    accessed: "2026-10-02"
+    claim: Each simulator comes with the computer cabinets that ran it; buyers need a forklift rated for at least 22,700 lb to extract them; the museum takes enquiries at info@1940airterminal.org or via its website contact form.
+    signals: [contact]
+    verified_via: web_search_snippet
+research:
+  researcher: mef relevance pass
+  last_updated: "2026-10-02"
+  international_transfer: "yes"
+  eligibility: Was an open sale (USD 20,000 per item, buyer removes); since 1 July 2026 artifact removal is paused while the Texas Historical Commission evaluates the collection, and only limited 'non-core assets' are sold.
+  summary_ru: Музей истории авиации в Хьюстоне закрылся в марте 2026 и в мае–июне продавал по 20 000 $ три полноразмерных авиасимулятора с подвижной платформой (Boeing 737-200, King Air 200, Hawker 700), классический тренажёр Link, кабину DC-6 и самолёт Lodestar. Срок освобождения здания — 30 июня 2026; с 1 июля Комиссия по историческому наследию Техаса арендовала здание и приостановила вывоз, музей продаёт лишь ограниченные «непрофильные активы». Симуляторы не включались с момента поступления, нужен погрузчик на 10+ т.
+  next_step: Email info@1940airterminal.org — ask which simulators and the Link trainer are still unsold or count as 'non-core assets', their weight and dimensions, and whether the Texas Historical Commission's review blocks a sale abroad.
+  outreach:
+    reason: The museum offered its flight simulators, a Link trainer and a DC-6 nose for sale in May–June 2026.
+    interest: The Link IFR trainer and, if still available, one of the full-motion simulator cockpits.
+    fit: Flight simulators and cockpits give TPM's aviation section hands-on exhibits for school groups.
+    email_hook: in May 2026 the museum offered its full-motion flight simulators, a Link IFR trainer and a DC-6 nose section for sale
+    source: e3

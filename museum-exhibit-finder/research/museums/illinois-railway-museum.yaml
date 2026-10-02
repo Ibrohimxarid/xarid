@@ -19,6 +19,9 @@ exhibitions:
         status: for_sale
         evidence: [e1, e2]
         notes: Buyer had 12 months to remove the tender — check whether it sold.
+        object_type: rolling_stock
+        transport: oversize
+        fit_for_tpm: Steam-locomotive tender (coal and water carrier) — shows how a steam locomotive was supplied with fuel and water; a large railway-technology object.
 evidence:
   - id: e1
     url: https://www.irm.org/in-the-news/museum-auction-2025/
@@ -43,8 +46,9 @@ evidence:
     signals: [for_sale]
     verified_via: web_search_snippet
 research:
-  summary_ru: "Аукцион 112 излишних предметов (в т.ч. тендер паровоза Chicago & North Western) завершился 17.01.2025. Можно спросить о непроданных лотах."
-  eligibility: "Public online auction (anyone could bid)."
+  summary_ru: Аукцион 112 излишних предметов (в т.ч. тендер паровоза Chicago & North Western) завершился 17.01.2025. Можно спросить о непроданных лотах.
+  eligibility: Public online auction (anyone could bid).
   researcher: mef expansion
   last_updated: "2026-09-30"
   next_step: IRM periodically sells surplus railway items — ask to be notified of the next surplus sale (railway components, signals, tools).
+  international_transfer: 'yes'

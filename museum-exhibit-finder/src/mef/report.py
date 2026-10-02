@@ -2,7 +2,7 @@
 
 Writes ``reports/<run>/REPORT.md`` with the six required sections, a museum
 card file (``MUSEUM_CARDS.md``) with the 8 research-logic answers per museum,
-the strict ``VERIFIED_OFFERS.md`` (only documented, current give-away/sale offers),
+the relevance-checked ``TPM_CANDIDATES.md``,
 and one outreach draft per museum with a documented (current or earlier) offer
 under ``outreach/``.
 """
@@ -20,7 +20,8 @@ from .outreach import build_draft
 from .priority import assess_museum, research_answers
 from .rows import database_record, iter_rows, museum_summary
 from .stats import compute_stats
-from .verified import verified_offers_markdown
+from .candidates import build as build_candidates
+from .candidates_out import candidates_markdown, offer_status
 
 ORDER = {"A": 0, "B": 1, "C": 2, None: 3, "—": 3}
 
@@ -46,36 +47,23 @@ def _sorted(files: list[MuseumFile]) -> list[MuseumFile]:
     return sorted(files, key=lambda mf: (ORDER[assess_museum(mf).priority], mf.museum.country, mf.museum.name))
 
 
-def _opportunity_rows(files: list[MuseumFile], priorities: tuple[str, ...], offered_before: bool = False) -> list:
-    rows = [r for r in iter_rows(files) if r.priority in priorities and (r.exhibit or r.exhibition)]
-    if offered_before:
-        rows = [r for r in rows if r.assessment.availability_evidence]
-    rows.sort(key=lambda r: (ORDER[r.priority], r.museum.museum.country, r.museum.museum.name))
-    body = []
-    for r in rows:
-        rec = database_record(r)
-        body.append([
-            r.priority,
-            f"{rec['Museum']} ({rec['Country']})",
-            rec["Old Exhibit"],
-            rec["Exhibit Category"] if rec["Exhibit Category"] != UNKNOWN else "—",
-            rec["Current Status"],
-            (rec["Availability Evidence"] + (" — " + " ".join(r.assessment.notes) if offered_before else ""))[:400],
-            _link(rec["Source"], rec["Source Date"] if rec["Source Date"] != UNKNOWN else "n.d."),
-        ])
-    return body
-
-
 def section_opportunities(files: list[MuseumFile]) -> str:
-    """Only A items (offer confirmed and current) in the headline; closed/stale offers below."""
-    headers = ["P", "Museum", "Exhibit / collection", "Category", "Status", "Availability evidence", "Source"]
-    a_rows = _opportunity_rows(files, ("A",))
-    closed = _opportunity_rows(files, ("B",), offered_before=True)
-    out = [_table(headers, a_rows) if a_rows else "_No confirmed, current offers yet._"]
-    out += ["", "### 1b. Offered earlier — window closed, evidence stale or not officially confirmed (ask what is left)", ""]
-    out.append(_table(headers, closed) if closed else "_None._")
-    out += ["", "Removed/stored exhibits with unknown fate and renovation-only museums are **not** "
-            "opportunities — they are listed under Museum Leads."]
+    """Relevance-checked candidates (see candidates.py): offered ones and every HIGH/MEDIUM."""
+    today = dt.date.today()
+    cands, chans, rejected = build_candidates(files, today)
+    rows = [c for c in cands if c.offered or c.acquisition.priority in ("HIGH", "MEDIUM")]
+    body = [[
+        c.acquisition.priority, c.acquisition.relevance.value, c.label,
+        f"{c.museum.museum.name} ({c.museum.museum.country})",
+        offer_status(c.offer_evidence(), today, c.assessment.notes),
+        (c.why_it_fits or "—")[:300],
+        _link(src.url, src.source_date or "n.d.") if (src := (c.offer_evidence() or c.evidence or [None])[0]) else "—",
+    ] for c in rows]
+    out = [_table(["Acquisition priority", "Museum relevance", "Exhibit", "Museum", "Offer status",
+                   "Why it fits TPM", "Source"], body) if body else "_No relevant offered exhibits yet._"]
+    out += ["", f"Relevant exhibits removed with unknown fate (ask): "
+            f"{sum(1 for c in cands if c not in rows)} · transfer channels without item lists: {len(chans)} · "
+            f"offered but NOT_RELEVANT (do not recommend): {len(rejected)}. Full list with checks: `TPM_CANDIDATES.md`."]
     return "\n".join(out)
 
 
@@ -206,8 +194,11 @@ def generate(files: list[MuseumFile], label: str = "run", out_root: Path | None 
 
     # Drafts only where a source shows an actual offer (current = A, or earlier/closed = B with
     # availability evidence). Renovation-only and "fate unknown" museums get no draft.
-    drafts = [build_draft(mf) for mf in _sorted(files)
-              if assess_museum(mf).priority in ("A", "B") and assess_museum(mf).availability_evidence]
+    # Drafts only where a relevant (DIRECT/STRONG) exhibit is or was offered, or a transfer channel exists.
+    cands, chans, _ = build_candidates(files)
+    wanted = {c.museum.museum.id for c in cands if c.offered and c.acquisition.relevance.value in
+              ("DIRECT_MATCH", "STRONG_MATCH")} | {ch.museum.museum.id for ch in chans}
+    drafts = [build_draft(mf) for mf in _sorted(files) if mf.museum.id in wanted]
     for d in drafts:
         (run_dir / "outreach" / f"{d.museum_id}.md").write_text(d.markdown(), encoding="utf-8")
 
@@ -228,9 +219,11 @@ def generate(files: list[MuseumFile], label: str = "run", out_root: Path | None 
 **Research run:** {label} · **Date:** {today} · **Museums researched:** {stats['Museums researched']} ·
 **Countries:** {stats['Countries covered']} · **Evidence records:** {stats['Evidence records (sources)']} ({via_line})
 {snippet_note}
-Priority legend — **A**: direct opportunity (availability confirmed by source) ·
-**B**: potential opportunity (old exhibits removed/stored, fate unknown, or availability evidence stale) ·
-**C**: lead (renovation/new exhibition only).
+Section 1 ranks exhibits by **ACQUISITION_PRIORITY** (HIGH / MEDIUM / LOW — relevance to the TPM profile plus
+five factual checks) and **MUSEUM_RELEVANCE** (DIRECT_MATCH / STRONG_MATCH / RELATED / WEAK_MATCH; NOT_RELEVANT
+objects are not shown). Elsewhere, the **evidence level** P = A / B / C says only how far the evidence goes:
+**A** offer documented and current · **B** removed/stored with unknown fate, or the offer is stale/closed ·
+**C** renovation / new exhibition only.
 Where availability is not confirmed the system states: *{POTENTIAL_LEAD}*
 Unknown fields read: *{UNKNOWN}*
 
@@ -259,10 +252,10 @@ Unknown fields read: *{UNKNOWN}*
 {section_statistics(files)}
 
 ---
-Strict list (only museums that actually give away / sell / transfer retired objects, with proof): `VERIFIED_OFFERS.md`.
+Relevance-checked candidate list (MUSEUM_RELEVANCE, ACQUISITION_PRIORITY, WHY_IT_FITS): `TPM_CANDIDATES.md`.
 Museum-by-museum cards with the 8 research-logic answers: `MUSEUM_CARDS.md`.
 """
     (run_dir / "REPORT.md").write_text(report, encoding="utf-8")
     (run_dir / "MUSEUM_CARDS.md").write_text(museum_cards(files), encoding="utf-8")
-    (run_dir / "VERIFIED_OFFERS.md").write_text(verified_offers_markdown(files), encoding="utf-8")
+    (run_dir / "TPM_CANDIDATES.md").write_text(candidates_markdown(files), encoding="utf-8")
     return run_dir

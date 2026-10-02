@@ -1,0 +1,55 @@
+museum:
+  id: gwacheon-national-science-museum
+  name: Gwacheon National Science Museum (국립과천과학관)
+  name_local: 국립과천과학관
+  country: South Korea
+  city: Gwacheon
+  website: https://www.sciencecenter.go.kr/scipia/
+  type: national science museum
+contacts:
+  - kind: general
+    contact_page: https://www.sciencecenter.go.kr/scipia/
+    source: https://www.sciencecenter.go.kr/scipia/
+exhibitions:
+  - id: dasi-on-2026
+    name: 다시ON (Re:ON) programme — 2026 transfer round
+    replacement_year: "2026"
+    status: already_transferred
+    evidence: [e1]
+    exhibits:
+      - id: same-volume-different-weight
+        name: Same Volume, Different Weight (같은 부피 다른 무게) — interactive density exhibit
+        category: [physics, stem]
+        object_type: interactive_station
+        former_exhibit: true
+        status: already_transferred
+        evidence: [e1]
+        fit_for_tpm: Interactive exhibit comparing objects of equal volume but different weight — a hands-on density and mass experiment, the classic interactive-physics station TPM wants.
+        notes: Allocated in the 2026 round to one of four Korean institutions (incl. Gangseo Starlight Space Science Museum) — not available; shown as an example of what the programme releases.
+evidence:
+  - id: e1
+    url: https://www.dailian.co.kr/news/view/1683188/%EA%B3%BC%EC%B2%9C%EA%B3%BC%ED%95%99%EA%B4%80-%EC%A0%84%EC%8B%9C-%EB%81%9D%EB%82%9C-%EC%9E%91%ED%92%88-%ED%83%80-%EA%B8%B0%EA%B4%80-2026
+    title: 과천과학관, 전시 끝난 작품 타 기관 이전…'다시ON' 사업 추진
+    publisher: Dailian (데일리안)
+    source_type: news
+    source_date: "2026"
+    accessed: "2026-10-02"
+    language: ko
+    claim: The museum's 다시ON (Re:ON) programme transfers exhibits whose display has ended to other institutions for exhibition and education reuse instead of discarding them; in 2026 it transfers 10 exhibits, incl. 'Same Volume, Different Weight', to four institutions incl. Gangseo Starlight Space Science Museum; 53 exhibits have been transferred since 2023.
+    signals: [exhibit_replaced, already_transferred]
+    verified_via: web_search_snippet
+    notes: Article mentions a 'Ribbon Day' handover event on the 2nd of the following month; exact publication date not captured.
+research:
+  researcher: mef relevance pass
+  last_updated: "2026-10-02"
+  international_transfer: unknown
+  transfer_programme: 다시ON (Re:ON) — retired exhibits transferred to other institutions (53 since 2023)
+  eligibility: Other institutions that reuse the exhibits for display or education; the 2026 recipients were Korean public science museums — foreign eligibility not stated.
+  summary_ru: Национальный научный музей Гвачхона (Южная Корея) ведёт программу «다시ON» — снятые интерактивные экспонаты не утилизируют, а передают другим учреждениям. С 2023 года передано 53 экспоната; в 2026 году 10 экспонатов (в т.ч. интерактивный «Одинаковый объём — разный вес») ушли четырём корейским музеям. Иностранные получатели в источнике не упоминаются — спросить о следующем раунде.
+  next_step: Ask the exhibition team when the next 다시ON round is planned, which retired exhibits it will include, and whether a foreign state museum may be a recipient (TPM pays packing and transport).
+  outreach:
+    reason: The museum's 다시ON programme gives retired exhibits a second life at other institutions.
+    interest: Retired interactive physics, mechanics and technology exhibits from future 다시ON rounds.
+    fit: TPM runs interactive physics demonstrations for school groups — the same hands-on format.
+    email_hook: through the 다시ON (Re:ON) programme your museum transfers exhibits whose display has ended to other institutions, 53 of them since 2023
+    source: e1

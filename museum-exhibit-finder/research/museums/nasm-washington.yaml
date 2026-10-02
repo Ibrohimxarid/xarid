@@ -25,6 +25,7 @@ exhibitions:
         status: available_transfer
         evidence: [e4, e5]
         fit_for_tpm: Aviation/space objects from the national collection; free transfer to qualified museums.
+        object_type: mixed_collection
 evidence:
   - id: e1
     url: https://airandspace.si.edu/newsroom/press-releases/national-air-and-space-museum-provides-update-renovation-project
@@ -47,7 +48,7 @@ evidence:
     verified_via: web_search_snippet
   - id: e3
     url: https://www.aip.org/history/the-2025-2026-reopening-of-the-national-air-and-space-museum-september-12-2025
-    title: "Q&A: The 2025-26 reopening of the National Air and Space Museum"
+    title: 'Q&A: The 2025-26 reopening of the National Air and Space Museum'
     publisher: American Institute of Physics
     source_type: other
     source_date: "2025-09-12"
@@ -75,17 +76,16 @@ evidence:
     signals: [willing_transfer, international_ok]
     verified_via: web_search_snippet
 research:
-  summary_ru: "Смитсоновский музей авиации и космонавтики периодически публикует список списанных предметов для передачи квалифицированным музеям и образовательным организациям; первыми предложение получают члены международного консорциума Mutual Concerns of Air and Space Museums. Актуальный список не получен."
+  summary_ru: Смитсоновский музей авиации и космонавтики периодически публикует список списанных предметов для передачи квалифицированным музеям и образовательным организациям; первыми предложение получают члены международного консорциума Mutual Concerns of Air and Space Museums. Актуальный список не получен.
   researcher: mef verification
   last_updated: "2026-09-30"
   eligibility: Qualified museums and educational organisations; outreach starts with the international "Mutual Concerns of Air and Space Museums" consortium (foreign museums can be members). US private recipients need 501(c)(3) status — foreign eligibility to be confirmed.
   next_step: Open the transfer page, download the current list, and ask NASM Collections how a foreign state museum can request objects (and whether TPM can join the Mutual Concerns consortium).
-  open_questions:
-    - Is the 2025/2026 transfer list published, and which items remain?
-    - Can a non-US state museum receive transfers? Who pays shipping?
+  open_questions: ['Is the 2025/2026 transfer list published, and which items remain?', 'Can a non-US state museum receive transfers? Who pays shipping?']
   outreach:
     reason: NASM publishes a list of deaccessioned objects available for transfer to museums, with outreach first to an international consortium of air and space museums.
     interest: Aircraft components, engines, instruments and models on the current transfer list.
     fit: Aviation and space engineering objects from the US national collection would anchor TPM's aviation section.
     email_hook: the Museum periodically offers deaccessioned objects to other museums through its Collection Items for Transfer programme, with outreach beginning with the international Mutual Concerns of Air and Space Museums community
     source: e4
+  transfer_programme: Collection Items for Transfer (periodic transfer list)

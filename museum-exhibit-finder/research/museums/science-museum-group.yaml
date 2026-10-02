@@ -10,7 +10,7 @@ exhibitions:
   - id: collection-transfers
     name: Collection transfers to other museums (rationalisation)
     status: unknown
-    evidence: [e1, e2]
+    evidence: [e1, e2, e3]
     exhibits:
       - id: altair
         name: Altair computer and components
@@ -18,12 +18,26 @@ exhibitions:
         status: already_transferred
         evidence: [e1]
         notes: Transferred in 2015 to the Centre for Computing History, Cambridge.
+        object_type: computer
       - id: electricity-gallery-1950s
         name: 100+ 1950s domestic electrical items from the Science and Industry Museum Electricity Gallery
         category: [electricity]
         status: already_transferred
         evidence: [e1]
         notes: Moved to Beamish Museum in 2016.
+        object_type: household
+      - id: altair-8800b-2026
+        name: Altair 8800b Turnkey system unit and Soroz VDU/keyboard(s)
+        category: [computing]
+        object_type: computer
+        dimensions: VDU/keyboard 325 x 470 x 540 mm
+        condition: Fair (per listing)
+        working_condition: display_only
+        transport: standard
+        status: available_transfer
+        evidence: [e3, e4, e5]
+        documentation: ['https://collection.sciencemuseumgroup.org.uk/objects/co8457430/altair-8800b-turnkey-system-unit', 'https://collection.sciencemuseumgroup.org.uk/objects/co8401386/collection-of-altair-8800b-system-unit-8-disk-drive-hard-disk-unit-and-separate-monitors-computer-component']
+        fit_for_tpm: Altair 8800b microcomputer (1970s) with a VDU terminal — the machine family that started the personal-computer era; shows front-panel programming and early computer architecture for a technology-history display.
 evidence:
   - id: e1
     url: https://www.sciencemuseumgroup.org.uk/our-work/our-collection/managing-collection
@@ -37,7 +51,7 @@ evidence:
     verified_via: web_search_snippet
   - id: e2
     url: https://www.sciencemuseum.org.uk/sites/default/files/2025-02/2025-01-31_SMG_One_Collection_Report.pdf
-    title: "Transforming access to the Science Museum Group collection: One Collection"
+    title: 'Transforming access to the Science Museum Group collection: One Collection'
     publisher: Science Museum Group
     source_type: annual_report
     source_date: "2025-01-31"
@@ -45,14 +59,46 @@ evidence:
     claim: SMG's One Collection programme is moving and reorganising the national collection into new storage (National Collections Centre).
     signals: [relocation]
     verified_via: web_search_snippet
+  - id: e3
+    url: https://findanobject.collectionstrust.org.uk/
+    title: Find an Object - Collections Trust
+    publisher: Collections Trust (Find an Object)
+    source_type: association
+    source_date: "2026-09-18"
+    accessed: "2026-10-02"
+    claim: The Science Museum Group posted a Soroz VDU/keyboard(s) and an Altair 8800b Turnkey system unit on Find an Object on 18 September 2026, condition Fair.
+    signals: [available_transfer, deaccession_in_progress]
+    verified_via: web_search_snippet
+    notes: Seen in the 'latest listings' on the Find an Object home page; the listing's own URL was not captured.
+  - id: e4
+    url: https://collection.sciencemuseumgroup.org.uk/objects/co8457430/altair-8800b-turnkey-system-unit
+    title: Altair 8800b Turnkey system unit
+    publisher: Science Museum Group Collection
+    source_type: collection_database
+    accessed: "2026-10-02"
+    claim: SMG collection record for the Altair 8800b Turnkey system unit.
+    signals: []
+    verified_via: web_search_snippet
+  - id: e5
+    url: https://collection.sciencemuseumgroup.org.uk/objects/co8401386/collection-of-altair-8800b-system-unit-8-disk-drive-hard-disk-unit-and-separate-monitors-computer-component
+    title: Collection of Altair 8800b system unit, 8" disk drive, hard disk unit, and separate monitors
+    publisher: Science Museum Group Collection
+    source_type: collection_database
+    accessed: "2026-10-02"
+    claim: 'SMG collection record: an Altair 8800b system with 8-inch disk drive, hard-disk unit and monitors; the Soroz VDU/keyboard (2014-451/13) measures 325 x 470 x 540 mm.'
+    signals: []
+    verified_via: web_search_snippet
 research:
   researcher: mef pilot
-  last_updated: "2026-09-30"
-  next_step: Ask SMG's collections team whether overseas public museums can be considered for transfers and how to register interest.
-  open_questions:
-    - Are transfers to non-UK museums permitted under the SMG disposal procedure?
+  last_updated: "2026-10-02"
+  next_step: Enquire via the Find an Object listing about the Altair 8800b now (listings usually run ~2 months) and ask whether an overseas state museum can be considered.
+  open_questions: ['Are transfers to non-UK museums permitted under the SMG disposal procedure?']
   outreach:
     reason: SMG transfers duplicate or better-placed objects to other public museums as part of collection rationalisation during the One Collection move.
     interest: Duplicate engineering, electrical, computing and transport objects identified during the One Collection move.
     fit: The national science and industry collection overlaps closely with TPM's themes.
     email_hook: the Science Museum Group transfers duplicate or better-placed objects to other public museums, and is currently reorganising its collection through the One Collection programme.
+  transfer_programme: Collection transfers to public museums (via Find an Object)
+  international_transfer: unknown
+  eligibility: 'Find an Object: museums and organisations within the public domain; SMG gives priority to accredited museums — foreign eligibility not stated.'
+  summary_ru: Группа Музея науки (Великобритания) 18 сентября 2026 выставила в Find an Object микрокомпьютер Altair 8800b (Turnkey) с терминалом Soroz, состояние «удовлетворительное». Это свежее предложение, объект небольшой; неизвестно, может ли получить иностранный музей.

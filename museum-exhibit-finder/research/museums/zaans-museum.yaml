@@ -22,7 +22,9 @@ exhibitions:
         interactive: false
         status: for_sale
         evidence: [e1]
-        fit_for_tpm: Small hands-on gear/wheel objects for a mechanics display; low value, low shipping cost.
+        fit_for_tpm: Iron wheels from old industrial machines — could illustrate wheel and gear transmission in a mechanics corner, but they are loose parts, not exhibits.
+        object_type: component
+        transport: standard
 evidence:
   - id: e1
     url: https://shop.museumdepotshop.nl/en/machine-parts.html
@@ -34,8 +36,9 @@ evidence:
     signals: [for_sale, deaccession_in_progress]
     verified_via: web_search_snippet
 research:
-  summary_ru: "Через MuseumDepotShop продаются детали машин из коллекции музея — чугунные колёса Ø 7,5–17 см; самовывоз из депо в Звааге или доставка по запросу. Низкий приоритет."
+  summary_ru: Через MuseumDepotShop продаются детали машин из коллекции музея — чугунные колёса Ø 7,5–17 см; самовывоз из депо в Звааге или доставка по запросу. Низкий приоритет.
   researcher: mef verification
   last_updated: "2026-09-30"
   eligibility: Open webshop — anyone can buy.
   next_step: Low priority — buy only together with larger items from MuseumDepotShop in one shipment.
+  international_transfer: 'yes'

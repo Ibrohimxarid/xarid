@@ -18,6 +18,9 @@ exhibitions:
         status: unknown
         evidence: [e1]
         notes: Auction date passed — check results; source is a magazine's Facebook post.
+        object_type: vehicle
+        transport: standard
+        fit_for_tpm: Historic hot rods show engine tuning, chassis modification and the evolution of American automotive engineering — complete cars for an automotive-technology display.
       - id: alfa-giulia-tz
         name: 1964 Alfa Romeo Giulia TZ from the Petersen (Velocity Invitational / Cars & Bids auction, May 2026)
         category: [automotive]
@@ -25,6 +28,9 @@ exhibitions:
         status: unknown
         evidence: [e2]
         notes: Auction (29–31 May 2026) has passed — check result.
+        object_type: vehicle
+        transport: standard
+        fit_for_tpm: 1964 Alfa Romeo Giulia TZ — lightweight tubular space-frame racing car showing chassis and aerodynamic engineering.
 evidence:
   - id: e1
     url: https://www.facebook.com/hotrodmag/posts/petersen-museum-consigns-5-historic-hot-rods-to-2026-mecum-auction-and-four-of-t/1530342405787844/
@@ -48,7 +54,7 @@ evidence:
     signals: []
     verified_via: web_search_snippet
 research:
-  summary_ru: "По сообщению журнала Hot Rod в Facebook, музей передал пять исторических хот-родов на аукцион Mecum 2026. Официального подтверждения музея нет."
+  summary_ru: По сообщению журнала Hot Rod в Facebook, музей передал пять исторических хот-родов на аукцион Mecum 2026. Официального подтверждения музея нет.
   researcher: mef expansion
   last_updated: "2026-09-30"
   next_step: Confirm on petersen.org whether the museum is deaccessioning vehicles; if so, ask to be notified before future consignments (possible museum-to-museum transfer instead of auction).
@@ -57,3 +63,4 @@ research:
     interest: Deaccessioned vehicles, cutaway engines and automotive technology displays.
     fit: Automotive technology is a core TPM theme.
     email_hook: the Petersen has been releasing some vehicles from its collection through public auctions in 2026
+  international_transfer: 'yes'

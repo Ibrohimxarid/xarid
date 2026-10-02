@@ -1,0 +1,58 @@
+museum:
+  id: russells-car-museum-glenrio
+  name: Russell's Travel Center Car Museum
+  country: United States
+  city: Glenrio, New Mexico
+  type: free roadside car museum (closed July 2026)
+exhibitions:
+  - id: auction-2026
+    name: Online auction of the museum contents (432 lots, Assiter Auctioneers)
+    replacement_year: "2026"
+    status: for_sale
+    evidence: [e1, e2]
+    exhibits:
+      - id: classic-cars
+        name: Classic cars from the museum (lots in the Assiter online auction)
+        category: [automotive]
+        object_type: vehicle
+        transport: standard
+        former_exhibit: true
+        status: for_sale
+        evidence: [e1, e2]
+        fit_for_tpm: Complete classic American cars — show engines, drivetrains and body engineering across decades; usable as automotive-technology exhibits.
+      - id: gas-pumps-signs
+        name: Vintage gas pumps, signs and memorabilia
+        category: [automotive, decorative]
+        object_type: decorative
+        status: for_sale
+        evidence: [e1]
+evidence:
+  - id: e1
+    url: https://thebullamarillo.com/russells-travel-center-museum-auction/
+    title: Russell's Travel Center Museum Closes, Contents Up for Auction
+    publisher: The Bull Amarillo
+    source_type: news
+    source_date: "2026"
+    valid_until: "2026-10-10"
+    accessed: "2026-10-02"
+    claim: The free museum at Russell's Travel Center has closed (contents removed in July 2026); Assiter Auctioneers holds an online auction of 432 lots — classic cars, gas pumps and memorabilia — ending 10 October 2026, with a preview on 8–9 October at the Assiter facility in Canyon, Texas.
+    signals: [closure, for_sale]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://power959.com/ixp/195/p/russells-travel-center-museum-auction/
+    title: Russell's Travel Center Museum Closes, Contents Up for Auction
+    publisher: Power 95.9
+    source_type: news
+    source_date: "2026"
+    valid_until: "2026-10-10"
+    accessed: "2026-10-02"
+    claim: Second report of the closure and the online auction ending 10 October 2026.
+    signals: [for_sale]
+    verified_via: web_search_snippet
+research:
+  researcher: mef relevance pass
+  last_updated: "2026-10-02"
+  international_transfer: "yes"
+  eligibility: Public online auction (Assiter Auctioneers) — any registered bidder.
+  summary_ru: Бесплатный автомузей при заправке Russell's (Нью-Мексико, США) закрылся; онлайн-аукцион Assiter Auctioneers из 432 лотов (классические автомобили, бензоколонки, вывески) завершается 10 октября 2026. Автомобили — STRONG_MATCH; бензоколонки и вывески — декор, не рекомендуются.
+  next_step: Check the Assiter Auctioneers catalogue before 10 October 2026; bidding needs a US agent for pickup and export shipping, and the condition of each car must be checked from the lot description.

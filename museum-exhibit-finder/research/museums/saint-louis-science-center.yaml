@@ -7,7 +7,7 @@ museum:
   type: science centre with planetarium
 contacts:
   - kind: general
-    phone: "+1 314-289-4400"
+    phone: +1 314-289-4400
     contact_page: https://www.slsc.org/contact-us/
     source: https://www.slsc.org/contact-us/
 exhibitions:
@@ -28,7 +28,8 @@ exhibitions:
         interactive: false
         status: already_replaced
         evidence: [e1, e2]
-        fit_for_tpm: A decommissioned Zeiss star projector is a spectacular precision-engineering and optics object for display (or reuse in a small dome).
+        fit_for_tpm: Opto-mechanical Zeiss star projector (fibre-optic star field, lens projection, precision drives) — a showpiece for optics and projection systems, or reusable in a small dome.
+        object_type: instrument
 evidence:
   - id: e1
     url: https://www.slsc.org/hello-goto/
@@ -65,9 +66,7 @@ research:
   researcher: mef expansion
   last_updated: "2026-09-30"
   next_step: Email SLSC now — ask whether the retired ZEISS UNIVERSARIUM Mark IX (or its components) is available, before it is scrapped or sold.
-  open_questions:
-    - Is the Zeiss projector complete and stored, returned to Zeiss, or sold?
-    - Dimensions/weight of the projector and control system?
+  open_questions: ['Is the Zeiss projector complete and stored, returned to Zeiss, or sold?', 'Dimensions/weight of the projector and control system?']
   outreach:
     reason: SLSC retired and disassembled its ZEISS UNIVERSARIUM Mark IX star projector in 2026 after installing a GOTO Chiron III.
     interest: ZEISS UNIVERSARIUM Mark IX star projector (complete or major components) and any retired planetarium control equipment.

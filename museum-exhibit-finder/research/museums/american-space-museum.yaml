@@ -1,0 +1,50 @@
+museum:
+  id: american-space-museum
+  name: American Space Museum & Walk of Fame
+  country: United States
+  city: Titusville, Florida
+  website: https://spacewalkoffame.org/
+  type: space-history museum
+exhibitions:
+  - id: charity-auction-2026
+    name: Charity space-memorabilia auction (25 Jan – 14 Feb 2026)
+    replacement_year: "2026"
+    status: for_sale
+    evidence: [e1, e2]
+    exhibits:
+      - id: rocketdyne-s3d
+        name: Rocketdyne S-3D rocket engine
+        category: [space, engineering]
+        object_type: engine
+        status: for_sale
+        evidence: [e1, e2]
+        fit_for_tpm: Liquid-fuel rocket engine (Rocketdyne S-3D, used on ballistic missiles) — shows turbopump, combustion chamber and nozzle, i.e. how rocket propulsion works.
+evidence:
+  - id: e1
+    url: https://mynews13.com/fl/orlando/space/2026/01/27/american-space-museum-rocket-engine-auction
+    title: Titusville's American Space Museum to auction off NASA rocket engine
+    publisher: Spectrum News 13
+    source_type: news
+    source_date: "2026-01-27"
+    valid_until: "2026-02-14"
+    accessed: "2026-10-02"
+    claim: The museum's online charity auction (25 January – 14 February 2026) included a Rocketdyne S-3D rocket engine that was used for ballistic missiles, not for Mercury or Apollo missions.
+    signals: [for_sale]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://spacewalkoffame.org/event/charity-memorabilia-auction-42/attachment/s3d-rocket-engine-l428280874
+    title: Actual S-3D Rocket Engine UP FOR BID
+    publisher: American Space Museum & Walk of Fame
+    source_type: official_site
+    valid_until: "2026-02-14"
+    accessed: "2026-10-02"
+    claim: The museum's own auction page lists the actual S-3D rocket engine up for bid.
+    signals: [for_sale]
+    verified_via: web_search_snippet
+research:
+  researcher: mef relevance pass
+  last_updated: "2026-10-02"
+  international_transfer: "yes"
+  eligibility: Public online charity auction.
+  summary_ru: Музей космонавтики в Титусвилле (Флорида, США) продавал на благотворительном аукционе (до 14 февраля 2026) ракетный двигатель Rocketdyne S-3D. Аукцион закрыт — можно спросить, продан ли двигатель.
+  next_step: Low priority — the auction closed on 14 February 2026; ask the museum whether the S-3D engine was sold.

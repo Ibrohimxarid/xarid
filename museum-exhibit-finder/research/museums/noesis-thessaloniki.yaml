@@ -11,6 +11,9 @@ exhibitions:
     new_exhibition: Modern projection system, dome-screen extension, wireless bilingual headphones
     status: already_replaced
     evidence: [e1]
+    object_type: instrument
+    category: [optics, space]
+    fit_for_tpm: The previous planetarium projection system was replaced — projector hardware shows optics and projection technology, fitting TPM's optics area (or reusable in a small dome).
 evidence:
   - id: e1
     url: https://thessaloniki.travel/exploring-the-city/art-culture/noesis/noesis-thessaloniki-science-center-and-technology-museum/

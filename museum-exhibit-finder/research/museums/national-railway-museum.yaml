@@ -10,7 +10,7 @@ exhibitions:
   - id: vision-2025
     name: Vision 2025 masterplan
     replacement_year: "2023–2026"
-    new_exhibition: "Wonderlab: The Bramall Gallery (opened 22 July 2023); Central Hall and Railway Futures gallery"
+    new_exhibition: 'Wonderlab: The Bramall Gallery (opened 22 July 2023); Central Hall and Railway Futures gallery'
     status: unknown
     evidence: [e1, e2]
   - id: rolling-stock-rationalisation
@@ -24,16 +24,18 @@ exhibitions:
         status: already_transferred
         evidence: [e3]
         notes: Transferred to the Swanage Railway in 2017.
+        object_type: rolling_stock
       - id: 4vep
         name: British Railways Southern Region 4VEP electric multiple unit
         category: [railway]
         status: already_transferred
         evidence: [e4]
         notes: Collected by the East Kent Railway in late 2016.
+        object_type: rolling_stock
 evidence:
   - id: e1
     url: https://www.railwaymuseum.org.uk/about-us/press-office/national-railway-museum-opens-wonderlab-bramall-gallery
-    title: "National Railway Museum Opens Wonderlab: The Bramall Gallery"
+    title: 'National Railway Museum Opens Wonderlab: The Bramall Gallery'
     publisher: National Railway Museum
     source_type: press_release
     source_date: "2023-07"

@@ -8,17 +8,17 @@ museum:
 contacts:
   - name: Dr. Kerstin Haller
     position: Exhibition contact
-    phone: "+49 421 3346-0"
+    phone: +49 421 3346-0
     kind: person
     source: https://universum-bremen.de/kontaktadressen/
   - name: Dr. Tobias Wolff
     position: Exhibition contact
-    phone: "+49 421 3346-0"
+    phone: +49 421 3346-0
     kind: person
     source: https://universum-bremen.de/kontaktadressen/
   - kind: general
     email: info@universum-bremen.de
-    phone: "+49 421 3346-0"
+    phone: +49 421 3346-0
     contact_page: https://universum-bremen.de/kontakt/
     source: https://universum-bremen.de/kontaktadressen/
 exhibitions:
@@ -29,6 +29,9 @@ exhibitions:
     new_exhibition: New scenography with additional exhibits (closed 16 Nov 2026 – 21 Mar 2027)
     status: being_replaced
     evidence: [e1]
+    object_type: interactive_station
+    category: [physics, mechanics, stem]
+    fit_for_tpm: Universum's 4,000 m² hands-on exhibition is rebuilt from 16 Nov 2026; highlights (earthquake sofa, tilted room, plasma sphere) stay, other interactive stations leave the floor — hands-on physics experiments fit TPM directly. Ask before November 2026.
 evidence:
   - id: e1
     url: https://universum-bremen.de/das-universum-bremen-blickt-in-die-zukunft/

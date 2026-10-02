@@ -13,6 +13,9 @@ exhibitions:
     new_exhibition: New 5,000 sq ft space-exploration exhibit (late 2025)
     status: already_replaced
     evidence: [e1, e2]
+    object_type: interactive_station
+    category: [space, stem]
+    fit_for_tpm: The former 'Our Place in Space' exhibition was replaced by a new space-exploration exhibit in late 2025 — retired space-science interactives fit TPM's aviation/space and STEM areas.
 evidence:
   - id: e1
     url: https://www.mdsci.org/wp-content/uploads/2025/04/Announcement-of-Enhancements_24.pdf

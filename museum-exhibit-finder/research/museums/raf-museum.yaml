@@ -29,15 +29,21 @@ exhibitions:
         interactive: false
         status: available_transfer
         evidence: [e3, e5]
-        fit_for_tpm: Rare jet/rocket research aircraft — landmark aviation engineering object.
-        documentation: [https://www.rafmuseum.org.uk/documents/collections/69-A-696-SR-53-XD145.pdf]
+        fit_for_tpm: Mixed-power interceptor prototype (rocket engine plus jet engine, 1957) — shows rocket and jet propulsion and high-speed aerodynamics in one aircraft.
+        documentation: ['https://www.rafmuseum.org.uk/documents/collections/69-A-696-SR-53-XD145.pdf']
+        object_type: aircraft
+        transport: oversize
+        former_exhibit: true
       - id: h126-xn714
         name: Hunting H.126 XN714 (blown-flap STOL research aircraft)
         category: [aviation, engineering]
         interactive: false
         status: available_transfer
         evidence: [e3]
-        fit_for_tpm: Demonstrates aerodynamic research (blown flaps / STOL) — strong engineering story.
+        fit_for_tpm: Research aircraft that tested jet-blown flaps for short take-off and landing — demonstrates lift augmentation and aerodynamic research.
+        object_type: aircraft
+        transport: oversize
+        former_exhibit: true
       - id: sea-balliol-wl732
         name: Boulton Paul Sea Balliol T.21 WL732
         category: [aviation]
@@ -45,8 +51,11 @@ exhibitions:
         interactive: false
         status: available_transfer
         evidence: [e2, e5]
-        documentation: [https://www.rafmuseum.org.uk/documents/collections/69-A-626_Sea_Balliol_WL732.pdf]
+        documentation: ['https://www.rafmuseum.org.uk/documents/collections/69-A-626_Sea_Balliol_WL732.pdf']
         notes: Listed in the March 2025 transfer batch — check whether already allocated.
+        object_type: aircraft
+        transport: oversize
+        fit_for_tpm: 1950s naval advanced trainer with a Rolls-Royce Merlin piston engine — a complete piston-engine aircraft for an aviation-technology display.
 evidence:
   - id: e1
     url: https://www.rafmuseum.org.uk/research/default/acquisitions-and-transfers/object-transfer-programme/
@@ -111,17 +120,17 @@ evidence:
     signals: [relocation, new_exhibition]
     verified_via: web_search_snippet
 research:
-  summary_ru: "Музей ВВС ведёт программу передачи объектов из национальной коллекции (до конца 2027). В 2025 г. опытные самолёты SR.53 XD145 и Hunting H.126 XN714 значились «всё ещё ожидающими нового дома». Раунды 04.2025 и 02.2026 уже закрыты; приоритет — британским публичным организациям, затем «альтернативные пути»."
-  eligibility: "Priority to UK public-heritage organisations; after that the Museum explores 'alternative routes' (per Feb 2026 transfer list). Expressions of interest must state organisation status, contacts and accession numbers."
+  summary_ru: Музей ВВС ведёт программу передачи объектов из национальной коллекции (до конца 2027). В 2025 г. опытные самолёты SR.53 XD145 и Hunting H.126 XN714 значились «всё ещё ожидающими нового дома». Раунды 04.2025 и 02.2026 уже закрыты; приоритет — британским публичным организациям, затем «альтернативные пути».
+  eligibility: Priority to UK public-heritage organisations; after that the Museum explores 'alternative routes' (per Feb 2026 transfer list). Expressions of interest must state organisation status, contacts and accession numbers.
   researcher: mef expansion
   last_updated: "2026-09-30"
   next_step: Email the Collections Development Committee now — ask which aircraft from the 2025/2026 batches were not taken by UK bodies (SR.53, H.126) and whether a foreign public museum can apply under "alternative routes".
-  open_questions:
-    - Are overseas public museums eligible once UK interest is exhausted?
-    - Transport/export logistics for large airframes (dismantling needed?).
+  open_questions: ['Are overseas public museums eligible once UK interest is exhausted?', 'Transport/export logistics for large airframes (dismantling needed?).']
   outreach:
     reason: The RAF Museum is transferring aircraft from its national collection; several (SR.53, H.126) were still awaiting new homes.
     interest: Saunders-Roe SR.53 XD145, Hunting H.126 XN714, and other research/test aircraft or engines in current transfer batches.
     fit: Landmark British aviation engineering; would anchor an aviation section at TPM.
     email_hook: the Museum's Objects Transfer Programme is offering aircraft from the national collection, and that the Saunders-Roe SR.53 and Hunting H.126 were still awaiting new homes
     source: e4
+  international_transfer: domestic_first
+  transfer_programme: Objects Transfer Programme (to late 2027)

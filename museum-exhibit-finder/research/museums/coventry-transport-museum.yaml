@@ -10,7 +10,7 @@ contacts:
   - kind: department
     position: Museum collections enquiries
     email: museumcollections@cvlife.co.uk
-    phone: "+44 24 7623 4270"
+    phone: +44 24 7623 4270
     contact_page: https://www.transport-museum.com/contact.aspx
     source: https://www.transport-museum.com/contact.aspx
   - kind: department
@@ -30,6 +30,7 @@ exhibitions:
         status: deaccessioned
         evidence: [e2, e3]
         notes: Report covers items at Coventry Transport Museum, the Herbert and ancillary stores; open the PDF to identify transport/technology items.
+        object_type: mixed_collection
 evidence:
   - id: e1
     url: https://transport-museum.com/collection/collections-review-project.aspx
@@ -71,8 +72,8 @@ evidence:
     signals: [relocation, storage]
     verified_via: web_search_snippet
 research:
-  summary_ru: "Совет Ковентри 26.02.2026 одобрил списание предметов коллекции (Транспортный музей, Herbert, хранилища). Списанное сначала предлагают аккредитованным музеям через Find an Object, затем другим организациям; передача за пределы Ковентри приветствуется. Перечень предметов не получен — запросить."
-  eligibility: "Offered first to accredited museums via Find an Object; if no interest, to other appropriate organisations (transfers outside Coventry welcomed)."
+  summary_ru: Совет Ковентри 26.02.2026 одобрил списание предметов коллекции (Транспортный музей, Herbert, хранилища). Списанное сначала предлагают аккредитованным музеям через Find an Object, затем другим организациям; передача за пределы Ковентри приветствуется. Перечень предметов не получен — запросить.
+  eligibility: Offered first to accredited museums via Find an Object; if no interest, to other appropriate organisations (transfers outside Coventry welcomed).
   researcher: mef expansion
   last_updated: "2026-09-30"
   next_step: Open the Feb 2026 council report; ask the collections team which transport/engineering items remain unallocated after the Find an Object period and whether an overseas public museum can apply.
@@ -82,3 +83,5 @@ research:
     fit: Coventry is the historic heart of the British motor and cycle industry — directly relevant to TPM's automotive theme.
     email_hook: Culture Coventry's Collections Review has identified items for disposal, which are being offered to other museums
     source: e1
+  international_transfer: domestic_first
+  transfer_programme: Collections Review Project — approved disposals (Feb 2026)

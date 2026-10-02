@@ -25,7 +25,9 @@ exhibitions:
         condition: Good (per listing)
         status: available_transfer
         evidence: [e1]
-        fit_for_tpm: Illustrates the refrigeration cycle / domestic electrification — useful for a thermodynamics display.
+        fit_for_tpm: 1950s compressor refrigerator — shows the refrigeration cycle (compressor, condenser, evaporator), i.e. thermodynamics in everyday life; ordinary household equipment that may still contain coolant.
+        object_type: household
+        transport: hazardous
 evidence:
   - id: e1
     url: https://findanobject.collectionstrust.org.uk/objects-for-disposal/mid-20th-century-fridge/
@@ -39,8 +41,8 @@ evidence:
     signals: [available_transfer, deaccession_in_progress]
     verified_via: web_search_snippet
 research:
-  summary_ru: "Холодильник Prestcold 1950-х (55×92×50 см) выставлен в Find an Object 20.05.2026; срок объявления истёк 20.07.2026."
-  eligibility: "Find an Object: museums and organisations within the public domain."
+  summary_ru: Холодильник Prestcold 1950-х (55×92×50 см) выставлен в Find an Object 20.05.2026; срок объявления истёк 20.07.2026.
+  eligibility: 'Find an Object: museums and organisations within the public domain.'
   researcher: mef expansion
   last_updated: "2026-09-30"
   next_step: Low priority — listing has expired; ask only if combining several UK items into one shipment.

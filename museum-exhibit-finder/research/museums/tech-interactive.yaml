@@ -12,6 +12,9 @@ exhibitions:
     new_exhibition: New galleries incl. Dream Garden (2025, AI-driven immersive environment)
     status: already_replaced
     evidence: [e1]
+    object_type: interactive_station
+    category: [engineering, stem]
+    fit_for_tpm: More than half of The Tech Interactive's exhibits were replaced; retired technology and engineering interactives fit TPM's STEM and engineering areas — ask what is in store.
 evidence:
   - id: e1
     url: https://en.wikipedia.org/wiki/The_Tech_Interactive

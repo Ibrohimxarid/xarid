@@ -20,7 +20,9 @@ exhibitions:
         interactive: false
         status: available_transfer
         evidence: [e1]
-        fit_for_tpm: Classic example of domestic mechanical engineering (treadle drive, crank, belt) — low-cost, small object; modest fit.
+        fit_for_tpm: Treadle drive turns the foot pedal's reciprocating motion into rotary motion via a crank and belt — a small mechanics example, but ordinary household equipment (low priority in the brief).
+        object_type: household
+        transport: standard
 evidence:
   - id: e1
     url: https://findanobject.collectionstrust.org.uk/objects-for-disposal/singer-treadle-sewing-machine/
@@ -33,8 +35,8 @@ evidence:
     signals: [available_transfer, deaccession_in_progress]
     verified_via: web_search_snippet
 research:
-  summary_ru: "Швейная машина Singer с ножным приводом выставлена в Find an Object. Объявление без даты; низкий приоритет."
-  eligibility: "Find an Object: museums and organisations within the public domain (UK-focused; overseas eligibility to confirm)."
+  summary_ru: Швейная машина Singer с ножным приводом выставлена в Find an Object. Объявление без даты; низкий приоритет.
+  eligibility: 'Find an Object: museums and organisations within the public domain (UK-focused; overseas eligibility to confirm).'
   researcher: mef pilot
   last_updated: "2026-09-30"
   next_step: Low priority — only enquire if bundled with other UK collections for one shipment.
@@ -44,3 +46,4 @@ research:
     fit: Simple mechanism (treadle, crank, flywheel, belt) useful for a hands-on mechanics display.
     email_hook: your Singer treadle sewing machine is offered for transfer to other museums.
     source: e1
+  international_transfer: unknown

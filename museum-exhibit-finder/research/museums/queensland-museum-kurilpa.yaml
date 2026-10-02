@@ -11,6 +11,9 @@ exhibitions:
     new_exhibition: Redeveloped SparkLab, Sciencentre
     status: already_replaced
     evidence: [e1]
+    object_type: interactive_station
+    category: [physics, stem]
+    fit_for_tpm: Hands-on exhibits of the former Sciencentre, replaced by SparkLab — interactive science stations fitting TPM's STEM area; ask whether any were kept in store.
 evidence:
   - id: e1
     url: https://www.museum.qld.gov.au/kurilpa/

@@ -9,7 +9,7 @@ museum:
 contacts:
   - kind: general
     email: enquiries@hk.science.museum
-    phone: "+852 2732 3232"
+    phone: +852 2732 3232
     contact_page: https://hk.science.museum/en/web/scm/contact-us.html
     source: https://hk.science.museum/en/web/scm/contact-us.html
 exhibitions:
@@ -20,10 +20,13 @@ exhibitions:
     new_exhibition: AI Gallery, InnoTech Gallery, Living Tech Gallery (Feb 2026); nine other galleries renewed
     status: being_replaced
     evidence: [e1, e2]
+    object_type: interactive_station
+    category: [optics, physics, stem]
+    fit_for_tpm: Ageing interactive exhibits from the renewed permanent galleries, incl. the World of Mirrors optics gallery due for renewal in 2026–27 — hands-on mirror and reflection experiments fit TPM's optics and interactive-physics areas.
 evidence:
   - id: e1
     url: https://www.info.gov.hk/gia/general/202411/13/P2024111300160.htm
-    title: "LCQ4: Permanent exhibitions of the Hong Kong Science Museum"
+    title: 'LCQ4: Permanent exhibitions of the Hong Kong Science Museum'
     publisher: Hong Kong SAR Government (Legislative Council reply)
     source_type: government
     source_date: "2024-11-13"

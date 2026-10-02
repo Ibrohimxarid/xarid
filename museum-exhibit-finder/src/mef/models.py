@@ -139,6 +139,61 @@ class OutreachStatus(str, Enum):
 _DATE_RE = re.compile(r"^\d{4}(-\d{2}(-\d{2})?)?$")
 
 
+class ObjectType(str, Enum):
+    """What the object physically is — a fact, used by the relevance check (``relevance.py``)."""
+    interactive_station = "interactive_station"  # hands-on science-centre exhibit
+    demonstrator = "demonstrator"  # working model / demonstration rig of a principle
+    cutaway = "cutaway"  # sectioned engine, gearbox, vehicle ...
+    simulator = "simulator"  # flight / driving / rail / earthquake simulator
+    robot = "robot"
+    digital_installation = "digital_installation"  # projection, multi-touch, VR/AR station
+    engine = "engine"  # complete engine / turbine / motor / generator
+    vehicle = "vehicle"  # car, truck, motorcycle, tram, bus
+    aircraft = "aircraft"  # complete aircraft or a major section (e.g. cockpit nose)
+    rolling_stock = "rolling_stock"
+    machine = "machine"  # industrial / workshop / agricultural machine
+    instrument = "instrument"  # scientific or technical instrument, projector
+    computer = "computer"
+    model = "model"  # static scale model
+    component = "component"  # part of a machine (wheels, plates, fittings)
+    household = "household"  # ordinary domestic equipment
+    display_furniture = "display_furniture"  # vitrines, cases, stands
+    book_document = "book_document"  # books, manuals, archives, posters, photos
+    decorative = "decorative"  # signs, memorabilia, decorative objects
+    mixed_collection = "mixed_collection"  # a batch whose contents are not itemised
+    unspecified = "unspecified"
+
+
+class Relevance(str, Enum):
+    """TASHKENT POLYTECHNIC MUSEUM RELEVANCE CHECK result (categories, not a score)."""
+    DIRECT_MATCH = "DIRECT_MATCH"
+    STRONG_MATCH = "STRONG_MATCH"
+    RELATED = "RELATED"
+    WEAK_MATCH = "WEAK_MATCH"
+    NOT_RELEVANT = "NOT_RELEVANT"
+
+
+class WorkingCondition(str, Enum):
+    working = "working"
+    restorable = "restorable"
+    display_only = "display_only"  # complete, fine for static display
+    parts_only = "parts_only"
+
+
+class Transport(str, Enum):
+    standard = "standard"  # fits a truck / container
+    oversize = "oversize"  # special heavy / oversize transport
+    hazardous = "hazardous"  # hazardous materials (coolant, asbestos, radioactive ...)
+
+
+class International(str, Enum):
+    """Can a foreign (Uzbek) state museum receive it, per the source?"""
+    yes = "yes"  # open sale / no restriction stated / foreign recipients welcomed
+    domestic_first = "domestic_first"  # domestic bodies first, others afterwards
+    no = "no"  # domestic recipients only
+    unknown = "unknown"
+
+
 class Evidence(Strict):
     id: str
     url: str
@@ -232,9 +287,23 @@ class Exhibit(Strict):
     status: ExhibitStatus = ExhibitStatus.unknown
     evidence: list[str] = Field(default_factory=list)
     fit_for_tpm: Optional[str] = Field(
-        None, description="Why this could suit Tashkent Polytechnic Museum"
+        None, description="WHY_IT_FITS_TASHKENT_POLYTECHNIC_MUSEUM — the concrete educational connection"
     )
+    object_type: ObjectType = ObjectType.unspecified
+    relevance: Optional[Relevance] = Field(
+        None, description="Manual override of the rule-based relevance check (needs relevance_reason)"
+    )
+    relevance_reason: Optional[str] = None
+    working_condition: Optional[WorkingCondition] = None
+    transport: Optional[Transport] = None
+    former_exhibit: Optional[bool] = Field(None, description="Was it on public display (not just in store)?")
     notes: Optional[str] = None
+
+    @model_validator(mode="after")
+    def _override_reason(self) -> "Exhibit":
+        if self.relevance and not self.relevance_reason:
+            raise ValueError(f"{self.id}: relevance override needs relevance_reason")
+        return self
 
     @field_validator("year", "approx_age", "dimensions", "weight", mode="before")
     @classmethod
@@ -253,6 +322,10 @@ class Exhibition(Strict):
     status: ExhibitStatus = ExhibitStatus.unknown
     evidence: list[str] = Field(default_factory=list)
     exhibits: list[Exhibit] = Field(default_factory=list)
+    # For galleries whose individual objects are not itemised in any source:
+    category: list[str] = Field(default_factory=list)
+    object_type: ObjectType = ObjectType.unspecified
+    fit_for_tpm: Optional[str] = None
     notes: Optional[str] = None
 
     @field_validator("opening_year", "replacement_year", mode="before")
@@ -280,6 +353,10 @@ class Research(Strict):
     open_questions: list[str] = Field(default_factory=list)
     eligibility: Optional[str] = Field(
         None, description="Who may receive the objects, as stated by the source (e.g. UK public bodies first)"
+    )
+    international_transfer: International = International.unknown
+    transfer_programme: Optional[str] = Field(
+        None, description="Name of a standing transfer/give-away programme this museum runs, if any"
     )
     summary_ru: Optional[str] = Field(
         None, description="Short Russian summary for TPM staff; must only restate the evidence"

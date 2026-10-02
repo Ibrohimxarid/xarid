@@ -1,0 +1,51 @@
+museum:
+  id: snooks-dream-cars
+  name: Snook's Dream Cars
+  country: United States
+  city: Bowling Green, Ohio
+  type: private car museum (closing October 2026)
+exhibitions:
+  - id: hagerty-auction-2026
+    name: Sale of the whole collection on Hagerty Marketplace (no reserve)
+    replacement_year: "2026"
+    status: for_sale
+    evidence: [e1, e2]
+    exhibits:
+      - id: collection-cars
+        name: 15 collection cars incl. a WWII Jeep, Jaguar XKE, early Datsun Z and streamliner-style American cars
+        category: [automotive]
+        object_type: vehicle
+        transport: standard
+        former_exhibit: true
+        status: for_sale
+        evidence: [e1, e2]
+        fit_for_tpm: Complete cars from the 1940s–1970s (military Jeep, sports cars, streamliners) — show the evolution of engines, chassis and aerodynamic body design.
+evidence:
+  - id: e1
+    url: https://www.thedrive.com/news/classic-car-museum-closing-because-nobody-can-work-on-carburetors-anymore-now-the-collections-for-sale
+    title: Classic Car Museum Closing Because Nobody Can Work on Carburetors Anymore. Now The Collection's For Sale
+    publisher: The Drive
+    source_type: trade_press
+    source_date: "2026-09"
+    valid_until: "2026-09-28"
+    accessed: "2026-10-02"
+    claim: Snook's Dream Cars is shutting down after 24 years because its mechanic retires; every car is sold on Hagerty Marketplace without reserve, the auction closing on 28 September 2026.
+    signals: [closure, for_sale]
+    verified_via: web_search_snippet
+  - id: e2
+    url: https://www.sent-trib.com/2026/09/15/snooks-dream-cars-closing-after-25-years/
+    title: Snook's Dream Cars closing after 25 years
+    publisher: Sentinel-Tribune
+    source_type: news
+    source_date: "2026-09-15"
+    accessed: "2026-10-02"
+    claim: Local press confirms the closure of Snook's Dream Cars after nearly 25 years.
+    signals: [closure]
+    verified_via: web_search_snippet
+research:
+  researcher: mef relevance pass
+  last_updated: "2026-10-02"
+  international_transfer: "yes"
+  eligibility: Public online auction (Hagerty Marketplace), no reserve.
+  summary_ru: Частный автомузей Snook's Dream Cars (Огайо, США) закрывается; все 15 машин (джип времён Второй мировой, Jaguar XKE, ранний Datsun Z и др.) продавались на Hagerty без резервной цены, аукцион закрылся 28 сентября 2026. Можно спросить о непроданных лотах.
+  next_step: Low priority — the auction closed on 28 September 2026; ask Hagerty about unsold lots only if TPM wants a US car shipment.

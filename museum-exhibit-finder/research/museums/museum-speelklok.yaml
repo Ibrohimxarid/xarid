@@ -18,6 +18,7 @@ exhibitions:
         status: deaccessioned
         evidence: [e1]
         notes: Open the PDF to see which objects; the two-month LAMO window ended ~Jan 2026.
+        object_type: mixed_collection
 evidence:
   - id: e1
     url: https://afstotingsdatabase.nl/wp-content/uploads/2025/11/Museum-Speelklok-ADB-2025-11-20.pdf
@@ -33,8 +34,8 @@ evidence:
     verified_via: web_search_snippet
     notes: valid_until derived from the ADB rule that notices stay online for two months.
 research:
-  summary_ru: "20.11.2025 музей опубликовал уведомление о списании в голландской базе Afstotingsdatabase (два месяца — приоритет музеям); срок истёк 20.01.2026. Состав предметов не получен."
-  eligibility: "LAMO: other museums first (two-month notice on the Afstotingsdatabase)."
+  summary_ru: 20.11.2025 музей опубликовал уведомление о списании в голландской базе Afstotingsdatabase (два месяца — приоритет музеям); срок истёк 20.01.2026. Состав предметов не получен.
+  eligibility: 'LAMO: other museums first (two-month notice on the Afstotingsdatabase).'
   researcher: mef expansion
   last_updated: "2026-09-30"
   next_step: Open the ADB PDF; if it contains mechanical instruments/automata, ask whether any remain after the LAMO period.
@@ -44,3 +45,4 @@ research:
     fit: Mechanical music and automata illustrate gears, cams and pneumatics — attractive hands-on mechanics content.
     email_hook: Museum Speelklok published a deaccession notice on the Afstotingsdatabase on 20 November 2025
     source: e1
+  international_transfer: domestic_first

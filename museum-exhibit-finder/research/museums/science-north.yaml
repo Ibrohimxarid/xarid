@@ -12,6 +12,9 @@ exhibitions:
     new_exhibition: Woven by Water (water ecosystems, Indigenous knowledge) — target 2028
     status: being_replaced
     evidence: [e1, e2]
+    object_type: interactive_station
+    category: [stem]
+    fit_for_tpm: Third- and fourth-floor hands-on exhibits are being renewed ($1.9m; Woven by Water to 2028); retired interactive science stations would fit TPM's STEM area — ask what leaves the floor.
 evidence:
   - id: e1
     url: https://www.sudbury.com/local-news/third-fourth-floors-at-science-north-getting-a-19m-renewal-11632359
