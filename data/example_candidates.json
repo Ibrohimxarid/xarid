@@ -1,0 +1,36 @@
+{
+  "_note": "ILLUSTRATIVE ONLY. These are the worked examples from the requirements, with placeholder institutions. They are not real offers. Replace with researched candidates.",
+  "candidates": [
+    {
+      "id": "EX-001",
+      "title": "Interactive Engine Cutaway",
+      "object_type": "engine cutaway",
+      "description": "Visitor-operated sectioned petrol engine; a hand crank turns the crankshaft so pistons, valves and the four-stroke cycle can be seen.",
+      "source_institution": "Science Centre X (example)",
+      "source_type": "science_centre",
+      "history": "Installed in 2012",
+      "exhibit_status": "FOR_TRANSFER",
+      "status_date": "2026-09-01",
+      "evidence_url": "https://example.org/science-centre-x/retired-exhibits.pdf",
+      "evidence_type": "official_museum_document",
+      "condition": "working",
+      "photos_available": true,
+      "documentation_available": true,
+      "contact_name": "Collections Manager (example)",
+      "contact_email": "collections@example.org",
+      "international_transfer": "yes",
+      "logistics_reasonable": true
+    },
+    {
+      "id": "EX-002",
+      "title": "41 volumes of books",
+      "object_type": "books",
+      "description": "Bound volumes of a 19th-century regional history series.",
+      "source_institution": "History Museum X (example)",
+      "source_type": "other_museum",
+      "exhibit_status": "DEACCESSIONED",
+      "evidence_url": "https://example.org/history-museum-x/disposal-auction",
+      "evidence_type": "auction_listing"
+    }
+  ]
+}
