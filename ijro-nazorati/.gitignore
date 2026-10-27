@@ -1,0 +1,13 @@
+# Ish ma'lumotlari va sozlamalar (tokenni repoga qo'ymang)
+local/config.yaml
+local/.ish/
+local/Kiruvchi/
+local/kontaktlar.xlsx
+local/jurnal.csv
+# Yig'ish va Python
+local/build/
+local/dist/
+local/.venv/
+__pycache__/
+.pytest_cache/
+apps-script/.clasp.json

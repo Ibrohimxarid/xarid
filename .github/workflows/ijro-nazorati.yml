@@ -1,0 +1,65 @@
+name: Ijro nazorati — testlar va IjroNazorati.exe
+
+on:
+  push:
+    paths:
+      - "ijro-nazorati/**"
+      - ".github/workflows/ijro-nazorati.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  google-part:
+    name: Google qismi (Apps Script) testlari
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: node --test ijro-nazorati/apps-script/tests/*.test.js
+
+  windows-exe:
+    name: Testlar va IjroNazorati.exe (Windows)
+    runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: ijro-nazorati/local
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Kutubxonalar
+        run: python -m pip install -r requirements-dev.txt
+      - name: Testlar
+        run: python -m pytest -q
+      - name: exe yig'ish
+        run: pyinstaller IjroNazorati.spec --noconfirm
+      - name: exe'ni bo'sh papkada sinash
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory smoke | Out-Null
+          Copy-Item dist/IjroNazorati.exe smoke/
+          Push-Location smoke
+          ./IjroNazorati.exe --check
+          if ($LASTEXITCODE -ne 0) { throw "--check exit code $LASTEXITCODE" }
+          foreach ($f in "config.yaml", "kontaktlar.xlsx", "Kiruvchi") {
+            if (-not (Test-Path $f)) { throw "$f yaratilmadi" }
+          }
+          Pop-Location
+      - name: To'plam
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory package | Out-Null
+          Copy-Item dist/IjroNazorati.exe, config.example.yaml package/
+          Copy-Item ../README.md package/README.md
+          New-Item -ItemType Directory package/google-apps-script | Out-Null
+          Copy-Item ../apps-script/*.gs, ../apps-script/appsscript.json package/google-apps-script/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: IjroNazorati-windows
+          path: ijro-nazorati/local/package
+          retention-days: 90

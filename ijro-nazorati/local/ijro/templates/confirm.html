@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Tasdiqlash — Ijro nazorati{% endblock %}
+{% block content %}
+<h1>Ro'yxatga olishni tasdiqlang</h1>
+<p>Tasdiqlagandan keyin: yozuv Google jadvaliga qo'shiladi, ijrochilarga xat yuboriladi,
+  fayl va undan olingan ma'lumotlar bu kompyuterdan <b>butunlay o'chiriladi</b>.</p>
+
+<table class="summary">
+  <tr><th>Ro'yxatga olingan raqami</th><td>{{ payload.regNo }}</td></tr>
+  <tr><th>Ro'yxatga olingan sana</th><td>{{ payload.regDate | dmy }}</td></tr>
+  <tr><th>Chiqish raqami</th><td>{{ payload.outNo or '—' }}</td></tr>
+  <tr><th>Rezolyutsiya</th><td class="pre">{{ payload.resolution }}</td></tr>
+  <tr><th>Ijro muddati</th><td>{{ payload.dueText or '— (eslatma yuborilmaydi)' }}</td></tr>
+  <tr><th>Hujjatning qisqacha mazmuni</th><td>{{ payload.summary }}</td></tr>
+  <tr><th>Xat oladi</th><td>{{ emails | join(', ') }}</td></tr>
+  <tr><th>Asl hujjat</th><td>{{ 'xatga ilova qilinadi' if send_pdf else 'yuborilmaydi' }}</td></tr>
+</table>
+
+{% if doc.fields.unmatched %}
+<div class="note warn"><b>Diqqat — emaili topilmagan, xat olmaydi:</b> {{ doc.fields.unmatched }}</div>
+{% endif %}
+
+<div class="actions">
+  <form method="post" action="{{ url_for('confirm', doc_id=doc.id) }}">
+    <input type="hidden" name="_csrf" value="{{ csrf }}">
+    <input type="hidden" name="rev" value="{{ doc.rev }}">
+    <button class="primary">Tasdiqlash va yuborish</button>
+  </form>
+  <a class="button" href="{{ url_for('view', doc_id=doc.id) }}">Orqaga</a>
+</div>
+{% endblock %}

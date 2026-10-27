@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block head %}{% if busy %}<meta http-equiv="refresh" content="5">{% endif %}{% endblock %}
+{% block content %}
+<section class="status">
+  {% for ok, text in status %}
+    <div class="pill {{ 'good' if ok else 'bad' }}">{{ text }}</div>
+  {% endfor %}
+</section>
+
+<h1>Tekshiruvni kutayotgan hujjatlar</h1>
+<p class="muted">Yangi hujjatni shu papkaga qo'ying: <code>{{ inbox }}</code></p>
+
+{% if docs %}
+<table class="list">
+  <thead><tr><th>Fayl</th><th>Holat</th><th>Ro'yxat raqami</th><th>Kelgan vaqt</th><th></th></tr></thead>
+  <tbody>
+  {% for d in docs %}
+    <tr>
+      <td>{{ d.file_name }}</td>
+      <td><span class="state state-{{ d.status }}">{{ {'queued': 'Navbatda', 'processing': "O'qilmoqda", 'ready': 'Tekshiring', 'error': "Qo'lda to'ldiring"}[d.status] }}</span>
+        {% if d.message %}<div class="muted small">{{ d.message }}</div>{% endif %}</td>
+      <td>{{ d.fields.reg_no }}</td>
+      <td>{{ d.created.replace('T', ' ') }}</td>
+      <td>{% if d.status not in (QUEUED, PROCESSING) %}<a class="button" href="{{ url_for('view', doc_id=d.id) }}">Ochish</a>{% endif %}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<p class="empty-list">Hozircha hujjat yo'q.</p>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block title %}{{ doc.file_name }} — Ijro nazorati{% endblock %}
+{% block content %}
+<p><a href="{{ url_for('index') }}">← Ro'yxatga qaytish</a></p>
+<h1>{{ doc.file_name }}</h1>
+{% if doc.message %}<p class="muted">{{ doc.message }}</p>{% endif %}
+{% if not doc.source_exists %}<div class="errors">Asl fayl kiruvchi papkada topilmadi.</div>{% endif %}
+{% if errors %}
+  <div class="errors"><b>Ro'yxatga olib bo'lmaydi:</b><ul>{% for e in errors %}<li>{{ e }}</li>{% endfor %}</ul></div>
+{% endif %}
+
+<div class="split">
+  <section class="pages">
+    {% for n in pages %}
+      <a href="{{ url_for('page', doc_id=doc.id, number=n) }}" target="_blank" title="Kattalashtirish">
+        <img src="{{ url_for('page', doc_id=doc.id, number=n) }}" alt="{{ n }}-sahifa">
+      </a>
+      <div class="muted small">{{ n }}-sahifa</div>
+    {% else %}
+      <p class="muted">Ko'rinish yo'q. Asl faylni oching: <code>{{ doc.source_path }}</code></p>
+    {% endfor %}
+  </section>
+
+  <section class="form">
+    <p class="legend"><span class="sw empty"></span> AI aniqlay olmadi — to'ldiring
+      <span class="sw unconfirmed"></span> hujjat matnida topilmadi — alohida solishtiring</p>
+    <form method="post" id="fields">
+      <input type="hidden" name="_csrf" value="{{ csrf }}">
+      {% for name in editable %}
+        {% set value = doc.fields[name] %}
+        {% set cls = 'empty' if not value else ('unconfirmed' if doc.checks.get(name) == 'unconfirmed' else '') %}
+        <label for="f-{{ name }}">{{ labels[name] }}</label>
+        {% if name in ('resolution', 'summary', 'emails') %}
+          <textarea id="f-{{ name }}" name="{{ name }}" rows="{{ 4 if name == 'summary' else 3 }}" class="{{ cls }}">{{ value }}</textarea>
+        {% elif name in ('reg_date', 'due_date') %}
+          <input id="f-{{ name }}" type="date" name="{{ name }}" value="{{ value }}" class="{{ cls }}">
+        {% else %}
+          <input id="f-{{ name }}" type="text" name="{{ name }}" value="{{ value }}" class="{{ cls }}">
+        {% endif %}
+      {% endfor %}
+      {% if doc.fields.unmatched %}
+        <div class="note warn"><b>{{ labels['unmatched'] }}:</b> {{ doc.fields.unmatched }}<br>
+          <span class="small">Emailni qo'lda kiriting yoki kontaktlar fayliga qo'shib, qayta o'qing.</span></div>
+      {% endif %}
+      {% if doc.fields.ai_note %}<div class="note"><b>{{ labels['ai_note'] }}:</b> {{ doc.fields.ai_note }}</div>{% endif %}
+      <div class="actions">
+        <button class="primary" formaction="{{ url_for('register', doc_id=doc.id) }}">Ro'yxatga olish…</button>
+        <button formaction="{{ url_for('save', doc_id=doc.id) }}">Saqlash</button>
+      </div>
+    </form>
+
+    <div class="actions secondary">
+      <form method="post" action="{{ url_for('reread', doc_id=doc.id) }}">
+        <input type="hidden" name="_csrf" value="{{ csrf }}">
+        <input type="text" name="model" placeholder="model: {{ model }}" size="16">
+        <button>Qayta o'qish</button>
+      </form>
+      <form method="post" action="{{ url_for('reject', doc_id=doc.id) }}"
+            onsubmit="return confirm('Hujjat va fayl butunlay o\'chiriladi. Davom etasizmi?')">
+        <input type="hidden" name="_csrf" value="{{ csrf }}">
+        <button class="danger">Rad etish</button>
+      </form>
+    </div>
+  </section>
+</div>
+<script>
+  // Bo'sh maydon to'ldirilsa — sariq rang yo'qoladi; tahrirlangan qiymat "tasdiqlanmagan" emas.
+  document.querySelectorAll('#fields input, #fields textarea').forEach(function (el) {
+    el.addEventListener('input', function () {
+      el.classList.remove('unconfirmed');
+      el.classList.toggle('empty', !el.value.trim());
+    });
+  });
+</script>
+{% endblock %}

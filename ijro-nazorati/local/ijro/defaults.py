@@ -1,0 +1,36 @@
+"""Birinchi ishga tushirishda yaratiladigan config.yaml (config.example.yaml bilan bir xil)."""
+
+DEFAULT_CONFIG = """\
+# Ijro nazorati — kompyuterdagi dastur sozlamalari.
+# Nisbiy yo'llar shu fayl turgan papkaga nisbatan. Windows yo'llarini qo'shtirnoqsiz yozing.
+
+paths:
+  inbox: Kiruvchi              # yangi hujjatlar shu papkaga qo'yiladi
+  work: .ish                   # vaqtinchalik ma'lumotlar (ro'yxatga olingach o'chiriladi)
+  contacts: kontaktlar.xlsx    # ijrochilar: ism/tashkilot -> email
+
+ollama:
+  url: http://127.0.0.1:11434
+  model: qwen2.5vl:7b          # kuchsiz kompyuter uchun: qwen2.5vl:3b yoki gemma3:4b
+  timeout_sec: 900
+  num_ctx: 16384
+
+ocr:
+  tesseract_cmd: tesseract     # PATH da bo'lmasa: C:\\Program Files\\Tesseract-OCR\\tesseract.exe
+  languages: uzb+uzb_cyrl+rus
+
+pages:
+  max_pages: 4                 # uzun hujjatdan: birinchi 3 ta + oxirgi sahifa
+  dpi: 200
+  llm_image_max_side: 1600
+
+remote:                        # Google qismi (Apps Script veb-ilovasi)
+  url:                         # https://script.google.com/macros/s/.../exec
+  token:                       # setup() bergan token
+  send_pdf: true               # false — asl hujjat Google'ga umuman yuborilmaydi
+
+ui:
+  host: 127.0.0.1
+  port: 8765
+  open_browser: true
+"""
