@@ -484,28 +484,6 @@ add(
   })
 );
 
-// Annex 1
-add(
-  new Paragraph({ pageBreakBefore: true, alignment: AlignmentType.RIGHT, children: [new TextRun({ text: "Annex 1 to the MoU", italics: true })] }),
-  new Paragraph({
-    alignment: AlignmentType.CENTER,
-    spacing: { before: 120, after: 60 },
-    children: [new TextRun({ text: "INDICATIVE INITIAL ACTIVITIES", bold: true, size: 26, color: NAVY })],
-  }),
-  center("(for reference; non-binding)", { run: { italics: true }, spacing: { after: 200 } }),
-  grid(
-    [600, 4270, 2200, 2000],
-    ["No.", "Activity", "Responsible", "Timeframe"],
-    [
-      ["1", "Visit of Panshi specialists to the Museum; assessment of exhibition spaces and needs", "Panshi, with the Museum’s support", "[month, year]"],
-      ["2", "Preparation of a concept and technical proposal for [the modernisation of the Museum’s interactive science exhibition]", "Panshi", "[__ weeks after the visit]"],
-      ["3", "Study visit of Museum staff to Panshi’s production facilities and reference projects in China", "Both Parties", "[month, year]"],
-      ["4", "Training workshop for Museum staff on interactive exhibits and museum education", "Panshi", "[month, year]"],
-      ["5", "First meeting of the Joint Working Group; approval of the annual plan of activities", "Both Parties", "[month, year]"],
-    ]
-  )
-);
-
 // ---------- document ----------
 const doc = new Document({
   creator: "Tashkent Polytechnic Museum",
