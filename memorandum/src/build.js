@@ -174,7 +174,7 @@ add(
   new Paragraph({
     spacing: { after: 240 },
     tabStops: [{ type: TabStopType.RIGHT, position: TEXT_W }],
-    children: [...runs("Tashkent, Republic of Uzbekistan"), new TextRun({ text: "\t" }), ...runs("[__ ____________ 2026]")],
+    children: [...runs("Tashkent, Republic of Uzbekistan"), new TextRun({ text: "\t" }), ...runs("30 October 2026")],
   })
 );
 
@@ -476,8 +476,8 @@ add(
       new TableRow({
         cantSplit: true,
         children: [
-          sig(["**FOR THE MUSEUM**", "Tashkent Polytechnic Museum", "", "", "", "______________________________", "Name: Sherzod U. Bekmatov", "Title: Director", "Date: [__ / __ / 2026]", "", "L.S."]),
-          sig(["**FOR PANSHI**", "Hefei Panshi Intelligent Technology Co., Ltd.", "", "", "", "______________________________", "Name: [full name]", "Title: [title]", "Date: [__ / __ / 2026]", "", "L.S."]),
+          sig(["**FOR THE MUSEUM**", "Tashkent Polytechnic Museum", "", "", "", "______________________________", "Name: Sherzod U. Bekmatov", "Title: Director", "Date: 30 October 2026"]),
+          sig(["**FOR PANSHI**", "Hefei Panshi Intelligent Technology Co., Ltd.", "", "", "", "______________________________", "Name: [full name]", "Title: [title]", "Date: 30 October 2026"]),
         ],
       }),
     ],
