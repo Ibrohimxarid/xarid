@@ -444,7 +444,7 @@ add(
     [
       ["Address", "13 Amir Temur Avenue, Mirabad District, Tashkent, Republic of Uzbekistan", "Panshi Industrial Park, Yunhu Road and Jixian Road, Feixi Economic Development Zone, Hefei, Anhui Province, PRC"],
       ["Telephone", "+998 70 523 10 10", "+86 400-135-1080"],
-      ["E-mail", "[e-mail]", "[e-mail]"],
+      ["E-mail", "museum@uzavtosanoat.uz", "panshizhineng@outlook.com"],
       ["Website", "politomuseum.uz", "www.panshiexhibit.com"],
     ],
     { firstColBold: true, keepTogether: true }
@@ -457,15 +457,7 @@ add(
   heading("ARTICLE 15. FINAL PROVISIONS"),
   clause(
     "15.1",
-    "This MoU is signed in [Tashkent] on [date] in two (2) original copies in the English language, one for each Party, both being equally authentic. Translations into Uzbek and Chinese may be prepared for convenience; in the event of any discrepancy, the English text shall prevail."
-  ),
-  clause(
-    "15.2",
-    "This MoU may be signed in counterparts, including by the exchange of scanned signed copies, each of which shall be deemed an original."
-  ),
-  clause(
-    "15.3",
-    "Annex 1 (Indicative Initial Activities) is attached for reference only and may be updated by mutual agreement of the Parties in writing without a formal amendment of this MoU."
+    "This MoU is executed in two (2) original copies in the English language, one for each Party, both being equally authentic."
   ),
   p("**IN WITNESS WHEREOF**, the undersigned, being duly authorised by their respective organisations, have signed this MoU.", {
     spacing: { before: 200, after: 240 },
