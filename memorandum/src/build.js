@@ -71,7 +71,7 @@ const borders = { top: thin, bottom: thin, left: thin, right: thin };
 const none = { style: BorderStyle.NONE, size: 0, color: "FFFFFF" };
 const noBorders = { top: none, bottom: none, left: none, right: none };
 
-function cell(text, width, { header = false, bold = false, shade, cellBorders = borders } = {}) {
+function cell(text, width, { header = false, bold = false, shade, cellBorders = borders, keepNext = false } = {}) {
   const lines = Array.isArray(text) ? text : [text];
   return new TableCell({
     width: { size: width, type: WidthType.DXA },
@@ -82,20 +82,22 @@ function cell(text, width, { header = false, bold = false, shade, cellBorders = 
     children: lines.map((t) =>
       new Paragraph({
         spacing: { after: 0, line: 252 },
+        keepNext,
         children: runs(t, header ? { bold: true, color: "FFFFFF" } : bold ? { bold: true } : {}),
       })
     ),
   });
 }
 
-function grid(widths, headerRow, rows, { firstColBold = false } = {}) {
+// keepTogether: keep-with-next on every row but the last, so the table does not split across pages.
+function grid(widths, headerRow, rows, { firstColBold = false, keepTogether = false } = {}) {
   return new Table({
     width: { size: widths.reduce((a, b) => a + b, 0), type: WidthType.DXA },
     columnWidths: widths,
     rows: [
       new TableRow({
         tableHeader: true,
-        children: headerRow.map((t, i) => cell(t, widths[i], { header: true, shade: NAVY })),
+        children: headerRow.map((t, i) => cell(t, widths[i], { header: true, shade: NAVY, keepNext: keepTogether })),
       }),
       ...rows.map(
         (r, ri) =>
@@ -105,6 +107,7 @@ function grid(widths, headerRow, rows, { firstColBold = false } = {}) {
               cell(t, widths[i], {
                 bold: firstColBold && i === 0,
                 shade: ri % 2 ? "F2F4F8" : undefined,
+                keepNext: keepTogether && ri < rows.length - 1,
               })
             ),
           })
@@ -307,13 +310,9 @@ add(
 
 // Article 5
 add(
-  heading("ARTICLE 5. COORDINATION"),
+  heading("ARTICLE 5. JOINT WORKING GROUP"),
   clause(
     "5.1",
-    "Within thirty (30) days after the signing of this MoU, each Party shall designate a coordinator responsible for its implementation and notify the other Party in writing."
-  ),
-  clause(
-    "5.2",
     "The Parties may establish a Joint Working Group, which shall meet at least once a year, in person or online, to review progress and agree on an annual plan of activities."
   )
 );
@@ -444,12 +443,11 @@ add(
     ["", "The Museum", "Panshi"],
     [
       ["Address", "13 Amir Temur Avenue, Mirabad District, Tashkent, Republic of Uzbekistan", "Panshi Industrial Park, Yunhu Road and Jixian Road, Feixi Economic Development Zone, Hefei, Anhui Province, PRC"],
-      ["Coordinator", "[full name, position]", "[full name, position]"],
-      ["Telephone", "+998 71 232 34 30", "+86 400-135-1080"],
+      ["Telephone", "+998 70 523 10 10", "+86 400-135-1080"],
       ["E-mail", "[e-mail]", "[e-mail]"],
       ["Website", "politomuseum.uz", "www.panshiexhibit.com"],
     ],
-    { firstColBold: true }
+    { firstColBold: true, keepTogether: true }
   ),
   new Paragraph({ spacing: { after: 60 }, children: [] })
 );
@@ -467,7 +465,7 @@ add(
   ),
   clause(
     "15.3",
-    "Annex 1 (Indicative Initial Activities) is attached for reference only and may be updated by the Parties’ coordinators without a formal amendment of this MoU."
+    "Annex 1 (Indicative Initial Activities) is attached for reference only and may be updated by mutual agreement of the Parties in writing without a formal amendment of this MoU."
   ),
   p("**IN WITNESS WHEREOF**, the undersigned, being duly authorised by their respective organisations, have signed this MoU.", {
     spacing: { before: 200, after: 240 },
@@ -507,12 +505,11 @@ add(
     [600, 4270, 2200, 2000],
     ["No.", "Activity", "Responsible", "Timeframe"],
     [
-      ["1", "Appointment of coordinators and exchange of contact details", "Both Parties", "Within 30 days of signing"],
-      ["2", "Visit of Panshi specialists to the Museum; assessment of exhibition spaces and needs", "Panshi, with the Museum’s support", "[month, year]"],
-      ["3", "Preparation of a concept and technical proposal for [the modernisation of the Museum’s interactive science exhibition]", "Panshi", "[__ weeks after the visit]"],
-      ["4", "Study visit of Museum staff to Panshi’s production facilities and reference projects in China", "Both Parties", "[month, year]"],
-      ["5", "Training workshop for Museum staff on interactive exhibits and museum education", "Panshi", "[month, year]"],
-      ["6", "First meeting of the Joint Working Group; approval of the annual plan of activities", "Both Parties", "[month, year]"],
+      ["1", "Visit of Panshi specialists to the Museum; assessment of exhibition spaces and needs", "Panshi, with the Museum’s support", "[month, year]"],
+      ["2", "Preparation of a concept and technical proposal for [the modernisation of the Museum’s interactive science exhibition]", "Panshi", "[__ weeks after the visit]"],
+      ["3", "Study visit of Museum staff to Panshi’s production facilities and reference projects in China", "Both Parties", "[month, year]"],
+      ["4", "Training workshop for Museum staff on interactive exhibits and museum education", "Panshi", "[month, year]"],
+      ["5", "First meeting of the Joint Working Group; approval of the annual plan of activities", "Both Parties", "[month, year]"],
     ]
   )
 );
