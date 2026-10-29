@@ -1,14 +1,13 @@
-// Builds the draft MoU between [Museum] and Hefei Panshi Intelligent Technology Co., Ltd.
-// Usage: node build.js <watermark.png> <output.docx>
+// Builds the draft MoU between the Tashkent Polytechnic Museum and Hefei Panshi Intelligent Technology Co., Ltd.
+// Usage: node build.js <output.docx>
 const fs = require("fs");
 const {
-  Document, Packer, Paragraph, TextRun, ImageRun, Header, Footer, Table, TableRow, TableCell,
+  Document, Packer, Paragraph, TextRun, Header, Footer, Table, TableRow, TableCell,
   AlignmentType, WidthType, BorderStyle, ShadingType, PageNumber, TabStopType,
-  HorizontalPositionRelativeFrom, HorizontalPositionAlign,
-  VerticalPositionRelativeFrom, VerticalPositionAlign, TextWrappingType, VerticalAlign,
+  VerticalAlign,
 } = require("docx");
 
-const [, , WATERMARK = "watermark.png", OUT = "MoU_Museum_Panshi_DRAFT.docx"] = process.argv;
+const [, , OUT = "MoU_Tashkent_Polytechnic_Museum_Panshi_DRAFT.docx"] = process.argv;
 
 const NAVY = "1F3864";
 const GREY = "7F7F7F";
@@ -114,27 +113,12 @@ function grid(widths, headerRow, rows, { firstColBold = false } = {}) {
   });
 }
 
-// ---------- header (with the centred two-logo watermark) & footer ----------
-const watermark = new ImageRun({
-  type: "png",
-  data: fs.readFileSync(WATERMARK),
-  transformation: { width: 500, height: Math.round((500 * 760) / 1800) },
-  floating: {
-    horizontalPosition: { relative: HorizontalPositionRelativeFrom.PAGE, align: HorizontalPositionAlign.CENTER },
-    verticalPosition: { relative: VerticalPositionRelativeFrom.PAGE, align: VerticalPositionAlign.CENTER },
-    behindDocument: true,
-    allowOverlap: true,
-    wrap: { type: TextWrappingType.NONE },
-  },
-  altText: { name: "Logos", title: "Logos of the Parties", description: "Logos of the Museum and Panshi" },
-});
-
+// ---------- header & footer ----------
 const header = new Header({
   children: [
     new Paragraph({
       alignment: AlignmentType.RIGHT,
       children: [
-        watermark,
         new TextRun({ text: "DRAFT — for discussion purposes only", italics: true, size: 16, color: GREY }),
       ],
     }),
@@ -148,9 +132,7 @@ const footer = new Footer({
       border: { top: { style: BorderStyle.SINGLE, size: 4, color: "BFBFBF", space: 4 } },
       tabStops: [{ type: TabStopType.RIGHT, position: TEXT_W }],
       children: [
-        new TextRun({ text: "Memorandum of Understanding — ", size: 16, color: GREY }),
-        new TextRun({ text: "[Museum]", size: 16, color: GREY, highlight: "yellow" }),
-        new TextRun({ text: " and Hefei Panshi Intelligent Technology Co., Ltd.", size: 16, color: GREY }),
+        new TextRun({ text: "Memorandum of Understanding — Tashkent Polytechnic Museum and Hefei Panshi Intelligent Technology Co., Ltd.", size: 16, color: GREY }),
         new TextRun({ text: "\tPage ", size: 16, color: GREY }),
         new TextRun({ children: [PageNumber.CURRENT], size: 16, color: GREY }),
         new TextRun({ text: " of ", size: 16, color: GREY }),
@@ -172,7 +154,7 @@ add(
     children: [new TextRun({ text: "MEMORANDUM OF UNDERSTANDING", bold: true, size: 34, color: NAVY })],
   }),
   center("between", { run: { italics: true }, spacing: { after: 60 } }),
-  center("**[FULL OFFICIAL NAME OF THE MUSEUM]**", { spacing: { after: 60 }, run: { size: 24 } }),
+  center("**TASHKENT POLYTECHNIC MUSEUM**", { spacing: { after: 60 }, run: { size: 24 } }),
   center("and", { run: { italics: true }, spacing: { after: 60 } }),
   center("**HEFEI PANSHI INTELLIGENT TECHNOLOGY CO., LTD.**", { spacing: { after: 160 }, run: { size: 24 } }),
   new Paragraph({
@@ -189,7 +171,7 @@ add(
   new Paragraph({
     spacing: { after: 240 },
     tabStops: [{ type: TabStopType.RIGHT, position: TEXT_W }],
-    children: [...runs("[City], [Country]"), new TextRun({ text: "\t" }), ...runs("[__ ____________ 2026]")],
+    children: [...runs("Tashkent, Republic of Uzbekistan"), new TextRun({ text: "\t" }), ...runs("[__ ____________ 2026]")],
   })
 );
 
@@ -198,7 +180,7 @@ add(
   p("This Memorandum of Understanding (hereinafter the “**MoU**”) is made by and between:"),
   clause(
     "(1)",
-    "**[FULL OFFICIAL NAME OF THE MUSEUM]**, a [legal status, e.g. state cultural institution] established under the laws of [Country], having its registered address at [address of the Museum], represented by [full name], [Director], acting on the basis of [the Charter of the Museum] (hereinafter the “**Museum**”); and"
+    "**Tashkent Polytechnic Museum**, established under the laws of the Republic of Uzbekistan, having its address at 13 Amir Temur Avenue, Mirabad District, Tashkent, Republic of Uzbekistan, represented by its Director, Mr. Sherzod Ulugbekovich Bekmatov, acting on the basis of the Charter of the Museum (hereinafter the “**Museum**”); and"
   ),
   new Paragraph({
     alignment: AlignmentType.JUSTIFIED,
@@ -223,7 +205,7 @@ add(
 add(
   heading("PREAMBLE"),
   whereas(
-    "the Museum is [a brief description of the Museum: its profile, collections and mission], dedicated to the preservation, study and presentation of [cultural, historical and/or natural heritage] and to the education of the public;"
+    "the Museum, established in 2015 on the initiative of JSC “Uzavtosanoat”, presents the history of the automobile, engineering and technology, and operates an interactive science exhibition dedicated to popularising science and engineering among children, young people and the general public;"
   ),
   whereas(
     "Panshi, founded in 2012, specialises in the content development, design, fabrication, installation and operational management of science centres, museums and other cultural venues, and has delivered interactive exhibition projects in the People’s Republic of China and internationally;"
@@ -306,7 +288,7 @@ add(
   ),
   item("b", "provide curatorial guidance and approve the content of all exhibits relating to its collections;"),
   item("c", "facilitate site visits, surveys and access to the premises required for joint projects;"),
-  item("d", "assist, within its competence, in obtaining the permits and approvals required in [Country]."),
+  item("d", "assist, within its competence, in obtaining the permits and approvals required in the Republic of Uzbekistan."),
   clause("4.2", "Panshi intends to:"),
   item("a", "provide professional expertise in exhibition planning, design and interactive technologies;"),
   item(
@@ -349,7 +331,7 @@ add(
   ),
   clause(
     "6.3",
-    "Any procurement of goods, works or services by the Museum shall be carried out in strict compliance with the public procurement legislation of [Country] and the Museum’s internal procedures. Nothing in this MoU grants Panshi any exclusivity, priority or preferential right in any procurement procedure."
+    "Any procurement of goods, works or services by the Museum shall be carried out in strict compliance with the procurement legislation of the Republic of Uzbekistan applicable to the Museum and with the Museum’s internal procedures. Nothing in this MoU grants Panshi any exclusivity, priority or preferential right in any procurement procedure."
   )
 );
 
@@ -362,7 +344,7 @@ add(
   ),
   clause(
     "7.2",
-    "All rights to the Museum’s collections, objects, archives, images, photographs, 3D scans and related data remain with the Museum [and/or the State]. Panshi may use such materials solely for agreed joint projects and only with the Museum’s prior written consent."
+    "All rights to the Museum’s collections, objects, archives, images, photographs, 3D scans and related data remain with the Museum. Panshi may use such materials solely for agreed joint projects and only with the Museum’s prior written consent."
   ),
   clause(
     "7.3",
@@ -461,11 +443,11 @@ add(
     [2000, 3535, 3535],
     ["", "The Museum", "Panshi"],
     [
-      ["Address", "[address of the Museum]", "Panshi Industrial Park, Yunhu Road and Jixian Road, Feixi Economic Development Zone, Hefei, Anhui Province, PRC"],
+      ["Address", "13 Amir Temur Avenue, Mirabad District, Tashkent, Republic of Uzbekistan", "Panshi Industrial Park, Yunhu Road and Jixian Road, Feixi Economic Development Zone, Hefei, Anhui Province, PRC"],
       ["Coordinator", "[full name, position]", "[full name, position]"],
-      ["Telephone", "[+___ ___ ___ __ __]", "+86 400-135-1080"],
+      ["Telephone", "+998 71 232 34 30", "+86 400-135-1080"],
       ["E-mail", "[e-mail]", "[e-mail]"],
-      ["Website", "[website]", "www.panshiexhibit.com"],
+      ["Website", "politomuseum.uz", "www.panshiexhibit.com"],
     ],
     { firstColBold: true }
   ),
@@ -477,7 +459,7 @@ add(
   heading("ARTICLE 15. FINAL PROVISIONS"),
   clause(
     "15.1",
-    "This MoU is signed in [City] on [date] in two (2) original copies in the English language, one for each Party, both being equally authentic. Translations into [official language of the Museum’s country] and Chinese may be prepared for convenience; in the event of any discrepancy, the English text shall prevail."
+    "This MoU is signed in [Tashkent] on [date] in two (2) original copies in the English language, one for each Party, both being equally authentic. Translations into Uzbek and Chinese may be prepared for convenience; in the event of any discrepancy, the English text shall prevail."
   ),
   clause(
     "15.2",
@@ -504,7 +486,7 @@ add(
       new TableRow({
         cantSplit: true,
         children: [
-          sig(["**FOR THE MUSEUM**", "[Full official name of the Museum]", "", "", "", "______________________________", "Name: [full name]", "Title: [Director]", "Date: [__ / __ / 2026]", "", "L.S."]),
+          sig(["**FOR THE MUSEUM**", "Tashkent Polytechnic Museum", "", "", "", "______________________________", "Name: Sherzod U. Bekmatov", "Title: Director", "Date: [__ / __ / 2026]", "", "L.S."]),
           sig(["**FOR PANSHI**", "Hefei Panshi Intelligent Technology Co., Ltd.", "", "", "", "______________________________", "Name: [full name]", "Title: [title]", "Date: [__ / __ / 2026]", "", "L.S."]),
         ],
       }),
@@ -527,7 +509,7 @@ add(
     [
       ["1", "Appointment of coordinators and exchange of contact details", "Both Parties", "Within 30 days of signing"],
       ["2", "Visit of Panshi specialists to the Museum; assessment of exhibition spaces and needs", "Panshi, with the Museum’s support", "[month, year]"],
-      ["3", "Preparation of a concept and technical proposal for [hall / exhibition]", "Panshi", "[__ weeks after the visit]"],
+      ["3", "Preparation of a concept and technical proposal for [the modernisation of the Museum’s interactive science exhibition]", "Panshi", "[__ weeks after the visit]"],
       ["4", "Study visit of Museum staff to Panshi’s production facilities and reference projects in China", "Both Parties", "[month, year]"],
       ["5", "Training workshop for Museum staff on interactive exhibits and museum education", "Panshi", "[month, year]"],
       ["6", "First meeting of the Joint Working Group; approval of the annual plan of activities", "Both Parties", "[month, year]"],
@@ -537,8 +519,8 @@ add(
 
 // ---------- document ----------
 const doc = new Document({
-  creator: "[Museum]",
-  title: "Memorandum of Understanding — [Museum] and Hefei Panshi Intelligent Technology Co., Ltd. (Draft)",
+  creator: "Tashkent Polytechnic Museum",
+  title: "Memorandum of Understanding — Tashkent Polytechnic Museum and Hefei Panshi Intelligent Technology Co., Ltd. (Draft)",
   styles: {
     default: {
       document: {
